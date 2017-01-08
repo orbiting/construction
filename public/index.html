@@ -6,54 +6,6 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <title>React App</title>
     <style>
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  color: #444444;
-  font-family: serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 18px;
-}
-.Container {
-  margin: 20px auto;
-  max-width: 640px;
-}
-img {
-  max-width: 100%;
-}
-.Portrait-image {
-  float: left;
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  background-size: cover;
-  /*border-radius: 50%;*/
-  /*shape-outside: circle();*/
-}
-input {
-  width: 211px;
-  margin-right: 6px
-}
-button {
-  width: 110px
-}
-button:hover, input[type="submit"] {
-  background: #444444;
-  color: white;
-}
-button,
-input {
-  vertical-align: bottom;
-  color: #444444;
-  padding: 10px 20px 10px 20px;
-  border: solid #444444 1px;
-  text-decoration: none;
-  background-color: white;
-  font-size: 14px;
-  height: 37px;
-}
 /* reset */
 img {
   border: 0;
@@ -126,13 +78,138 @@ select {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* r */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #444444;
+  font-family: serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3 {
+  font-family: sans-serif;
+}
+h1 {
+  margin: 0 0 0.2em;
+}
+h2, h3 {
+  margin: 0 0 0.2em;
+}
+p {
+  margin: 0 0 0.8em;
+}
+a, a:visited {
+  color: #222;
+  text-decoration: underline;
+}
+a:hover {
+  color: #444;
+}
+.Container {
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 10px;
+  max-width: 640px;
+}
+@media (min-width: 600px) {
+  .Container {
+    padding-top: 20px;
+  }
+}
+.Cover {
+  width: 100%;
+  position: relative;
+}
+.Lead-content {
+  padding: 20px 20px 0;
+}
+.Lead p {
+  margin: 0;
+  font-weight: bold;
+}
+@media (min-width: 600px) {
+  .Lead {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    color: #fff;
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.80) 100%);
+  }
+  .Lead-content {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+.Logo {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.Portrait {
+  margin: 20px 0;
+}
+.Portrait p {
+  margin: 0;
+}
+@media (min-width: 600px) {
+  .Portrait-image {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /*border-radius: 50%;*/
+    /*shape-outside: circle();*/
+  }
+}
+input {
+  width: 211px;
+  margin-right: 6px
+}
+button {
+  width: 110px
+}
+button:hover, input[type="submit"] {
+  background: #444444;
+  color: white;
+}
+button,
+input {
+  vertical-align: bottom;
+  color: #444444;
+  padding: 10px 20px 10px 20px;
+  border: solid #444444 1px;
+  text-decoration: none;
+  background-color: white;
+  font-size: 14px;
+  height: 37px;
+}
     </style>
   </head>
   <body>
-    <div class="Container">
-<img src="%PUBLIC_URL%/images/project_r_logo.svg" width="20%" />
 
-<h1>Project R zieht ins Rothaus</h1>
+<div class="Cover">
+  <img src="%PUBLIC_URL%/images/project_r_crew.jpg" alt="Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017" />
+  <div class="Lead">
+    <div class="Lead-content">
+      <h1>Project R zieht ins Rothaus</h1>
+      <p>«Die besten Köpfe der Schweiz sind bereit, sich auf ein neues Abenteuer einzulassen»: die Süddeutsche Zeitung über «Project R».</p>
+    </div>
+  </div>
+</div>
+
+<div class="Container">
 
 <h2>Im Sturm hält man den Kopf hoch</h2>
 
@@ -172,59 +249,57 @@ select {
 
 <h2>Crew</h2>
 
-<img src="%PUBLIC_URL%/images/project_r_crew.jpg" />
-
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/susanne_sugimoto.jpg'); background-position: 80% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/susanne_sugimoto.jpg" alt="" />
   <h2>Susanne Sugimoto</h2>
   <h3>Geschäftsführung</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/laurent_burst.jpg'); background-position: 70% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/laurent_burst.jpg" alt="" />
   <h2>Laurent Burst</h2>
   <h3>Strategie</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/nadja_schnetzler.jpg'); background-position: 70% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/nadja_schnetzler.jpg" alt="" />
   <h2>Nadja Schnetzler</h2>
   <h3>Prozesse und Zusammenarbeit</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/clara_vuillemin.jpg'); background-position: 70% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/clara_vuillemin.jpg" alt="" />
   <h2>Clara Vuillemin</h2>
   <h3>IT-Gesamtkonzeption</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/patrick_recher.jpg'); background-position: 50% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/patrick_recher.jpg" alt="" />
   <h2>Patrick Recher</h2>
   <h3>IT-Entwicklung Backend</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/thomas_preusse.jpg'); background-position: 30% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/thomas_preusse.jpg" alt="" />
   <h2>Thomas Preusse</h2>
   <h3>IT-Entwicklung Frontend</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/constantin_seibt.jpg'); background-position: 40% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/constantin_seibt.jpg" alt="" />
   <h2>Constantin Seibt</h2>
   <h3>Konzeption und Redaktion</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/christof_moser.jpg'); background-position: 80% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/christof_moser.jpg" alt="" />
   <h2>Christof Moser</h2>
   <h3>Konzeption und Redaktion</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
@@ -248,7 +323,7 @@ select {
 
 <!-- Newsletter -->
 
-<h1>Ladies and Gentlemen,</h1>
+<h2>Ladies and Gentlemen,</h2>
 
 <p>Thomas Jefferson, der Autor der amerikanischen Unabhängigkeits­erklärung, schrieb einmal:</p>
 
@@ -258,10 +333,20 @@ select {
 
 <p>Falls Sie daran interessiert sind, übermitteln Sie uns bitte Ihre E-Mail-Adresse. Wir werden Sie informieren.</p>
 
-<div id="newsletter"></div>
+<p id="newsletter"></p>
 
 <p>Danke!</p>
 
-    </div>
+<!-- Kontakt -->
+
+<div>
+  <!-- <img class="Logo" src="%PUBLIC_URL%/images/project_r_logo.svg" width="20%" /> -->
+
+  <h2>Kontakt</h2>
+  <p><a href="mailto:jefferson@project-r.construction">jefferson@project-r.construction</a></p>
+
+</div>
+
+</div>
   </body>
 </html>
