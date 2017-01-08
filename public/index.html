@@ -1,11 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <title>React App</title>
-    <style>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+<title>Project R zieht ins Rothaus</title>
+<meta name="author" content="Project R"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://project-r.construction/"/>
+<meta property="og:title" content="Project R zieht ins Rothaus"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="images/balkon.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@christof_moser"/>
+<meta name="twitter:creator" content="@christof_moser"/>
+<style>
 /* reset */
 img {
   border: 0;
@@ -93,9 +104,17 @@ img {
 }
 h1, h2, h3 {
   font-family: sans-serif;
+  font-weight: bold;
 }
 h1 {
   margin: 0 0 0.2em;
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 18px;
 }
 h2, h3 {
   margin: 0 0 0.2em;
@@ -168,7 +187,12 @@ ul {
   max-width: 50px;
 }
 .Portrait {
-  margin: 20px 0;
+  margin: 0 0 20px;
+}
+.Portrait:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 @media (min-width: 600px) {
   .Portrait-image {
@@ -176,8 +200,6 @@ ul {
     width: 50%;
     margin-right: 20px;
     margin-bottom: 20px;
-    /*border-radius: 50%;*/
-    /*shape-outside: circle();*/
   }
 }
 input {
@@ -202,9 +224,9 @@ input {
   font-size: 14px;
   height: 37px;
 }
-    </style>
-  </head>
-  <body>
+</style>
+</head>
+<body>
 
 <div class="Cover">
   <img class="Cover-image" src="%PUBLIC_URL%/images/project_r_crew.jpg" alt="Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017" />
@@ -283,7 +305,7 @@ input {
 <div class="Portrait">
   <img class="Portrait-image" src="%PUBLIC_URL%/images/clara_vuillemin.jpg" alt="" />
   <h2>Clara Vuillemin</h2>
-  <h3>IT-Gesamtkonzeption</h3>
+  <h3>Head of IT</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
   <p><a href="mailto:clara.vuillemin@project-r.construction">clara.vuillemin@project-r.construction</a></p>
 </div>
@@ -291,7 +313,7 @@ input {
 <div class="Portrait">
   <img class="Portrait-image" src="%PUBLIC_URL%/images/patrick_recher.jpg" alt="" />
   <h2>Patrick Recher</h2>
-  <h3>IT-Entwicklung Backend</h3>
+  <h3>Software Entwicklung</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
   <p><a href="mailto:patrick.recher@project-r.construction">patrick.recher@project-r.construction</a></p>
 </div>
@@ -299,7 +321,7 @@ input {
 <div class="Portrait">
   <img class="Portrait-image" src="%PUBLIC_URL%/images/thomas_preusse.jpg" alt="" />
   <h2>Thomas Preusse</h2>
-  <h3>IT-Entwicklung Frontend</h3>
+  <h3>Software Entwicklung</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
   <p><a href="mailto:thomas.preusse@project-r.construction">thomas.preusse@project-r.construction</a></p>
 </div>
@@ -308,7 +330,6 @@ input {
   <img class="Portrait-image" src="%PUBLIC_URL%/images/constantin_seibt.jpg" alt="" />
   <h2>Constantin Seibt</h2>
   <h3>Konzeption und Redaktion</h3>
-  <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
   <p><a href="mailto:constantin.seibt@project-r.construction">constantin.seibt@project-r.construction</a></p>
 </div>
 
@@ -316,7 +337,6 @@ input {
   <img class="Portrait-image" src="%PUBLIC_URL%/images/christof_moser.jpg" alt="" />
   <h2>Christof Moser</h2>
   <h3>Konzeption und Redaktion</h3>
-  <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
   <p><a href="mailto:christof.moser@project-r.construction">christof.moser@project-r.construction</a></p>
 </div>
 
@@ -371,5 +391,5 @@ input {
 </div>
 
 </div>
-  </body>
+</body>
 </html>
