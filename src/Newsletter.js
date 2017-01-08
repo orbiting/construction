@@ -26,18 +26,26 @@ class Newsletter extends Component {
 
     this.setState({ loading: true })
     const lang = navigator.language.substring(0, 2)
-    // Meteor.call('subscribers.insert', email, lang, (error) => {
-    //   this.setState({ loading: false })
-    //   if(error === undefined) {
-    //     this.setState({
-    //       errors: { success: "Bitte bestätigen Sie die E-Mail, die wir Ihnen geschickt haben." }
-    //     })
-    //   } else {
-    //     this.setState({
-    //       errors: { fail: error.error }
-    //     })
-    //   }
-    // })
+
+    const formData = { email, lang }
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('post', '/api/subscribe');
+    xhr.setRequestHeader('Content-type', 'application/json;charset=UTF-8')
+    xhr.addEventListener('load', () => {
+      console.log(xhr.status)
+      this.setState({ loading: false })
+      if (xhr.status === 200) {
+        // success
+        this.setState({
+          errors: { success: "Bitte bestätigen Sie die E-Mail, die wir Ihnen geschickt haben." }
+        })
+      } else {
+        const error = xhr.response.error ? xhr.response.error : "unknown error"
+        this.setState({ fail: error })
+      }
+    });
+    xhr.send(JSON.stringify(formData))
   }
 
   render() {
