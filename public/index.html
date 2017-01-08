@@ -204,7 +204,13 @@ ul {
   clear: both;
 }
 @media (min-width: 600px) {
-  .Portrait-image {
+  .Portrait:nth-child(even):not(.Portrait-left) .Portrait-image {
+    float: right;
+    width: 50%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .Portrait:nth-child(odd) .Portrait-image, .Portrait.Portrait-left .Portrait-image {
     float: left;
     width: 50%;
     margin-right: 20px;
@@ -335,14 +341,14 @@ input {
   <p><a href="mailto:thomas.preusse@project-r.construction">thomas.preusse@project-r.construction</a></p>
 </div>
 
-<div class="Portrait">
+<div class="Portrait Portrait-left">
   <img class="Portrait-image" src="https://assets.project-r.construction/images/constantin_seibt.jpg" alt="" />
   <h2>Constantin Seibt</h2>
   <h3>Konzeption und Redaktion</h3>
   <p><a href="mailto:constantin.seibt@project-r.construction">constantin.seibt@project-r.construction</a></p>
 </div>
 
-<div class="Portrait">
+<div class="Portrait Portrait-left">
   <img class="Portrait-image" src="https://assets.project-r.construction/images/christof_moser.jpg" alt="" />
   <h2>Christof Moser</h2>
   <h3>Konzeption und Redaktion</h3>
