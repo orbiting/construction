@@ -5,7 +5,7 @@ class Newsletter extends Component {
     super(props)
     this.state = {
       loading: false,
-      errors: {}
+      messages: []
     }
     this.onSubmit = this.onSubmit.bind(this)
   }
@@ -13,14 +13,13 @@ class Newsletter extends Component {
   onSubmit(event) {
     event.preventDefault()
     const email = this.refs.email.value
-    const errors = {}
 
     if (!email) {
-      errors.email = 'Bitte geben Sie eine E-Mail Adresse an.'
-    }
-
-    this.setState({ errors })
-    if (Object.keys(errors).length) {
+      this.setState({
+        messages: [
+          'Bitte geben Sie eine E-Mail Adresse an.'
+        ]
+      })
       return
     }
 
@@ -33,37 +32,34 @@ class Newsletter extends Component {
     xhr.open('post', '/api/subscribe');
     xhr.setRequestHeader('Content-type', 'application/json;charset=UTF-8')
     xhr.addEventListener('load', () => {
-      console.log(xhr.status)
-      this.setState({ loading: false })
-      if (xhr.status === 200) {
-        // success
-        this.setState({
-          errors: { success: "Bitte bestätigen Sie die E-Mail, die wir Ihnen geschickt haben." }
-        })
-      } else {
-        const error = xhr.response.error ? xhr.response.error : "unknown error"
-        this.setState({ fail: error })
+      let nextState = {
+        loading: false
       }
+      if (xhr.status === 200) {
+        nextState.messages = ['Bitte bestätigen Sie die E-Mail, die wir Ihnen geschickt haben.']
+      } else {
+        const error = xhr.response.error ? xhr.response.error : 'Unbekannter Fehler'
+        nextState.messages = [error]
+      }
+      this.setState(nextState)
     });
     xhr.send(JSON.stringify(formData))
   }
 
   render() {
-    const { loading, errors } = this.state
-    const errorMessages = Object.keys(errors).map(key => errors[key])
-    const errorClass = key => errors[key] && 'error'
+    const { loading, messages } = this.state
 
     return (
       <form onSubmit={this.onSubmit}>
-        <input type="email" name="email" ref="email" placeholder="E-Mail"/>
-        { loading
-          ? <img className="wheel" src="wheel.png" />
-          : <button type="submit" className="btn">Anmelden</button> }
-        <div className="list-errors">
-          {errorMessages.map(msg => (
-            <div className="list-item" key={msg}>{msg}</div>
-          ))}
-        </div>
+        <p>
+          <input type="email" name="email" ref="email" placeholder="E-Mail"/>
+          { loading
+            ? '...'
+            : <button type="submit" className="btn">Anmelden</button> }
+        </p>
+        <ul>
+          {messages.map((msg, i) => <li key={i}>{msg}</li>)}
+        </ul>
       </form>
     )
   }
