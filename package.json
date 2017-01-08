@@ -6,7 +6,9 @@
     "react-scripts": "0.8.4"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "express-history-api-fallback": "^2.1.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
