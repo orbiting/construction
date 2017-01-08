@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Newsletter from './Newsletter';
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+  <Newsletter />,
+  document.getElementById('newsletter')
 );
