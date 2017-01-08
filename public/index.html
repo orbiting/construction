@@ -133,6 +133,13 @@ a:hover {
   font-weight: bold;
 }
 @media (min-width: 600px) {
+  .Cover {
+    background-color: #000;
+    text-align: center;
+  }
+  .Cover-image {
+    max-height: 80vh;
+  }
   .Lead {
     position: absolute;
     bottom: 0;
@@ -200,7 +207,7 @@ input {
   <body>
 
 <div class="Cover">
-  <img src="%PUBLIC_URL%/images/project_r_crew.jpg" alt="Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017" />
+  <img class="Cover-image" src="%PUBLIC_URL%/images/project_r_crew.jpg" alt="Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017" />
   <div class="Lead">
     <div class="Lead-content">
       <h1>Project R zieht ins Rothaus</h1>
@@ -344,6 +351,14 @@ input {
 
   <h2>Kontakt</h2>
   <p><a href="mailto:jefferson@project-r.construction">jefferson@project-r.construction</a></p>
+
+  <h2>Medienanfragen</h2>
+  <p>
+    Susanne Sugimoto<br />
+    Geschäftsführung<br />
+    +41 79 000 00 00
+  </p>
+  <p><a href="https://assets.project-r.construction/media/170110.zip">Media-Kit herunterladen</a></p>
 
 </div>
 
