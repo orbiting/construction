@@ -149,6 +149,22 @@ ul {
   width: 100%;
   position: relative;
 }
+.Cover-image {
+  display: block;
+}
+@media (min-width: 1200px) {
+  .Cover {
+    min-height: 500px;
+    height: 700px;
+    height: 80vh;
+    background-image: url('https://assets.project-r.construction/images/project_r_crew.jpg');
+    background-size: cover;
+    background-position: 0 center;
+  }
+  .Cover-image {
+    display: none;
+  }
+}
 .Lead-content {
   padding: 20px 20px 0;
 }
@@ -157,13 +173,6 @@ ul {
   font-weight: bold;
 }
 @media (min-width: 600px) {
-  .Cover {
-    background-color: #000;
-    text-align: center;
-  }
-  .Cover-image {
-    max-height: 80vh;
-  }
   .Lead {
     position: absolute;
     bottom: 0;
