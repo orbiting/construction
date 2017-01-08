@@ -102,35 +102,49 @@ a:hover {
   color: #444;
 }
 .Container {
-  margin: 20px auto;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 10px;
   max-width: 640px;
 }
+@media (min-width: 600px) {
+  .Container {
+    padding-top: 20px;
+  }
+}
 .Cover {
-  background-image: url('%PUBLIC_URL%/images/project_r_crew.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 80vh; 
   width: 100%;
   position: relative;
 }
-.Lead {
-  position: absolute;
-  padding: 20px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #fff;
-  text-align: center;
-  background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.50) 100%);
+.Lead-content {
+  padding: 20px 20px 0;
 }
 .Lead h1 {
-  margin: 0 auto 0.2em;
-  max-width: 640px;
+  margin: 0 0 0.2em;
 }
 .Lead p {
-  margin: 0 auto;
-  max-width: 640px;
+  margin: 0;
   font-weight: bold;
+}
+@media (min-width: 600px) {
+  .Lead {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    color: #fff;
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.80) 100%);
+  }
+  .Lead-content {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+  }
 }
 .Logo {
   float: left;
@@ -151,18 +165,15 @@ a:hover {
 .Portrait p {
   margin: 0;
 }
-.Portrait-image {
-  float: left;
-  width: 40%;
-  height: 145px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  background-size: cover;
-  background-size: contain;
-  background-position: 0 0 !important;
-  background-repeat: no-repeat;
-  /*border-radius: 50%;*/
-  /*shape-outside: circle();*/
+@media (min-width: 600px) {
+  .Portrait-image {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /*border-radius: 50%;*/
+    /*shape-outside: circle();*/
+  }
 }
 input {
   width: 211px;
@@ -191,9 +202,12 @@ input {
   <body>
 
 <div class="Cover">
+  <img src="%PUBLIC_URL%/images/project_r_crew.jpg" alt="Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017" />
   <div class="Lead">
-    <h1>Project R zieht ins Rothaus</h1>
-    <p>«Die besten Köpfe der Schweiz sind bereit, sich auf ein neues Abenteuer einzulassen»: die Süddeutsche Zeitung über «Project R».</p>
+    <div class="Lead-content">
+      <h1>Project R zieht ins Rothaus</h1>
+      <p>«Die besten Köpfe der Schweiz sind bereit, sich auf ein neues Abenteuer einzulassen»: die Süddeutsche Zeitung über «Project R».</p>
+    </div>
   </div>
 </div>
 
@@ -238,56 +252,56 @@ input {
 <h2>Crew</h2>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/susanne_sugimoto.jpg'); background-position: 80% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/susanne_sugimoto.jpg" alt="" />
   <h2>Susanne Sugimoto</h2>
   <h3>Geschäftsführung</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/laurent_burst.jpg'); background-position: 70% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/laurent_burst.jpg" alt="" />
   <h2>Laurent Burst</h2>
   <h3>Strategie</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/nadja_schnetzler.jpg'); background-position: 70% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/nadja_schnetzler.jpg" alt="" />
   <h2>Nadja Schnetzler</h2>
   <h3>Prozesse und Zusammenarbeit</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/clara_vuillemin.jpg'); background-position: 70% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/clara_vuillemin.jpg" alt="" />
   <h2>Clara Vuillemin</h2>
   <h3>IT-Gesamtkonzeption</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/patrick_recher.jpg'); background-position: 50% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/patrick_recher.jpg" alt="" />
   <h2>Patrick Recher</h2>
   <h3>IT-Entwicklung Backend</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/thomas_preusse.jpg'); background-position: 30% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/thomas_preusse.jpg" alt="" />
   <h2>Thomas Preusse</h2>
   <h3>IT-Entwicklung Frontend</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/constantin_seibt.jpg'); background-position: 40% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/constantin_seibt.jpg" alt="" />
   <h2>Constantin Seibt</h2>
   <h3>Konzeption und Redaktion</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
 </div>
 
 <div class="Portrait">
-  <div class="Portrait-image" style="background-image: url('%PUBLIC_URL%/images/christof_moser.jpg'); background-position: 80% 0;"></div>
+  <img class="Portrait-image" src="%PUBLIC_URL%/images/christof_moser.jpg" alt="" />
   <h2>Christof Moser</h2>
   <h3>Konzeption und Redaktion</h3>
   <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen? Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag.</p>
