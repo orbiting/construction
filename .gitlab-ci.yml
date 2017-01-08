@@ -11,7 +11,7 @@ before_script:
   - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.git.project-r.construction
 
 build-and-release:
-  stage: build
+  stage: build-and-release
   script:
     - docker build -t $CONTAINER_TEST_IMAGE .
     - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
