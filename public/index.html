@@ -109,12 +109,15 @@ h1, h2, h3 {
 h1 {
   margin: 0 0 0.2em;
   font-size: 36px;
+  line-height: 1.2em;
 }
 h2 {
   font-size: 28px;
+  line-height: 1.2em;
 }
 h3 {
   font-size: 18px;
+  line-height: 1.2em;
 }
 h2, h3 {
   margin: 0 0 0.2em;
@@ -169,8 +172,10 @@ ul {
   padding: 20px 20px 0;
 }
 .Lead p {
-  margin: 0;
   font-weight: bold;
+}
+.Lead p:last-child {
+  margin: 0;
 }
 @media (min-width: 600px) {
   .Lead {
@@ -196,7 +201,7 @@ ul {
   max-width: 50px;
 }
 .Portrait {
-  margin: 0 0 20px;
+  margin: 0 0 15px;
 }
 .Portrait:after {
   content: "";
@@ -207,14 +212,16 @@ ul {
   .Portrait:nth-child(even):not(.Portrait-left) .Portrait-image {
     float: right;
     width: 50%;
+    margin-top: 5px;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .Portrait:nth-child(odd) .Portrait-image, .Portrait.Portrait-left .Portrait-image {
     float: left;
     width: 50%;
+    margin-top: 5px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 input {
@@ -349,6 +356,8 @@ input {
   <li><a href="http://www.jungejournalisten.ch/blog/2016/10/27/und-ewig-sparen-die-verleger">Und ewig sparen die Verleger</a></li>
   <li><a href="http://presseverein.ch/2016/10/09/die-rebellion-beginnt/">Die Rebellion beginnt</a></li>
 </ul>
+
+<p><a href="%PUBLIC_URL%/newsletter.html">Newsletter</a> – <a href="%PUBLIC_URL%/media.html">Medieninformation</a></p>
 
 <!-- Newsletter -->
 
