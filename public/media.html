@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/favicon.ico">
+<title>Project R zieht ins Rothaus</title>
+<meta name="author" content="Project R"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://project-r.construction/"/>
+<meta property="og:title" content="Project R zieht ins Rothaus"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="https://assets.project-r.construction/images/balkon.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@_Project_R"/>
+<meta name="twitter:creator" content="@_Project_R"/>
+<style>
+/* reset */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+html,
+button,
+input,
+textarea,
+select {
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+html,
+button,
+input,
+textarea,
+select {
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* r */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #444444;
+  font-family: serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3 {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+h1 {
+  margin: 0 0 0.2em;
+  font-size: 36px;
+  line-height: 1.2em;
+}
+h2 {
+  font-size: 28px;
+  line-height: 1.2em;
+}
+h3 {
+  font-size: 18px;
+  line-height: 1.2em;
+}
+h2, h3 {
+  margin: 0 0 0.2em;
+}
+p {
+  margin: 0 0 0.8em;
+}
+a, a:visited {
+  color: #222;
+  text-decoration: underline;
+}
+a:hover {
+  color: #444;
+}
+ul {
+  list-style-type: disc;
+  margin: 0 0 1em;
+  padding-left: 30px;
+}
+.Container {
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 10px;
+  max-width: 640px;
+}
+@media (min-width: 600px) {
+  .Container {
+    padding-top: 20px;
+  }
+}
+.Cover {
+  width: 100%;
+  position: relative;
+}
+.Cover-image {
+  display: block;
+}
+@media (min-width: 1200px) {
+  .Cover {
+    min-height: 500px;
+    height: 700px;
+    height: 80vh;
+    background-image: url('https://assets.project-r.construction/images/rothaus.jpg');
+    background-size: cover;
+    background-position: 0 center;
+  }
+  .Cover-image {
+    display: none;
+  }
+}
+.Lead-content {
+  padding: 20px 20px 0;
+}
+.Lead p {
+  margin: 0;
+  font-weight: bold;
+}
+@media (min-width: 600px) {
+  .Lead {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    color: #fff;
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.80) 100%);
+  }
+  .Lead-content {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+.Logo {
+  max-width: 50px;
+}
+.Portrait {
+  margin: 0 0 15px;
+}
+.Portrait:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 600px) {
+  .Portrait:nth-child(even):not(.Portrait-left) .Portrait-image {
+    float: right;
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .Portrait:nth-child(odd) .Portrait-image, .Portrait.Portrait-left .Portrait-image {
+    float: left;
+    width: 50%;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+}
+input {
+  width: 211px;
+  margin-right: 6px
+}
+button {
+  width: 110px
+}
+button:hover, input[type="submit"] {
+  background: #444444;
+  color: white;
+}
+button,
+input {
+  vertical-align: bottom;
+  color: #444444;
+  padding: 10px 20px 10px 20px;
+  border: solid #444444 1px;
+  text-decoration: none;
+  background-color: white;
+  font-size: 14px;
+  height: 37px;
+}
+</style>
+</head>
+<body>
+
+<div class="Cover">
+  <img class="Cover-image" src="https://assets.project-r.construction/images/rothaus.jpg" alt="Das Hotel Rothaus" />
+  <div class="Lead">
+    <div class="Lead-content">
+      <h1>Medieninformation</h1>
+      <p>
+        Zürich, 10. Januar 2017<br />
+        <em>Dem Journalismus seine Rolle als verlässlicher Wachhund der Demokratie geben</em>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="Container">
+
+<h2>Project R startet mit Aufbau-Crew im «Hotel&nbsp;Rothaus»</h2>
+
+<p>Die Aufbau-Crew von Project R hat Anfang Januar ihr provisorisches Domizil im Zürcher Kreis 4 bezogen. Sie hat die Möglichkeit erhalten, 3 Zimmer im Hotel Rothaus als Büroräumlichkeiten zu mieten. Dort treibt das Team die Konzeption und Entwicklung des Medienprojekts voran. Eine Genossenschaft» sowie eine Produktions-und Vertriebs-AG stehen kurz vor der Gründung.</p>
+
+<p>Project R nimmt weiter an Fahrt auf. Seit Monaten arbeitet die Project R-Aufbau-Crew, gemeinsam mit ihren zahlreichen Komplizinnen und Komplizen, an der Gesellschaftsform, dem Redaktionskonzept, dem Aufbau der Crowdfunding-Plattform, der IT-Entwicklung, der Positionierung, dem Pricing etc. Der Bezug der «Hotelzimmer» an der Langstrasse ermöglicht der Aufbau-Crew, nun noch intensiver zusammenzuarbeiten, um das Projekt im geplanten Zeitrahmen voranzutreiben. Die Zeit der «nur» Nachtarbeit ist damit vorbei.</p>
+
+<h2>Über Project R</h2>
+
+<p>Die grossen Verlage verlassen den Journalismus. Sie bauen sich in hohem Tempo zu Internet-Handelshäusern um und investieren nicht mehr in die Publizistik. Dies ist ein Problem für den Journalismus und eine Gefahr für die Demokratie. Es ist jetzt Zeit zu handeln. Deshalb entwickelt Project R ein neues, von Medienkonzernen unabhängiges Geschäftsmodell. Ziel ist es, dem Journalismus seine Rolle zu geben: als verlässlicher Wachhund der Demokratie.</p>
+
+<h2>Die Project R-Aufbau-Crew</h2>
+
+<ul>
+  <li>Constantin Seibt, Konzeption und Redaktion</li>
+  <li>Christof Moser, Konzeption und Redaktion</li>
+  <li>Susanne Sugimoto, Geschäftsführung</li>
+  <li>Laurent Burst, Strategie</li>
+  <li>Nadja Schnetzler, Prozesse und Zusammenarbeit</li>
+  <li>Clara Vuillemin, Head of IT</li>
+  <li>Patrick Recher, Software Entwicklung</li>
+  <li>Thomas Preusse, Software Entwicklung</li>
+  <li>François Zosso, Finanzen</li>
+</ul>
+
+<!-- Kontakt -->
+
+<div>
+  <h2>Medienanfragen</h2>
+  <p>
+    Susanne Sugimoto<br />
+    +41 79 000 00 00<br />
+    <a href="mailto:susanne.sugimoto@project-r.construction">susanne.sugimoto@project-r.construction</a>
+  </p>
+  <p><a href="https://assets.project-r.construction/media/170110.zip">Media-Kit herunterladen</a></p>
+
+  <h2>Kontakt</h2>
+  <p><a href="mailto:jefferson@project-r.construction">jefferson@project-r.construction</a></p>
+
+  <img class="Logo" src="https://assets.project-r.construction/images/project_r_logo.svg" />
+
+</div>
+
+</div>
+</body>
+</html>
