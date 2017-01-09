@@ -109,12 +109,15 @@ h1, h2, h3 {
 h1 {
   margin: 0 0 0.2em;
   font-size: 36px;
+  line-height: 1.2em;
 }
 h2 {
   font-size: 28px;
+  line-height: 1.2em;
 }
 h3 {
   font-size: 18px;
+  line-height: 1.2em;
 }
 h2, h3 {
   margin: 0 0 0.2em;
@@ -196,7 +199,7 @@ ul {
   max-width: 50px;
 }
 .Portrait {
-  margin: 0 0 20px;
+  margin: 0 0 15px;
 }
 .Portrait:after {
   content: "";
@@ -207,14 +210,16 @@ ul {
   .Portrait:nth-child(even):not(.Portrait-left) .Portrait-image {
     float: right;
     width: 50%;
+    margin-top: 5px;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .Portrait:nth-child(odd) .Portrait-image, .Portrait.Portrait-left .Portrait-image {
     float: left;
     width: 50%;
+    margin-top: 5px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 input {
