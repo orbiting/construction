@@ -1,6 +1,8 @@
 const express = require('express')
 const https = require('https')
 const querystring = require('querystring')
+const fs = require('fs')
+const path = require('path')
 const router = new express.Router()
 const Subscriber = require('../models/subscriber')
 
@@ -106,11 +108,18 @@ router.get('/confirm/:token', (req, res) => {
 				'Content-Length': Buffer.byteLength(postData)
 			}
 		}, (_res) => {
-			console.log(`STATUS: ${_res.statusCode}`);
-
 			Subscriber.update({validationToken: validationToken}, {$set: {isValidated: true}}, function(error, affected) {
-				console.log(error, affected)
-				res.status(200).end("Welcome aboard!")
+				//console.log(error, affected)
+				fs.readFile(path.join(__dirname, '../../public/welcome_aboard.html'), {encoding: 'utf-8'}, function(err,data){
+					if(!err) {
+						res.writeHead(200, {'Content-Type': 'text/html'});
+						res.write(data);
+						res.end();
+					} else {
+						console.log(err)
+						res.status(200).end("Welcome aboard!")
+					}
+				});
 			})
 		})
 
