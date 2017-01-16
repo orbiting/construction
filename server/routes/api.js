@@ -13,18 +13,13 @@ const transporter = require('../lib/transporter')
 const subscribeText = function(validationToken) {
   return `Ma’am, Sir,
 
-wir freuen uns über Ihr Interesse: sowohl an dem für Rebellion wie auch
-an dem für Journalismus.
+herzlichen Dank für Ihr Interesse an Project R.
 
-Im Moment arbeiten wir noch an dem Plan für beides.
-
-Aber lange wird das nicht mehr dauern. Sobald wir weiter sind, werden
-Sie es als Erste erfahren.
+Wir arbeiten derzeit an dem Aufbau der Crowdfunding-Plattform, an der IT-Entwicklung und am Redaktionskonzept.
+Sobald wir Neuigkeiten haben, werden wir uns wieder melden!
 
 Dafür müssen Sie nur noch auf folgenden Link klicken:
 https://project-r.construction/api/confirm/${validationToken}
-
-Mit bestem Dank,
 
 Ihre R-Crew
 `}
@@ -36,7 +31,7 @@ const sendConfimationEmail = (email, res) => {
 		transporter.sendMail({
 			from: "jefferson@project-r.construction",
 			to: email,
-			subject: "Flaschenpost von project-r",
+			subject: "Bitte Anmeldung Project R-Newsletter bestätigen",
 			text: subscribeText(subscriber.validationToken)
 		}, function(error, info) {
 			if(error){
