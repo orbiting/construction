@@ -49,6 +49,11 @@ router.post('/subscribe', (req, res) => {
 
 	const { email, lang } = req.body
 
+  if(email && email.indexOf('construction@project-r.construction') > -1) {
+    res.status(500).end("😝");
+    return;
+  }
+
 	const subscriber = {
 		email: email,
 		lang: lang,
