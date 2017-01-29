@@ -17,6 +17,9 @@ app.prepare().then(() => {
   server.use(require('body-parser').json())
   server.use('/api', require('./server/routes/api'))
 
+  server.get('/index.html', (req, res) => {
+    res.redirect(301, '/');
+  })
   server.get('/media.html', (req, res) => {
     res.redirect(301, '/media/2017-01-10-hotel-rothaus');
   })
