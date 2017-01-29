@@ -41,7 +41,7 @@ const portraitImageRightStyle = css({
 
 const Portrait = ({name, age, title, email, image, description, odd}) => (
   <div {...portraitStyle}>
-    <img className={odd ? portraitImageLeftStyle : portraitImageRightStyle} src={image} alt="" />
+    <img className={odd ? portraitImageLeftStyle : portraitImageRightStyle} src={image} alt='' />
     <h2>{name},&nbsp;{age}</h2>
     <h3>{title}</h3>
     <p>{description}</p>

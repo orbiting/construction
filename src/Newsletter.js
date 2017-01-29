@@ -25,7 +25,7 @@ const buttonStyle = css({
 })
 
 class Newsletter extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       loading: false,
@@ -34,7 +34,7 @@ class Newsletter extends Component {
     this.onSubmit = this.onSubmit.bind(this)
   }
 
-  onSubmit(event) {
+  onSubmit (event) {
     event.preventDefault()
     const email = this.refs.email.value
 
@@ -52,8 +52,8 @@ class Newsletter extends Component {
 
     const formData = { email, lang }
 
-    const xhr = new XMLHttpRequest();
-    xhr.open('post', '/api/subscribe');
+    const xhr = new window.XMLHttpRequest()
+    xhr.open('post', '/api/subscribe')
     xhr.setRequestHeader('Content-type', 'application/json;charset=UTF-8')
     xhr.addEventListener('load', () => {
       let nextState = {
@@ -66,20 +66,20 @@ class Newsletter extends Component {
         nextState.messages = [error]
       }
       this.setState(nextState)
-    });
+    })
     xhr.send(JSON.stringify(formData))
   }
 
-  render() {
+  render () {
     const { loading, messages } = this.state
 
     return (
       <form onSubmit={this.onSubmit}>
         <p>
-          <input type="email" name="email" ref="email" placeholder="E-Mail" {...fieldStyle} {...inputStyle} />
+          <input type='email' name='email' ref='email' placeholder='E-Mail' {...fieldStyle} {...inputStyle} />
           { loading
             ? '...'
-            : <button type="submit" {...fieldStyle} {...buttonStyle}>Anmelden</button> }
+            : <button type='submit' {...fieldStyle} {...buttonStyle}>Anmelden</button> }
         </p>
         <ul>
           {messages.map((msg, i) => <li key={i}>{msg}</li>)}

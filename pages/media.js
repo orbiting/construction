@@ -11,7 +11,7 @@ export default () => {
         <title>Project R Medieninformation</title>
       </Head>
       <h1>Medieninformation</h1>
-      
+
       <ul>
         <li>
           Zürich, 10. Januar 2017<br />

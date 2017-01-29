@@ -15,13 +15,13 @@ css.global('h1, h2, h3', {
   margin: '0 0 0.2em'
 })
 css.global('h1', {
-  fontSize: 36,
+  fontSize: 36
 })
 css.global('h2', {
-  fontSize: 28,
+  fontSize: 28
 })
 css.global('h3', {
-  fontSize: 18,
+  fontSize: 18
 })
 css.global('p', {
   margin: '0 0 0.8em'
@@ -55,23 +55,23 @@ const containerStyle = css({
 const Layout = ({children, meta, cover}) => (
   <div>
     <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="shortcut icon" href="https://assets.project-r.construction/images/favicon.ico" />
-      <meta name="author" content="Project R"/>
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <link rel='shortcut icon' href='https://assets.project-r.construction/images/favicon.ico' />
+      <meta name='author' content='Project R' />
     </Head>
 
     {!!meta && <Head>
       <title>{meta.title}</title>
-      <meta name="description" content={meta.description} />
-      <meta property="og:type" content="website"/>
-      <meta property="og:url" content={meta.url} />
-      <meta property="og:title" content={meta.title} />
-      <meta property="og:description" content={meta.description} />
-      <meta property="og:image" content={meta.image} />
-      <meta property="fb:app_id" content="1774637906137716"/>
-      <meta name="twitter:card" content="summary_large_image"/>
-      <meta name="twitter:site" content="@_Project_R"/>
-      <meta name="twitter:creator" content="@_Project_R"/>
+      <meta name='description' content={meta.description} />
+      <meta property='og:type' content='website' />
+      <meta property='og:url' content={meta.url} />
+      <meta property='og:title' content={meta.title} />
+      <meta property='og:description' content={meta.description} />
+      <meta property='og:image' content={meta.image} />
+      <meta property='fb:app_id' content='1774637906137716' />
+      <meta name='twitter:card' content='summary_large_image' />
+      <meta name='twitter:site' content='@_Project_R' />
+      <meta name='twitter:creator' content='@_Project_R' />
     </Head>}
 
     {cover}

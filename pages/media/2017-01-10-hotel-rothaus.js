@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 import Layout from '../../src/Layout'
 
@@ -43,7 +42,7 @@ export default () => {
         <li>François Zosso, Finanzen</li>
       </ul>
 
-      <p>Finden Sie mehr unter: <a href="https://project-r.construction/">project-r.construction</a></p>
+      <p>Finden Sie mehr unter: <a href='https://project-r.construction/'>project-r.construction</a></p>
 
       <h2>Vorgesehener Zeitrahmen</h2>
 
@@ -67,9 +66,9 @@ export default () => {
       <p>
         Für weitere Auskünfte:<br />
         Susanne Sugimoto: +41 78 897 70 28,<br />
-        <a href="mailto:susanne.sugimoto@project-r.construction">susanne.sugimoto@project-r.construction</a>
+        <a href='mailto:susanne.sugimoto@project-r.construction'>susanne.sugimoto@project-r.construction</a>
       </p>
-      <p><a href="https://assets.project-r.construction/media/170110.zip">Pressebilder herunterladen</a></p>
+      <p><a href='https://assets.project-r.construction/media/170110.zip'>Pressebilder herunterladen</a></p>
 
       <h2>Project R</h2>
       <p>
@@ -78,7 +77,7 @@ export default () => {
         CH-8004 Zürich
       </p>
 
-      <img style={{maxWidth: 50}} src="https://assets.project-r.construction/images/project_r_logo.svg" />
+      <img style={{maxWidth: 50}} src='https://assets.project-r.construction/images/project_r_logo.svg' />
     </Layout>
   )
 }

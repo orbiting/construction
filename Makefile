@@ -22,3 +22,6 @@ images:
 
 	jpegtran -copy none -progressive assets/images/raw/project_r_crew.jpg > assets/images/optimized/project_r_crew.jpg
 	cp assets/images/raw/project_r_logo.svg assets/images/optimized/project_r_logo.svg
+
+standardize:
+	@$$(npm bin)/standard --fix 'src/**/*.js' 'pages/**/*.js'

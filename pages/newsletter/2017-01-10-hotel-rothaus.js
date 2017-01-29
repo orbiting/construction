@@ -1,12 +1,9 @@
 import React from 'react'
-import {css} from 'glamor'
 import Head from 'next/head'
 
 import Layout from '../../src/Layout'
-import Newsletter from '../../src/Newsletter'
 import Cover from '../../src/Cover'
 import Portrait from '../../src/Portrait'
-import Link from 'next/link'
 
 // we could import from src, but the newsletter content should never change
 const team = [
@@ -71,7 +68,7 @@ const team = [
     name: 'Christof Moser',
     age: 37,
     title: 'Konzeption und Redaktion',
-    description: `Christof Moser wollte Journalist werden, noch bevor er bis Z buchstabieren konnte – und nachdem sich herausgestellt hatte, dass Regenwaldforscher wegen Arachnophobie keine gute Berufswahl gewesen wäre. Also lancierte er mit 12 seine erste Schülerzeitung, die sich bis zum Ende der Schulzeit in ein Magazin («Nachtisch») weiter entwickelte und dann noch weiter – bis zum mittelgrossen Konkurs. Die Publikation fiel auf einen Betrüger herein. Und Moser zahlte bis 25 Druckereirechnungen ab. Nach einer kaufmännischen Ausbildung stieg Moser als Volontär beim «Brückenbauer» (dem heutigen «Migros-Magazin») in den Journalismus ein. Im Jahr 2000 gehörte er beim Wirtschaftsportal «Moneycab» zu den ersten Onlinejournalisten der Schweiz, danach folgten Stationen als Politik-Reporter bei «Facts», «Weltwoche» und «SonntagsBlick» und eine abgebrochene TV-Stage bei «10vor10». Zuletzt arbeitete er als Bundeshaus-Journalist und Medienkritiker bei der «Schweiz am Sonntag» und als freier Autor für «Literarischer Monat», «Surprise», «Zeit Schweiz» und «Schweizer Illustrierte». Daneben baute er «Infosperber» mit auf und unterrichtet Journalismus-Studentinnen und -Studenten in Politik- und Wirtschaftsjournalismus, Storytelling und Medienethik. Bei Project R kann Moser ein bisher verborgenes Talent ausleben: das Zeichnen von Plänen. Denn davon braucht ein Medienprojekt Unmengen.`,
+    description: `Christof Moser wollte Journalist werden, noch bevor er bis Z buchstabieren konnte – und nachdem sich herausgestellt hatte, dass Regenwaldforscher wegen Arachnophobie keine gute Berufswahl gewesen wäre. Also lancierte er mit 12 seine erste Schülerzeitung, die sich bis zum Ende der Schulzeit in ein Magazin («Nachtisch») weiter entwickelte und dann noch weiter – bis zum mittelgrossen Konkurs. Die Publikation fiel auf einen Betrüger herein. Und Moser zahlte bis 25 Druckereirechnungen ab. Nach einer kaufmännischen Ausbildung stieg Moser als Volontär beim «Brückenbauer» (dem heutigen «Migros-Magazin») in den Journalismus ein. Im Jahr 2000 gehörte er beim Wirtschaftsportal «Moneycab» zu den ersten Onlinejournalisten der Schweiz, danach folgten Stationen als Politik-Reporter bei «Facts», «Weltwoche» und «SonntagsBlick» und eine abgebrochene TV-Stage bei «10vor10». Zuletzt arbeitete er als Bundeshaus-Journalist und Medienkritiker bei der «Schweiz am Sonntag» und als freier Autor für «Literarischer Monat», «Surprise», «Zeit Schweiz» und «Schweizer Illustrierte». Daneben baute er «Infosperber» mit auf und unterrichtet Journalismus-Studentinnen und -Studenten in Politik- und Wirtschaftsjournalismus, Storytelling und Medienethik. Bei Project R kann Moser ein bisher verborgenes Talent ausleben: das Zeichnen von Plänen. Denn davon braucht ein Medienprojekt Unmengen.`,
     email: 'christof.moser@project-r.construction'
   }
 ]
@@ -101,7 +98,7 @@ export default () => {
 
       <p>Und zwar - das ist unser zweiter Grund, Sie einzuladen - an unserem brandneuen Geschäftssitz.</p>
 
-      <img src="https://assets.project-r.construction/images/rothaus.jpg" />
+      <img src='https://assets.project-r.construction/images/rothaus.jpg' />
 
       <p>Wir haben unsere Büros fürs erste im Hotel Rothaus eingerichtet, mitten im Zürcher Kreis 4 an der Langstrasse, genauer: an der Sihlhallenstrasse 1. Das Rothaus war viele Jahre das Winterquartier für die Artisten des Zirkus Knie, später ein Stundenhotel – keine schlechte Umgebung für publizistische Pläne.</p>
 
@@ -115,7 +112,7 @@ export default () => {
 
       <p>Hier also das Aufbauteam, das heute Abend mit Ihnen trinken wird:</p>
 
-      {team.map((person, i) => <Portrait key={i} {...person} odd={!(i%2)} />)}
+      {team.map((person, i) => <Portrait key={i} {...person} odd={!(i % 2)} />)}
 
       <p>Soweit also das Aufbauteam, das mit Ihnen Bier oder Schorle trinkt.</p>
 
@@ -143,25 +140,25 @@ export default () => {
       </p>
 
       <p>
-        <a href="https://www.facebook.com/Project-R-1283717661652978">Facebook</a> –
-        <a href="https://twitter.com/_Project_R">Twitter</a> –
-        <a href="https://project-r.construction/media.html">Medieninformation</a>
+        <a href='https://www.facebook.com/Project-R-1283717661652978'>Facebook</a>{' – '}
+        <a href='https://twitter.com/_Project_R'>Twitter</a>{' – '}
+        <a href='https://project-r.construction/media.html'>Medieninformation</a>
       </p>
 
       <h2>Project R</h2>
       <p>
-        c/o Hotel Rothaus<br/>
-        Sihlhallenstrasse 1<br/>
+        c/o Hotel Rothaus<br />
+        Sihlhallenstrasse 1<br />
         CH-8004 Zürich
       </p>
-      <img style={{maxWidth: 50}} src="https://assets.project-r.construction/images/project_r_logo.svg" />
+      <img style={{maxWidth: 50}} src='https://assets.project-r.construction/images/project_r_logo.svg' />
 
       <p>
-        Spendenkonto:<br/>
-        Verein für unabhängigen Journalismus<br/>
-        Hegifeldstrasse 57<br/>
-        8404 Winterthur<br/>
-        Raiffeisenbank Winterthur<br/>
+        Spendenkonto:<br />
+        Verein für unabhängigen Journalismus<br />
+        Hegifeldstrasse 57<br />
+        8404 Winterthur<br />
+        Raiffeisenbank Winterthur<br />
         IBAN: CH12 8148 5000 0082 2840 1
       </p>
 
