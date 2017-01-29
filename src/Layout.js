@@ -2,8 +2,6 @@ import React, {PropTypes} from 'react'
 import Head from 'next/head'
 import {css} from 'glamor'
 
-import 'glamor/reset'
-
 css.global('body', {
   fontFamily: 'serif',
   fontSize: 18,

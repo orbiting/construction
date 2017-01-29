@@ -110,16 +110,7 @@ router.get('/confirm/:token', (req, res) => {
 		}, (_res) => {
 			Subscriber.update({validationToken: validationToken}, {$set: {isValidated: true}}, function(error, affected) {
 				//console.log(error, affected)
-				fs.readFile(path.join(__dirname, '../../public/welcome_aboard.html'), {encoding: 'utf-8'}, function(err,data){
-					if(!err) {
-						res.writeHead(200, {'Content-Type': 'text/html'});
-						res.write(data);
-						res.end();
-					} else {
-						console.log(err)
-						res.status(200).end("Welcome aboard!")
-					}
-				});
+				res.redirect('/newsletter/welcome')
 			})
 		})
 
