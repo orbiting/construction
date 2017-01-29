@@ -1,4 +1,28 @@
 import React, {Component} from 'react'
+import {css} from 'glamor'
+
+const fieldStyle = css({
+  verticalAlign: 'bottom',
+  color: '#444',
+  padding: '10px 20px 10px 20px',
+  border: 'solid #444 1px',
+  textDecoration: 'none',
+  backgroundColor: 'white',
+  fontSize: 14,
+  height: 37,
+  boxSizing: 'border-box'
+})
+const inputStyle = css({
+  width: 211,
+  marginRight: 6
+})
+const buttonStyle = css({
+  width: 110,
+  ':hover': {
+    background: '#444',
+    color: 'white'
+  }
+})
 
 class Newsletter extends Component {
   constructor(props) {
@@ -52,10 +76,10 @@ class Newsletter extends Component {
     return (
       <form onSubmit={this.onSubmit}>
         <p>
-          <input type="email" name="email" ref="email" placeholder="E-Mail"/>
+          <input type="email" name="email" ref="email" placeholder="E-Mail" {...fieldStyle} {...inputStyle} />
           { loading
             ? '...'
-            : <button type="submit" className="btn">Anmelden</button> }
+            : <button type="submit" {...fieldStyle} {...buttonStyle}>Anmelden</button> }
         </p>
         <ul>
           {messages.map((msg, i) => <li key={i}>{msg}</li>)}

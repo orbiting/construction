@@ -44,7 +44,17 @@ css.global('ul', {
   paddingLeft: 30
 })
 
-const Layout = ({children, meta}) => (
+const containerStyle = css({
+  margin: '0 auto',
+  padding: 20,
+  paddingTop: 10,
+  maxWidth: 640,
+  '@media (min-width: 600px)': {
+    paddingTop: 20
+  }
+})
+
+const Layout = ({children, meta, cover}) => (
   <div>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -66,11 +76,16 @@ const Layout = ({children, meta}) => (
       <meta name="twitter:creator" content="@_Project_R"/>
     </Head>}
 
-    {children}
+    {cover}
+
+    <div {...containerStyle}>
+      {children}
+    </div>
   </div>
 )
 
 Layout.propTypes = {
+  cover: PropTypes.node,
   meta: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
