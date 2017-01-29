@@ -1,7 +1,7 @@
 .PHONY: all upload-assets images
 
 all:
-	npm start
+	npm run dev
 
 upload-assets:
 	s3cmd sync --verbose --acl-public -c ./.s3cfg public/images/ s3://construction/images/

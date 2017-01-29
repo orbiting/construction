@@ -10,6 +10,7 @@ coverage
 build
 
 # misc
+.next
 .DS_Store
 .env
 .s3cfg
