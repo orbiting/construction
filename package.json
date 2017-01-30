@@ -1,27 +1,26 @@
 {
   "name": "construction",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "devDependencies": {
     "nodemon": "^1.11.0",
-    "react-scripts": "0.8.4"
+    "standard": "^8.6.0"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
     "dotenv": "^4.0.0",
     "express": "^4.14.0",
-    "express-history-api-fallback": "^2.1.0",
+    "glamor": "^2.20.22",
     "mongoose": "^4.7.6",
+    "next": "^2.0.0-beta.20",
     "nodemailer": "^2.7.0",
     "querystring": "^0.2.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "server": "nodemon ./server"
+    "start": "NODE_ENV=production node server.js",
+    "build": "next build",
+    "dev": "node server.js"
   }
 }

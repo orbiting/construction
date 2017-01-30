@@ -13,4 +13,4 @@ COPY . /usr/src/app
 RUN npm run build
 
 EXPOSE 4000
-CMD ["node", "server/index.js"]
+CMD ["npm", "start"]
