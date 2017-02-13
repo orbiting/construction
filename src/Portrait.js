@@ -47,7 +47,7 @@ export const RawPortrait = ({image, children, odd}) => (
 )
 
 const Portrait = ({odd, image, description, name, age, title, email}) => (
-  <RawPortrait odd={odd} iamge={image}>
+  <RawPortrait odd={odd} image={image}>
     <h2>{name}&nbsp;{age}</h2>
     <h3>{title}</h3>
     <p>{description}</p>
