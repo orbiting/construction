@@ -31,11 +31,11 @@ css.global('.base p', {
 css.global('.base img', {
   maxWidth: '100%'
 })
-css.global('.base a, .base a:visited', {
+css.global('a, a:visited', {
   color: '#222',
   textDecoration: 'underline'
 })
-css.global('.base a:hover', {
+css.global('a:hover', {
   color: '#444'
 })
 css.global('.base ul', {

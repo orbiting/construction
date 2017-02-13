@@ -1,4 +1,5 @@
 import React from 'react'
+import {css} from 'glamor'
 
 import Layout from '../src/Layout'
 import Cover from '../src/Cover'
@@ -8,6 +9,25 @@ import {RawPortrait} from '../src/Portrait'
 import team from '../src/data/team'
 
 const clara = team.filter(p => p.name === 'Clara Vuillemin')[0]
+
+const buttinLinkStyle = css({
+  display: 'inline-block',
+  fontFamily: 'sans-serif',
+  verticalAlign: 'bottom',
+  color: '#444',
+  padding: '10px 20px 10px 20px',
+  border: 'solid #444 1px',
+  textDecoration: 'none',
+  backgroundColor: 'white',
+  fontSize: 14,
+  height: 37,
+  boxSizing: 'border-box',
+  minWidth: 110,
+  ':hover': {
+    background: '#444',
+    color: 'white'
+  }
+})
 
 export default () => {
   const meta = {
@@ -55,16 +75,22 @@ export default () => {
       </ul>
 
       <RawPortrait {...clara} age={null}>
-        <p>Bewerbungen bitte an <a href={`mailto:${clara.email}`}>{clara.email}</a>.</p>
+        <p>Bewerbungen bitte an:</p>
+        <p>{clara.name}, {clara.title}</p>
+        <p><a href={`mailto:${clara.email}`}>{clara.email}</a></p>
+        <br />
+        <p><a href={`mailto:${clara.email}?${[
+          ['subject', 'Bewerbungen Entwickler/in'],
+          ['body', `Hallo Clara,\n\n...\n\nHerzliche Grüsse,\ngithub.com/[username]`]
+        ].map(pair => pair.map(encodeURIComponent).join('=')).join('&')}`} {...buttinLinkStyle}>Jetzt bewerben</a></p>
+      </RawPortrait>
+
       <h2>Project R</h2>
       <p>c/o Hotel Rothaus<br />
       Sihlhallenstrasse 1<br />
       CH-8004 Zürich
       </p>
       <img style={{maxWidth: 50}} src='https://assets.project-r.construction/images/project_r_logo.svg' />
-      </RawPortrait>
-
-
     </Layout>
   )
 }
