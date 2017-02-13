@@ -19,6 +19,19 @@ const coverImageStyle = css({
     display: 'none'
   }
 })
+const creditStyle = css({
+  position: 'absolute',
+  fontSize: 10,
+  fontFamily: 'sans-serif',
+  color: '#000',
+  right: 10,
+  top: 5,
+  [mqMedium]: {
+    color: '#fff',
+    top: 'auto',
+    bottom: 10
+  }
+})
 
 const leadStyle = css({
   '& p': {
@@ -27,6 +40,7 @@ const leadStyle = css({
   '& p:last-child': {
     margin: 0
   },
+  position: 'relative',
   [mqMedium]: {
     position: 'absolute',
     bottom: 0,
@@ -65,6 +79,7 @@ const Cover = ({image, children}) => (
           {children}
         </div>
       </div>
+      {!!image.credit && <div {...creditStyle}>{image.credit}</div>}
     </div>
   </div>
 )

@@ -20,6 +20,7 @@ export default () => {
   return (
     <Layout meta={meta} cover={(
       <Cover image={{
+        credit: 'Foto: Jan Bolomey für Project R',
         src: 'https://assets.project-r.construction/images/wewantyou.jpg',
         alt: 'Das Project R Team auf dem Balkon des Hotel Rothaus'}}
       >
