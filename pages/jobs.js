@@ -47,6 +47,7 @@ export default () => {
         <li>Ein diverses und leidenschaftliches Team</li>
         <li>Du arbeitest nicht von der Welt abgekoppelt und bist du bei den Entscheidungen der Geschäftsleitung wie der Redaktion dabei</li>
         <li>Hoher Einheitslohn</li>
+        <li>Der ganze Code wird unter einer Open-Source-Lizenz veröffentlicht</li>
         <li>24h Hotel Reception</li>
         <li>Club Mate soviel du willst immer gratis</li>
       </ul>
