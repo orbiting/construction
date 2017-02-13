@@ -60,7 +60,8 @@ export default () => {
       <p>
         <a href='https://www.facebook.com/Project-R-1283717661652978'>Facebook</a>{' – '}
         <a href='https://twitter.com/_Project_R'>Twitter</a>{' – '}
-        <Link href='/media'><a>Medieninformationen</a></Link>
+        <Link href='/media'><a>Medieninformationen</a></Link>{' – '}
+        <Link href='/jobs'><a>Jobs</a></Link>
       </p>
 
       <p>Wenn Sie informiert bleiben wollen, bitte hier Ihre E-Mail-Adresse eintragen:</p>
