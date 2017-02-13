@@ -2,17 +2,11 @@ import Document, {Head, Main, NextScript} from 'next/document'
 
 import {renderStatic} from 'glamor/server'
 
-import 'glamor/reset'
-
 export default class MyDocument extends Document {
-  static async getInitialProps (ctx) {
-    let nextProps
-    const {css} = renderStatic(() => {
-      nextProps = Document.getInitialProps(ctx)
-      return nextProps.html
-    })
-    const {nextCSS, ...props} = nextProps
-    return {...props, css, nextCSS: {styles: nextCSS.styles}}
+  static async getInitialProps ({renderPage}) {
+    const page = renderPage()
+    const styles = renderStatic(() => page.html)
+    return { ...page, ...styles }
   }
 
   render () {

@@ -2,41 +2,43 @@ import React, {PropTypes} from 'react'
 import Head from 'next/head'
 import {css} from 'glamor'
 
+import 'glamor/reset'
+
 css.global('body', {
   fontFamily: 'serif',
   fontSize: 18,
   color: '#444',
   WebkitFontSmoothing: 'antialiased'
 })
-css.global('h1, h2, h3', {
+css.global('.base h1, .base h2, .base h3', {
   fontFamily: 'sans-serif',
   fontWeight: 'bold',
   lineHeight: '1.2em',
   margin: '0 0 0.2em'
 })
-css.global('h1', {
+css.global('.base h1', {
   fontSize: 36
 })
-css.global('h2', {
+css.global('.base h2', {
   fontSize: 28
 })
-css.global('h3', {
+css.global('.base h3', {
   fontSize: 18
 })
-css.global('p', {
+css.global('.base p', {
   margin: '0 0 0.8em'
 })
-css.global('img', {
+css.global('.base img', {
   maxWidth: '100%'
 })
-css.global('a, a:visited', {
+css.global('.base a, .base a:visited', {
   color: '#222',
   textDecoration: 'underline'
 })
-css.global('a:hover', {
+css.global('.base a:hover', {
   color: '#444'
 })
-css.global('ul', {
+css.global('.base ul', {
   listStyleType: 'disc',
   margin: '0 0 1em',
   paddingLeft: 30
@@ -53,7 +55,7 @@ const containerStyle = css({
 })
 
 const Layout = ({children, meta, cover}) => (
-  <div>
+  <div className='base'>
     <Head>
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <link rel='shortcut icon' href='https://assets.project-r.construction/images/favicon.ico' />
