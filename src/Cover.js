@@ -8,9 +8,9 @@ const coverStyle = css({
   position: 'relative',
   [mqLarge]: {
     minHeight: 500,
-    height: [700, '80vh'],
+    height: ['700px', '80vh'],
     backgroundSize: 'cover',
-    backgroundPosition: '0 center'
+    backgroundPosition: 'center'
   }
 })
 const coverImageStyle = css({
