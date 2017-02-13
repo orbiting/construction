@@ -34,7 +34,7 @@ export default () => {
 
       <p>Du liebst guten Journalismus und hast Lust, Teil eines Entwicklungsprojekts zu sein. Du programmierst leidenschaftlich und findest es spannend ein komplexes Produkt von den Requirements über die technische Planung, die Implementierung, das Testing und den Betrieb mit einer schlagkräftigen Guerilla-Truppe mitzuentwickeln.</p>
 
-      <p>Arbeitsbeginn: Ungefähr Juni 2017 | 60 – 100% | projektbasiert bis Januar 2018, Verlängerung nach Absprache.</p>
+      <p>Arbeitsbeginn: Juni 2017 | 60 – 100% | projektbasiert bis Januar 2018, Verlängerung nach Absprache.</p>
 
       <p><strong>Frontend</strong>: Du hast Erfahrung mit React, schreibst gut strukturierte Web-Apps und kannst ein Responsive-Design umsetzen.</p>
 
@@ -44,10 +44,10 @@ export default () => {
 
       <h3>Deine Vorteile bei uns (abgesehen von ewigem Ruhm):</h3>
       <ul>
-        <li>Ein total diverses und leidenschaftliches Team</li>
+        <li>Ein diverses und leidenschaftliches Team</li>
         <li>Du arbeitest nicht von der Welt abgekoppelt und bist du bei den Entscheidungen der Geschäftsleitung wie der Redaktion dabei</li>
         <li>Hoher Einheitslohn</li>
-        <li>24h Hotel Reception – und viele Duschen</li>
+        <li>24h Hotel Reception</li>
         <li>Club Mate soviel du willst immer gratis</li>
       </ul>
 
