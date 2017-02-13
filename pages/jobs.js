@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../src/Layout'
 import Cover from '../src/Cover'
+import Link from 'next/link'
 import {RawPortrait} from '../src/Portrait'
 
 import team from '../src/data/team'
@@ -26,7 +27,7 @@ export default () => {
         <p>Wir suchen zwei Entwickler/innen.</p>
       </Cover>
     )}>
-      <p>Project R ist eine Rebellion gegen die traditionellen Verlage: Es will die Medienwelt entscheidend verändern. Eine entschlossene Crew entwickelt ein digitales Magazin für den Journalismus des 21. Jahrhunderts. In allen Bereichen sind Spezialistinnen am Werk: bei der Publizistik, der Geschäftsentwicklung, der Zusammenarbeit, dem Community Building und der IT. Wir arbeiten kollaborativ und ohne steile Hierarchien. Arbeitsort ist das Hotel Rothaus an der Zürcher Langstrasse.</p>
+      <p>Project R ist eine Rebellion gegen die traditionellen Verlage: Es will die Medienwelt entscheidend verändern. Eine entschlossene Crew entwickelt ein digitales Magazin für den Journalismus des 21. Jahrhunderts. In allen Bereichen sind Spezialistinnen am Werk: bei der Publizistik, der Geschäftsentwicklung, der Zusammenarbeit, dem Community Building und der IT. Wir arbeiten kollaborativ und ohne steile Hierarchien. Arbeitsort ist das Hotel Rothaus an der Zürcher Langstrasse. Mehr zum Projekt: <Link href='/'><a>project-r.construction</a></Link></p>
 
       <p>Gleichberechtigung und Diversität sind für uns eine Herzenssache. Wir streben ein in allen Belangen gut durchmischte Teams an. Bereits heute profitiert ein sehr diverses Team in Wissen und Erfahrung voneinander.  Mit dem Aufbau der Redaktion werden wir Sommer 2017 starten – derzeit stellen wir noch keine Journalistinnen und Journalisten an.</p>
 
@@ -53,15 +54,16 @@ export default () => {
       </ul>
 
       <RawPortrait {...clara} age={null}>
-        <h2>Wie bewerben?</h2>
         <p>Bewerbungen bitte an <a href={`mailto:${clara.email}`}>{clara.email}</a>.</p>
-        <p>Eine Bewerbung enthält idealerweise folgendes:</p>
-        <ul>
-          <li>Lebenslauf</li>
-          <li>Portfolio</li>
-          <li>Links zu deinen Open-Source-Projekten</li>
-        </ul>
+      <h2>Project R</h2>
+      <p>c/o Hotel Rothaus<br />
+      Sihlhallenstrasse 1<br />
+      CH-8004 Zürich
+      </p>
+      <img style={{maxWidth: 50}} src='https://assets.project-r.construction/images/project_r_logo.svg' />
       </RawPortrait>
+
+
     </Layout>
   )
 }
