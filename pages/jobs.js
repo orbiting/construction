@@ -58,7 +58,7 @@ export default () => {
         <ul>
           <li>Lebenslauf</li>
           <li>Portfolio</li>
-          <li>Links zu deinen Open-Source-Projekte</li>
+          <li>Links zu deinen Open-Source-Projekten</li>
         </ul>
       </RawPortrait>
     </Layout>
