@@ -25,7 +25,7 @@ const buttinLinkStyle = css({
   minWidth: 110,
   ':hover': {
     background: '#444',
-    color: 'white'
+    color: 'white !important'
   }
 })
 
