@@ -44,19 +44,19 @@ export default () => {
         src: 'https://assets.project-r.construction/images/wewantyou.jpg',
         alt: 'Das Project R Team auf dem Balkon des Hotel Rothaus'}}
       >
-        <h1>Jobs</h1>
-        <p>Wir suchen zwei Entwickler/innen.</p>
+        <h1>Jobs bei Project R</h1>
+        <p>Wir suchen zwei Entwickler/innen</p>
       </Cover>
     )}>
-      <p>Project R ist eine Rebellion gegen die traditionellen Verlage: Es will die Medienwelt entscheidend verändern. Eine entschlossene Crew entwickelt ein digitales Magazin für den Journalismus des 21. Jahrhunderts. In allen Bereichen sind Spezialistinnen am Werk: bei der Publizistik, der Geschäftsentwicklung, der Zusammenarbeit, dem Community Building und der IT. Wir arbeiten kollaborativ und ohne steile Hierarchien. Arbeitsort ist das Hotel Rothaus an der Zürcher Langstrasse. Mehr zum Projekt: <Link href='/'><a>project-r.construction</a></Link></p>
+      <p>Project R ist eine Rebellion gegen die traditionellen Verlage: Es will die Medienwelt entscheidend verändern. Eine entschlossene Crew entwickelt ein digitales Magazin für den Journalismus des 21. Jahrhunderts. In allen Bereichen sind Spezialistinnen am Werk: bei der Publizistik, der Geschäftsentwicklung, der Zusammenarbeit, dem Community Building und der IT. Wir arbeiten kollaborativ und ohne steile Hierarchien. Arbeitsort ist das Hotel Rothaus an der Zürcher Langstrasse. Mehr zu Project R hier: <Link href='/'><a>project-r.construction</a></Link></p>
 
-      <p>Gleichberechtigung und Diversität sind für uns eine Herzenssache. Wir streben ein in allen Belangen gut durchmischte Teams an. Bereits heute profitiert ein sehr diverses Team in Wissen und Erfahrung voneinander.  Mit dem Aufbau der Redaktion werden wir Sommer 2017 starten – derzeit stellen wir noch keine Journalistinnen und Journalisten an.</p>
+      <p>Gleichberechtigung und Diversität sind für uns eine Herzenssache. Bereits heute profitiert ein sehr diverses Team in Wissen und Erfahrung voneinander.  Mit dem Aufbau der Redaktion werden wir Sommer 2017 starten – derzeit stellen wir noch keine Journalistinnen und Journalisten an.</p>
 
       <h2>Zur Verstärkung unserer IT-Crew suchen wir eine Backend-Entwickler/in und eine Frontend-Entwickler/in.</h2>
 
       <p>Du liebst guten Journalismus und hast Lust, Teil eines Entwicklungsprojekts zu sein. Du programmierst leidenschaftlich und findest es spannend ein komplexes Produkt von den Requirements über die technische Planung, die Implementierung, das Testing und den Betrieb mit einer schlagkräftigen Guerilla-Truppe mitzuentwickeln.</p>
 
-      <p>Arbeitsbeginn: Juni 2017 | 60 – 100% | projektbasiert bis Januar 2018, Verlängerung nach Absprache.</p>
+      <p>Arbeitsbeginn: Juni 2017, 60-100%, projektbasiert bis Januar 2018, Verlängerung nach Absprache.</p>
 
       <p><strong>Frontend</strong>: Du hast Erfahrung mit React, schreibst gut strukturierte Web-Apps und kannst ein Responsive-Design umsetzen.</p>
 
@@ -67,10 +67,10 @@ export default () => {
       <h3>Deine Vorteile bei uns (abgesehen von ewigem Ruhm):</h3>
       <ul>
         <li>Ein diverses und leidenschaftliches Team</li>
-        <li>Du arbeitest nicht von der Welt abgekoppelt und bist du bei den Entscheidungen der Geschäftsleitung wie der Redaktion dabei</li>
-        <li>Hoher Einheitslohn</li>
+        <li>Du bist bei den Entscheidungen der Geschäftsleitung wie der Redaktion dabei</li>
+        <li>Guter Einheitslohn</li>
         <li>Der ganze Code wird unter einer Open-Source-Lizenz veröffentlicht</li>
-        <li>24h Hotel Reception</li>
+        <li>24h-Hotel-Reception</li>
         <li>Club Mate soviel du willst immer gratis</li>
       </ul>
 
