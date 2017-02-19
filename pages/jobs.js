@@ -6,11 +6,9 @@ import Cover from '../src/Cover'
 import Link from 'next/link'
 import {RawPortrait} from '../src/Portrait'
 
-import team from '../src/data/team'
+import {clara} from '../src/data/team'
 
-const clara = team.filter(p => p.name === 'Clara Vuillemin')[0]
-
-const buttinLinkStyle = css({
+const buttonLinkStyle = css({
   display: 'inline-block',
   fontFamily: 'sans-serif',
   verticalAlign: 'bottom',
@@ -82,7 +80,7 @@ export default () => {
         <p><a href={`mailto:${clara.email}?${[
           ['subject', 'Bewerbungen Entwickler/in'],
           ['body', `Hallo Clara,\n\n...\n\nHerzliche Grüsse,\ngithub.com/[username]`]
-        ].map(pair => pair.map(encodeURIComponent).join('=')).join('&')}`} {...buttinLinkStyle}>Jetzt bewerben</a></p>
+        ].map(pair => pair.map(encodeURIComponent).join('=')).join('&')}`} {...buttonLinkStyle}>Jetzt bewerben</a></p>
       </RawPortrait>
 
       <h2>Project R</h2>
