@@ -59,7 +59,7 @@ export default () => {
       <p><strong>E-Mail</strong><br />
       <a href="mailto:office@project-r.construction">office@project-r.construction</a><br />
       PGP-Key-ID: 6A1DB6B9<br />
-      <a href="https://assets.project-r.construction/pgp/jefferson@project-r.construction_0x5BB9486F.asc">Key herunterladen</a> 
+      <a href="https://assets.project-r.construction/contact/0x6A1DB6B9_office.asc">Key herunterladen</a> 
       </p>
 
       <p><strong>Geschäftsführung</strong><br />

@@ -5,6 +5,7 @@ all:
 
 upload-assets:
 	s3cmd sync --verbose --acl-public -c ./.s3cfg assets/images/optimized/ s3://construction/images/
+	s3cmd sync --verbose --acl-public -c ./.s3cfg assets/contact/ s3://construction/contact/
 	s3cmd sync --verbose --acl-public -c ./.s3cfg assets/media/ s3://construction/media/
 
 images:
