@@ -56,7 +56,7 @@ export default [
   {
     image: 'https://assets.project-r.construction/images/constantin_seibt.jpg',
     name: 'Constantin Seibt',
-    age: 50,
+    age: 51,
     title: 'Konzeption und Redaktion',
     description: `Constantin Seibt war ein Kind, das Abenteurromane las. Und den Plan fasste, eines Tages dasselbe zu machen: Nicht Abenteuer zu erleben. Aber Abenteuerromane zu schreiben. Mit 22 kam er seinem Ziel am nächsten: Er schrieb mit einem Kollegen einen Krimi. Die Folge waren Aufträge von Zeitungen. Seibt blieb im Journalismus, erst bei der Zürcher Studierendenzeitung «ZS», später bei der Wochenzeitung «WoZ» und schliesslich beim «Tages-Anzeiger». Sein Spezialgebiet wurde die Grauzone zwischen Politik und Wirtschaft: von der Finanzkrise bis zur Eurokrise. Für seine Reportagenserie zum Swissair-Prozess erhielt er 2008 den Zürcher Journalistenpreis. Seibt ist einer der wenigen Reporter, die nicht nur eine Praxis, sondern auch eine Theorie haben: 2015 erschien sein Buch «Deadline» über das Handwerk des Schreibens. Die Bilanz ist also, dass Seibt sein Ziel um 180 Grad verfehlt hat: Der Beruf als Reporter verwandelte zwar sein Berufsleben in eine Kette von kleinen Abenteuern. Doch der Abenteuerroman blieb ungeschrieben. Project R soll dafür sorgen, dass es dabei bleibt.`,
     email: 'constantin.seibt@project-r.construction'
