@@ -40,8 +40,7 @@ export default () => {
 
       <h2>Kontakt</h2> 
 
-      <p>Postadresse:<br />
-      Project R<br />
+      <p>Project R<br />
       c/o Hotel Rothaus<br />
       Sihlhallenstrasse 1<br />
       CH-8004 Zürich

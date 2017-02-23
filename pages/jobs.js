@@ -52,7 +52,7 @@ export default () => {
 
       <h2>Zur Verstärkung unserer IT-Crew suchen wir eine Backend-Entwickler/in und eine Frontend-Entwickler/in.</h2>
 
-      <p>Du liebst guten Journalismus und hast Lust, Teil eines Entwicklungsprojekts zu sein. Du programmierst leidenschaftlich und findest es spannend ein komplexes Produkt von den Requirements über die technische Planung, die Implementierung, das Testing und den Betrieb mit einer schlagkräftigen Guerilla-Truppe mitzuentwickeln.</p>
+      <p>Du liebst guten Journalismus und hast Lust, Teil eines Entwicklungsprojekts zu sein. Du programmierst leidenschaftlich und findest es spannend, ein komplexes Produkt von den Requirements über die technische Planung, die Implementierung, das Testing und den Betrieb mit einer schlagkräftigen Guerilla-Truppe mitzuentwickeln.</p>
 
       <p>Arbeitsbeginn: Juni 2017, 60-100%, projektbasiert bis Januar 2018, Verlängerung nach Absprache.</p>
 
