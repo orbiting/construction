@@ -5,6 +5,7 @@ import Newsletter from '../src/Newsletter'
 import Cover from '../src/Cover'
 import Portrait from '../src/Portrait'
 import Link from 'next/link'
+import SocialMedia from '../src/SocialMedia'
 
 import team from '../src/data/team'
 
@@ -57,14 +58,14 @@ export default () => {
         <li><a href='http://presseverein.ch/2016/10/09/die-rebellion-beginnt/'>Die Rebellion beginnt</a></li>
       </ul>
 
+      <SocialMedia />
+
       <p>
-        <a href='https://www.facebook.com/Project-R-1283717661652978'>Facebook</a>{' – '}
-        <a href='https://twitter.com/_Project_R'>Twitter</a>{' – '}
         <Link href='/media'><a>Medieninformationen</a></Link>{' – '}
         <Link href='/jobs'><a>Jobs</a></Link>
       </p>
 
-      <p>Wenn Sie informiert bleiben wollen, bitte hier Ihre E-Mail-Adresse eintragen:</p>
+      <p>Wenn Sie informiert bleiben wollen, bitte hier eintragen:</p>
       <Newsletter />
 
       <p>Danke!</p>

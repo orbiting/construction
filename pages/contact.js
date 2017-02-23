@@ -6,6 +6,7 @@ import Cover from '../src/Cover'
 import Link from 'next/link'
 import {RawPortrait} from '../src/Portrait'
 import Newsletter from '../src/Newsletter'
+import SocialMedia from '../src/SocialMedia'
 
 import {susanne, clara, laurent} from '../src/data/team'
 
@@ -34,6 +35,8 @@ export default () => {
       <p>Danke!</p>
 
       <p>Mehr zu Project R: <Link href='/'><a>project-r.construction</a></Link></p>
+
+      <SocialMedia />
 
       <h2>Kontakt</h2> 
 
