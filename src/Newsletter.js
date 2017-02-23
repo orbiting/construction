@@ -76,7 +76,7 @@ class Newsletter extends Component {
     return (
       <form onSubmit={this.onSubmit}>
         <p>
-          <input type='email' name='email' ref='email' placeholder='E-Mail' {...fieldStyle} {...inputStyle} />
+          <input type='email' name='email' ref='email' placeholder='E-Mail-Adresse' {...fieldStyle} {...inputStyle} />
           { loading
             ? '...'
             : <button type='submit' {...fieldStyle} {...buttonStyle}>Anmelden</button> }

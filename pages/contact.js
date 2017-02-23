@@ -7,57 +7,33 @@ import Link from 'next/link'
 import {RawPortrait} from '../src/Portrait'
 import Newsletter from '../src/Newsletter'
 
-import team from '../src/data/team'
-
-const clara = team.filter(p => p.name === 'Clara Vuillemin')[0]
-const susanne = team.filter(p => p.name === 'Susanne Sugimoto')[0]
-const laurent = team.filter(p => p.name === 'Laurent Burst')[0]
-
-const buttinLinkStyle = css({
-  display: 'inline-block',
-  fontFamily: 'sans-serif',
-  verticalAlign: 'bottom',
-  color: '#444',
-  padding: '10px 20px 10px 20px',
-  border: 'solid #444 1px',
-  textDecoration: 'none',
-  backgroundColor: 'white',
-  fontSize: 14,
-  height: 37,
-  boxSizing: 'border-box',
-  minWidth: 110,
-  ':hover': {
-    background: '#444',
-    color: 'white !important'
-  }
-})
+import {susanne, clara, laurent} from '../src/data/team'
 
 export default () => {
   const meta = {
     title: 'Newsletter von Project R',
     description: 'Jetzt E-Mail-Adresse eintragen und auf dem Laufenden bleiben',
-    image: 'https://assets.project-r.construction/images/wewantyou.jpg',
+    image: 'https://assets.project-r.construction/images/rothaus.jpg',
     url: 'https://project-r.construction/contact'
   }
 
   return (
     <Layout meta={meta} cover={(
       <Cover image={{
-        credit: '',
-        src: 'https://assets.project-r.construction/images/wewantyou.jpg',
-        alt: 'Das Project R Team auf dem Balkon des Hotel Rothaus'}}
+        src: 'https://assets.project-r.construction/images/rothaus.jpg',
+        alt: 'Das Hotel Rothaus an der Langstrasse mit einem Project R Logo auf dem Balkon'}}
       >
         <h1>Newsletter und Kontakt</h1>
       </Cover>
     )}>
-
-      <p>Wenn Sie informiert bleiben wollen, bitte hier Ihre E-Mail-Adresse eintragen:</p>
+      <h2>Newsletter</h2>
+      <p>Wenn Sie informiert bleiben wollen, bitte hier eintragen:</p>
 
       <Newsletter />
 
       <p>Danke!</p>
 
-      <p>Mehr zu Project R finden Sie hier: <Link href='/'><a>project-r.construction</a></Link></p>
+      <p>Mehr zu Project R: <Link href='/'><a>project-r.construction</a></Link></p>
 
       <h2>Kontakt</h2> 
 
@@ -77,17 +53,18 @@ export default () => {
       IBAN: CH12 8148 5000 0082 2840 1
       </p>
 
-      <p>E-Mail-Adresse:<br />
+      <p><strong>E-Mail</strong><br />
       <a href="mailto:office@project-r.construction">office@project-r.construction</a><br />
-      PGP-Key-ID: 6A1DB6B9 oder Key <a href="https://assets.project-r.construction/pgp/jefferson@project-r.construction_0x5BB9486F.asc">hier</a> herunterladen. 
+      PGP-Key-ID: 6A1DB6B9<br />
+      <a href="https://assets.project-r.construction/pgp/jefferson@project-r.construction_0x5BB9486F.asc">Key herunterladen</a> 
       </p>
 
-      <p>Geschäftsführung:<br />
+      <p><strong>Geschäftsführung</strong><br />
       Susanne Sugimoto, +41 78 897 70 28<br />
       <a href={`mailto:${susanne.email}`}>{susanne.email}</a>
       </p>
       
-      <p>Investor Relations:<br />
+      <p><strong>Investor Relations</strong><br />
       Laurent Burst<br />
       <a href={`mailto:${laurent.email}`}>{laurent.email}</a>
       </p>
