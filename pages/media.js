@@ -20,6 +20,14 @@ export default () => {
       </ul>
 
       <p>Finden Sie mehr unter: <Link href='/'><a>project-r.construction</a></Link></p>
+
+      <h3>Medienartikel zu Project R</h3>
+
+      <ul>
+        <li><a href='http://www.persoenlich.com/medien/wir-wollen-unser-baby-wach-intelligent-ohne-bullshit'>Interview: «Wir wollen unser Baby wach, intelligent, ohne Bullshit»</a></li>
+        <li><a href='http://www.jungejournalisten.ch/blog/2016/10/27/und-ewig-sparen-die-verleger'>Und ewig sparen die Verleger</a></li>
+        <li><a href='http://presseverein.ch/2016/10/09/die-rebellion-beginnt/'>Die Rebellion beginnt</a></li>
+      </ul>
     </Layout>
   )
 }
