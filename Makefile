@@ -1,4 +1,4 @@
-.PHONY: all upload-assets images
+.PHONY: all upload-assets images standardize
 
 all:
 	npm run dev
@@ -26,4 +26,4 @@ images:
 	cp assets/images/raw/project_r_logo.svg assets/images/optimized/project_r_logo.svg
 
 standardize:
-	@$$(npm bin)/standard --fix 'src/**/*.js' 'pages/**/*.js'
+	npm run standardize
