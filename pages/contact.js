@@ -1,14 +1,12 @@
 import React from 'react'
-import {css} from 'glamor'
 
 import Layout from '../src/Layout'
 import Cover from '../src/Cover'
 import Link from 'next/link'
-import {RawPortrait} from '../src/Portrait'
 import Newsletter from '../src/Newsletter'
 import SocialMedia from '../src/SocialMedia'
 
-import {susanne, clara, laurent} from '../src/data/team'
+import {susanne, laurent} from '../src/data/team'
 
 export default () => {
   const meta = {
@@ -38,7 +36,7 @@ export default () => {
 
       <SocialMedia />
 
-      <h2>Kontakt</h2> 
+      <h2>Kontakt</h2>
 
       <p>Project R<br />
       c/o Hotel Rothaus<br />
@@ -56,21 +54,20 @@ export default () => {
       </p>
 
       <p><strong>E-Mail</strong><br />
-      <a href="mailto:office@project-r.construction">office@project-r.construction</a><br />
+        <a href='mailto:office@project-r.construction'>office@project-r.construction</a><br />
       PGP-Key-ID: 6A1DB6B9<br />
-      <a href="https://assets.project-r.construction/contact/0x6A1DB6B9_office.asc">Key herunterladen</a> 
+        <a href='https://assets.project-r.construction/contact/0x6A1DB6B9_office.asc'>Key herunterladen</a>
       </p>
 
       <p><strong>Geschäftsführung</strong><br />
       Susanne Sugimoto, +41 78 897 70 28<br />
-      <a href={`mailto:${susanne.email}`}>{susanne.email}</a>
-      </p>
-      
-      <p><strong>Investor Relations</strong><br />
-      Laurent Burst<br />
-      <a href={`mailto:${laurent.email}`}>{laurent.email}</a>
+        <a href={`mailto:${susanne.email}`}>{susanne.email}</a>
       </p>
 
+      <p><strong>Investor Relations</strong><br />
+      Laurent Burst<br />
+        <a href={`mailto:${laurent.email}`}>{laurent.email}</a>
+      </p>
 
     </Layout>
   )
