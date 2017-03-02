@@ -69,15 +69,6 @@ export default () => {
         <a href='mailto:susanne.sugimoto@project-r.construction'>susanne.sugimoto@project-r.construction</a>
       </p>
       <p><a href='https://assets.project-r.construction/media/170110.zip'>Pressebilder herunterladen</a></p>
-
-      <h2>Project R</h2>
-      <p>
-        c/o Hotel Rothaus<br />
-        Sihlhallenstrasse 1<br />
-        CH-8004 Zürich
-      </p>
-
-      <img style={{maxWidth: 50}} src='https://assets.project-r.construction/images/project_r_logo.svg' />
     </Layout>
   )
 }

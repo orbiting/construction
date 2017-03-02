@@ -139,29 +139,6 @@ export default () => {
         Ihre R-Crew
       </p>
 
-      <p>
-        <a href='https://www.facebook.com/Project-R-1283717661652978'>Facebook</a>{' – '}
-        <a href='https://twitter.com/_Project_R'>Twitter</a>{' – '}
-        <a href='https://project-r.construction/media.html'>Medieninformation</a>
-      </p>
-
-      <h2>Project R</h2>
-      <p>
-        c/o Hotel Rothaus<br />
-        Sihlhallenstrasse 1<br />
-        CH-8004 Zürich
-      </p>
-      <img style={{maxWidth: 50}} src='https://assets.project-r.construction/images/project_r_logo.svg' />
-
-      <p>
-        Spendenkonto:<br />
-        Verein für unabhängigen Journalismus<br />
-        Hegifeldstrasse 57<br />
-        8404 Winterthur<br />
-        Raiffeisenbank Winterthur<br />
-        IBAN: CH12 8148 5000 0082 2840 1
-      </p>
-
     </Layout>
   )
 }

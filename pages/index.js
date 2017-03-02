@@ -6,8 +6,8 @@ import Cover from '../src/Cover'
 
 export default () => {
   const meta = {
-    title: 'Project R geht an den Start',
-    description: 'Das Medienprojekt stellt seine Aufbau-Crew vor – und zieht ins Hotel Rothaus in Zürich',
+    title: 'Project R',
+    description: 'ToDo',
     image: 'https://assets.project-r.construction/images/balkon.jpg',
     url: 'https://project-r.construction/'
   }

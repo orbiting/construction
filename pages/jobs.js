@@ -82,13 +82,6 @@ export default () => {
           ['body', `Hallo Clara,\n\n...\n\nHerzliche Grüsse,\ngithub.com/[username]`]
         ].map(pair => pair.map(encodeURIComponent).join('=')).join('&')}`} {...buttonLinkStyle}>Jetzt bewerben</a></p>
       </RawPortrait>
-
-      <h2>Project R</h2>
-      <p>c/o Hotel Rothaus<br />
-      Sihlhallenstrasse 1<br />
-      CH-8004 Zürich
-      </p>
-      <img style={{maxWidth: 50}} src='https://assets.project-r.construction/images/project_r_logo.svg' />
     </Layout>
   )
 }

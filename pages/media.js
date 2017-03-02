@@ -19,8 +19,6 @@ export default () => {
         </li>
       </ul>
 
-      <p>Finden Sie mehr unter: <Link href='/'><a>project-r.construction</a></Link></p>
-
       <h3>Medienartikel zu Project R</h3>
 
       <ul>

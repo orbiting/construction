@@ -11,7 +11,7 @@ const Footer = () => (
     </a></Link>
 
     <p>
-      <Link href='/team'><a>Team</a></Link>{' – '}
+      <Link href='/crew'><a>Crew</a></Link>{' – '}
       <Link href='/media'><a>Medieninformationen</a></Link>{' – '}
       <Link href='/jobs'><a>Jobs</a></Link>
     </p>
