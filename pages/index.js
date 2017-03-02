@@ -3,6 +3,20 @@ import React from 'react'
 import Layout from '../src/Layout'
 import Newsletter from '../src/Newsletter'
 import Cover from '../src/Cover'
+import Card from '../src/Card'
+import Grid, {GridItem} from '../src/Grid'
+
+const newsletters = [
+  {
+    href: '/newsletter/2017-01-10-hotel-rothaus',
+    title: 'Der erste Newsletter von Project R',
+    date: '10. Januar 2017',
+    image: {
+      src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
+      alt: ''
+    }
+  }
+]
 
 export default () => {
   const meta = {
@@ -34,9 +48,15 @@ export default () => {
 
       <p>Wir glauben, dass auch im Journalismus die Zeit für eine kleine Rebellion gekommen ist. Und arbeiten daran, sie zu machen.</p>
 
-      <p>Dafür haben wir uns fürs erste im legendären Hotel Rothaus einquartiert, mitten im Zürcher Kreis 4 an der Langstrasse, genauer: an der Sihlhallenstrasse 1. Das Rothaus war viele Jahre das Winterquartier für die Artisten des Zirkus Knie, später ein Stundenhotel – keine schlechte Umgebung für publizistische Pläne.</p>
+      <h2>Aktuelles von Project R</h2>
 
-      <p>Danke!</p>
+      <Grid>
+        {newsletters.map((newsletter, i) => (
+          <GridItem key={i}>
+            <Card {...newsletter} />
+          </GridItem>
+        ))}
+      </Grid>
     </Layout>
   )
 }

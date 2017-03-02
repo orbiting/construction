@@ -78,7 +78,7 @@ export default () => {
     <Layout cover={(
       <Cover image={{
         src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
-        alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 201'
+        alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'
       }} />
     )}>
       <Head>
