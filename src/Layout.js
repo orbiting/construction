@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react'
 import Head from 'next/head'
 import {css} from 'glamor'
+import Footer from './Footer'
 
 import 'glamor/reset'
 
@@ -80,6 +81,8 @@ const Layout = ({children, meta, cover}) => (
 
     <div {...containerStyle}>
       {children}
+
+      <Footer />
     </div>
   </div>
 )
