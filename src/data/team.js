@@ -25,48 +25,67 @@ export const laurent = {
   email: 'laurent.burst@project-r.construction'
 }
 
+export const nadja = {
+  image: 'https://assets.project-r.construction/images/nadja_schnetzler.jpg',
+  name: 'Nadja Schnetzler',
+  age: 44,
+  title: 'Prozesse und Zusammenarbeit',
+  description: `Nadja Schnetzler begann bei einer Schülerzeitung, aus der noch vor der Matura ein Business wurde: die Vermittlung von Inseraten für Schülerzeitungen. Später, in der Ringier-Journalistenschule, machte sie Praktika bei so unterschiedlichen Medien wie «Bild» und «taz». Doch entscheidender war ein Tag im Frühling 1997: Als Schnetzler mit ihrem späteren Mann entschied, während der Herbstferien in einem Ladenlokal in Biel ein neuartiges Geschäft aufzumachen: einen Ideenhandel namens Brainstore. Die ersten Produkte waren noch unschlagbar günstig – für 9 Franken 90 erhielten Passanten gleich drei Ideen. (Eine typische Frage war etwa, wie man den pensionierten Ehemann dazu bringt, wieder ausser Haus zu gehen.) Zur Verblüffung aller entwickelte sich daraus eine international tätige Firma: Auf dem Höhepunkt beschäftige Brainstore 80 Mitarbeiter und 3000 Freelancer – und entwickelte Ideen für Unternehmen, NGOs, Privatleute und Regierungen auf sämtlichen Kontinenten, mit Ausnahme der Antarktis. (Mehr zu Theorie und Praxis der industriellen Ideenproduktion finden Sie in Schnetzlers Buch «Die Ideenmaschine».) 2012 machte sich Nadja Schnetzler als Kollaborations-Coach mit «Word and Deed» selbstständig. Bei Project R ist ihr Mandat die Entwicklung und Zusammenarbeit: Wie macht man etwas besser? Wie einfacher? Und wie kann man etwas neu denken?`,
+  email: 'nadja.schnetzler@project-r.construction'
+}
+
+export const patrick = {
+  image: 'https://assets.project-r.construction/images/patrick_recher.jpg',
+  name: 'Patrick Recher',
+  age: 28,
+  title: 'Software-Entwicklung',
+  description: `Patrick Recher, der Mann für die Datenbanken, machte seine Informatiker-Lehre bei der Swisscom, wo jeder Lehrling ein Generalabonnement in die Hand gedrückt bekam und die Möglichkeit, sich irgendwo im Unternehmen zu bewerben. Was ihn faszinierte, waren Netzwerke: Er hatte schon mit 12 die Nachbarhäuser verkabelt. Was ihn weniger faszinierte war das Informatikstudium danach: lauter veraltete Software. («Für Informatiker gehört es zum guten Ton, dass du das Studium abbrichst.») Er wurde trotzdem zwei Mal Schweizer Vizemeister in Informatik. Und erhielt eine Goldmedaille (leider keinen Barren) von der Nationalbank für seine Lehrabschlussarbeit zur Finanzkrise. Seinen grössten Coup landete er mit seiner Maturarbeit: Für das erste iPhone entwickelte er eine App, die ein beliebiges Landschaftsfoto mit Orts-, Fluss- und Bergnamen beschriftete. Recher schlug damit die Entwickler aus der ETH, die mit einem ähnlichen Vorhaben gescheitert waren. Und hatte noch vor dem Abschluss einen Job als App-Entwickler. Bei Project R ist seine Verantwortung, die Programme für alles Verborgene zu entwickeln: Artikelverwaltung, Userverwaltung, Zahlungsabwicklung – «immer mit einem innovativen Twist.»`,
+  email: 'patrick.recher@project-r.construction'
+}
+
+export const thomas = {
+  image: 'https://assets.project-r.construction/images/thomas_preusse.jpg',
+  name: 'Thomas Preusse',
+  age: 25,
+  title: 'Software-Entwicklung',
+  description: `Thomas Preusse schaffte es, als Programmierer in Rekordzeit zwei Journalistenpreise zu gewinnen – obwohl er «lieber 100 Zeilen Code schreibt als einen einzigen Satz». 2016 gewann er (mit Markus Häfliger) den Zürcher Journalistenpreis für die Aufdeckung der Kasachstan-Affäre, welche die damalige Nationalratspräsidentin Christa Markwalder in Bedrängnis brachte. Preusse hatte die Suchmaschine gebaut, mit der ein Datenleck der kasachischen Regierung durchforstet werden konnte. Im Jahr zuvor hatte er mit einem NZZ-Team den deutschen Reporterpreis für die beste Web-Reportage erhalten: eine Rekonstruktion des Flugs MH370, der spurlos über dem Indischen Ozean verschwand. Seine Laufbahn begann Preusse als Webdesigner bei einer Werbeagentur in Kanada, zuletzt arbeitete er bei der Web-Agentur «Interactive Things» in Zürich. Preusses Hauptjob bei Project R ist der Aufbau des sogenannten Frontends: einem Interface, das für die Leser und Redaktion so vollkommen unauffällig funktionieren soll wie in einem englischen Schloss der Butler.`,
+  email: 'thomas.preusse@project-r.construction'
+}
+export const constantin = {
+  image: 'https://assets.project-r.construction/images/constantin_seibt.jpg',
+  name: 'Constantin Seibt',
+  age: 51,
+  title: 'Konzeption und Redaktion',
+  description: `Constantin Seibt war ein Kind, das Abenteurromane las. Und den Plan fasste, eines Tages dasselbe zu machen: Nicht Abenteuer zu erleben. Aber Abenteuerromane zu schreiben. Mit 22 kam er seinem Ziel am nächsten: Er schrieb mit einem Kollegen einen Krimi. Die Folge waren Aufträge von Zeitungen. Seibt blieb im Journalismus, erst bei der Zürcher Studierendenzeitung «ZS», später bei der Wochenzeitung «WoZ» und schliesslich beim «Tages-Anzeiger». Sein Spezialgebiet wurde die Grauzone zwischen Politik und Wirtschaft: von der Finanzkrise bis zur Eurokrise. Für seine Reportagenserie zum Swissair-Prozess erhielt er 2008 den Zürcher Journalistenpreis. Seibt ist einer der wenigen Reporter, die nicht nur eine Praxis, sondern auch eine Theorie haben: 2015 erschien sein Buch «Deadline» über das Handwerk des Schreibens. Die Bilanz ist also, dass Seibt sein Ziel um 180 Grad verfehlt hat: Der Beruf als Reporter verwandelte zwar sein Berufsleben in eine Kette von kleinen Abenteuern. Doch der Abenteuerroman blieb ungeschrieben. Project R soll dafür sorgen, dass es dabei bleibt.`,
+  email: 'constantin.seibt@project-r.construction'
+}
+
+export const christof = {
+  image: 'https://assets.project-r.construction/images/christof_moser.jpg',
+  name: 'Christof Moser',
+  age: 37,
+  title: 'Konzeption und Redaktion',
+  description: `Christof Moser wollte Journalist werden, noch bevor er bis Z buchstabieren konnte – und nachdem sich herausgestellt hatte, dass Regenwaldforscher wegen Arachnophobie keine gute Berufswahl gewesen wäre. Also lancierte er mit 12 seine erste Schülerzeitung, die sich bis zum Ende der Schulzeit in ein Magazin («Nachtisch») weiter entwickelte und dann noch weiter – bis zum mittelgrossen Konkurs. Die Publikation fiel auf einen Betrüger herein. Und Moser zahlte bis 25 Druckereirechnungen ab. Nach einer kaufmännischen Ausbildung stieg Moser als Volontär beim «Brückenbauer» (dem heutigen «Migros-Magazin») in den Journalismus ein. Im Jahr 2000 gehörte er beim Wirtschaftsportal «Moneycab» zu den ersten Onlinejournalisten der Schweiz, danach folgten Stationen als Politik-Reporter bei «Facts», «Weltwoche» und «SonntagsBlick» und eine abgebrochene TV-Stage bei «10vor10». Zuletzt arbeitete er als Bundeshaus-Journalist und Medienkritiker bei der «Schweiz am Sonntag» und als freier Autor für «Literarischer Monat», «Surprise», «Zeit Schweiz» und «Schweizer Illustrierte». Daneben baute er «Infosperber» mit auf und unterrichtet Journalismus-Studentinnen und -Studenten in Politik- und Wirtschaftsjournalismus, Storytelling und Medienethik. Bei Project R kann Moser ein bisher verborgenes Talent ausleben: das Zeichnen von Plänen. Denn davon braucht ein Medienprojekt Unmengen.`,
+  email: 'christof.moser@project-r.construction'
+}
+
+export const richard = {
+  image: 'https://assets.project-r.construction/images/todo.jpg',
+  name: 'Richard Höchner',
+  age: 29,
+  title: 'Community Manager',
+  description: '',
+  email: 'richard.hoechner@project-r.construction'
+}
+
 export default [
   susanne,
   laurent,
-  {
-    image: 'https://assets.project-r.construction/images/nadja_schnetzler.jpg',
-    name: 'Nadja Schnetzler',
-    age: 44,
-    title: 'Prozesse und Zusammenarbeit',
-    description: `Nadja Schnetzler begann bei einer Schülerzeitung, aus der noch vor der Matura ein Business wurde: die Vermittlung von Inseraten für Schülerzeitungen. Später, in der Ringier-Journalistenschule, machte sie Praktika bei so unterschiedlichen Medien wie «Bild» und «taz». Doch entscheidender war ein Tag im Frühling 1997: Als Schnetzler mit ihrem späteren Mann entschied, während der Herbstferien in einem Ladenlokal in Biel ein neuartiges Geschäft aufzumachen: einen Ideenhandel namens Brainstore. Die ersten Produkte waren noch unschlagbar günstig – für 9 Franken 90 erhielten Passanten gleich drei Ideen. (Eine typische Frage war etwa, wie man den pensionierten Ehemann dazu bringt, wieder ausser Haus zu gehen.) Zur Verblüffung aller entwickelte sich daraus eine international tätige Firma: Auf dem Höhepunkt beschäftige Brainstore 80 Mitarbeiter und 3000 Freelancer – und entwickelte Ideen für Unternehmen, NGOs, Privatleute und Regierungen auf sämtlichen Kontinenten, mit Ausnahme der Antarktis. (Mehr zu Theorie und Praxis der industriellen Ideenproduktion finden Sie in Schnetzlers Buch «Die Ideenmaschine».) 2012 machte sich Nadja Schnetzler als Kollaborations-Coach mit «Word and Deed» selbstständig. Bei Project R ist ihr Mandat die Entwicklung und Zusammenarbeit: Wie macht man etwas besser? Wie einfacher? Und wie kann man etwas neu denken?`,
-    email: 'nadja.schnetzler@project-r.construction'
-  },
+  nadja,
+  richard,
   clara,
-  {
-    image: 'https://assets.project-r.construction/images/patrick_recher.jpg',
-    name: 'Patrick Recher',
-    age: 28,
-    title: 'Software-Entwicklung',
-    description: `Patrick Recher, der Mann für die Datenbanken, machte seine Informatiker-Lehre bei der Swisscom, wo jeder Lehrling ein Generalabonnement in die Hand gedrückt bekam und die Möglichkeit, sich irgendwo im Unternehmen zu bewerben. Was ihn faszinierte, waren Netzwerke: Er hatte schon mit 12 die Nachbarhäuser verkabelt. Was ihn weniger faszinierte war das Informatikstudium danach: lauter veraltete Software. («Für Informatiker gehört es zum guten Ton, dass du das Studium abbrichst.») Er wurde trotzdem zwei Mal Schweizer Vizemeister in Informatik. Und erhielt eine Goldmedaille (leider keinen Barren) von der Nationalbank für seine Lehrabschlussarbeit zur Finanzkrise. Seinen grössten Coup landete er mit seiner Maturarbeit: Für das erste iPhone entwickelte er eine App, die ein beliebiges Landschaftsfoto mit Orts-, Fluss- und Bergnamen beschriftete. Recher schlug damit die Entwickler aus der ETH, die mit einem ähnlichen Vorhaben gescheitert waren. Und hatte noch vor dem Abschluss einen Job als App-Entwickler. Bei Project R ist seine Verantwortung, die Programme für alles Verborgene zu entwickeln: Artikelverwaltung, Userverwaltung, Zahlungsabwicklung – «immer mit einem innovativen Twist.»`,
-    email: 'patrick.recher@project-r.construction'
-  },
-  {
-    image: 'https://assets.project-r.construction/images/thomas_preusse.jpg',
-    name: 'Thomas Preusse',
-    age: 25,
-    title: 'Software-Entwicklung',
-    description: `Thomas Preusse schaffte es, als Programmierer in Rekordzeit zwei Journalistenpreise zu gewinnen – obwohl er «lieber 100 Zeilen Code schreibt als einen einzigen Satz». 2016 gewann er (mit Markus Häfliger) den Zürcher Journalistenpreis für die Aufdeckung der Kasachstan-Affäre, welche die damalige Nationalratspräsidentin Christa Markwalder in Bedrängnis brachte. Preusse hatte die Suchmaschine gebaut, mit der ein Datenleck der kasachischen Regierung durchforstet werden konnte. Im Jahr zuvor hatte er mit einem NZZ-Team den deutschen Reporterpreis für die beste Web-Reportage erhalten: eine Rekonstruktion des Flugs MH370, der spurlos über dem Indischen Ozean verschwand. Seine Laufbahn begann Preusse als Webdesigner bei einer Werbeagentur in Kanada, zuletzt arbeitete er bei der Web-Agentur «Interactive Things» in Zürich. Preusses Hauptjob bei Project R ist der Aufbau des sogenannten Frontends: einem Interface, das für die Leser und Redaktion so vollkommen unauffällig funktionieren soll wie in einem englischen Schloss der Butler.`,
-    email: 'thomas.preusse@project-r.construction'
-  },
-  {
-    image: 'https://assets.project-r.construction/images/constantin_seibt.jpg',
-    name: 'Constantin Seibt',
-    age: 51,
-    title: 'Konzeption und Redaktion',
-    description: `Constantin Seibt war ein Kind, das Abenteurromane las. Und den Plan fasste, eines Tages dasselbe zu machen: Nicht Abenteuer zu erleben. Aber Abenteuerromane zu schreiben. Mit 22 kam er seinem Ziel am nächsten: Er schrieb mit einem Kollegen einen Krimi. Die Folge waren Aufträge von Zeitungen. Seibt blieb im Journalismus, erst bei der Zürcher Studierendenzeitung «ZS», später bei der Wochenzeitung «WoZ» und schliesslich beim «Tages-Anzeiger». Sein Spezialgebiet wurde die Grauzone zwischen Politik und Wirtschaft: von der Finanzkrise bis zur Eurokrise. Für seine Reportagenserie zum Swissair-Prozess erhielt er 2008 den Zürcher Journalistenpreis. Seibt ist einer der wenigen Reporter, die nicht nur eine Praxis, sondern auch eine Theorie haben: 2015 erschien sein Buch «Deadline» über das Handwerk des Schreibens. Die Bilanz ist also, dass Seibt sein Ziel um 180 Grad verfehlt hat: Der Beruf als Reporter verwandelte zwar sein Berufsleben in eine Kette von kleinen Abenteuern. Doch der Abenteuerroman blieb ungeschrieben. Project R soll dafür sorgen, dass es dabei bleibt.`,
-    email: 'constantin.seibt@project-r.construction'
-  },
-  {
-    image: 'https://assets.project-r.construction/images/christof_moser.jpg',
-    name: 'Christof Moser',
-    age: 37,
-    title: 'Konzeption und Redaktion',
-    description: `Christof Moser wollte Journalist werden, noch bevor er bis Z buchstabieren konnte – und nachdem sich herausgestellt hatte, dass Regenwaldforscher wegen Arachnophobie keine gute Berufswahl gewesen wäre. Also lancierte er mit 12 seine erste Schülerzeitung, die sich bis zum Ende der Schulzeit in ein Magazin («Nachtisch») weiter entwickelte und dann noch weiter – bis zum mittelgrossen Konkurs. Die Publikation fiel auf einen Betrüger herein. Und Moser zahlte bis 25 Druckereirechnungen ab. Nach einer kaufmännischen Ausbildung stieg Moser als Volontär beim «Brückenbauer» (dem heutigen «Migros-Magazin») in den Journalismus ein. Im Jahr 2000 gehörte er beim Wirtschaftsportal «Moneycab» zu den ersten Onlinejournalisten der Schweiz, danach folgten Stationen als Politik-Reporter bei «Facts», «Weltwoche» und «SonntagsBlick» und eine abgebrochene TV-Stage bei «10vor10». Zuletzt arbeitete er als Bundeshaus-Journalist und Medienkritiker bei der «Schweiz am Sonntag» und als freier Autor für «Literarischer Monat», «Surprise», «Zeit Schweiz» und «Schweizer Illustrierte». Daneben baute er «Infosperber» mit auf und unterrichtet Journalismus-Studentinnen und -Studenten in Politik- und Wirtschaftsjournalismus, Storytelling und Medienethik. Bei Project R kann Moser ein bisher verborgenes Talent ausleben: das Zeichnen von Plänen. Denn davon braucht ein Medienprojekt Unmengen.`,
-    email: 'christof.moser@project-r.construction'
-  }
+  patrick,
+  thomas,
+  constantin,
+  christof
 ]
