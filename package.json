@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "d3-time": "^1.0.5",
+    "d3-time-format": "^2.0.4",
     "dotenv": "^4.0.0",
     "express": "^4.14.0",
     "glamor": "^2.20.22",
