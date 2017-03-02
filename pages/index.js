@@ -20,7 +20,7 @@ export default () => {
   return (
     <Layout meta={meta} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
+        src: 'https://assets.project-r.construction/images/rothaus.jpg',
         alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'}}
       >
         <h1>{meta.title}</h1>
@@ -28,7 +28,7 @@ export default () => {
       </Cover>
     )}>
 
-      <p>Ladies and Gentlemen,</p>
+      <p>TODO: Ladies and Gentlemen,</p>
 
       <p>Thomas Jefferson, der Autor der amerikanischen Unabhängigkeits­erklärung, schrieb einmal:</p>
 
@@ -37,18 +37,6 @@ export default () => {
       <p>Wir glauben, dass auch im Journalismus die Zeit für eine kleine Rebellion gekommen ist. Und arbeiten daran, sie zu machen.</p>
 
       <p>Dafür haben wir uns fürs erste im legendären Hotel Rothaus einquartiert, mitten im Zürcher Kreis 4 an der Langstrasse, genauer: an der Sihlhallenstrasse 1. Das Rothaus war viele Jahre das Winterquartier für die Artisten des Zirkus Knie, später ein Stundenhotel – keine schlechte Umgebung für publizistische Pläne.</p>
-
-      <img src='https://assets.project-r.construction/images/rothaus.jpg' />
-
-      <p>Unser Job dort wird sein, eine Zukunft für den Journalismus abseits der grossen Verlage zu bauen. Denn die traditionellen Verlagshäuser verlassen die Publizistik. Sie investieren zwar noch Reden in ihr altes Geschäftsmodell, aber das Geld und die Ideen fliessen in den Aufbau von Internet-Handelshäusern. Das ist ökonomisch vernünftig, aber schlimm für die Demokratie. Denn mit schlechten Informationen fallen schlechte Entscheidungen.</p>
-
-      <p>Unsere Aufgabe ist es, ein digitales Magazin für den Journalismus des 21. Jahrhunderts zu entwickeln: einen Salon für Debatten und ungelöste Fragen, smart, politisch, fair – und mitreissend genug, dass die Artikel freiwillig gelesen werden. Das wäre eigentlich Abenteuer genug. Zusätzlich haben wir aber auch die Aufgabe, ein Geschäftsmodell dafür zu entwickeln: ein Medium, das schlagkräftig genug ist, um im öffentlichen Diskurs einen Unterschied zu machen. Und schlank genug, um zu überleben.</p>
-
-      <p>Seit Monaten arbeitet die Project R-Aufbau-Crew, gemeinsam mit zahlreichen Komplizinnen und Komplizen im Hintergrund, an der Gesellschaftsform, dem Aufbau der Crowdfunding-Plattform, der IT-Entwicklung und dem Redaktionskonzept.</p>
-
-      <p>Zur Aufbau-Crew gehören:</p>
-
-      {team.map((person, i) => <Portrait key={i} {...person} odd={!(i % 2)} />)}
 
       <h3>Medienartikel zu Project R</h3>
 
@@ -61,6 +49,7 @@ export default () => {
       <SocialMedia />
 
       <p>
+        <Link href='/team'><a>Team</a></Link>{' – '}
         <Link href='/media'><a>Medieninformationen</a></Link>{' – '}
         <Link href='/jobs'><a>Jobs</a></Link>
       </p>
