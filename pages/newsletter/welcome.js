@@ -8,9 +8,9 @@ const welcomeStyle = css({
   textAlign: 'center'
 })
 
-export default () => {
+export default ({url}) => {
   return (
-    <Layout>
+    <Layout url={url}>
       <Head>
         <title>Project R Newsletter</title>
       </Head>

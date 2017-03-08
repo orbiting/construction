@@ -5,7 +5,7 @@ import Portrait from '../src/Portrait'
 
 import team from '../src/data/team'
 
-export default () => {
+export default ({url}) => {
   const meta = {
     title: 'Project R Crew',
     description: 'todo',
@@ -14,7 +14,7 @@ export default () => {
   }
 
   return (
-    <Layout meta={meta}>
+    <Layout meta={meta} url={url}>
       <h1>{meta.title}</h1>
       {team.map((person, i) => <Portrait key={i} {...person} odd={!(i % 2)} />)}
     </Layout>

@@ -1,8 +1,24 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
 import Link from 'next/link'
 import SocialMedia from './SocialMedia'
+import {intersperse} from './utils/helpers'
 
-const Footer = () => (
+const links = [
+  {
+    path: '/crew',
+    title: 'Crew'
+  },
+  {
+    path: '/media',
+    title: 'Medieninformationen'
+  },
+  {
+    path: '/jobs',
+    title: 'Jobs'
+  }
+]
+
+const Footer = ({url}) => (
   <div>
     <Link href='/'><a>
       <img
@@ -11,9 +27,21 @@ const Footer = () => (
     </a></Link>
 
     <p>
-      <Link href='/crew'><a>Crew</a></Link>{' – '}
-      <Link href='/media'><a>Medieninformationen</a></Link>{' – '}
-      <Link href='/jobs'><a>Jobs</a></Link>
+      {intersperse(
+        links.map(({path, title}) => {
+          if (path === url.pathname) {
+            return title
+          }
+          return (
+            <Link href={path}>
+              <a>
+                {title}
+              </a>
+            </Link>
+          )
+        }),
+        ' – '
+      )}
     </p>
 
     <SocialMedia />
@@ -34,5 +62,11 @@ const Footer = () => (
     </p>
   </div>
 )
+
+Footer.propTypes = {
+  url: PropTypes.shape({
+    pathname: PropTypes.string.isRequired
+  }).isRequired
+}
 
 export default Footer

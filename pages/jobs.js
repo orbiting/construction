@@ -27,7 +27,7 @@ const buttonLinkStyle = css({
   }
 })
 
-export default () => {
+export default ({url}) => {
   const meta = {
     title: 'Project R sucht zwei Entwickler/innen',
     description: 'Project R ist eine Rebellion gegen die traditionellen Verlage: Es will die Medienwelt entscheidend verändern.',
@@ -36,7 +36,7 @@ export default () => {
   }
 
   return (
-    <Layout meta={meta} cover={(
+    <Layout meta={meta} url={url} cover={(
       <Cover image={{
         credit: 'Foto: Jan Bolomey für Project R',
         src: 'https://assets.project-r.construction/images/wewantyou.jpg',

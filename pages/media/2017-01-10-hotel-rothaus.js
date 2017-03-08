@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../../src/Layout'
 
-export default () => {
+export default ({url}) => {
   const meta = {
     title: 'Project R stellt Aufbau-Crew vor und zieht ins Hotel Rothaus',
     description: 'Die Aufbau-Crew von Project R hat Anfang Januar ihr provisorisches Domizil im Zürcher Kreis 4 bezogen. Dort treibt das Team die Konzeption und Entwicklung des Medienprojekts voran.',
@@ -11,7 +11,7 @@ export default () => {
   }
 
   return (
-    <Layout meta={meta}>
+    <Layout meta={meta} url={url}>
       <h1>Medieninformation</h1>
       <p>Zürich, 10. Januar 2017</p>
       <p><em>Dem Journalismus seine Rolle als verlässlicher Wachhund der Demokratie geben</em></p>

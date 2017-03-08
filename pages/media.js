@@ -4,9 +4,9 @@ import Head from 'next/head'
 
 import Layout from '../src/Layout'
 
-export default () => {
+export default ({url}) => {
   return (
-    <Layout>
+    <Layout url={url}>
       <Head>
         <title>Project R Medieninformation</title>
       </Head>

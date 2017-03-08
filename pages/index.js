@@ -18,7 +18,7 @@ const newsletters = [
   }
 ]
 
-export default () => {
+export default ({url}) => {
   const meta = {
     title: 'Project R',
     description: 'ToDo',
@@ -27,7 +27,7 @@ export default () => {
   }
 
   return (
-    <Layout meta={meta} cover={(
+    <Layout meta={meta} url={url} cover={(
       <Cover image={{
         src: 'https://assets.project-r.construction/images/rothaus.jpg',
         alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'}}

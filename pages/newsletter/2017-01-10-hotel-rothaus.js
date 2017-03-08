@@ -73,9 +73,9 @@ const team = [
   }
 ]
 
-export default () => {
+export default ({url}) => {
   return (
-    <Layout cover={(
+    <Layout url={url} cover={(
       <Cover image={{
         src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
         alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'

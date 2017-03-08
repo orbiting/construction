@@ -8,7 +8,7 @@ import SocialMedia from '../src/SocialMedia'
 
 import {susanne, laurent} from '../src/data/team'
 
-export default () => {
+export default ({url}) => {
   const meta = {
     title: 'Newsletter von Project R',
     description: 'Jetzt E-Mail-Adresse eintragen und auf dem Laufenden bleiben',
@@ -17,7 +17,7 @@ export default () => {
   }
 
   return (
-    <Layout meta={meta} cover={(
+    <Layout meta={meta} url={url} cover={(
       <Cover image={{
         src: 'https://assets.project-r.construction/images/rothaus.jpg',
         alt: 'Das Hotel Rothaus an der Langstrasse mit einem Project R Logo auf dem Balkon'}}

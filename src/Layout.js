@@ -55,7 +55,7 @@ const containerStyle = css({
   }
 })
 
-const Layout = ({children, meta, cover}) => (
+const Layout = ({children, meta, cover, url}) => (
   <div className='base'>
     <Head>
       <meta name='viewport' content='width=device-width, initial-scale=1' />
@@ -82,13 +82,16 @@ const Layout = ({children, meta, cover}) => (
     <div {...containerStyle}>
       {children}
 
-      <Footer />
+      <Footer url={url} />
     </div>
   </div>
 )
 
 Layout.propTypes = {
   cover: PropTypes.node,
+  url: PropTypes.shape({
+    pathname: PropTypes.string.isRequired
+  }).isRequired,
   meta: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
