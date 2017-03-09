@@ -29,8 +29,8 @@ export default ({url}) => {
   return (
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/images/rothaus.jpg',
-        alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'}}
+        src: 'https://assets.project-r.construction/images/rothaus_r.jpg',
+        alt: ''}}
       >
         <h1>{meta.title}</h1>
         <p>«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam, oder gar nicht.»</p>

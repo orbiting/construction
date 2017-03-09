@@ -11,6 +11,7 @@ upload-assets:
 images:
 	convert -resize 2000x -quality 80 assets/images/raw/balkon.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/balkon.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/rothaus.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus.jpg
+	convert -resize 2000x -quality 80 assets/images/raw/rothaus_r.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_r.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/wewantyou.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/wewantyou.jpg
 
 	convert -resize 1000x -quality 90 assets/images/raw/christof_moser.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/christof_moser.jpg
