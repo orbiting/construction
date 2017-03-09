@@ -54,11 +54,10 @@ const Footer = ({url}) => (
     </p>
 
     <p>Spendenkonto:<br />
-    Verein für unabhängigen Journalismus<br />
-    Hegifeldstrasse 57<br />
-    8404 Winterthur<br />
+    <strong>Project R Genossenschaft</strong><br />
     Raiffeisenbank Winterthur<br />
-    IBAN: CH12 8148 5000 0082 2840 1
+    IBAN: CH04 8148 5000 0083 4669 1
+
     </p>
   </div>
 )

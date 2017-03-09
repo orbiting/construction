@@ -9,7 +9,7 @@ import Grid, {GridItem} from '../src/Grid'
 const newsletters = [
   {
     href: '/newsletter/2017-01-10-hotel-rothaus',
-    title: 'Der erste Newsletter von Project R',
+    title: 'Project R geht an den Start',
     date: '10. Januar 2017',
     image: {
       src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
@@ -37,18 +37,19 @@ export default ({url}) => {
       </Cover>
     )}>
 
-      <p>TODO: Ladies and Gentlemen,</p>
+      <p>Ladies and Gentlemen,</p>
 
       <p>Thomas Jefferson, der Autor der amerikanischen Unabhängigkeits­erklärung, schrieb einmal:</p>
 
       <blockquote>«Ich bin sicher, eine kleine Rebellion hie und da ist eine gute Sache; sie ist in der Politik so notwendig, um die Dinge zu klären, wie ein Sturm für das Wetter.»</blockquote>
 
-      <p>Wenn Sie informiert bleiben wollen, bitte hier eintragen:</p>
+      <p>Wir glauben, dass auch im Journalismus die Zeit für eine kleine Rebellion gekommen ist. Und arbeiten daran, sie zu machen.</p>
+      <p>Wenn Sie informiert bleiben wollen, bitte hier für den Newsletter eintragen:</p>
       <Newsletter />
 
-      <p>Wir glauben, dass auch im Journalismus die Zeit für eine kleine Rebellion gekommen ist. Und arbeiten daran, sie zu machen.</p>
+      <p>Danke!</p>
 
-      <h2>Aktuelles von Project R</h2>
+      <h3>Aktuelles von Project R</h3>
 
       <Grid>
         {newsletters.map((newsletter, i) => (

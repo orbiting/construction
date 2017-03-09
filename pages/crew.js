@@ -7,7 +7,7 @@ import team from '../src/data/team'
 
 export default ({url}) => {
   const meta = {
-    title: 'Project R Crew',
+    title: 'Project R-Crew',
     description: 'todo',
     image: 'https://assets.project-r.construction/images/project_r_crew.jpg',
     url: 'https://project-r.construction/'
@@ -16,6 +16,11 @@ export default ({url}) => {
   return (
     <Layout meta={meta} url={url}>
       <h1>{meta.title}</h1>
+
+      <p>Die Project R-Aufbau-Crew arbeitet derzeit – gemeinsam mit zahlreichen Komplizinnen im Hintergrund – an der Gesellschaftsform, dem Aufbau der Crowdfunding-Plattform, der IT-Entwicklung und dem Redaktionskonzept.</p>
+
+      <p>Zur Aufbau-Crew gehören:</p> 
+
       {team.map((person, i) => <Portrait key={i} {...person} odd={!(i % 2)} />)}
     </Layout>
   )

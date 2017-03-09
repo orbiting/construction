@@ -25,8 +25,7 @@ export default ({url}) => {
         <h1>Newsletter und Kontakt</h1>
       </Cover>
     )}>
-      <h2>Newsletter</h2>
-      <p>Wenn Sie informiert bleiben wollen, bitte hier eintragen:</p>
+      <p>Wenn Sie informiert bleiben wollen, bitte hier für den Newsletter eintragen:</p>
 
       <Newsletter />
 
