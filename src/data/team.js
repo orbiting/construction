@@ -73,7 +73,7 @@ export const christof = {
 }
 
 export const richard = {
-  image: 'https://assets.project-r.construction/images/todo.jpg',
+  image: 'https://assets.project-r.construction/images/richard_hoechner.jpg',
   name: 'Richard Höchner',
   dob: '13.05.1987',
   title: 'Community Manager',
