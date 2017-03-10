@@ -60,7 +60,7 @@ export default ({url}) => {
       <p>willkommen zum zweiten Newsletter von Project R.</p>
 
       <div {...topPromoStyle}>
-        <p>Noch nicht für den Newsletter eintragen? Bleiben Sie informiert:</p>
+        <p>Noch nicht für den Newsletter eingetragen? Bleiben Sie informiert:</p>
         <Newsletter />
       </div>
 
@@ -287,7 +287,7 @@ export default ({url}) => {
         </Link>
       </p>
 
-      <p>Noch nicht für den Newsletter eintragen? Bleiben Sie informiert:</p>
+      <p>Noch nicht für den Newsletter eingetragen? Bleiben Sie informiert:</p>
       <Newsletter />
       <p>Danke!</p>
 
