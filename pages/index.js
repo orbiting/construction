@@ -8,6 +8,15 @@ import Grid, {GridItem} from '../src/Grid'
 
 const newsletters = [
   {
+    href: '/newsletter/2017-03-14-aufbau',
+    title: 'So bauen wir Project R',
+    date: '14. März 2017',
+    image: {
+      src: 'https://placehold.it/2000x1125?text=Foto+Konzernmodell+Tabelle',
+      alt: ''
+    }
+  },
+  {
     href: '/newsletter/2017-01-10-hotel-rothaus',
     title: 'Project R geht an den Start',
     date: '10. Januar 2017',
@@ -21,7 +30,7 @@ const newsletters = [
 export default ({url}) => {
   const meta = {
     title: 'Project R',
-    description: 'ToDo',
+    description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam, oder gar nicht.»',
     image: 'https://assets.project-r.construction/images/balkon.jpg',
     url: 'https://project-r.construction/'
   }
@@ -33,7 +42,7 @@ export default ({url}) => {
         alt: ''}}
       >
         <h1>{meta.title}</h1>
-        <p>«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam, oder gar nicht.»</p>
+        <p>{meta.description}</p>
       </Cover>
     )}>
 

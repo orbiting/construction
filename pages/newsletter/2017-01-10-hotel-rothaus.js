@@ -79,7 +79,7 @@ export default ({url}) => {
       <Cover image={{
         src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
         alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'
-      }} 
+      }}
       >
         <h1>Project R geht an den Start</h1>
         <p>«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam, oder gar nicht.»</p>

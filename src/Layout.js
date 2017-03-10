@@ -5,6 +5,9 @@ import Footer from './Footer'
 
 import 'glamor/reset'
 
+css.global('html', {boxSizing: 'border-box'})
+css.global('*, *:before, *:after', {boxSizing: 'inherit'})
+
 css.global('body', {
   fontFamily: 'serif',
   fontSize: 18,
@@ -45,13 +48,14 @@ css.global('.base ul', {
   paddingLeft: 30
 })
 
+export const PADDING = 20
 const containerStyle = css({
   margin: '0 auto',
-  padding: 20,
-  paddingTop: 10,
+  padding: PADDING,
+  paddingTop: PADDING / 2,
   maxWidth: 640,
   '@media (min-width: 600px)': {
-    paddingTop: 20
+    paddingTop: PADDING
   }
 })
 

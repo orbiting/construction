@@ -28,12 +28,12 @@ const Footer = ({url}) => (
 
     <p>
       {intersperse(
-        links.map(({path, title}) => {
+        links.map(({path, title}, i) => {
           if (path === url.pathname) {
             return title
           }
           return (
-            <Link href={path}>
+            <Link key={i} href={path}>
               <a>
                 {title}
               </a>
