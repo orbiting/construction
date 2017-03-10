@@ -32,7 +32,7 @@ export default ({url}) => {
     title: 'Project R',
     description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam, oder gar nicht.»',
     image: 'https://assets.project-r.construction/images/balkon.jpg',
-    url: 'https://project-r.construction/'
+    url: `https://project-r.construction${url.pathname}`
   }
 
   return (

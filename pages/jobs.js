@@ -32,7 +32,7 @@ export default ({url}) => {
     title: 'Project R sucht zwei Entwickler/innen',
     description: 'Project R ist eine Rebellion gegen die traditionellen Verlage: Es will die Medienwelt entscheidend verändern.',
     image: 'https://assets.project-r.construction/images/wewantyou.jpg',
-    url: 'https://project-r.construction/jobs'
+    url: `https://project-r.construction${url.pathname}`
   }
 
   return (

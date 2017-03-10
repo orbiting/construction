@@ -27,7 +27,7 @@ export default ({url}) => {
     title: 'So bauen wir Project R',
     description: '',
     image: 'https://placehold.it/2000x1125?text=Foto+Konzernmodell+Tabelle',
-    url: 'https://project-r.construction/'
+    url: `https://project-r.construction${url.pathname}`
   }
 
   return (

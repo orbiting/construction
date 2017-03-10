@@ -1,8 +1,21 @@
 import React from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
 
 import Layout from '../src/Layout'
+import Card from '../src/Card'
+import Grid, {GridItem} from '../src/Grid'
+
+const media = [
+  {
+    href: '/media/2017-01-10-hotel-rothaus',
+    title: 'Project R stellt Aufbau-Crew vor und zieht ins Hotel Rothaus',
+    date: 'Zürich, 10. Januar 2017',
+    image: {
+      src: 'https://assets.project-r.construction/images/rothaus.jpg',
+      alt: 'Das Hotel Rothaus von aussen'
+    }
+  }
+]
 
 export default ({url}) => {
   return (
@@ -12,12 +25,13 @@ export default ({url}) => {
       </Head>
       <h1>Medieninformationen</h1>
 
-      <ul>
-        <li>
-          Zürich, 10. Januar 2017<br />
-          <Link href='/media/2017-01-10-hotel-rothaus'><a>Project R stellt Aufbau-Crew vor und zieht ins Hotel Rothaus</a></Link>
-        </li>
-      </ul>
+      <Grid>
+        {media.map((newsletter, i) => (
+          <GridItem key={i}>
+            <Card {...newsletter} />
+          </GridItem>
+        ))}
+      </Grid>
 
       <h3>Medienartikel zu Project R</h3>
 

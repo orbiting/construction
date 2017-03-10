@@ -13,7 +13,7 @@ export default ({url}) => {
     title: 'Newsletter von Project R',
     description: 'Jetzt E-Mail-Adresse eintragen und auf dem Laufenden bleiben',
     image: 'https://assets.project-r.construction/images/rothaus.jpg',
-    url: 'https://project-r.construction/contact'
+    url: `https://project-r.construction${url.pathname}`
   }
 
   return (

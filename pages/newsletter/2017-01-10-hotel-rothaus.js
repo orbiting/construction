@@ -74,15 +74,22 @@ const team = [
 ]
 
 export default ({url}) => {
+  const meta = {
+    title: 'Project R geht an den Start',
+    description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam, oder gar nicht.»',
+    image: 'https://assets.project-r.construction/images/project_r_crew.jpg',
+    url: `https://project-r.construction${url.pathname}`
+  }
+
   return (
-    <Layout url={url} cover={(
+    <Layout url={url} meta={meta} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
+        src: meta.image,
         alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'
       }}
       >
-        <h1>Project R geht an den Start</h1>
-        <p>«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam, oder gar nicht.»</p>
+        <h1>{meta.title}</h1>
+        <p>{meta.description}</p>
       </Cover>
     )}>
 

@@ -11,7 +11,7 @@ export default ({url}) => {
     title: 'Project R-Crew',
     description: 'Die Project R-Aufbau-Crew arbeitet derzeit – gemeinsam mit zahlreichen Komplizinnen im Hintergrund – an der Gesellschaftsform, dem Aufbau der Crowdfunding-Plattform, der IT-Entwicklung und dem Redaktionskonzept.',
     image: 'https://assets.project-r.construction/images/project_r_crew2.jpg',
-    url: 'https://project-r.construction/crew'
+    url: `https://project-r.construction${url.pathname}`
   }
 
   return (
