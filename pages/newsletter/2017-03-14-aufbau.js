@@ -91,7 +91,7 @@ export default ({url}) => {
 
       <p>Das Crowdfunding ist ein Markttest in der Realität. Es muss der Beweis erbracht werden, dass genügend Leute an unabhängigem Journalismus interessiert sind. Wir springen vor den Investoren von der Klippe und testen, ob das Wasser tief genug ist, damit sich niemand die Beine bricht.</p>
 
-      <h3>Jeder Franken von Ihnen wird mehr als vervierfacht</h3>
+      <h3>Für jeden Franken von Ihnen kommen 4 Franken 66&nbsp;dazu</h3>
 
       <p>Die erste Finanzierungsrunde ist jetzt so gut wie abgeschlossen, der Stand der Dinge ist folgender:</p>
 
