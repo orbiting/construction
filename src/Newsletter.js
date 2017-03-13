@@ -33,6 +33,7 @@ const fieldStyle = css({
   }
 })
 const buttonStyle = css({
+  minWidth: 106,
   ':hover': {
     background: '#444',
     color: 'white'
