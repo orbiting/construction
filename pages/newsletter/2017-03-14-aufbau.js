@@ -269,7 +269,7 @@ export default ({url}) => {
       </p>
 
       <p>
-        PPS: Im ersten Newsletter haben wir Sie zu einer spontanen Party eingeladen, um mit Ihnen an unserem Geschäftssitz im Hotel Rothaus in Zürich anzustossen. Das Ergebnis war überwältigend: Obwohl wir kurzfristig einluden, kamen über 500 Gäste! Danke, es war eine Freude, Sie kennen zu lernen! Den elegantesten Partybericht schrieb persoenlich.com. Die Branchen-Website verglich die Project-R-Party mit der Dreikönigstagung der Schweizer Verleger, die gleichentags stattgefunden hatte. Und das mit einigem Charme.{' '}
+        PPS: Im ersten Newsletter haben wir Sie zu einer spontanen Party eingeladen, um mit Ihnen an unserem Geschäftssitz im Hotel Rothaus in Zürich anzustossen. Das Ergebnis war überwältigend: Obwohl wir kurzfristig einluden, kamen über 500 Gäste! Danke, es war eine Freude, Sie kennenzulernen! Den elegantesten Partybericht schrieb persoenlich.com. Die Branchen-Website verglich die Project-R-Party mit der Dreikönigstagung der Schweizer Verleger, die gleichentags stattgefunden hatte. Und das mit einigem Charme.{' '}
         <a href='http://www.persoenlich.com/medien/von-den-konigen-zu-den-rebellen'>
           Artikel&nbsp;lesen
         </a>
