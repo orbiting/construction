@@ -39,7 +39,7 @@ const topPromoStyle = css({
 export default ({url}) => {
   const meta = {
     title: 'So bauen wir Project R',
-    description: '',
+    description: '«Wenn die Verleger aus der Publizistik ausgestiegen sind, ist es zu spät. Es ist wichtig, dass wir jetzt schon handeln und ein Auffangmodell für den Journalismus des 21. Jahrhunderts entwickeln.»',
     image: 'https://placehold.it/2000x1125?text=Foto+Konzernmodell+Tabelle',
     url: `https://project-r.construction${url.pathname}`
   }
@@ -52,6 +52,7 @@ export default ({url}) => {
       }}
       >
         <h1>{meta.title}</h1>
+        <p>«Wenn die Verleger aus der Publizistik ausgestiegen sind, ist es zu spät. Es ist wichtig, dass wir jetzt schon handeln und ein Auffangmodell für den Journalismus des 21. Jahrhunderts entwickeln.»</p>
       </Cover>
     )}>
 
