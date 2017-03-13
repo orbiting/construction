@@ -110,7 +110,7 @@ export default ({url}) => {
 
       <p>Der junge Konzern wird, sofern er das Crowdfunding überlebt, zwei Gesellschaftsformen haben: eine Genossenschaft und eine AG.</p>
 
-      <p>Die Project R Genossenschaft ist seit dem 26. Januar 2017 im Handelsregister eingetragen. Sie hat den Langzeitzweck, dem Journalismus seinen Platz als Wachhund in der Demokratie zu sichern. Die Aufgabe der Aktiengesellschaft wird sein, das digitale Magazin herauszugeben – mit Journalismus, der sich mit den grossen Debatten und Fragen beschäftigt, ohne Bullshit.</p>
+      <p>Die Genossenschaft hat den Langzeitzweck, dem Journalismus seinen Platz als Wachhund in der Demokratie zu sichern. Die Aufgabe der Aktiengesellschaft wird sein, das digitale Magazin herauszugeben – mit Journalismus, der sich mit den grossen Debatten und Fragen beschäftigt, ohne Bullshit.</p>
 
       <p>Im Überblick sieht das so aus:</p>
 
@@ -191,7 +191,7 @@ export default ({url}) => {
 
       <p>Sie sehen: Wir bauen ein Mutter-Kind-Modell. Am Anfang versorgt die Genossenschaft das Magazin mit allem Notwendigen: IT-Infrastruktur, Budgets für grosse Recherchen, Nachwuchs, juristischem Schutz, Abonnentinnen und Abonnenten. Das Magazin erscheint also quasi ohne Startkosten: Es wird per Nabelschnur mit Geld und Schutz versorgt. Das erschien uns als beste Möglichkeit, wie leserfinanzierter Journalismus in einem kleinen, rauen Markt eine echte Chance hat. Mit der Zeit soll die Verbindung loser werden: Das Magazin wird selbsttragend finanziert. Und die Genossenschaft kann sich weiteren journalistischen Projekten zuwenden.</p>
 
-      <p>Präsidiert wird die Project R Genossenschaft von Nadja Schnetzler, im Vorstand sitzen Clara Vuillemin, Laurent Burst und Geschäftsführerin Susanne Sugimoto. Gratulation zur Verantwortung!</p>
+      <p>Die Project R Genossenschaft ist seit dem 26. Januar 2017 im Handelsregister eingetragen. Präsidiert wird sie von Nadja Schnetzler, im Vorstand sitzen Clara Vuillemin, Laurent Burst und Geschäftsführerin Susanne Sugimoto. Gratulation zur Verantwortung!</p>
 
       <p>
         <img
@@ -203,7 +203,7 @@ export default ({url}) => {
 
       <p>Der zweite Vorteil der Doppelstruktur ist, dass eine ziemlich heikle Frage damit gelöst ist: die der Macht. Bei publizistischen Produkten ist die Frage der Unabhängigkeit zentral. Denn Medien gehören ihrem rechtlichen Besitzer nur halb – die andere Hälfte gehört der Öffentlichkeit. Das führt in der Krise zu Problemen. Etwa, wenn Besitzer politischen Einfluss nehmen wollen. Oder wenn sie den Journalismus aus Rendite-Überlegungen verkümmern lassen.</p>
 
-      <p>Wir haben versucht, die Machtstruktur möglichst erdbebenfest zu bauen, so dass niemand als die Vernunft das Sagen hat. (Soweit Vernunft in der Publizistik reicht, da vernünftiger Journalismus immer auch etwas Verspieltes hat – eine gute Zeitung ist halb Waffe, halb Waffel.)</p>
+      <p>Wir haben versucht, die Machtstruktur möglichst erdbebenfest zu bauen, sodass niemand als die Vernunft das Sagen hat. (Soweit Vernunft in der Publizistik reicht, da vernünftiger Journalismus immer auch etwas Verspieltes hat – eine gute Zeitung ist halb Waffe, halb Waffel.)</p>
 
       <p>Die Genossenschaft ist mitglieder-, spenden- und stiftungsfinanziert. Die Macht liegt hier primär in den Händen der Leserinnen und Leser. Egal, wie beeindruckend die Einlage einzelner Spender ist – in einer Genossenschaft gilt das demokratische Prinzip: one man, one woman, one vote.</p>
 
@@ -212,18 +212,18 @@ export default ({url}) => {
       <ul>
         <li>Die Leserinnen und Leser, vertreten durch die Genossenschaft, halten etwas über 40 Prozent der Aktien. Sie sind der grösste Block.</li>
         <li>Die Mitarbeitenden halten knapp unter 40 Prozent der Aktien. Genug, um eine starke Stimme zu haben, aber nicht genug, um fürstliche Privilegien durchzusetzen. (So wie etwa die Print-Redaktion des «Spiegel», die 49 Prozent der Aktien hält – und sich als Herrschaftskaste eine weit schlechter bezahlte, weit rechtlosere Online-Redaktion aufgebaut hat.)</li>
-        <li>Die Investoren kontrollieren rund 20 Prozent des Aktienkapitals. Sie haben am Wenigsten zu sagen. Sie werden jedoch, im Fall eines Gewinns, bei der Ausschüttung finanziell bevorzugt.</li>
+        <li>Die Investoren kontrollieren rund 20 Prozent des Aktienkapitals. Sie haben am wenigsten zu sagen. Sie werden jedoch, im Fall eines Gewinns, bei der Ausschüttung finanziell bevorzugt.</li>
       </ul>
 
       <p>Mit diesem Modell ist garantiert, dass ein Gleichgewicht zwischen Publikum, Mitarbeitenden und Investorinnen besteht – mindestens zwei von drei Parteien müssen hinter Entschlüssen stehen.</p>
 
-      <p>Diese Überlegungen zur Machtbalance sind leider unumgänglich. Denn, was passiert, wenn eine Partei im Journalismus allein das Sagen hat, zeigt sich beim Blick auf die aktuelle Mediensituation.</p>
+      <p>Diese Überlegungen zur Machtbalance sind leider unumgänglich. Denn was passiert, wenn eine Partei im Journalismus allein das Sagen hat, zeigt sich beim Blick auf die aktuelle Mediensituation.</p>
 
       <h2>Wie man Journalisten vor Mut schützt</h2>
 
-      <p>Das aktuellste Beispiel: Der Verlag Ringier Axel Springer Schweiz hat Ende Januar nach 35 Jahren das angesehenste Magazin der Westschweiz geschlossen: „L’Hebdo“.</p>
+      <p>Das aktuellste Beispiel: Der Verlag Ringier Axel Springer Schweiz hat Ende Januar nach über 35 Jahren das angesehenste Magazin der Westschweiz geschlossen: «L’Hebdo».</p>
 
-      <p>Zwar hatte der Verlag der Redaktion noch die Chance gegeben, ein neues Konzept für die digitale Zukunft zu entwickeln. Die Redaktion arbeitete im Sommer und Herbst wie wild durch, dann präsentierte sie das Resultat dem Verlag. Der nannte das Konzept «ausgezeichnet» – und schloss das Magazin nur Wochen später. Und als die Redaktion, überzeugt vom Konzept, ein Management-Buy-Out vorschlug, verweigerte sich der Verlag. Mit der Begründung, die Redaktion «vor dem eigenen Mut zu schützen».</p>
+      <p>Zwar hatte der Verlag der Redaktion noch die Chance gegeben, ein neues Konzept für die digitale Zukunft zu entwickeln. Die Redaktion arbeitete im Sommer und Herbst wie wild durch, dann präsentierte sie das Resultat dem Verlag. Der nannte das Konzept «ausgezeichnet» – und schloss das Magazin nur Wochen später. Und als die Redaktion, überzeugt vom Konzept, ein Management-Buy-out vorschlug, verweigerte sich der Verlag. Mit der Begründung, die Redaktion «vor dem eigenen Mut zu schützen».</p>
 
       <p>Stattdessen lancierte Ringier Axel Springer Schweiz die gute Nachricht, dass die Tageszeitung «Le Temps» ein neues Beilage-Magazin erhalte – mit dem Schwerpunkt Uhren, Kosmetik und Automobil. Gleichzeitig werden bei «Le Temps» 20 Stellen gestrichen – bei Politik, Hintergrund, Kultur. Es ist der grösste Stellenabbau in der Geschichte der Zeitung.</p>
 
@@ -233,13 +233,13 @@ export default ({url}) => {
 
       <p>Dieser Abschied der traditionellen Verlagshäuser aus der Publizistik hat nicht zuletzt politische Folgen. Vor kurzem schrieb die «NZZ am Sonntag», dass SVP-Investoren um Walter Frey für 230 Millionen Franken die gesamte «Blick»-Gruppe übernehmen wollen. Zwar dementierte Frey – aber Dementis sind bei derartigen Deals Standard: etwa beim Verkauf der «Basler Zeitung».</p>
 
-      <p>Der Kaufhunger der SVP ist in der Medienbranche bekannt. Christoph Blocher stand mit Tamedia zwei Mal nur Zentimeter vor einem Geschäftsabschluss – zuerst mit dem beabsichtigten Kauf der «SonntagsZeitung», später mit dem geplanten Tausch der «Basler Zeitung» gegen die Zürcher Landzeitungen plus der «Berner Zeitung». Beide Deals scheiterten nur ganz knapp an einem Veto im Verwaltungsrat.</p>
+      <p>Der Kaufhunger der SVP ist in der Medienbranche bekannt. Christoph Blocher stand mit Tamedia zweimal nur Zentimeter vor einem Geschäftsabschluss – zuerst mit dem beabsichtigten Kauf der «SonntagsZeitung», später mit dem geplanten Tausch der «Basler Zeitung» gegen die Zürcher Landzeitungen plus der «Berner Zeitung». Beide Deals scheiterten nur ganz knapp an einem Veto im Verwaltungsrat.</p>
 
-      <p>Bei der «NZZ» forderte Blocher 2014 öffentlich die Abschaffung der Vinkulierung der NZZ-Aktie: also der Klausel, die Übernahmen durch finanzkräftige Aktionäre verhindert. Währenddessen kauften SVP-nahe Personen im Hintergrund bereits blockweise NZZ-Aktien. Der aufgebaute Druck kippte die Vinkulierung zwar nicht, zeigte aber dennoch Wirkung: Ende 2014 scheiterte die Installierung von «Basler Zeitung»-Chef und Blocher-Biograf Markus Somm als «NZZ»-Chefredaktor kurz vor Unterschrift an den Protesten bei Redaktion und Leserschaft.</p>
+      <p>Bei der NZZ forderte Blocher 2014 öffentlich die Abschaffung der Vinkulierung der NZZ-Aktie: also der Klausel, die Übernahmen durch finanzkräftige Aktionäre verhindert. Währenddessen kauften SVP-nahe Personen im Hintergrund bereits blockweise NZZ-Aktien. Der aufgebaute Druck kippte die Vinkulierung zwar nicht, zeigte aber dennoch Wirkung: Ende 2014 scheiterte die Installierung von «Basler Zeitung»-Chef und Blocher-Biograf Markus Somm als NZZ-Chefredaktor kurz vor Unterschrift an den Protesten bei Redaktion und Leserschaft.</p>
 
       <p>Kurz: Eine flächendeckende Übernahme der Presse durch die grösste Partei des Landes kein unwahrscheinliches Szenario. Das sehen auch bürgerliche Beobachter so. Felix E. Müller, Chefredaktor der «NZZ am Sonntag», kommentierte das SVP-Kaufangebot an Ringier wie folgt: «Der Moment, da Medienbesitzer lieber die letzten Millionen retten als eine tapfere Anti-Blocher-Haltung mit massivem Vermögensverlust zu bezahlen, ist vielleicht näher, als man denkt.»</p>
 
-      <p>Kein Wunder: Die SVP-Milliardäre sind auf dem ausgebluteten Medienmarkt die einzigen verbleibenden Käufer. Auch deshalb attackiert ihre Partei die SRG: Als zukünftig letzte verbleibende Konkurrenz. Falls die SRG die Angriffe überhaupt überlebt.</p>
+      <p>Kein Wunder: Die SVP-Milliardäre sind auf dem ausgebluteten Medienmarkt die einzigen verbleibenden Käufer. Auch deshalb attackiert ihre Partei die SRG: als zukünftig letzte verbleibende Konkurrenz. Falls die SRG die Angriffe überhaupt überlebt.</p>
 
       <p>Dabei müsste sich die harte Rechte nicht einmal so sehr anstrengen. Hier der Schluss des Verhörs von Hammett durch McCarthy:</p>
 
@@ -249,22 +249,18 @@ export default ({url}) => {
         <em>McCarthy:</em> Von einem Autor hört sich das ungewöhnlich an. Sie sind entlassen.<br />
       </blockquote>
 
-      <p>Dashiell Hammett hatte Recht. Nicht nur, wenn es um den Kommunismus geht – sondern überhaupt um Ideen. Ohne Bücher, ohne funktionierende Presse, setzt sich die vorhandene Macht widerspruchslos durch. Auch in der perfektesten Demokratie fallen ohne vernünftige Informationen unvernünftige Entscheidungen.</p>
+      <p>Dashiell Hammett hatte Recht. Nicht nur, wenn es um den Kommunismus geht – sondern überhaupt um Ideen. Ohne Bücher, ohne funktionierende Presse, setzt sich die vorhandene Macht widerspruchslos durch. Auch in perfekten Demokratie fallen ohne vernünftige Informationen unvernünftige Entscheidungen.</p>
 
       <p>Und deshalb tun wir, was wir tun: ein neues Modell bauen, um die Zukunft des unabhängigen Journalismus zu sichern. Dafür werden wir im Mai Ihre Hilfe brauchen – und etwas Geld.</p>
 
-      <p>Was Sie schon jetzt tun können: uns weiterempfehlen.</p>
-
       <p>Danke für Ihre Aufmerksamkeit! Sobald wir wieder Neuigkeiten haben, hören Sie von uns.</p>
 
-      <p>Ihre Project R-Crew</p>
-
-      <p>Nadja Schnetzler, Susanne Sugimoto, Laurent Burst, Clara Vuillemin, Thomas Preusse, Patrick Recher, Richard Höchner, Christof Moser, Constantin Seibt und alle Komplizinnen und Komplizen im Hintergrund</p>
+      <p>Ihre Project-R-Crew</p>
 
       <hr />
 
       <p>
-        PS: Eine der wichtigsten Jobs einer neu gedachten, leserfinanzierten Redaktion ist, dass wir nicht einfach nur von der Kanzel herunter predigen. Sondern, dass wir auch auch zuhören werden. Und Leute miteinander vernetzen. Dafür haben wir die ideale Person gefunden. Willkommen an Bord, Richard Höchner!{' '}
+        PS: Eine der wichtigsten Jobs einer neu gedachten, leserfinanzierten Redaktion ist, dass wir nicht einfach nur von der Kanzel herunter predigen. Sondern, dass wir auch zuhören werden. Und Leute miteinander vernetzen. Dafür haben wir die ideale Person gefunden. Willkommen an Bord, Richard Höchner!{' '}
         <Link href='/crew'>
           <a>
             Biografie&nbsp;ansehen
@@ -273,14 +269,14 @@ export default ({url}) => {
       </p>
 
       <p>
-        PPS: Am 10. Januar haben wir Sie zu einer spontanen Party eingeladen, um mit Ihnen an unserem Geschäftssitz im Hotel Rothaus in Zürich anzustossen. Das Ergebnis war überwältigend: Obwohl wir kurzfristig einluden, kamen über 500 von Ihnen! Danke, es war eine Freude, Sie kennen zu lernen! Den elegantesten Partybericht schrieb persoenlich.com. Die Branchen-Website verglich die Project-R-Party mit der Dreikönigstagung der Schweizer Verleger, die gleichentags stattgefunden hat. Und das mit einigem Charme.{' '}
+        PPS: Im ersten Newsletter haben wir Sie zu einer spontanen Party eingeladen, um mit Ihnen an unserem Geschäftssitz im Hotel Rothaus in Zürich anzustossen. Das Ergebnis war überwältigend: Obwohl wir kurzfristig einluden, kamen über 500 Gäste! Danke, es war eine Freude, Sie kennen zu lernen! Den elegantesten Partybericht schrieb persoenlich.com. Die Branchen-Website verglich die Project-R-Party mit der Dreikönigstagung der Schweizer Verleger, die gleichentags stattgefunden hatte. Und das mit einigem Charme.{' '}
         <a href='http://www.persoenlich.com/medien/von-den-konigen-zu-den-rebellen'>
           Artikel&nbsp;lesen
         </a>
       </p>
 
       <p>
-        PPPS: Wir suchen ab Sommer 2017 weitere zwei clevere Programmierer (oder noch besser: Programmierinnen!).{' '}
+        PPPS: Wir suchen ab Sommer 2017 zwei weitere clevere Programmierer (oder noch besser: Programmiererinnen!).{' '}
         <Link href='/jobs'>
           <a>
             Zum&nbsp;Job-Beschrieb
