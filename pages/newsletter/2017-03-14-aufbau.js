@@ -11,6 +11,9 @@ const tableStyle = css({
   '@media (max-width: 600px)': {
     fontSize: 14
   },
+  '@media (min-width: 321px) and (max-width: 600px)': {
+    borderSpacing: '10px 0'
+  },
   '& th, & td': {
     textAlign: 'left',
     verticalAlign: 'top',
