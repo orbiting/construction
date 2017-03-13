@@ -165,8 +165,9 @@ export default ({url}) => {
                   <li>Nachwuchsförderung, Aus- und Weiterbildung</li>
                   <li>Entwicklung IT-Infrastruktur (Open Source)</li>
                   <li>Veranstaltungen</li>
-                  <li>Sensibilisierung von Ö̈ffentlichkeit für unabhängigen Journalismus</li>
-                  <li>Mittelbescha ung, Recherchefonds — Rechtliches</li>
+                  <li>Sensibilisierung von Öffentlichkeit für unabhängigen Journalismus</li>
+                  <li>Mittelbeschaffung, Recherchefonds</li>
+                  <li>Rechtliches</li>
                   <li>Kooperationen</li>
                 </ul>
               </td>
@@ -263,26 +264,26 @@ export default ({url}) => {
       <hr />
 
       <p>
-        PS: Eine der wichtigsten Jobs einer neu gedachten, leserfinanzierten Redaktion ist, dass wir nicht einfach nur von der Kanzel herunter predigen. Sondern, dass wir auch auch zuhören werden. Und Leute miteinander vernetzen. Dafür haben wir die ideale Person gefunden. Willkommen an Bord, Richard Höchner!<br />
+        PS: Eine der wichtigsten Jobs einer neu gedachten, leserfinanzierten Redaktion ist, dass wir nicht einfach nur von der Kanzel herunter predigen. Sondern, dass wir auch auch zuhören werden. Und Leute miteinander vernetzen. Dafür haben wir die ideale Person gefunden. Willkommen an Bord, Richard Höchner!{' '}
         <Link href='/crew'>
           <a>
-            project-r.construction/crew
+            Biografie&nbsp;ansehen
           </a>
         </Link>
       </p>
 
       <p>
-        PPS: Am 10. Januar haben wir Sie zu einer spontanen Party eingeladen, um mit Ihnen an unserem Geschäftssitz im Hotel Rothaus in Zürich anzustossen. Das Ergebnis war überwältigend: Obwohl wir kurzfristig einluden, kamen über 500 von Ihnen! Danke, es war eine Freude, Sie kennen zu lernen! Den elegantesten Partybericht schrieb persoenlich.com. Die Branchen-Website verglich die Project-R-Party mit der Dreikönigstagung der Schweizer Verleger, die gleichentags stattgefunden hat. Und das mit einigem Charme.<br />
+        PPS: Am 10. Januar haben wir Sie zu einer spontanen Party eingeladen, um mit Ihnen an unserem Geschäftssitz im Hotel Rothaus in Zürich anzustossen. Das Ergebnis war überwältigend: Obwohl wir kurzfristig einluden, kamen über 500 von Ihnen! Danke, es war eine Freude, Sie kennen zu lernen! Den elegantesten Partybericht schrieb persoenlich.com. Die Branchen-Website verglich die Project-R-Party mit der Dreikönigstagung der Schweizer Verleger, die gleichentags stattgefunden hat. Und das mit einigem Charme.{' '}
         <a href='http://www.persoenlich.com/medien/von-den-konigen-zu-den-rebellen'>
-          persoenlich.com/medien/von-den-konigen-zu-den-rebellen
+          Artikel&nbsp;lesen
         </a>
       </p>
 
       <p>
-        PPPS: Wir suchen ab Sommer 2017 weitere zwei clevere Programmierer (oder noch besser: Programmierinnen!).<br />
+        PPPS: Wir suchen ab Sommer 2017 weitere zwei clevere Programmierer (oder noch besser: Programmierinnen!).{' '}
         <Link href='/jobs'>
           <a>
-            Job-Beschrieb
+            Zum&nbsp;Job-Beschrieb
           </a>
         </Link>
       </p>
