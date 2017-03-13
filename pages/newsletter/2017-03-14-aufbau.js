@@ -91,7 +91,7 @@ export default ({url}) => {
 
       <p>Das Crowdfunding ist ein Markttest in der Realität. Es muss der Beweis erbracht werden, dass genügend Leute an unabhängigem Journalismus interessiert sind. Wir springen vor den Investoren von der Klippe und testen, ob das Wasser tief genug ist, damit sich niemand die Beine bricht.</p>
 
-      <h2>Jeder Franken von Ihnen wird mehr als vervierfacht</h2>
+      <h3>Jeder Franken von Ihnen wird mehr als vervierfacht</h3>
 
       <p>Die erste Finanzierungsrunde ist jetzt so gut wie abgeschlossen, der Stand der Dinge ist folgender:</p>
 
@@ -104,7 +104,7 @@ export default ({url}) => {
 
       <p>Der Mai wird also ein interessanter Monat für uns alle. Schaffen wir die Dreiviertelmillion gemeinsam nicht, wird das Projekt liquidiert. Schaffen wir sie, wird danach die Redaktion aufgebaut. Und diese ist dann bereits für knapp zwei Jahre finanziert: Für jeden Franken, den Sie riskieren, kommen 4 Franken 66 von Investorinnen und Investoren dazu.</p>
 
-      <h2>Unser Konzernmodell</h2>
+      <h3>Unser Konzernmodell</h3>
 
       <p>Kein Wunder, sind wir aufgeregt. Aber das entbindet uns nicht von der Pflicht, vorwärts zu planen. So gut wie fertig ist seit Ende Februar das Fundament des ganzen Unternehmens: die Rechtsform. Sie ist auf den ersten Blick kompliziert, auf den zweiten Blick klärt sie mehrere wichtige Fragen.</p>
 
@@ -199,7 +199,7 @@ export default ({url}) => {
           alt='FOTO' />
       </p>
 
-      <h2>Die Machtfrage</h2>
+      <h3>Die Machtfrage</h3>
 
       <p>Der zweite Vorteil der Doppelstruktur ist, dass eine ziemlich heikle Frage damit gelöst ist: die der Macht. Bei publizistischen Produkten ist die Frage der Unabhängigkeit zentral. Denn Medien gehören ihrem rechtlichen Besitzer nur halb – die andere Hälfte gehört der Öffentlichkeit. Das führt in der Krise zu Problemen. Etwa, wenn Besitzer politischen Einfluss nehmen wollen. Oder wenn sie den Journalismus aus Rendite-Überlegungen verkümmern lassen.</p>
 
@@ -219,7 +219,7 @@ export default ({url}) => {
 
       <p>Diese Überlegungen zur Machtbalance sind leider unumgänglich. Denn was passiert, wenn eine Partei im Journalismus allein das Sagen hat, zeigt sich beim Blick auf die aktuelle Mediensituation.</p>
 
-      <h2>Wie man Journalisten vor Mut schützt</h2>
+      <h3>Wie man Journalisten vor Mut schützt</h3>
 
       <p>Das aktuellste Beispiel: Der Verlag Ringier Axel Springer Schweiz hat Ende Januar nach über 35 Jahren das angesehenste Magazin der Westschweiz geschlossen: «L’Hebdo».</p>
 
@@ -229,7 +229,7 @@ export default ({url}) => {
 
       <p>Dieses Muster werden wir in den kommenden Monaten und Jahren immer wieder sehen. Tamedia-CEO Christoph Tonini kündigte bereits weitere Zeitungsschliessungen in der Westschweiz an – und auch, dass die Redaktionen in der Deutschschweiz noch weiter ausgedünnt werden.</p>
 
-      <h2>Verleger gehen, Oligarchen kommen</h2>
+      <h3>Verleger gehen, Oligarchen kommen</h3>
 
       <p>Dieser Abschied der traditionellen Verlagshäuser aus der Publizistik hat nicht zuletzt politische Folgen. Vor kurzem schrieb die «NZZ am Sonntag», dass SVP-Investoren um Walter Frey für 230 Millionen Franken die gesamte «Blick»-Gruppe übernehmen wollen. Zwar dementierte Frey – aber Dementis sind bei derartigen Deals Standard: etwa beim Verkauf der «Basler Zeitung».</p>
 
