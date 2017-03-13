@@ -67,7 +67,7 @@ export default ({url}) => {
       <p>Das letzte Mal, als die USA am Rand des Faschismus standen, war in den 1950er-Jahren. Damals jagte ein Untersuchungsausschuss unter dem Senator Joseph McCarthy tatsächliche und vermeintliche Kommunisten. Einer davon war der Krimiautor Dashiell Hammett. Hier eine Kurzfassung des Verhörs:</p>
 
       <blockquote>
-        <em>Vorsitzender McCarthy:</em> Mr. Hammett, waren oder sind Sie Mitglied der kommunistischen Partei Amerikas?<br />
+        <em>Vorsitzender McCarthy:</em> Mr. Hammett, waren oder sind Sie Mitglied der Kommunistischen Partei Amerikas?<br />
         <em>Hammett:</em> Ich verweigere die Antwort, mit der Begründung, dass eine Antwort mich belasten könnte.<br />
         <em>McCarthy:</em> Sie sind also Kommunist. Und Sie würden eine Übernahme des Kommunismus in diesem Land unterstützen.<br />
         <em>Hammett:</em> Nein.<br />
@@ -83,15 +83,15 @@ export default ({url}) => {
 
       <p>Exakt so wie Hammett geht es uns bei unserer Rebellion gegen die traditionellen Verlage. Es erscheint uns unpraktisch, ein Massenmedium zu gründen, wenn die Leute es nicht wollen.</p>
 
-      <p>Vor dem Start unseres Projekts haben wir zwei Jahre lang Pläne durchgerechnet. Die schwierigste Frage dabei war die nach der Grösse: Das Magazin sollte gross genug sein, um in der öffentlichen Debatte Wirkung zu erzielen. Und schlank genug, um zu überleben und agil zu bleiben.</p>
+      <p>Vor dem Start unseres Projekts haben wir zwei Jahre lang Pläne durchgerechnet. Die schwierigste Frage dabei war die nach der Grösse: Das Magazin sollte gross genug sein, um in der öffentlichen Debatte Wirkung zu erzielen. Und schlank genug, um agil zu bleiben.</p>
 
       <p>Nach langem Hin und Her hatten wir einen Plan, der überzeugte. Doch eine Frage blieb trotz allen Rechnereien. Ausgerechnet die entscheidende: Wie gross ist der Markt? Wie viele Leserinnen und Leser sind bereit, für ein digitales Magazin, für unabhängigen Journalismus zu bezahlen?</p>
 
-      <p>Es schien uns unfair, dieses Problem abzuwälzen. Also zu Investorinnen und Investoren zu gehen und zu sagen: Gebt uns Geld, damit wir ein paar Jahre in Sicherheit arbeiten können – selbst, wenn wir das unter Ausschluss der Öffentlichkeit tun. Deshalb beschlossen wir, noch vor den Geldgebern ins Risiko zu gehen. Und alle zugesagten Investorengelder an ein aussagekräftiges Crowdfunding zu koppeln. Schaffen wir es, dann werden die Investitionen ausgelöst. Schaffen wir es nicht, erhalten wir gar nichts. Und das Projekt ist noch vor der Geburt tot.</p>
+      <p>Es schien uns unfair, dieses Problem abzuwälzen. Also zu Investorinnen und Investoren zu gehen und zu sagen: Gebt uns Geld, damit wir ein paar Jahre in Sicherheit arbeiten können – selbst wenn wir das unter Ausschluss der Öffentlichkeit tun. Deshalb beschlossen wir, noch vor den Geldgebern ins Risiko zu gehen. Und alle zugesagten Investorengelder an ein aussagekräftiges Crowdfunding zu koppeln. Schaffen wir es, dann werden die Investitionen ausgelöst. Schaffen wir es nicht, erhalten wir gar nichts. Und das Projekt ist noch vor der Geburt tot.</p>
 
       <p>Das Crowdfunding ist ein Markttest in der Realität. Es muss der Beweis erbracht werden, dass genügend Leute an unabhängigem Journalismus interessiert sind. Wir springen vor den Investoren von der Klippe und testen, ob das Wasser tief genug ist, damit sich niemand die Beine bricht.</p>
 
-      <h2>Für jeden Franken von Ihnen kommen 4 Franken 66 dazu</h2>
+      <h2>Jeder Franken von Ihnen wird mehr als vervierfacht</h2>
 
       <p>Die erste Finanzierungsrunde ist jetzt so gut wie abgeschlossen, der Stand der Dinge ist folgender:</p>
 
@@ -143,7 +143,7 @@ export default ({url}) => {
                 <p>Alles Institutionelle.</p>
                 <p>Dem Journalismus seine Rolle in der Demokratie sichern.</p>
                 <p>
-                  <em>Gemeinnützig;</em><br />
+                  <em>Gemeinnützig;</em><br />
                   mitglieder-, spenden- und stiftungsfinanziert
                 </p>
               </td>
@@ -159,13 +159,13 @@ export default ({url}) => {
             <tr>
               <th>Aufgaben:</th>
               <td>
-                <p>Alles, was Journalismus schützt und voranbringt</p>
+                <p>Alles, was Journalismus schützt und voranbringt</p>
                 <ul>
                   <li>Entwicklung und Weiterentwicklung journalistischer Formate</li>
-                  <li>Nachwuchsförderung, Aus- und Weiterbildung</li>
+                  <li>Nachwuchsförderung, Aus- und Weiterbildung</li>
                   <li>Entwicklung IT-Infrastruktur (Open Source)</li>
                   <li>Veranstaltungen</li>
-                  <li>Sensibilisierung von Öffentlichkeit für unabhängigen Journalismus</li>
+                  <li>Sensibilisierung von Öffentlichkeit für unabhängigen Journalismus</li>
                   <li>Mittelbeschaffung, Recherchefonds</li>
                   <li>Rechtliches</li>
                   <li>Kooperationen</li>
@@ -189,7 +189,7 @@ export default ({url}) => {
         <li>Das digitale Magazin bleibt extrem schlank. Die Produktions-AG hat nur zwei Aufgaben zu erledigen: Marketing. Und einen Journalismus, der dieses Marketing rechtfertigt.</li>
       </ol>
 
-      <p>Sie sehen: Wir bauen ein Mutter-Kind-Modell. Am Anfang versorgt die Genossenschaft das Magazin mit allem Notwendigen: IT-Infrastruktur, Budgets für grosse Recherchen, Nachwuchs, juristischem Schutz, Abonnentinnen und Abonnenten. Das Magazin erscheint also quasi ohne Startkosten: es wird per Nabelschnur mit Geld und Schutz versorgt. Das erschien uns als beste Möglichkeit, wie leserfinanzierter Journalismus in einem kleinen, rauhen Markt eine echte Chance hat. Mit der Zeit soll die Verbindung loser werden: Das Magazin wird selbsttragend finanziert. Und die Genossenschaft kann sich weiteren journalistischen Projekten zuwenden.</p>
+      <p>Sie sehen: Wir bauen ein Mutter-Kind-Modell. Am Anfang versorgt die Genossenschaft das Magazin mit allem Notwendigen: IT-Infrastruktur, Budgets für grosse Recherchen, Nachwuchs, juristischem Schutz, Abonnentinnen und Abonnenten. Das Magazin erscheint also quasi ohne Startkosten: Es wird per Nabelschnur mit Geld und Schutz versorgt. Das erschien uns als beste Möglichkeit, wie leserfinanzierter Journalismus in einem kleinen, rauen Markt eine echte Chance hat. Mit der Zeit soll die Verbindung loser werden: Das Magazin wird selbsttragend finanziert. Und die Genossenschaft kann sich weiteren journalistischen Projekten zuwenden.</p>
 
       <p>Präsidiert wird die Project R Genossenschaft von Nadja Schnetzler, im Vorstand sitzen Clara Vuillemin, Laurent Burst und Geschäftsführerin Susanne Sugimoto. Gratulation zur Verantwortung!</p>
 
