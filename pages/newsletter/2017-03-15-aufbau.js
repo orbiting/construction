@@ -82,7 +82,7 @@ export default ({url}) => {
       <figure style={{margin: '0 0 10px'}}>
         <img
           src='https://assets.project-r.construction/images/hammett_mccarthy.jpg'
-          alt='FOTO+UNTERSUCHUNGS-AUSSCHUSS' /><br />
+          alt='Senator Joseph McCarthy nimmt den Schwur von Autor Dashiell Hammett im «Permanent Investigating Committee» des Senats ab' /><br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
           Photo by Hank Walker/The LIFE Picture Collection/Getty Images
         </figcaption>
@@ -203,7 +203,7 @@ export default ({url}) => {
       <p>
         <img
           src='https://assets.project-r.construction/images/praesidium_genossenschaft.jpg'
-          alt='FOTO' />
+          alt='Nadja Schnetzler, Clara Vuillemin, Laurent Burst und Susanne Sugimoto schauen fröhlich in die Kamera' />
       </p>
 
       <h3>Die Machtfrage</h3>
