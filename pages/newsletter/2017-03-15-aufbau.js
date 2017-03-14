@@ -202,7 +202,7 @@ export default ({url}) => {
 
       <p>
         <img
-          src='https://assets.project-r.construction/images/praesidium_genossenschaft.jpg'
+          src='https://assets.project-r.construction/images/vorstand_genossenschaft.jpg'
           alt='Nadja Schnetzler, Clara Vuillemin, Laurent Burst und Susanne Sugimoto schauen fröhlich in die Kamera' />
       </p>
 

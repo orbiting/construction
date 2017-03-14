@@ -15,7 +15,7 @@ images:
 	convert -resize 2000x -quality 80 assets/images/raw/wewantyou.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/wewantyou.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/enterprise_with_hand.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/enterprise_with_hand.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/hammett_mccarthy.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/hammett_mccarthy.jpg
-	convert -resize 1200x -quality 80 assets/images/raw/praesidium_genossenschaft.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/praesidium_genossenschaft.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/vorstand_genossenschaft.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/vorstand_genossenschaft.jpg
 	convert -resize 600x -quality 80 assets/images/raw/rothaus_thumb.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_thumb.jpg
 
 	convert -resize 1000x -quality 90 assets/images/raw/christof_moser.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/christof_moser.jpg
