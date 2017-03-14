@@ -79,14 +79,14 @@ export default ({url}) => {
         <em>Hammett:</em> Es erschiene mir unpraktisch, eine Revolution zu machen, wenn die Leute sie nicht wollen.<br />
       </blockquote>
 
-      <p>
+      <figure style={{margin: '0 0 10px'}}>
         <img
           src='https://assets.project-r.construction/images/hammett-mccarthy.jpg'
           alt='FOTO+UNTERSUCHUNGS-AUSSCHUSS' /><br />
-        <p style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
+        <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
           Photo by Hank Walker/The LIFE Picture Collection/Getty Images
-        </p>
-      </p>
+        </figcaption>
+      </figure>
 
       <p>Exakt so wie Hammett geht es uns bei unserer Rebellion gegen die traditionellen Verlage. Es erscheint uns unpraktisch, ein Massenmedium zu gründen, wenn die Leute es nicht wollen.</p>
 
