@@ -50,7 +50,8 @@ const Footer = ({url}) => (
     Project R<br />
     c/o Hotel Rothaus<br />
     Sihlhallenstrasse 1<br />
-    CH-8004 Zürich
+    8004 Zürich<br />
+    Schweiz
     </p>
 
     <p>

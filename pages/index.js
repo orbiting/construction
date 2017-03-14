@@ -12,7 +12,7 @@ const newsletters = [
     title: 'So bauen wir Project R',
     date: '14. März 2017',
     image: {
-      src: 'https://placehold.it/2000x1125?text=Foto+Konzernmodell+Tabelle',
+      src: 'https://assets.project-r.construction/images/enterprise.jpg',
       alt: ''
     }
   },
@@ -29,7 +29,7 @@ const newsletters = [
 
 export default ({url}) => {
   const meta = {
-    title: 'Project R',
+    title: 'Project R geht an den Start',
     description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam, oder gar nicht.»',
     image: 'https://assets.project-r.construction/images/balkon.jpg',
     url: `https://project-r.construction${url.pathname}`
@@ -41,7 +41,7 @@ export default ({url}) => {
         src: 'https://assets.project-r.construction/images/rothaus_r.jpg',
         alt: ''}}
       >
-        <h1>{meta.title}</h1>
+        <h1>Project R</h1>
         <p>{meta.description}</p>
       </Cover>
     )}>

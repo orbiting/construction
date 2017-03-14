@@ -36,9 +36,9 @@ export default ({url}) => {
       <h3>Medienartikel zu Project R</h3>
 
       <ul>
-        <li><a href='http://www.persoenlich.com/medien/wir-wollen-unser-baby-wach-intelligent-ohne-bullshit'>Interview: «Wir wollen unser Baby wach, intelligent, ohne Bullshit» - Oktober 2016</a></li>
-        <li><a href='http://www.jungejournalisten.ch/blog/2016/10/27/und-ewig-sparen-die-verleger'>Und ewig sparen die Verleger - Oktober 2016</a></li>
-        <li><a href='http://presseverein.ch/2016/10/09/die-rebellion-beginnt/'>Die Rebellion beginnt - Oktober 2016</a></li>
+        <li><a href='http://www.persoenlich.com/medien/wir-wollen-unser-baby-wach-intelligent-ohne-bullshit'>«Wir wollen unser Baby wach, intelligent, ohne Bullshit»</a> <em>Oktober 2016</em></li>
+        <li><a href='http://www.jungejournalisten.ch/blog/2016/10/27/und-ewig-sparen-die-verleger'>Und ewig sparen die Verleger</a> <em>Oktober 2016</em></li>
+        <li><a href='http://presseverein.ch/2016/10/09/die-rebellion-beginnt/'>Die Rebellion beginnt</a> <em>Oktober 2016</em></li>
       </ul>
     </Layout>
   )

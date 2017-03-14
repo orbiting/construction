@@ -43,7 +43,7 @@ export default ({url}) => {
   const meta = {
     title: 'So bauen wir Project R',
     description: '«Wenn die Verleger aus der Publizistik ausgestiegen sind, ist es zu spät. Es ist wichtig, dass wir jetzt schon handeln und ein Auffangmodell für den Journalismus des 21. Jahrhunderts entwickeln.»',
-    image: 'https://placehold.it/2000x1125?text=Foto+Konzernmodell+Tabelle',
+    image: 'https://assets.project-r.construction/images/enterprise.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -81,8 +81,11 @@ export default ({url}) => {
 
       <p>
         <img
-          src='https://placehold.it/2000x1331?text=FOTO+UNTERSUCHUNGS-AUSSCHUSS'
-          alt='FOTO+UNTERSUCHUNGS-AUSSCHUSS' />
+          src='https://assets.project-r.construction/images/hammett-mccarthy.jpg'
+          alt='FOTO+UNTERSUCHUNGS-AUSSCHUSS' /><br />
+        <p style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
+          Photo by Hank Walker/The LIFE Picture Collection/Getty Images
+        </p>
       </p>
 
       <p>Exakt so wie Hammett geht es uns bei unserer Rebellion gegen die traditionellen Verlage. Es erscheint uns unpraktisch, ein Massenmedium zu gründen, wenn die Leute es nicht wollen.</p>
@@ -101,16 +104,16 @@ export default ({url}) => {
 
       <ol>
         <li>Wir haben bisher 3,5 Millionen Franken an Investoren- und Spendengeldern zugesagt erhalten (also exakt die Hälfte der sieben Millionen, die wir in fünf Jahren bis zu dem Moment brauchen, in dem das digitale Magazin selbsttragend sein soll.)</li>
-        <li>Damit diese Gelder ausgelöst werden, müssen wir das drittgrösste Crowdfunding überleben, das in der Schweiz je stattgefunden hat. Wir müssen mindestens 3000 Leserinnen und Leser von uns überzeugen und 750’000 Franken sammeln.</li>
+        <li>Damit diese Gelder ausgelöst werden, müssen wir das drittgrösste Crowdfunding überleben, das in der Schweiz je stattgefunden hat. Wir müssen mindestens 3000 Leserinnen und Leser von uns überzeugen und 750'000 Franken sammeln.</li>
       </ol>
 
       <p>Das heisst: Wir legen unser Schicksal in Ihre Hand. Wir werden Ihre Kühnheit, Ihr Vertrauen und nicht zuletzt etwas Geld von Ihnen brauchen. Der Start des Crowdfundings ist Ende April. Das Ganze wird knapp fünf Wochen dauern. Und wir werden etwas Lärm machen müssen.</p>
 
       <p>Der Mai wird also ein interessanter Monat für uns alle. Schaffen wir die Dreiviertelmillion gemeinsam nicht, wird das Projekt liquidiert. Schaffen wir sie, wird danach die Redaktion aufgebaut. Und diese ist dann bereits für knapp zwei Jahre finanziert: Für jeden Franken, den Sie riskieren, kommen 4 Franken 66 von Investorinnen und Investoren dazu.</p>
 
-      <h3>Unser Konzernmodell</h3>
+      <p>Kein Wunder, sind wir nervös. Aber das entbindet uns nicht von der Pflicht, vorwärts zu planen. So gut wie fertig ist seit Ende Februar das Fundament des ganzen Unternehmens: die Rechtsform. Sie ist auf den ersten Blick kompliziert, auf den zweiten Blick klärt sie mehrere wichtige Fragen.</p>
 
-      <p>Kein Wunder, sind wir aufgeregt. Aber das entbindet uns nicht von der Pflicht, vorwärts zu planen. So gut wie fertig ist seit Ende Februar das Fundament des ganzen Unternehmens: die Rechtsform. Sie ist auf den ersten Blick kompliziert, auf den zweiten Blick klärt sie mehrere wichtige Fragen.</p>
+      <h3>Unser Konzernmodell</h3>
 
       <p>Der junge Konzern wird, sofern er das Crowdfunding überlebt, zwei Gesellschaftsformen haben: eine Genossenschaft und eine AG.</p>
 
@@ -139,7 +142,7 @@ export default ({url}) => {
             <tr>
               <th>Name:</th>
               <td>Project R</td>
-              <td>noch ein Geheimnis</td>
+              <td>(noch ein Geheimnis)</td>
             </tr>
             <tr>
               <th>Zweck:</th>
@@ -199,7 +202,7 @@ export default ({url}) => {
 
       <p>
         <img
-          src='https://placehold.it/2000x1331?text=FOTO'
+          src='https://assets.project-r.construction/images/praesidium_genossenschaft.jpg'
           alt='FOTO' />
       </p>
 
@@ -227,11 +230,11 @@ export default ({url}) => {
 
       <p>Das aktuellste Beispiel: Der Verlag Ringier Axel Springer Schweiz hat Ende Januar nach über 35 Jahren das angesehenste Magazin der Westschweiz geschlossen: «L’Hebdo».</p>
 
-      <p>Zwar hatte der Verlag der Redaktion noch die Chance gegeben, ein neues Konzept für die digitale Zukunft zu entwickeln. Die Redaktion arbeitete im Sommer und Herbst wie wild durch, dann präsentierte sie das Resultat dem Verlag. Der nannte das Konzept «ausgezeichnet» – und schloss das Magazin nur Wochen später. Und als die Redaktion, überzeugt vom Konzept, ein Management-Buy-out vorschlug, verweigerte sich der Verlag. Mit der Begründung, die Redaktion «vor dem eigenen Mut zu schützen».</p>
+      <p>Zwar hatte der Verlag der Redaktion noch die Chance gegeben, ein neues Konzept für die digitale Zukunft zu entwickeln. Die Redaktion arbeitete im Sommer und Herbst wie wild durch, dann präsentierte sie das Resultat dem Verlag. Der nannte das Konzept «ausgezeichnet» – und schloss das Magazin nur Wochen später. Und als die Redaktion, überzeugt von ihrem Konzept, ein Management-Buy-out vorschlug, verweigerte sich der Verlag. Mit der Begründung, die Redaktion «vor dem eigenen Mut zu schützen».</p>
 
       <p>Stattdessen lancierte Ringier Axel Springer Schweiz die gute Nachricht, dass die Tageszeitung «Le Temps» ein neues Beilage-Magazin erhalte – mit dem Schwerpunkt Uhren, Kosmetik und Automobil. Gleichzeitig werden bei «Le Temps» 20 Stellen gestrichen – bei Politik, Hintergrund, Kultur. Es ist der grösste Stellenabbau in der Geschichte der Zeitung.</p>
 
-      <p>Dieses Muster werden wir in den kommenden Monaten und Jahren immer wieder sehen. Tamedia-CEO Christoph Tonini kündigte bereits weitere Zeitungsschliessungen in der Westschweiz an – und auch, dass die Redaktionen in der Deutschschweiz noch weiter ausgedünnt werden.</p>
+      <p>Dieses Muster werden wir in den kommenden Monaten und Jahren immer und immer wieder sehen. Tamedia-CEO Christoph Tonini kündigte bereits weitere Zeitungsschliessungen in der Westschweiz an – und auch, dass die Redaktionen in der Deutschschweiz noch weiter ausgedünnt werden.</p>
 
       <h3>Verleger gehen, Oligarchen kommen</h3>
 
@@ -239,11 +242,11 @@ export default ({url}) => {
 
       <p>Der Kaufhunger der SVP ist in der Medienbranche bekannt. Christoph Blocher stand mit Tamedia zweimal nur Zentimeter vor einem Geschäftsabschluss – zuerst mit dem beabsichtigten Kauf der «SonntagsZeitung», später mit dem geplanten Tausch der «Basler Zeitung» gegen die Zürcher Landzeitungen plus der «Berner Zeitung». Beide Deals scheiterten nur ganz knapp an einem Veto im Verwaltungsrat.</p>
 
-      <p>Bei der NZZ forderte Blocher 2014 öffentlich die Abschaffung der Vinkulierung der NZZ-Aktie: also der Klausel, die Übernahmen durch finanzkräftige Aktionäre verhindert. Währenddessen kauften SVP-nahe Personen im Hintergrund bereits blockweise NZZ-Aktien. Der aufgebaute Druck kippte die Vinkulierung zwar nicht, zeigte aber dennoch Wirkung: Ende 2014 scheiterte die Installierung von «Basler Zeitung»-Chef und Blocher-Biograf Markus Somm als NZZ-Chefredaktor kurz vor Unterschrift an den Protesten bei Redaktion und Leserschaft.</p>
+      <p>Bei der NZZ forderte Blocher 2014 öffentlich die Abschaffung der Vinkulierung der NZZ-Aktie: also der Klausel, die Übernahmen durch finanzkräftige Aktionäre verhindert. Währenddessen kauften SVP-nahe Personen im Hintergrund bereits blockweise NZZ-Aktien. Der aufgebaute Druck kippte die Vinkulierung zwar nicht, zeigte aber dennoch Wirkung: Ende 2014 scheiterte die Installierung von «Basler Zeitung»-Chef und Blocher-Biograf Markus Somm als NZZ-Chefredaktor kurz vor Unterschrift an den Protesten von Redaktion und Leserschaft.</p>
 
       <p>Kurz: Eine flächendeckende Übernahme der Presse durch die grösste Partei des Landes kein unwahrscheinliches Szenario. Das sehen auch bürgerliche Beobachter so. Felix E. Müller, Chefredaktor der «NZZ am Sonntag», kommentierte das SVP-Kaufangebot an Ringier wie folgt: «Der Moment, da Medienbesitzer lieber die letzten Millionen retten als eine tapfere Anti-Blocher-Haltung mit massivem Vermögensverlust zu bezahlen, ist vielleicht näher, als man denkt.»</p>
 
-      <p>Kein Wunder: Die SVP-Milliardäre sind auf dem ausgebluteten Medienmarkt die einzigen verbleibenden Käufer. Auch deshalb attackiert ihre Partei die SRG: als zukünftig letzte verbleibende Konkurrenz. Falls die SRG die Angriffe überhaupt überlebt.</p>
+      <p>Kein Wunder: Die SVP-Milliardäre sind auf dem ausgebluteten Medienmarkt die einzigen verbleibenden Käufer. Auch deshalb attackiert ihre Partei die SRG: als zukünftig letzte verbleibende Konkurrenz. Falls die SRG die Angriffe überhaupt unbeschadet überlebt.</p>
 
       <p>Dabei müsste sich die harte Rechte nicht einmal so sehr anstrengen. Hier der Schluss des Verhörs von Hammett durch McCarthy:</p>
 
@@ -253,30 +256,29 @@ export default ({url}) => {
         <em>McCarthy:</em> Von einem Autor hört sich das ungewöhnlich an. Sie sind entlassen.<br />
       </blockquote>
 
-      <p>Dashiell Hammett hatte Recht. Nicht nur, wenn es um den Kommunismus geht – sondern überhaupt um Ideen. Ohne Bücher, ohne funktionierende Presse, setzt sich die vorhandene Macht widerspruchslos durch. Auch in perfekten Demokratie fallen ohne vernünftige Informationen unvernünftige Entscheidungen.</p>
+      <p>Dashiell Hammett hatte Recht. Nicht nur, wenn es um den Kommunismus geht – sondern überhaupt um Ideen. Ohne Bücher, ohne funktionierende Medien, setzt sich vorhandene Macht widerspruchslos durch. Auch in perfekten Demokratien fallen ohne vernünftige Informationen unvernünftige Entscheidungen.</p>
 
-      <p>Und deshalb tun wir, was wir tun: ein neues Modell bauen, um die Zukunft des unabhängigen Journalismus zu sichern. Dafür werden wir im Mai Ihre Hilfe brauchen – und etwas Geld.</p>
+      <p>Und deshalb tun wir, was wir tun: ein neues Modell bauen, um die Zukunft des unabhängigen Journalismus zu sichern. Wenn die Verleger aus der Publizistik ausgestiegen sind, ist es zu spät. Es ist wichtig, dass wir jetzt schon handeln und ein Auffangmodell für den Journalismus des 21. Jahrhunderts entwickeln. Dafür werden wir sehr bald Ihre Hilfe brauchen – und etwas Geld.</p>
 
-      <p>Danke für Ihre Aufmerksamkeit! Sobald wir wieder Neuigkeiten haben, hören Sie von uns.</p>
+      <p>Herzlichen Dank für Ihre Aufmerksamkeit! Sobald wir Neuigkeiten haben, hören Sie wieder von uns.</p>
 
       <p>Ihre Project-R-Crew</p>
 
-      <hr />
-
       <p>
-        PS: Eine der wichtigsten Jobs einer neu gedachten, leserfinanzierten Redaktion ist, dass wir nicht einfach nur von der Kanzel herunter predigen. Sondern, dass wir auch zuhören werden. Und Leute miteinander vernetzen. Dafür haben wir die ideale Person gefunden. Willkommen an Bord, Richard Höchner!{' '}
-        <Link href='/crew'>
-          <a>
-            Biografie&nbsp;ansehen
-          </a>
-        </Link>
+        <br />
+        PS: Im ersten Newsletter haben wir Sie zu einer spontanen Party eingeladen. Das Ergebnis war überwältigend: Obwohl wir kurzfristig einluden, kamen über 500 Gäste! Danke, es war eine Freude, Sie kennenzulernen! Den elegantesten Partybericht schrieb persoenlich.com. Die Branchen-Website verglich die Project-R-Party mit der Dreikönigstagung der Schweizer Verleger, die gleichentags stattgefunden hatte. Und das mit einigem Charme:{' '}
+        <a href='http://www.persoenlich.com/medien/von-den-konigen-zu-den-rebellen'>
+          Artikel&nbsp;lesen
+        </a>.
       </p>
 
       <p>
-        PPS: Im ersten Newsletter haben wir Sie zu einer spontanen Party eingeladen, um mit Ihnen an unserem Geschäftssitz im Hotel Rothaus in Zürich anzustossen. Das Ergebnis war überwältigend: Obwohl wir kurzfristig einluden, kamen über 500 Gäste! Danke, es war eine Freude, Sie kennenzulernen! Den elegantesten Partybericht schrieb persoenlich.com. Die Branchen-Website verglich die Project-R-Party mit der Dreikönigstagung der Schweizer Verleger, die gleichentags stattgefunden hatte. Und das mit einigem Charme.{' '}
-        <a href='http://www.persoenlich.com/medien/von-den-konigen-zu-den-rebellen'>
-          Artikel&nbsp;lesen
-        </a>
+        PPS: Einer der wichtigsten Jobs einer neu gedachten, leserfinanzierten Redaktion ist, dass wir nicht nur von der Kanzel herunter predigen. Sondern, dass wir auch zuhören werden. Und Leute miteinander vernetzen. Dafür haben wir die ideale Person gefunden: Willkommen an Bord, Richard Höchner!{' '}
+        <Link href='/crew'>
+          <a>
+            Portrait&nbsp;lesen
+          </a>
+        </Link>
       </p>
 
       <p>
@@ -287,6 +289,7 @@ export default ({url}) => {
           </a>
         </Link>
       </p>
+      <hr style={{margin: '40px 0'}} />
 
       <p>Noch nicht für den Newsletter eingetragen? Bleiben Sie informiert:</p>
       <Newsletter />

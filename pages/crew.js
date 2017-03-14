@@ -8,8 +8,8 @@ import team from '../src/data/team'
 
 export default ({url}) => {
   const meta = {
-    title: 'Project R-Crew',
-    description: 'Die Project R-Aufbau-Crew arbeitet derzeit – gemeinsam mit zahlreichen Komplizinnen im Hintergrund – an der Gesellschaftsform, dem Aufbau der Crowdfunding-Plattform, der IT-Entwicklung und dem Redaktionskonzept.',
+    title: 'Project-R-Crew',
+    description: 'Die Project-R-Crew arbeitet derzeit – gemeinsam mit zahlreichen Komplizinnen im Hintergrund – an der Gesellschaftsform, dem Aufbau der Crowdfunding-Plattform, der IT-Entwicklung und dem Redaktionskonzept.',
     image: 'https://assets.project-r.construction/images/project_r_crew2.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
@@ -18,7 +18,7 @@ export default ({url}) => {
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
         src: meta.image,
-        alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'}}
+        alt: 'Das Project-R-Crew in der Lobby des Hotel Rothaus am 5. Januar 2017'}}
       >
         <h1>{meta.title}</h1>
         <p>{meta.description}</p>
