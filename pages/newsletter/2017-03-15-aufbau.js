@@ -54,7 +54,7 @@ export default ({url}) => {
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
         src: meta.image,
-        alt: 'Konzernmodell: Project R und Magazin auf Papier'
+        alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
       }}
       >
         <h1>{meta.title}</h1>

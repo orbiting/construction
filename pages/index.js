@@ -13,7 +13,7 @@ const newsletters = [
     date: '15. März 2017',
     image: {
       src: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
-      alt: 'Konzernmodell: Project R und Magazin auf Papier'
+      alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
     }
   },
   {
