@@ -31,6 +31,7 @@ images:
 	jpegtran -copy none -progressive assets/images/raw/project_r_crew.jpg > assets/images/optimized/project_r_crew.jpg
 	jpegtran -copy none -progressive assets/images/raw/project_r_crew2.jpg > assets/images/optimized/project_r_crew2.jpg
 	cp assets/images/raw/project_r_logo.svg assets/images/optimized/project_r_logo.svg
+	cp assets/images/raw/project_r_logo.png assets/images/optimized/project_r_logo.png
 
 standardize:
 	npm run standardize
