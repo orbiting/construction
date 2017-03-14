@@ -5,8 +5,8 @@ import Layout from '../../src/Layout'
 
 export default ({url}) => {
   const meta = {
-    title: '',
-    description: '',
+    title: 'Der Bauplan für das Geschäftsmodell von Project R steht',
+    description: 'Das Medienprojekt wird mit zwei Gesellschaftsformen aufgebaut. Die Struktur räumt dem Publikum eine gewichtige Stimme ein.',
     image: 'https://assets.project-r.construction/images/enterprise-with-hand.jpg',
     url: `https://project-r.construction${url.pathname}`
   }

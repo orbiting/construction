@@ -42,7 +42,7 @@ const topPromoStyle = css({
 export default ({url}) => {
   const meta = {
     title: 'So bauen wir Project R',
-    description: '«Wenn die Verleger aus der Publizistik ausgestiegen sind, ist es zu spät. Es ist wichtig, dass wir jetzt schon handeln und ein Auffangmodell für den Journalismus des 21. Jahrhunderts entwickeln.»',
+    description: 'Das Medienprojekt stellt den Bauplan für das Geschäftsmodell vor. Und wird bald den Markt testen: mit einem Crowdfunding.',
     image: 'https://assets.project-r.construction/images/enterprise.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
