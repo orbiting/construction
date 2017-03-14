@@ -14,7 +14,7 @@
     "express": "^4.14.0",
     "glamor": "^2.20.22",
     "mongoose": "^4.7.6",
-    "next": "^2.0.0-beta.36",
+    "next": "^2.0.0-beta.37",
     "nodemailer": "^2.7.0",
     "querystring": "^0.2.0",
     "react": "^15.4.2",
