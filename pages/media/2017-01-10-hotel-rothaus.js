@@ -24,11 +24,11 @@ export default ({url}) => {
 
       <p>Project R nimmt damit weiter an Fahrt auf. Seit Monaten arbeitet die Project R-Aufbau- Crew, gemeinsam mit ihren zahlreichen Komplizinnen und Komplizen im Hintergrund, an der Gesellschaftsform, dem Redaktionskonzept, dem Aufbau der Crowdfunding-Plattform, der IT-Entwicklung, der Positionierung, dem Pricing etc. Der Bezug der «Hotelzimmer» an der Langstrasse ermöglicht der Aufbau-Crew, nun noch intensiver zusammenzuarbeiten, um das Projekt im geplanten Zeitrahmen voranzutreiben. Die Zeit der «nur» Nachtarbeit ist damit vorbei.</p>
 
-      <h2>Über Project R</h2>
+      <h3>Über Project R</h3>
 
       <p>Die grossen Verlage verlassen den Journalismus. Sie bauen sich in hohem Tempo zu Internet-Handelshäusern um und investieren nicht mehr in die Publizistik. Dies ist ein Problem für den Journalismus und eine Gefahr für die Demokratie. Es ist jetzt Zeit zu handeln. Deshalb entwickelt Project R ein neues, von Medienkonzernen unabhängiges Geschäftsmodell. Ziel ist es, dem Journalismus seine Rolle zu geben: als verlässlicher Wachhund der Demokratie.</p>
 
-      <h2>Die Project R-Aufbau-Crew</h2>
+      <h3>Die Project R-Aufbau-Crew</h3>
 
       <ul>
         <li>Constantin Seibt, Konzeption und Redaktion</li>
@@ -44,7 +44,7 @@ export default ({url}) => {
 
       <p>Finden Sie mehr unter: <a href='https://project-r.construction/'>project-r.construction</a></p>
 
-      <h2>Vorgesehener Zeitrahmen</h2>
+      <h3>Vorgesehener Zeitrahmen</h3>
 
       <p>
         <strong>Januar/Februar 2017</strong><br />

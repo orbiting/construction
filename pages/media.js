@@ -7,11 +7,20 @@ import Grid, {GridItem} from '../src/Grid'
 
 const media = [
   {
+    href: '/media/2017-03-14-aufbau',
+    title: 'Der Bauplan von Project R steht',
+    date: 'Zürich, 15. März 2017',
+    image: {
+      src: 'https://assets.project-r.construction/images/enterprise-with-hand.jpg',
+      alt: 'Konzernmodell: Project R und Magazin auf Papier'
+    }
+  },
+  {
     href: '/media/2017-01-10-hotel-rothaus',
     title: 'Project R stellt Aufbau-Crew vor und zieht ins Hotel Rothaus',
     date: 'Zürich, 10. Januar 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/rothaus.jpg',
+      src: 'https://assets.project-r.construction/images/rothaus_thumb.jpg',
       alt: 'Das Hotel Rothaus von aussen'
     }
   }
