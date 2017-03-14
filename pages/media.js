@@ -7,11 +7,11 @@ import Grid, {GridItem} from '../src/Grid'
 
 const media = [
   {
-    href: '/media/2017-03-14-aufbau',
+    href: '/media/2017-03-15-aufbau',
     title: 'Der Bauplan von Project R steht',
     date: 'Zürich, 15. März 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/enterprise-with-hand.jpg',
+      src: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
       alt: 'Konzernmodell: Project R und Magazin auf Papier'
     }
   },

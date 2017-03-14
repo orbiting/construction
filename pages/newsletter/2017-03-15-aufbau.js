@@ -41,9 +41,9 @@ const topPromoStyle = css({
 
 export default ({url}) => {
   const meta = {
-    title: 'So bauen wir Project R',
+    title: 'So bauen wir Project R',
     description: 'Das Medienprojekt stellt den Bauplan für das Geschäftsmodell vor. Und wird bald den Markt testen: mit einem Crowdfunding.',
-    image: 'https://assets.project-r.construction/images/enterprise.jpg',
+    image: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -51,7 +51,7 @@ export default ({url}) => {
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
         src: meta.image,
-        alt: ''
+        alt: 'Konzernmodell: Project R und Magazin auf Papier'
       }}
       >
         <h1>{meta.title}</h1>
@@ -61,7 +61,7 @@ export default ({url}) => {
 
       <p>Ladies and Gentlemen,</p>
 
-      <p>willkommen zum zweiten Newsletter von Project R.</p>
+      <p>willkommen zum zweiten Newsletter von Project R.</p>
 
       <div {...topPromoStyle}>
         <p>Noch nicht für den Newsletter eingetragen? Bleiben Sie informiert:</p>
@@ -81,7 +81,7 @@ export default ({url}) => {
 
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/images/hammett-mccarthy.jpg'
+          src='https://assets.project-r.construction/images/hammett_mccarthy.jpg'
           alt='FOTO+UNTERSUCHUNGS-AUSSCHUSS' /><br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
           Photo by Hank Walker/The LIFE Picture Collection/Getty Images
@@ -198,7 +198,7 @@ export default ({url}) => {
 
       <p>Sie sehen: Wir bauen ein Mutter-Kind-Modell. Am Anfang versorgt die Genossenschaft das Magazin mit allem Notwendigen: IT-Infrastruktur, Budgets für grosse Recherchen, Nachwuchs, juristischem Schutz, Abonnentinnen und Abonnenten. Das Magazin erscheint also quasi ohne Startkosten: Es wird per Nabelschnur mit Geld und Schutz versorgt. Das erschien uns als beste Möglichkeit, wie leserfinanzierter Journalismus in einem kleinen, rauen Markt eine echte Chance hat. Mit der Zeit soll die Verbindung loser werden: Das Magazin wird selbsttragend finanziert. Und die Genossenschaft kann sich weiteren journalistischen Projekten zuwenden.</p>
 
-      <p>Die Project R Genossenschaft ist seit dem 26. Januar 2017 im Handelsregister eingetragen. Präsidiert wird sie von Nadja Schnetzler, im Vorstand sitzen Clara Vuillemin, Laurent Burst und Geschäftsführerin Susanne Sugimoto. Gratulation zur Verantwortung!</p>
+      <p>Die Project R Genossenschaft ist seit dem 26. Januar 2017 im Handelsregister eingetragen. Präsidiert wird sie von Nadja Schnetzler, im Vorstand sitzen Clara Vuillemin, Laurent Burst und Geschäftsführerin Susanne Sugimoto (im Bild von links nach rechts). Gratulation zur Verantwortung!</p>
 
       <p>
         <img

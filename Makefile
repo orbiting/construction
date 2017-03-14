@@ -13,9 +13,8 @@ images:
 	convert -resize 2000x -quality 80 assets/images/raw/rothaus.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/rothaus_r.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_r.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/wewantyou.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/wewantyou.jpg
-	convert -resize 2000x -quality 80 assets/images/raw/enterprise.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/enterprise.jpg
-	convert -resize 2000x -quality 80 assets/images/raw/enterprise-with-hand.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/enterprise-with-hand.jpg
-	convert -resize 1200x -quality 80 assets/images/raw/hammett-mccarthy.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/hammett-mccarthy.jpg
+	convert -resize 2000x -quality 80 assets/images/raw/enterprise_with_hand.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/enterprise_with_hand.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/hammett_mccarthy.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/hammett_mccarthy.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/praesidium_genossenschaft.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/praesidium_genossenschaft.jpg
 	convert -resize 600x -quality 80 assets/images/raw/rothaus_thumb.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_thumb.jpg
 

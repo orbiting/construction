@@ -8,12 +8,12 @@ import Grid, {GridItem} from '../src/Grid'
 
 const newsletters = [
   {
-    href: '/newsletter/2017-03-14-aufbau',
+    href: '/newsletter/2017-03-15-aufbau',
     title: 'So bauen wir Project R',
-    date: '14. März 2017',
+    date: '15. März 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/enterprise.jpg',
-      alt: ''
+      src: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
+      alt: 'Konzernmodell: Project R und Magazin auf Papier'
     }
   },
   {
@@ -22,7 +22,7 @@ const newsletters = [
     date: '10. Januar 2017',
     image: {
       src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
-      alt: ''
+      alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'
     }
   }
 ]
@@ -39,7 +39,7 @@ export default ({url}) => {
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
         src: 'https://assets.project-r.construction/images/rothaus_r.jpg',
-        alt: ''}}
+        alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'}}
       >
         <h1>Project R</h1>
         <p>{meta.description}</p>
