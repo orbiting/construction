@@ -6,7 +6,9 @@ all:
 upload-assets:
 	s3cmd sync --verbose --acl-public -c ./.s3cfg assets/images/optimized/ s3://construction/images/
 	s3cmd sync --verbose --acl-public -c ./.s3cfg assets/contact/ s3://construction/contact/
-	s3cmd sync --verbose --acl-public -c ./.s3cfg assets/media/ s3://construction/media/
+	s3cmd sync --verbose --acl-public -c ./.s3cfg \
+		--exclude "*" --include "*.zip" \
+		assets/media/ s3://construction/media/
 
 images:
 	convert -resize 2000x -quality 80 assets/images/raw/balkon.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/balkon.jpg
