@@ -26,12 +26,7 @@ const buttonLinkStyle = css({
   }
 })
 
-const images = [
-  'https://assets.project-r.construction/images/it-0.jpg',
-  'https://assets.project-r.construction/images/it-1.jpg',
-  'https://assets.project-r.construction/images/it-2.jpg'
-]
-class Image extends Component {
+class ImageSequence extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -40,7 +35,7 @@ class Image extends Component {
   }
   next () {
     let index = this.state.index + 1
-    if (index >= images.length) {
+    if (index >= this.props.srcs.length) {
       index = 0
     }
     this.setState({index})
@@ -51,31 +46,37 @@ class Image extends Component {
   }
   render () {
     const {index} = this.state
+    const {srcs, alt} = this.props
     return (
       <div
-        style={{position: 'relative'}}
+        style={{
+          position: 'relative',
+          lineHeight: 0,
+          marginBottom: 10
+        }}
         onMouseOver={() => {
           this.next()
         }}
         onMouseOut={() => {
           clearTimeout(this.timeout)
-          this.setState({src: images[0]})
+          this.setState({index: 0})
         }}>
         <img
-          alt='Thomas, Clara und Patrick lachen in die Kamera'
-          src={images[0]} />
+          alt={alt}
+          src={srcs[0]} />
         {
-          images.map((image, i) => (
+          srcs.map((src, i) => (
             <img
               key={i}
+              alt=''
               style={{
                 position: 'absolute',
                 left: 0,
-                top: 0,
+                bottom: 0,
                 opacity: i === index ? 1 : 0,
                 transition: 'opacity 300ms'
               }}
-              src={image} />
+              src={src} />
           ))
         }
       </div>
@@ -114,7 +115,13 @@ export default ({url}) => {
 
       <p><strong>Du</strong> bist entweder eine erfahrene Node.js-Entwicklerin oder ein Frontend Engineer, der schon mit React oder ähnlichem gearbeitet hat. Du hast mit einigen unserer zentralen Technologien Erfahrung:  Node.js, React and React Native, GraphQL, Next.js, SQL (PostgreSQL), Docker, Kubernetes, Contenteditable-Editors (e.g. Slate, Draft.js), D3.js. Dir liegt die Zukunft des Journalismus am Herzen (und du glaubst nicht, dass Social Media die Lösung ist).</p>
 
-      <Image />
+      <ImageSequence
+        srcs={[
+          'https://assets.project-r.construction/images/it-0.jpg',
+          'https://assets.project-r.construction/images/it-1.jpg',
+          'https://assets.project-r.construction/images/it-2.jpg'
+        ]}
+        alt='Thomas, Clara und Patrick lachen in die Kamera' />
 
       <p>Thomas Preusse (links auf dem Bild): Frontend Engineer, ehemals Interactiv Things und NZZ. Begeistert von Daten-Visualisierungen und seinen journalistischen Anwendungen. Versucht das Leben selbst in einen Bubble Chart zu verwandeln. Verwendet nie eine Technologie, die schon in Beta ist.</p>
 
