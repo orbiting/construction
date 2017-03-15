@@ -73,7 +73,7 @@ class Image extends Component {
                 left: 0,
                 top: 0,
                 opacity: i === index ? 1 : 0,
-                transition: 'opacity 400ms'
+                transition: 'opacity 300ms'
               }}
               src={image} />
           ))
