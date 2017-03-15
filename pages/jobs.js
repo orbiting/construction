@@ -27,16 +27,16 @@ const buttonLinkStyle = css({
   }
 })
 
-export default () => {
+export default ({url}) => {
   const meta = {
     title: 'Project R sucht zwei Entwickler/innen',
     description: 'Project R ist eine Rebellion gegen die traditionellen Verlage: Es will die Medienwelt entscheidend verändern.',
     image: 'https://assets.project-r.construction/images/wewantyou.jpg',
-    url: 'https://project-r.construction/jobs'
+    url: `https://project-r.construction${url.pathname}`
   }
 
   return (
-    <Layout meta={meta} cover={(
+    <Layout meta={meta} url={url} cover={(
       <Cover image={{
         credit: 'Foto: Jan Bolomey für Project R',
         src: 'https://assets.project-r.construction/images/wewantyou.jpg',
@@ -60,7 +60,7 @@ export default () => {
 
       <p><strong>Backend</strong>: Du bist Node.js-Profi, fühlst dich mit Datenbanken aller Art wohl und hast Erfahrung mit Docker.</p>
 
-      <p>Wir sind ein kleines Team. Es ist wichtig, dass du Lust hast, an vielen Ecken und Enden anzupacken. Wir machen alles selber: von den Requirements bis zum Support. Von Vorteil wäre, wenn du mit einigen der von uns verwendeten Technologien Erfahrung hättest: Node.js, React und React Native, GraphQL, Next.js, SQL (idealerweise PostgreSQL), Docker, Kubernetis, Contenteditable-Editoren (e.g. Slate, Draft.js), D3.js.</p>
+      <p>Wir sind ein kleines Team. Es ist wichtig, dass du Lust hast, an vielen Ecken und Enden anzupacken. Wir machen alles selber: von den Requirements bis zum Support. Von Vorteil wäre, wenn du mit einigen der von uns verwendeten Technologien Erfahrung hättest: Node.js, React und React Native, GraphQL, Next.js, SQL (idealerweise PostgreSQL), Docker, Kubernetes, Contenteditable-Editoren (e.g. Slate, Draft.js), D3.js.</p>
 
       <h3>Deine Vorteile bei uns (abgesehen von ewigem Ruhm):</h3>
       <ul>
@@ -82,13 +82,6 @@ export default () => {
           ['body', `Hallo Clara,\n\n...\n\nHerzliche Grüsse,\ngithub.com/[username]`]
         ].map(pair => pair.map(encodeURIComponent).join('=')).join('&')}`} {...buttonLinkStyle}>Jetzt bewerben</a></p>
       </RawPortrait>
-
-      <h2>Project R</h2>
-      <p>c/o Hotel Rothaus<br />
-      Sihlhallenstrasse 1<br />
-      CH-8004 Zürich
-      </p>
-      <img style={{maxWidth: 50}} src='https://assets.project-r.construction/images/project_r_logo.svg' />
     </Layout>
   )
 }

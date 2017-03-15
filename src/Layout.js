@@ -1,8 +1,12 @@
 import React, {PropTypes} from 'react'
 import Head from 'next/head'
 import {css} from 'glamor'
+import Footer from './Footer'
 
 import 'glamor/reset'
+
+css.global('html', {boxSizing: 'border-box'})
+css.global('*, *:before, *:after', {boxSizing: 'inherit'})
 
 css.global('body', {
   fontFamily: 'serif',
@@ -44,17 +48,18 @@ css.global('.base ul', {
   paddingLeft: 30
 })
 
+export const PADDING = 20
 const containerStyle = css({
   margin: '0 auto',
-  padding: 20,
-  paddingTop: 10,
+  padding: PADDING,
+  paddingTop: PADDING / 2,
   maxWidth: 640,
   '@media (min-width: 600px)': {
-    paddingTop: 20
+    paddingTop: PADDING
   }
 })
 
-const Layout = ({children, meta, cover}) => (
+const Layout = ({children, meta, cover, url}) => (
   <div className='base'>
     <Head>
       <meta name='viewport' content='width=device-width, initial-scale=1' />
@@ -80,12 +85,17 @@ const Layout = ({children, meta, cover}) => (
 
     <div {...containerStyle}>
       {children}
+
+      <Footer url={url} />
     </div>
   </div>
 )
 
 Layout.propTypes = {
   cover: PropTypes.node,
+  url: PropTypes.shape({
+    pathname: PropTypes.string.isRequired
+  }).isRequired,
   meta: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,

@@ -2,16 +2,16 @@ import React from 'react'
 
 import Layout from '../../src/Layout'
 
-export default () => {
+export default ({url}) => {
   const meta = {
     title: 'Project R stellt Aufbau-Crew vor und zieht ins Hotel Rothaus',
     description: 'Die Aufbau-Crew von Project R hat Anfang Januar ihr provisorisches Domizil im Zürcher Kreis 4 bezogen. Dort treibt das Team die Konzeption und Entwicklung des Medienprojekts voran.',
     image: 'https://assets.project-r.construction/images/rothaus.jpg',
-    url: 'https://project-r.construction/media/2017-01-10-hotel-rothaus'
+    url: `https://project-r.construction${url.pathname}`
   }
 
   return (
-    <Layout meta={meta}>
+    <Layout meta={meta} url={url}>
       <h1>Medieninformation</h1>
       <p>Zürich, 10. Januar 2017</p>
       <p><em>Dem Journalismus seine Rolle als verlässlicher Wachhund der Demokratie geben</em></p>
@@ -24,11 +24,11 @@ export default () => {
 
       <p>Project R nimmt damit weiter an Fahrt auf. Seit Monaten arbeitet die Project R-Aufbau- Crew, gemeinsam mit ihren zahlreichen Komplizinnen und Komplizen im Hintergrund, an der Gesellschaftsform, dem Redaktionskonzept, dem Aufbau der Crowdfunding-Plattform, der IT-Entwicklung, der Positionierung, dem Pricing etc. Der Bezug der «Hotelzimmer» an der Langstrasse ermöglicht der Aufbau-Crew, nun noch intensiver zusammenzuarbeiten, um das Projekt im geplanten Zeitrahmen voranzutreiben. Die Zeit der «nur» Nachtarbeit ist damit vorbei.</p>
 
-      <h2>Über Project R</h2>
+      <h3>Über Project R</h3>
 
       <p>Die grossen Verlage verlassen den Journalismus. Sie bauen sich in hohem Tempo zu Internet-Handelshäusern um und investieren nicht mehr in die Publizistik. Dies ist ein Problem für den Journalismus und eine Gefahr für die Demokratie. Es ist jetzt Zeit zu handeln. Deshalb entwickelt Project R ein neues, von Medienkonzernen unabhängiges Geschäftsmodell. Ziel ist es, dem Journalismus seine Rolle zu geben: als verlässlicher Wachhund der Demokratie.</p>
 
-      <h2>Die Project R-Aufbau-Crew</h2>
+      <h3>Die Project R-Aufbau-Crew</h3>
 
       <ul>
         <li>Constantin Seibt, Konzeption und Redaktion</li>
@@ -44,7 +44,7 @@ export default () => {
 
       <p>Finden Sie mehr unter: <a href='https://project-r.construction/'>project-r.construction</a></p>
 
-      <h2>Vorgesehener Zeitrahmen</h2>
+      <h3>Vorgesehener Zeitrahmen</h3>
 
       <p>
         <strong>Januar/Februar 2017</strong><br />
@@ -69,15 +69,6 @@ export default () => {
         <a href='mailto:susanne.sugimoto@project-r.construction'>susanne.sugimoto@project-r.construction</a>
       </p>
       <p><a href='https://assets.project-r.construction/media/170110.zip'>Pressebilder herunterladen</a></p>
-
-      <h2>Project R</h2>
-      <p>
-        c/o Hotel Rothaus<br />
-        Sihlhallenstrasse 1<br />
-        CH-8004 Zürich
-      </p>
-
-      <img style={{maxWidth: 50}} src='https://assets.project-r.construction/images/project_r_logo.svg' />
     </Layout>
   )
 }

@@ -1,7 +1,25 @@
 import React, {Component} from 'react'
 import {css} from 'glamor'
 
+const formStyle = css({
+  display: 'flex',
+  justifyContent: 'space-between',
+  maxWidth: 400,
+  width: '100%',
+  '& input[type=email], & input[type=text]': {
+    width: 'auto',
+    flexGrow: 2,
+    minWidth: 0
+  },
+  '& input[type=submit], & button': {
+    marginLeft: 8,
+    width: 'auto',
+    flexGrow: 1
+  }
+})
 const fieldStyle = css({
+  appearance: 'none',
+  borderRadius: 0,
   verticalAlign: 'bottom',
   color: '#444',
   padding: '10px 20px 10px 20px',
@@ -10,14 +28,12 @@ const fieldStyle = css({
   backgroundColor: 'white',
   fontSize: 14,
   height: 37,
-  boxSizing: 'border-box'
-})
-const inputStyle = css({
-  width: 211,
-  marginRight: 6
+  ':focus': {
+    outline: 'none'
+  }
 })
 const buttonStyle = css({
-  width: 110,
+  minWidth: 106,
   ':hover': {
     background: '#444',
     color: 'white'
@@ -75,8 +91,12 @@ class Newsletter extends Component {
 
     return (
       <form onSubmit={this.onSubmit}>
-        <p>
-          <input type='email' name='email' ref='email' placeholder='E-Mail-Adresse' {...fieldStyle} {...inputStyle} />
+        <p {...formStyle}>
+          <input {...fieldStyle}
+            type='email'
+            name='email'
+            ref='email'
+            placeholder='E-Mail-Adresse' />
           { loading
             ? '...'
             : <button type='submit' {...fieldStyle} {...buttonStyle}>Anmelden</button> }

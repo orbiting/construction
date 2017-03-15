@@ -73,14 +73,26 @@ const team = [
   }
 ]
 
-export default () => {
+export default ({url}) => {
+  const meta = {
+    title: 'Project R geht an den Start',
+    description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam, oder gar nicht.»',
+    image: 'https://assets.project-r.construction/images/project_r_crew.jpg',
+    url: `https://project-r.construction${url.pathname}`
+  }
+
   return (
-    <Layout cover={(
+    <Layout url={url} meta={meta} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
-        alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 201'
-      }} />
+        src: meta.image,
+        alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'
+      }}
+      >
+        <h1>{meta.title}</h1>
+        <p>{meta.description}</p>
+      </Cover>
     )}>
+
       <Head>
         <title>Ladies and Gentlemen, hier ist er, der erste Newsletter von Project R.</title>
       </Head>
@@ -104,6 +116,7 @@ export default () => {
 
       <p>Unser Job dort wird sein, eine Zukunft für den Journalismus abseits der grossen Verlage zu bauen. Denn die traditionellen Verlagshäuser verlassen die Publizistik. Sie investieren zwar noch Reden in ihr altes Geschäftsmodell, aber das Geld und die Ideen fliessen in den Aufbau von Internet-Handelshäusern. Das ist ökonomisch vernünftig, aber schlimm für die Demokratie. Denn mit schlechten Informationen fallen schlechte Entscheidungen.</p>
 
+      <h3>Ein Magazin für den Journalismus des 21. Jahrhunderts</h3>
       <p>Unsere Aufgabe ist es, ein digitales Magazin für den Journalismus des 21. Jahrhunderts zu entwickeln: einen Salon für Debatten und ungelöste Fragen, smart, politisch, fair – und mitreissend genug, dass die Artikel freiwillig gelesen werden. Das wäre eigentlich Abenteuer genug. Zusätzlich haben wir aber auch noch die Aufgabe, ein Geschäftsmodell dafür zu entwickeln: ein Medium, das schlagkräftig genug ist, um im öffentlichen Diskurs einen Unterschied zu machen. Und schlank genug, um zu überleben.</p>
 
       <p>Wir versuchen dabei einen Fehler zu vermeiden, den einige bisherige Projekte gemacht haben: nur auf publizistischen Glanz zu vertrauen und das Geschäftliche ausser Acht zu lassen. Wir müssen eine funktionierende Firma bauen.</p>
@@ -119,6 +132,8 @@ export default () => {
       <p>Wer noch dazustösst, wird die Zukunft zeigen. In den letzten Monaten haben wir mit ein paar Dutzend der interessantesten Journalistinnen und Journalisten, Anwälte, Informatikern, Campaignern gesprochen. Ab dem Sommer werden wir die Redaktion zusammenstellen können.</p>
 
       <p>Davor liegt noch eine Furcht erregende Hürde. Ende des Frühlings werden wir ein Ereignis überstehen müssen, das über Leben und Tod des Projekts entscheidet: ein Crowdfunding.</p>
+
+      <h3>Wir werden Ihre Unterstützung brauchen</h3>
 
       <p>Dies aus folgendem Grund: Der Journalismus ist nicht zufällig weltweit in der Krise. Mit dem Internet brach das traditionelle Geschäftsmodell zusammen: Man verkaufte die Zeitungen an die Leser und die Leser an die Werbung. Viele Jahrzehnte hatten die Journalisten geglaubt, sie verdienten ihr Geld wegen ihrer Brillanz auf der Kanzel - nun stellte sich heraus, dass die Kanzel aus Kleinanzeigen gebaut war. Die verschwanden im Netz und die Kanzel mit ihnen.</p>
 
@@ -139,29 +154,13 @@ export default () => {
         Ihre R-Crew
       </p>
 
-      <p>
-        <a href='https://www.facebook.com/Project-R-1283717661652978'>Facebook</a>{' – '}
-        <a href='https://twitter.com/_Project_R'>Twitter</a>{' – '}
-        <a href='https://project-r.construction/media.html'>Medieninformation</a>
-      </p>
+      <h3>Medienartikel zu Project R</h3>
 
-      <h2>Project R</h2>
-      <p>
-        c/o Hotel Rothaus<br />
-        Sihlhallenstrasse 1<br />
-        CH-8004 Zürich
-      </p>
-      <img style={{maxWidth: 50}} src='https://assets.project-r.construction/images/project_r_logo.svg' />
-
-      <p>
-        Spendenkonto:<br />
-        Verein für unabhängigen Journalismus<br />
-        Hegifeldstrasse 57<br />
-        8404 Winterthur<br />
-        Raiffeisenbank Winterthur<br />
-        IBAN: CH12 8148 5000 0082 2840 1
-      </p>
-
+      <ul>
+        <li><a href='http://www.persoenlich.com/medien/wir-wollen-unser-baby-wach-intelligent-ohne-bullshit'>Interview: «Wir wollen unser Baby wach, intelligent, ohne Bullshit»</a></li>
+        <li><a href='http://www.jungejournalisten.ch/blog/2016/10/27/und-ewig-sparen-die-verleger'>Und ewig sparen die Verleger</a></li>
+        <li><a href='http://presseverein.ch/2016/10/09/die-rebellion-beginnt/'>Die Rebellion beginnt</a></li>
+      </ul>
     </Layout>
   )
 }

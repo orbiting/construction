@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react'
 import {css} from 'glamor'
 
 const mqMedium = '@media (min-width: 600px)'
-const mqLarge = '@media (min-width: 1200px)'
+const mqLarge = '@media (min-width: 900px)'
 const coverStyle = css({
   width: '100%',
   position: 'relative',
