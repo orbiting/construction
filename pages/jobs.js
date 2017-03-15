@@ -27,9 +27,9 @@ const buttonLinkStyle = css({
 })
 
 const images = [
-  'http://localhost:8000/it-0.jpg',
-  'http://localhost:8000/it-1.jpg',
-  'http://localhost:8000/it-2.jpg'
+  'https://assets.project-r.construction/images/it-0.jpg',
+  'https://assets.project-r.construction/images/it-1.jpg',
+  'https://assets.project-r.construction/images/it-2.jpg'
 ]
 class Image extends Component {
   constructor (props) {
