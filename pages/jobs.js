@@ -120,7 +120,7 @@ export default ({url}) => {
 
       <p><strong>Wir</strong> sind daran, die beste User-Experience für journalistische Inhalte zu bauen. Und die besten Tools für digitale Journalistinnen. Wir sind eine kleine, qualifizierte, hart arbeitende, leidenschaftliche und fröhliche Crew. Wir arbeiten sehr eng mit dem ganzen Team von Project R zusammen. Wir machen alles, von den Requirements bis zum Hosting. Wir sind vollständig Open-Source. Code, den wir schon veröffentlicht haben, findest du hier: <a href='https://github.com/orbiting'>github.com/orbiting</a></p>
 
-      <p><strong>Du</strong> bist entweder eine erfahrene Node.js-Entwicklerin oder ein Frontend Engineer, der schon mit React oder ähnlichem gearbeitet hat. Du hast mit einigen unserer zentralen Technologien Erfahrung:  Node.js, React and React Native, GraphQL, Next.js, SQL (PostgreSQL), Docker, Kubernetes, Contenteditable-Editors (e.g. Slate, Draft.js), D3.js. Dir liegt die Zukunft des Journalismus am Herzen (und du glaubst nicht, dass Social Media die Lösung ist).</p>
+      <p><strong>Du</strong> bist entweder eine erfahrene Node.js-Entwicklerin oder ein Frontend Engineer, der schon mit React oder ähnlichem gearbeitet hat. Du hast mit einigen unserer zentralen Technologien Erfahrung:  Node.js, React and React Native, GraphQL, Next.js, SQL (PostgreSQL), Docker-Containers, Kubernetes, Ansible, Terraform, Contenteditable-Editors (e.g. Slate, Draft.js), D3.js. Dir liegt die Zukunft des Journalismus am Herzen (und du glaubst nicht, dass Social Media die Lösung ist).</p>
 
       <ImageSequence
         srcs={[
