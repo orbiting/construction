@@ -132,7 +132,7 @@ export default ({url}) => {
 
       <p>Thomas Preusse (links auf dem Bild): Frontend Engineer, ehemals Interactiv&nbsp;Things und NZZ. Begeistert von Daten-Visualisierungen und seinen journalistischen Anwendungen. Versucht das Leben selbst in einen Bubble Chart zu verwandeln. Verwendet nie eine Technologie, die schon in Beta ist.</p>
 
-      <p>Patrick Recher (rechts): Backend- und DevOps-Engineer, skaliert dein App von null auf zwanzig Pods in sechs Sekunden (haben wir gerade gemessen). Scheint eine Obsession für referentielle Integrität zu haben, kompensiert dies aber mit JavaScript im Backend. Immer in seinem Zimmer, trotzdem ein Nomade.</p>
+      <p>Patrick Recher (rechts): Backend-Engineer und Sysadmin, skaliert dein App von null auf zwanzig Pods in sechs Sekunden (haben wir gerade gemessen). Scheint eine Obsession für referentielle Integrität zu haben, kompensiert dies aber mit JavaScript im Backend. Immer in seinem Zimmer, trotzdem ein Nomade.</p>
 
       <p>Clara Vuillemin: die Chefin, die coden kann. Wenn du sagst es sei unmöglich, schreibt sie übers Wochenend einen Prototyp und beweist das Gegenteil. Zu jung (oder smart), um zu wissen «wie man es richtig macht» und vertraut dem gesunden Menschenverstand. Hat tatsächlich einen Uni-Abschluss (in Elektrotechnik).</p>
 
