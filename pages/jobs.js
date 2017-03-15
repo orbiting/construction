@@ -120,12 +120,12 @@ export default ({url}) => {
 
       <p>Patrick Recher (rechts): Backend- und DevOps-Engineer, skaliert dein App von null auf zwanzig Pods in sechs Sekunden (haben wir gerade gemessen). Scheint eine Obsession für referentielle Integrität zu haben, kompensiert dies aber mit JavaScript im Backend. Immer in seinem Zimmer, trotzdem ein Nomade.</p>
 
-      <p>Clara Vuillemin: die Chefin, die coden kann. Wenn du sagst es sei unmöglich, schreibt sie übers Wochenend einen Prototyp und beweist das Gegenteil. Zu jung (oder smart), um zu wissen «wie man es richtig macht», vertraut Augen, Hirn und dem gesunden Menschenverstand. Hat tatsächlich einen Uni-Abschluss (in Elektrotechnik).</p>
+      <p>Clara Vuillemin: die Chefin, die coden kann. Wenn du sagst es sei unmöglich, schreibt sie übers Wochenend einen Prototyp und beweist das Gegenteil. Zu jung (oder smart), um zu wissen «wie man es richtig macht» und vertraut dem gesunden Menschenverstand. Hat tatsächlich einen Uni-Abschluss (in Elektrotechnik).</p>
 
-      <p>Bewerbungen bitte an:</p>
-      <p>{clara.name}, {clara.title}</p>
-      <p><a href={`mailto:${clara.email}`}>{clara.email}</a></p>
-      <br />
+      <p>
+        Bewerbungen bitte an: {clara.name}<br />
+        <a href={`mailto:${clara.email}`}>{clara.email}</a>
+      </p>
       <p><a href={`mailto:${clara.email}?${[
           ['subject', 'Bewerbungen Entwickler/in'],
           ['body', `Hallo Clara,\n\n...\n\nHerzliche Grüsse,\ngithub.com/[username]`]
