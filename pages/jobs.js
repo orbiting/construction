@@ -130,7 +130,7 @@ export default ({url}) => {
         ]}
         alt='Thomas, Clara und Patrick lachen in die Kamera' />
 
-      <p>Thomas Preusse (links auf dem Bild): Frontend Engineer, ehemals Interactiv&nbsp;Things und NZZ. Begeistert von Daten-Visualisierungen und seinen journalistischen Anwendungen. Versucht das Leben selbst in einen Bubble Chart zu verwandeln. Verwendet nie eine Technologie, die schon in Beta ist.</p>
+      <p>Thomas Preusse (links auf dem Bild): Frontend Engineer, ehemals Interactiv&nbsp;Things und NZZ. Begeistert von Daten-Visualisierungen und ihren journalistischen Anwendungen. Versucht das Leben selbst in einen Bubble-Chart zu verwandeln. Verwendet nie eine Technologie, die schon in Beta ist.</p>
 
       <p>Patrick Recher (rechts): Backend-Engineer und Sysadmin, skaliert dein App von null auf zwanzig Pods in sechs Sekunden (haben wir gerade gemessen). Scheint eine Obsession für referentielle Integrität zu haben, kompensiert dies aber mit JavaScript im Backend. Immer in seinem Zimmer, trotzdem ein Nomade.</p>
 
