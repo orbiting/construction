@@ -50,38 +50,29 @@ export default ({url}) => {
 
       <p>Gleichberechtigung und Diversität sind für uns eine Herzenssache. Bereits heute profitiert ein sehr diverses Team in Wissen und Erfahrung voneinander.  Mit dem Aufbau der Redaktion werden wir Sommer 2017 starten – derzeit stellen wir noch keine Journalistinnen und Journalisten an.</p>
 
-      <h2>Zur Verstärkung unserer IT-Crew suchen wir eine Backend-Entwickler/in und eine Frontend-Entwickler/in.</h2>
-
-      <p>Du liebst guten Journalismus und hast Lust, Teil eines Entwicklungsprojekts zu sein. Du programmierst leidenschaftlich und findest es spannend, ein komplexes Produkt von den Requirements über die technische Planung, die Implementierung, das Testing und den Betrieb mit einer schlagkräftigen Guerilla-Truppe mitzuentwickeln.</p>
+      <h3>Zur Verstärkung unserer IT-Crew suchen wir zwei Web-Entwickler/innen.</h3>
 
       <p>Arbeitsbeginn: Juni 2017, 60-100%, projektbasiert bis Januar 2018, Verlängerung nach Absprache.</p>
 
-      <p><strong>Frontend</strong>: Du hast Erfahrung mit React, schreibst gut strukturierte Web-Apps und kannst ein Responsive-Design umsetzen.</p>
+      <p>WIR sind daran, die beste User Experience für die besten Journalistischen Inhalte zu bauen. Und die besten Tools für digitale Journalistinnen. Wir sind eine kleine, qualifizierte, hart arbeitende, leidenschaftliche und fröhliche Crew. Wir arbeiten sehr eng mit dem ganzen Team von Project R zusammen. Wir machen alles, von den Requirements bis zum Hosting selber. Wir sind vollständig Open-Source. Code, den wir schon veröffentlicht haben, findest du hier: github.com/orbiting</p>
 
-      <p><strong>Backend</strong>: Du bist Node.js-Profi, fühlst dich mit Datenbanken aller Art wohl und hast Erfahrung mit Docker.</p>
+      <p>DU bist entweder eine erfahrene Node.js-Entwicklerin oder ein Frontend Engineer, der schon mit React oder ähnlichem gearbeitet hat. Du hast mit mindestens einigen unsere core technologies Erfahrung:  Node.js, React and React Native, GraphQL, Next.js, SQL (PostgreSQL), Docker, Kubernetes, Contenteditable-Editors (e.g. Slate, Draft.js), D3.js. Dir liegt die Zukunft des Journalismus am Herzen (und du glaubst nicht, dass Social Media die Lösung ist).</p>
 
-      <p>Wir sind ein kleines Team. Es ist wichtig, dass du Lust hast, an vielen Ecken und Enden anzupacken. Wir machen alles selber: von den Requirements bis zum Support. Von Vorteil wäre, wenn du mit einigen der von uns verwendeten Technologien Erfahrung hättest: Node.js, React und React Native, GraphQL, Next.js, SQL (idealerweise PostgreSQL), Docker, Kubernetes, Contenteditable-Editoren (e.g. Slate, Draft.js), D3.js.</p>
 
-      <h3>Deine Vorteile bei uns (abgesehen von ewigem Ruhm):</h3>
-      <ul>
-        <li>Ein diverses und leidenschaftliches Team</li>
-        <li>Du bist bei den Entscheidungen der Geschäftsleitung wie der Redaktion dabei</li>
-        <li>Guter Einheitslohn</li>
-        <li>Der ganze Code wird unter einer Open-Source-Lizenz veröffentlicht</li>
-        <li>24h-Hotel-Reception</li>
-        <li>Club Mate soviel du willst immer gratis</li>
-      </ul>
+      <p>Thomas Preusse: frontend engineer, ehemaliger Interactiv Things and NZZ angestellter. Begeistert von Daten-Visualisierungen und seinen journalistischen Anwendungen. Versucht das Leben selbst in einen Bubble Chart zu verwandeln. Verwendet nie eine Technologie, die schon in Beta ist.</p> 
 
-      <RawPortrait {...clara} age={null}>
-        <p>Bewerbungen bitte an:</p>
-        <p>{clara.name}, {clara.title}</p>
-        <p><a href={`mailto:${clara.email}`}>{clara.email}</a></p>
-        <br />
-        <p><a href={`mailto:${clara.email}?${[
+      <p>Patrick Recher: Backend- und DevOps-Engineer, skaliert dein App von null auf zwanzig Pods in sechs Sekunden (haben wir gerade gemessen). Scheint eine Obsession für referentielle Integrität zu haben, kompensiert dies aber mit JavaScript im Backend. Immer in seinem Zimmer, trotzdem ein Nomade.</p>
+
+      <p>Clara Vuillemin: die Chefin, die coden kann. Wenn du sagst es sei unmöglich, schreibt sie übers Wochenend einen Prototyp und beweist das Gegenteil. Zu jung (oder smart), um zu wissen "wie man es richtig macht", vertraut Augen, Hirn und dem gesunden Menschenverstand. Hat tatsächlich einen Uni-Abschluss (in Elektrotechnik).</p>
+
+      <p>Bewerbungen bitte an:</p>
+      <p>{clara.name}, {clara.title}</p>
+      <p><a href={`mailto:${clara.email}`}>{clara.email}</a></p>
+      <br />
+      <p><a href={`mailto:${clara.email}?${[
           ['subject', 'Bewerbungen Entwickler/in'],
           ['body', `Hallo Clara,\n\n...\n\nHerzliche Grüsse,\ngithub.com/[username]`]
-        ].map(pair => pair.map(encodeURIComponent).join('=')).join('&')}`} {...buttonLinkStyle}>Jetzt bewerben</a></p>
-      </RawPortrait>
+      ].map(pair => pair.map(encodeURIComponent).join('=')).join('&')}`} {...buttonLinkStyle}>Jetzt bewerben</a></p>
     </Layout>
   )
 }
