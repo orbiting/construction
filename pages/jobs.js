@@ -1,10 +1,9 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {css} from 'glamor'
 
 import Layout from '../src/Layout'
 import Cover from '../src/Cover'
 import Link from 'next/link'
-import {RawPortrait} from '../src/Portrait'
 
 import {clara} from '../src/data/team'
 
@@ -26,6 +25,63 @@ const buttonLinkStyle = css({
     color: 'white !important'
   }
 })
+
+const images = [
+  'http://localhost:8000/it-0.jpg',
+  'http://localhost:8000/it-1.jpg',
+  'http://localhost:8000/it-2.jpg'
+]
+class Image extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      index: 0
+    }
+  }
+  next () {
+    let index = this.state.index + 1
+    if (index >= images.length) {
+      index = 0
+    }
+    this.setState({index})
+    this.timeout = setTimeout(() => this.next(), 400)
+  }
+  componentWillUnmount () {
+    clearTimeout(this.timeout)
+  }
+  render () {
+    const {index} = this.state
+    return (
+      <div
+        style={{position: 'relative'}}
+        onMouseOver={() => {
+          this.next()
+        }}
+        onMouseOut={() => {
+          clearTimeout(this.timeout)
+          this.setState({src: images[0]})
+        }}>
+        <img
+          alt='Thomas, Clara und Patrick lachen in die Kamera'
+          src={images[0]} />
+        {
+          images.map((image, i) => (
+            <img
+              key={i}
+              style={{
+                position: 'absolute',
+                left: 0,
+                top: 0,
+                opacity: i === index ? 1 : 0,
+                transition: 'opacity 400ms'
+              }}
+              src={image} />
+          ))
+        }
+      </div>
+    )
+  }
+}
 
 export default ({url}) => {
   const meta = {
@@ -54,16 +110,17 @@ export default ({url}) => {
 
       <p>Arbeitsbeginn: Juni 2017, 60-100%, projektbasiert bis Januar 2018, Verlängerung nach Absprache.</p>
 
-      <p>WIR sind daran, die beste User Experience für die besten Journalistischen Inhalte zu bauen. Und die besten Tools für digitale Journalistinnen. Wir sind eine kleine, qualifizierte, hart arbeitende, leidenschaftliche und fröhliche Crew. Wir arbeiten sehr eng mit dem ganzen Team von Project R zusammen. Wir machen alles, von den Requirements bis zum Hosting selber. Wir sind vollständig Open-Source. Code, den wir schon veröffentlicht haben, findest du hier: github.com/orbiting</p>
+      <p><strong>Wir</strong> sind daran, die beste User-Experience für journalistische Inhalte zu bauen. Und die besten Tools für digitale Journalistinnen. Wir sind eine kleine, qualifizierte, hart arbeitende, leidenschaftliche und fröhliche Crew. Wir arbeiten sehr eng mit dem ganzen Team von Project R zusammen. Wir machen alles, von den Requirements bis zum Hosting. Wir sind vollständig Open-Source. Code, den wir schon veröffentlicht haben, findest du hier: <a href='github.com/orbiting'>github.com/orbiting</a></p>
 
-      <p>DU bist entweder eine erfahrene Node.js-Entwicklerin oder ein Frontend Engineer, der schon mit React oder ähnlichem gearbeitet hat. Du hast mit mindestens einigen unsere core technologies Erfahrung:  Node.js, React and React Native, GraphQL, Next.js, SQL (PostgreSQL), Docker, Kubernetes, Contenteditable-Editors (e.g. Slate, Draft.js), D3.js. Dir liegt die Zukunft des Journalismus am Herzen (und du glaubst nicht, dass Social Media die Lösung ist).</p>
+      <p><strong>Du</strong> bist entweder eine erfahrene Node.js-Entwicklerin oder ein Frontend Engineer, der schon mit React oder ähnlichem gearbeitet hat. Du hast mit einigen unserer zentralen Technologien Erfahrung:  Node.js, React and React Native, GraphQL, Next.js, SQL (PostgreSQL), Docker, Kubernetes, Contenteditable-Editors (e.g. Slate, Draft.js), D3.js. Dir liegt die Zukunft des Journalismus am Herzen (und du glaubst nicht, dass Social Media die Lösung ist).</p>
 
+      <Image />
 
-      <p>Thomas Preusse: frontend engineer, ehemaliger Interactiv Things and NZZ angestellter. Begeistert von Daten-Visualisierungen und seinen journalistischen Anwendungen. Versucht das Leben selbst in einen Bubble Chart zu verwandeln. Verwendet nie eine Technologie, die schon in Beta ist.</p> 
+      <p>Thomas Preusse (links auf dem Bild): Frontend Engineer, ehemals Interactiv Things und NZZ. Begeistert von Daten-Visualisierungen und seinen journalistischen Anwendungen. Versucht das Leben selbst in einen Bubble Chart zu verwandeln. Verwendet nie eine Technologie, die schon in Beta ist.</p>
 
-      <p>Patrick Recher: Backend- und DevOps-Engineer, skaliert dein App von null auf zwanzig Pods in sechs Sekunden (haben wir gerade gemessen). Scheint eine Obsession für referentielle Integrität zu haben, kompensiert dies aber mit JavaScript im Backend. Immer in seinem Zimmer, trotzdem ein Nomade.</p>
+      <p>Patrick Recher (rechts): Backend- und DevOps-Engineer, skaliert dein App von null auf zwanzig Pods in sechs Sekunden (haben wir gerade gemessen). Scheint eine Obsession für referentielle Integrität zu haben, kompensiert dies aber mit JavaScript im Backend. Immer in seinem Zimmer, trotzdem ein Nomade.</p>
 
-      <p>Clara Vuillemin: die Chefin, die coden kann. Wenn du sagst es sei unmöglich, schreibt sie übers Wochenend einen Prototyp und beweist das Gegenteil. Zu jung (oder smart), um zu wissen "wie man es richtig macht", vertraut Augen, Hirn und dem gesunden Menschenverstand. Hat tatsächlich einen Uni-Abschluss (in Elektrotechnik).</p>
+      <p>Clara Vuillemin: die Chefin, die coden kann. Wenn du sagst es sei unmöglich, schreibt sie übers Wochenend einen Prototyp und beweist das Gegenteil. Zu jung (oder smart), um zu wissen «wie man es richtig macht», vertraut Augen, Hirn und dem gesunden Menschenverstand. Hat tatsächlich einen Uni-Abschluss (in Elektrotechnik).</p>
 
       <p>Bewerbungen bitte an:</p>
       <p>{clara.name}, {clara.title}</p>
