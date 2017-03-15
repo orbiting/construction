@@ -44,7 +44,7 @@ const topPromoStyle = css({
 
 export default ({url}) => {
   const meta = {
-    title: 'So bauen wir Project R',
+    title: 'Der Bauplan von Project R',
     description: 'Das Medienprojekt stellt den Bauplan für das Geschäftsmodell vor. Und wird bald den Markt testen: mit einem Crowdfunding.',
     image: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
     url: `https://project-r.construction${url.pathname}`

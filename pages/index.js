@@ -9,7 +9,7 @@ import Grid, {GridItem} from '../src/Grid'
 const newsletters = [
   {
     href: '/newsletter/2017-03-15-aufbau',
-    title: 'So bauen wir Project R',
+    title: 'Der Bauplan von Project R',
     date: '15. März 2017',
     image: {
       src: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
