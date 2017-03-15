@@ -47,6 +47,16 @@ class ImageSequence extends Component {
   render () {
     const {index} = this.state
     const {srcs, alt} = this.props
+
+    const start = (e) => {
+      e.preventDefault()
+      this.next()
+    }
+    const end = () => {
+      clearTimeout(this.timeout)
+      this.setState({index: 0})
+    }
+
     return (
       <div
         style={{
@@ -54,13 +64,10 @@ class ImageSequence extends Component {
           lineHeight: 0,
           marginBottom: 10
         }}
-        onMouseOver={() => {
-          this.next()
-        }}
-        onMouseOut={() => {
-          clearTimeout(this.timeout)
-          this.setState({index: 0})
-        }}>
+        onTouchStart={start}
+        onTouchEnd={end}
+        onMouseEnter={start}
+        onMouseLeave={end}>
         <img
           alt={alt}
           src={srcs[0]} />
