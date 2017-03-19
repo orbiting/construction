@@ -134,7 +134,7 @@ export default ({url}) => {
 
       <p>Patrick Recher (rechts): Backend-Engineer und Sysadmin, skaliert dein App von null auf zwanzig Pods in sechs Sekunden (haben wir gerade gemessen). Scheint eine Obsession für referentielle Integrität zu haben, kompensiert dies aber mit JavaScript im Backend. Immer in seinem Zimmer, trotzdem ein Nomade.</p>
 
-      <p>Clara Vuillemin: die Chefin, die coden kann. Wenn du sagst es sei unmöglich, schreibt sie übers Wochenend einen Prototyp und beweist das Gegenteil. Zu jung (oder smart), um zu wissen «wie man es richtig macht», vertraut dem gesunden Menschenverstand. Hat tatsächlich einen Uni-Abschluss (in Elektrotechnik).</p>
+      <p>Clara Vuillemin: die Chefin, die coden kann. Wenn du sagst, es sei unmöglich, schreibt sie übers Wochenende einen Prototypen und beweist das Gegenteil. Zu jung (oder smart), um zu wissen «wie man es richtig macht», vertraut dem gesunden Menschenverstand. Hat tatsächlich einen Uni-Abschluss (in Elektrotechnik).</p>
 
       <p>
         Bewerbungen bitte an: {clara.name}<br />
