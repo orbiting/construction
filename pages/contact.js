@@ -33,25 +33,6 @@ export default ({url}) => {
 
       <p>Mehr zu Project R: <Link href='/'><a>project-r.construction</a></Link></p>
 
-      <SocialMedia />
-
-      <h2>Kontakt</h2>
-
-      <p>Project R<br />
-      c/o Hotel Rothaus<br />
-      Sihlhallenstrasse 1<br />
-      CH-8004 Zürich
-      </p>
-      <img style={{maxWidth: 50}} src='https://assets.project-r.construction/images/project_r_logo.svg' />
-
-      <p>Spendenkonto:<br />
-      Verein für unabhängigen Journalismus<br />
-      Hegifeldstrasse 57<br />
-      8404 Winterthur<br />
-      Raiffeisenbank Winterthur<br />
-      IBAN: CH12 8148 5000 0082 2840 1
-      </p>
-
       <p><strong>E-Mail</strong><br />
         <a href='mailto:office@project-r.construction'>office@project-r.construction</a><br />
       PGP-Key-ID: 6A1DB6B9<br />
