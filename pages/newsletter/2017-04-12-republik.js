@@ -154,7 +154,7 @@ export default ({url}) => {
 
       <p>Es ist die Zeit gekommen, wo um Selbstverständlichkeiten wie Rechtsstaat, Gleichheit vor dem Gesetz oder Gewaltentrennung gekämpft werden muss. Jahrzehnte waren die republikanischen Institutionen fast langweilig. Weil unbestritten. Das ist nun Vergangenheit. Historisch gesehen ist das keine Überraschung. Denn die Institutionen sind kristallisierter Kampf. Um sie zu errichten haben Generationen von Männern und Frauen – wie etwa Peter Ochs oder Heinrich Waser – Stellung, Ehre oder sogar den Kopf riskiert. Nun ist die Reihe an unserer Generation.</p>
 
-      <p>Lang lebe die Republi k!</p>
+      <p>Lang lebe die Republik!</p>
 
       <p>Wir melden uns wieder zum Start des Crowdfundings am 26. April.</p>
 
@@ -162,11 +162,11 @@ export default ({url}) => {
 
       <p>
         <br />
-        PS: Die heutige Taufe der «Republik» in Bern läuft noch bis 17 Uhr. Sie findet im Kulturzentrum Progr an der Speichergasse 4 in Bern statt. Falls Sie in der Nähe sind: Herzlich willkommen!
+        PS: Die heutige Taufe der «Republik» in Bern läuft noch bis 17 Uhr. Sie findet im Kulturzentrum Progr an der Speichergasse 4 statt. Falls Sie in der Nähe sind: Herzlich willkommen!
       </p>
 
       <p>
-        PPS: Sie finden «@RepublikMagazin» ab sofort auch auf <a href='https://www.facebook.com/RepublikMagazin'>Facebook</a> und <a href='https://twitter.com/RepublikMagazin'>Twitter</a>.
+        PPS: Sie finden @RepublikMagazin ab sofort auch auf <a href='https://www.facebook.com/RepublikMagazin'>Facebook</a> und <a href='https://twitter.com/RepublikMagazin'>Twitter</a>.
       </p>
 
       <hr style={{margin: '40px 0'}} />
