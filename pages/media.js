@@ -7,7 +7,7 @@ import Grid, {GridItem} from '../src/Grid'
 
 const media = [
   {
-    href: '/media/2017-04-12-name',
+    href: '/media/2017-04-12-republik',
     title: 'Das Magazin von Project R heisst «Republik»',
     date: 'Bern, 12. April 2017',
     image: {

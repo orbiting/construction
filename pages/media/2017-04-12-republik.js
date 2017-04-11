@@ -31,7 +31,7 @@ export default ({url}) => {
 
       <p>
         Finden Sie mehr unter: <Link href='/'><a>project-r.construction</a></Link><br />
-        Link zum aktuellen Newsletter: <Link href='/newsletter/2017-04-12-name'><a>Das Magazin von Project R</a></Link><br />
+        Link zum aktuellen Newsletter: <Link href='/newsletter/2017-04-12-republik'><a>Das Magazin von Project R</a></Link><br />
         Das Manifest im Wortlaut: <Link href='https://republik.ch/manifest'><a>republik.ch/manifest</a></Link>
       </p>
 

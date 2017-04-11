@@ -8,7 +8,7 @@ import Grid, {GridItem} from '../src/Grid'
 
 const newsletters = [
   {
-    href: '/newsletter/2017-04-12-name',
+    href: '/newsletter/2017-04-12-republik',
     title: 'So heisst das Magazin von Project R', 
     date: '12. April 2017',
     image: {
