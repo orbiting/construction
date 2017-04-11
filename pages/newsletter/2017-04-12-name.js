@@ -45,17 +45,16 @@ const topPromoStyle = css({
 export default ({url}) => {
   const meta = {
     title: 'So heisst das Magazin von Project R', 
-    description: '', //TODO
-    image: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg', //TODO
+    description: 'Am heutigen 12. April, dem Jahrestag der Ausrufung der Helvetischen Republik, enthüllt das Medienprojekt in Bern den Namen des geplanten digitalen Magazins. Das Crowdfunding startet am 26. April.', 
+    image: 'http://localhost:8000/optimized/rothaus_republik2.jpg', 
     url: `https://project-r.construction${url.pathname}`
   }
   
-//TODO
   return (
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
         src: meta.image,
-        alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
+        alt: 'Das Hotel Rothaus mit dem Banner des Logos der Republik'
       }}
       >
         <h1>{meta.title}</h1>
@@ -84,10 +83,9 @@ export default ({url}) => {
       
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='http://localhost:8000/optimized/freiheitsbaum.jpg'
-          alt='Senator Joseph McCarthy nimmt den Schwur von Autor Dashiell Hammett im «Permanent Investigating Committee» des Senats ab' /><br />
-        <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
-          Photo by Hank Walker/The LIFE Picture Collection/Getty Images
+          src='http://localhost:8000/optimized/foto_manifest.jpg'
+          alt='Fotos des Manifest der Republik' /><br />
+        <figcaption style={{fontSize: 12, fontFamily: 'sans-serif', margin: 0, textAlign: 'left'}}>
         </figcaption>
       </figure>
 
@@ -109,10 +107,10 @@ export default ({url}) => {
       
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/images/hammett_mccarthy.jpg'
-          alt='Senator Joseph McCarthy nimmt den Schwur von Autor Dashiell Hammett im «Permanent Investigating Committee» des Senats ab' /><br />
-        <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
-          Photo by Hank Walker/The LIFE Picture Collection/Getty Images
+          src='http://localhost:8000/optimized/freiheitsbaum.jpg'
+          alt='Münsterplatz Basel, 22. Januar 1798, Pflanzung des Freiheitsbaumes' /><br />
+        <figcaption style={{fontSize: 12, fontFamily: 'sans-serif', margin: 0, textAlign: 'left'}}>
+          Nach dem Umsturz der alten Ordnung wird 1798 auf dem Basler Münsterplatz ein Freiheitsbaum aufgerichtet. (Credits: Historisches Museum Basel, Reprografie: P. Portner)
         </figcaption>
       </figure>
       
@@ -122,10 +120,9 @@ export default ({url}) => {
       
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/images/hammett_mccarthy.jpg'
-          alt='Senator Joseph McCarthy nimmt den Schwur von Autor Dashiell Hammett im «Permanent Investigating Committee» des Senats ab' /><br />
+          src='http://localhost:8000/optimized/pressefreiheit.jpg'
+          alt='Auszug aus der Verfassung der helvetischen Republik zur Pressefreiheit' /><br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
-          Photo by Hank Walker/The LIFE Picture Collection/Getty Images
         </figcaption>
       </figure>
         
@@ -139,10 +136,9 @@ export default ({url}) => {
       
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/images/hammett_mccarthy.jpg'
-          alt='Senator Joseph McCarthy nimmt den Schwur von Autor Dashiell Hammett im «Permanent Investigating Committee» des Senats ab' /><br />
+          src='http://localhost:8000/optimized/logo_republik.jpg'
+          alt='Logo Republik' /><br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
-          Photo by Hank Walker/The LIFE Picture Collection/Getty Images
         </figcaption>
       </figure>
       
@@ -174,10 +170,10 @@ export default ({url}) => {
       
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/images/hammett_mccarthy.jpg'
-          alt='Senator Joseph McCarthy nimmt den Schwur von Autor Dashiell Hammett im «Permanent Investigating Committee» des Senats ab' /><br />
-        <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
-          Photo by Hank Walker/The LIFE Picture Collection/Getty Images
+          src='http://localhost:8000/optimized/ochs_waser.jpg'
+          alt='' /><br />
+        <figcaption style={{fontSize: 12, fontFamily: 'sans-serif', margin: 0, textAlign: 'left'}}>
+          Peter Ochs rief am 12. April 1798 in Aarau die Helvetische Republik aus, für Johann Heinrich Waser kam die erste moderne Verfassung der Schweiz zu spät: Er wurde 1780 wegen «Pressevergehen» hingerichtet.
         </figcaption>
       </figure>
       

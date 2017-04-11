@@ -7,6 +7,15 @@ import Grid, {GridItem} from '../src/Grid'
 
 const media = [
   {
+    href: '/media/2017-04-12-name',
+    title: 'Das Magazin von Project R heisst «Republik»',
+    date: 'Bern, 12. April 2017',
+    image: {
+      src: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
+      alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
+    }
+  }, //TODO
+  {
     href: '/media/2017-03-15-aufbau',
     title: 'Der Bauplan von Project R steht',
     date: 'Zürich, 15. März 2017',

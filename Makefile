@@ -16,14 +16,19 @@ images:
 	convert -resize 2000x -quality 80 assets/images/raw/rothaus_r.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_r.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/wewantyou.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/wewantyou.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/enterprise_with_hand.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/enterprise_with_hand.jpg
+	convert -resize 2000x -quality 80 assets/images/raw/rothaus_republik2.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_republik2.jpg
+	convert -resize 2000x -quality 80 assets/images/raw/logo_republik.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/logo_republik.jpg
 	
 	convert -resize 1200x -quality 80 assets/images/raw/it-0.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/it-0.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/it-1.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/it-1.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/it-2.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/it-2.jpg
 
 	convert -resize 1200x -quality 80 assets/images/raw/hammett_mccarthy.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/hammett_mccarthy.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/ochs_waser.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/ochs_waser.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/freiheitsbaum.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/freiheitsbaum.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/vorstand_genossenschaft.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/vorstand_genossenschaft.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/pressefreiheit.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/pressefreiheit.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/foto_manifest.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/foto_manifest.jpg
 	convert -resize 600x -quality 80 assets/images/raw/rothaus_thumb.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_thumb.jpg
 
 	convert -resize 1000x -quality 90 assets/images/raw/christof_moser.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/christof_moser.jpg
