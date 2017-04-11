@@ -23,7 +23,7 @@ export default ({url}) => {
 
       <p>An ihrer Medienorientierung während ihres «Tags der offenen Türe» im Berner Zentrum für Kulturproduktion PROGR enthüllte die Project-R-Crew Name und Logo des geplanten Magazins. Und sie stellte ihr Manifest zur «Vierten Gewalt» in einer freiheitlichen Gesellschaft vor. Das digitale Magazin wird «Republik» heissen.</p>
 
-     <p> Das heutige Datum für die Namens-Präsentation ist nicht zufällig gewählt: Vor 219 Jahren, am 12. April 1798, wurde in Aarau die Helvetische Republik ausgerufen. Das Datum markiert die Geburt der modernen Schweiz. Erstmals garantierte eine Verfassung Gewaltenteilung, Gleichheit vor dem Gesetz, Wahlen und Pressefreiheit. Claude Longchamp, Historiker und Politologe erörterte in seinem Input-Referat an der Medienorientierung die republikanischen Werte und setzte diese in den aktuellen politischen Kontext. Anschliessend diskutierten, unter der Leitung des Berner Kommunikationsfachmanns Mark Balsiger, Claude Longchamp, die Historikerin Nanina Egli und Christof Moser von Project R Sinn und Zweck der republikanischen Grundwerte in einer demokratischen Gesellschaft.</p>
+      <p> Das heutige Datum für die Namens-Präsentation ist nicht zufällig gewählt: Vor 219 Jahren, am 12. April 1798, wurde in Aarau die Helvetische Republik ausgerufen. Das Datum markiert die Geburt der modernen Schweiz. Erstmals garantierte eine Verfassung Gewaltenteilung, Gleichheit vor dem Gesetz, Wahlen und Pressefreiheit. Claude Longchamp, Historiker und Politologe erörterte in seinem Input-Referat an der Medienorientierung die republikanischen Werte und setzte diese in den aktuellen politischen Kontext. Anschliessend diskutierten, unter der Leitung des Berner Kommunikationsfachmanns Mark Balsiger, Claude Longchamp, die Historikerin Nanina Egli und Christof Moser von Project R Sinn und Zweck der republikanischen Grundwerte in einer demokratischen Gesellschaft.</p>
 
       <h3>«Republik»-Crowdfunding startet am 26. April</h3>
 
@@ -31,7 +31,7 @@ export default ({url}) => {
 
       <p>
         Finden Sie mehr unter: <Link href='/'><a>project-r.construction</a></Link><br />
-        Link zum aktuellen Newsletter: <Link href='/newsletter/2017-04-12-name'><a>Das Magazin von Project R</a></Link><br /> 
+        Link zum aktuellen Newsletter: <Link href='/newsletter/2017-04-12-name'><a>Das Magazin von Project R</a></Link><br />
         Das Manifest im Wortlaut: <Link href='https://republik.ch/manifest'><a>republik.ch/manifest</a></Link>
       </p>
 
@@ -51,7 +51,7 @@ export default ({url}) => {
         Susanne Sugimoto: +41 78 897 70 28,<br />
         <a href='mailto:susanne.sugimoto@project-r.construction'>susanne.sugimoto@project-r.construction</a>
       </p>
-      <p><a href='https://assets.project-r.construction/media/170315.zip'>Pressebilder herunterladen (ab 14 Uhr)</a></p> 
-    </Layout> //TODO
+      <p><a href='https://assets.project-r.construction/media/170315.zip'>Pressebilder herunterladen (ab 14 Uhr)</a></p>
+    </Layout> // TODO
   )
 }
