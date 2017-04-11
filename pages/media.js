@@ -14,7 +14,7 @@ const media = [
       src: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
       alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
     }
-  }, //TODO
+  }, // TODO
   {
     href: '/media/2017-03-15-aufbau',
     title: 'Der Bauplan von Project R steht',
@@ -54,13 +54,13 @@ export default ({url}) => {
       <h3>Medienartikel zu Project R</h3>
 
       <ul>
-      	<li><a href='https://www.nzz.ch/feuilleton/medien/in-medias-ras-ein-testfall-fuer-schweizer-journalisten-ld.151509'>Die Idee von Project R liegt in der Luft</a> — NZZ, März 2017</li>
-      	<li><a href='http://www.srf.ch/sendungen/medientalk/medientalk-wie-gruende-ich-ein-medien-startup'>«Mit Fake News, mit Trump, mit dem langsamen Sterben, dem Niedergang und dem Vor-sich-her-Faulen der grossen Verlage, ist eigentlich klar, dass man etwas tun muss»</a> — Radio SRF4, Januar 2017</li>
-      	<li><a href='http://www.kontextwochenzeitung.de/medien/304/r-wie-rebellion-4158.html'>R wie Rebellion</a>  —  Kontext, Januar 2017</li>
-      	<li><a href='https://tsri.ch/zh/projectr/#.WICVuI0axL4.facebook'>«Wenn die Verleger aus der Publizistik ausgestiegen sind, ist es zu spät»</a> — tsüri.ch, Januar 2017</li>
-      	<li><a href='http://www.persoenlich.com/medien/von-den-konigen-zu-den-rebellen'>Verleger vs. Project R: Von den Königen zu den Rebellen</a> — persönlich.com, Januar 2017</li>
-      	<li><a href='https://www.nzz.ch/feuilleton/medien/journalismusprojekt-r-news-aus-dem-zuercher-rotlicht-viertel-ld.139282'>News aus dem Zürcher Rotlichtviertel</a> — NZZ, Januar 2017</li>
-      	<li><a href='http://www.deutschlandradiokultur.de/schweizer-online-magazin-project-r-die-verlage-verwandeln.1013.de.html?dram:article_id=376069'>«Die Verlage verwandeln sich in Internet-Handelshäuser»</a> — Deutschlandradio Kultur, Januar 2017</li>
+        <li><a href='https://www.nzz.ch/feuilleton/medien/in-medias-ras-ein-testfall-fuer-schweizer-journalisten-ld.151509'>Die Idee von Project R liegt in der Luft</a> — NZZ, März 2017</li>
+        <li><a href='http://www.srf.ch/sendungen/medientalk/medientalk-wie-gruende-ich-ein-medien-startup'>«Mit Fake News, mit Trump, mit dem langsamen Sterben, dem Niedergang und dem Vor-sich-her-Faulen der grossen Verlage, ist eigentlich klar, dass man etwas tun muss»</a> — Radio SRF4, Januar 2017</li>
+        <li><a href='http://www.kontextwochenzeitung.de/medien/304/r-wie-rebellion-4158.html'>R wie Rebellion</a>  —  Kontext, Januar 2017</li>
+        <li><a href='https://tsri.ch/zh/projectr/#.WICVuI0axL4.facebook'>«Wenn die Verleger aus der Publizistik ausgestiegen sind, ist es zu spät»</a> — tsüri.ch, Januar 2017</li>
+        <li><a href='http://www.persoenlich.com/medien/von-den-konigen-zu-den-rebellen'>Verleger vs. Project R: Von den Königen zu den Rebellen</a> — persönlich.com, Januar 2017</li>
+        <li><a href='https://www.nzz.ch/feuilleton/medien/journalismusprojekt-r-news-aus-dem-zuercher-rotlicht-viertel-ld.139282'>News aus dem Zürcher Rotlichtviertel</a> — NZZ, Januar 2017</li>
+        <li><a href='http://www.deutschlandradiokultur.de/schweizer-online-magazin-project-r-die-verlage-verwandeln.1013.de.html?dram:article_id=376069'>«Die Verlage verwandeln sich in Internet-Handelshäuser»</a> — Deutschlandradio Kultur, Januar 2017</li>
         <li><a href='https://www.woz.ch/-730f'>Die grosse Wette auf den Journalismus</a> — WoZ, Oktober 2016</li>
         <li><a href='http://www.persoenlich.com/medien/wir-wollen-unser-baby-wach-intelligent-ohne-bullshit'>«Wir wollen unser Baby wach, intelligent, ohne Bullshit»</a> — persönlich.com, Oktober 2016</li>
         <li><a href='http://www.jungejournalisten.ch/blog/2016/10/27/und-ewig-sparen-die-verleger'>Und ewig sparen die Verleger</a> — jungejournalisten.ch, Oktober 2016</li>

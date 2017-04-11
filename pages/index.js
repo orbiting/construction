@@ -9,11 +9,11 @@ import Grid, {GridItem} from '../src/Grid'
 const newsletters = [
   {
     href: '/newsletter/2017-04-12-republik',
-    title: 'So heisst das Magazin von Project R', 
+    title: 'So heisst das Magazin von Project R',
     date: '12. April 2017',
     image: {
       src: 'http://localhost:8000/optimized/rothaus_republik2.jpg',
-      alt: 'Das Hotel Rothaus mit dem Banner der Republik' 
+      alt: 'Das Hotel Rothaus mit dem Banner der Republik'
     }
   },
   {
