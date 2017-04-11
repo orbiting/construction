@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {css} from 'glamor'
+import fetch from 'isomorphic-unfetch'
 
 const formStyle = css({
   display: 'flex',
@@ -45,7 +46,7 @@ class Newsletter extends Component {
     super(props)
     this.state = {
       loading: false,
-      messages: []
+      message: null
     }
     this.onSubmit = this.onSubmit.bind(this)
   }
@@ -55,39 +56,30 @@ class Newsletter extends Component {
     const email = this.refs.email.value
 
     if (!email) {
-      this.setState({
-        messages: [
-          'Bitte geben Sie eine E-Mail Adresse an.'
-        ]
-      })
+      this.setState({message: 'Bitte geben Sie eine E-Mail Adresse an.'})
       return
     }
 
     this.setState({ loading: true })
-    const lang = navigator.language.substring(0, 2)
 
-    const formData = { email, lang }
-
-    const xhr = new window.XMLHttpRequest()
-    xhr.open('post', '/api/subscribe')
-    xhr.setRequestHeader('Content-type', 'application/json;charset=UTF-8')
-    xhr.addEventListener('load', () => {
-      let nextState = {
-        loading: false
-      }
-      if (xhr.status === 200) {
-        nextState.messages = ['Bitte bestätigen Sie die E-Mail, die wir Ihnen geschickt haben.']
-      } else {
-        const error = xhr.response.error ? xhr.response.error : 'Unbekannter Fehler'
-        nextState.messages = [error]
-      }
-      this.setState(nextState)
-    })
-    xhr.send(JSON.stringify(formData))
+    fetch(`/newsletter/subscribe?email=${encodeURIComponent(email)}`, {credentials: 'same-origin'})
+      .then(response => response.json())
+      .then(data => {
+        this.setState({message: data.message, loading: false})
+        if (data.success) {
+          this.refs.email.value = ''
+        }
+      })
+      .catch(e => {
+        this.setState({
+          message: 'Unerwarteter Fehler, bitte versuchen Sie es später nochmals.',
+          loading: false
+        })
+      })
   }
 
   render () {
-    const { loading, messages } = this.state
+    const { loading, message } = this.state
 
     return (
       <form onSubmit={this.onSubmit}>
@@ -101,9 +93,7 @@ class Newsletter extends Component {
             ? '...'
             : <button type='submit' {...fieldStyle} {...buttonStyle}>Anmelden</button> }
         </p>
-        <ul>
-          {messages.map((msg, i) => <li key={i}>{msg}</li>)}
-        </ul>
+        {!!message && <p>{message}</p>}
       </form>
     )
   }

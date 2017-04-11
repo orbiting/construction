@@ -1,9 +1,7 @@
 const express = require('express')
 const next = require('next')
+const newsletter = require('./server/newsletter')
 require('dotenv').config()
-
-// connect to mongo and load models
-const mongoose = require('./server/models').connect(process.env.MONGO_URL)
 
 const DEV = process.env.NODE_ENV !== 'production'
 const PORT = 4000
@@ -14,8 +12,7 @@ const handle = app.getRequestHandler()
 app.prepare().then(() => {
   const server = express()
 
-  server.use(require('body-parser').json())
-  server.use('/api', require('./server/routes/api'))
+  server.use(newsletter)
 
   server.get('/index.html', (req, res) => {
     res.redirect(301, '/')
