@@ -5,8 +5,8 @@ import Layout from '../../src/Layout'
 
 export default ({url}) => {
   const meta = {
-    title: '',
-    description: '',
+    title: 'Das Magazin von Project R heisst «Republik»',
+    description: 'Am heutigen 12. April, dem Jahrestag der Ausrufung der Helvetischen Republik, enthüllt das Medienprojekt in Bern den Namen des geplanten digitalen Magazins. Das Crowdfunding startet am 26. April.',
     image: 'https://assets.project-r.construction/images/logo_republik.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
