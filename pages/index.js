@@ -8,6 +8,15 @@ import Grid, {GridItem} from '../src/Grid'
 
 const newsletters = [
   {
+    href: '/newsletter/2017-04-12-republik',
+    title: 'So heisst das Magazin von Project R',
+    date: '12. April 2017',
+    image: {
+      src: 'https://assets.project-r.construction/images/rothaus_republik.jpg',
+      alt: 'Das Hotel Rothaus mit dem Banner der Republik'
+    }
+  },
+  {
     href: '/newsletter/2017-03-15-aufbau',
     title: 'Der Bauplan von Project R',
     date: '15. März 2017',
@@ -30,7 +39,7 @@ const newsletters = [
 export default ({url}) => {
   const meta = {
     title: 'Project R geht an den Start',
-    description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam, oder gar nicht.»',
+    description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam – oder gar nicht.»',
     image: 'https://assets.project-r.construction/images/balkon.jpg',
     url: `https://project-r.construction${url.pathname}`
   }

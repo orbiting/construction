@@ -57,6 +57,8 @@ const Footer = ({url}) => (
     <p>
       Spendenkonto:<br />
       <strong>Project R Genossenschaft</strong><br />
+      Sihlhallenstrasse 1<br />
+      8004 Zürich<br />
       Raiffeisenbank Winterthur<br />
       IBAN: CH04 8148 5000 0083 4669 1
     </p>

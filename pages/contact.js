@@ -4,7 +4,6 @@ import Layout from '../src/Layout'
 import Cover from '../src/Cover'
 import Link from 'next/link'
 import Newsletter from '../src/Newsletter'
-import SocialMedia from '../src/SocialMedia'
 
 import {susanne, laurent} from '../src/data/team'
 
