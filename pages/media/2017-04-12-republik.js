@@ -51,7 +51,7 @@ export default ({url}) => {
         Susanne Sugimoto: +41 78 897 70 28,<br />
         <a href='mailto:susanne.sugimoto@project-r.construction'>susanne.sugimoto@project-r.construction</a>
       </p>
-      <p><a href='https://assets.project-r.construction/media/170315.zip'>Pressebilder herunterladen (ab 14 Uhr)</a></p>
-    </Layout> // TODO
+      <p>Pressebilder herunterladen (ab 14 Uhr)</p>
+    </Layout>
   )
 }
