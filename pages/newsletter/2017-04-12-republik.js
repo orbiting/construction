@@ -22,7 +22,7 @@ const topPromoStyle = css({
 
 export default ({url}) => {
   const meta = {
-    title: 'So heisst das Magazin von Project R',
+    title: 'So heisst das Magazin von Project R',
     description: 'Am heutigen 12. April, dem Jahrestag der Ausrufung der Helvetischen Republik, enthüllt das Medienprojekt in Bern den Namen des geplanten digitalen Magazins. Das Crowdfunding startet am 26. April.',
     image: 'http://localhost:8000/optimized/rothaus_republik2.jpg',
     url: `https://project-r.construction${url.pathname}`
@@ -154,7 +154,7 @@ export default ({url}) => {
 
       <p>Es ist die Zeit gekommen, wo um Selbstverständlichkeiten wie Rechtsstaat, Gleichheit vor dem Gesetz oder Gewaltentrennung gekämpft werden muss. Jahrzehnte waren die republikanischen Institutionen fast langweilig. Weil unbestritten. Das ist nun Vergangenheit. Historisch gesehen ist das keine Überraschung. Denn die Institutionen sind kristallisierter Kampf. Um sie zu errichten haben Generationen von Männern und Frauen – wie etwa Peter Ochs oder Heinrich Waser – Stellung, Ehre oder sogar den Kopf riskiert. Nun ist die Reihe an unserer Generation.</p>
 
-      <p>Lang lebe die Republik!</p>
+      <p>Lang lebe die Republi k!</p>
 
       <p>Wir melden uns wieder zum Start des Crowdfundings am 26. April.</p>
 
