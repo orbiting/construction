@@ -24,7 +24,7 @@ export default ({url}) => {
   const meta = {
     title: 'So heisst das Magazin von Project R',
     description: 'Am heutigen 12. April, dem Jahrestag der Ausrufung der Helvetischen Republik, enthüllt das Medienprojekt in Bern den Namen des geplanten digitalen Magazins. Das Crowdfunding startet am 26. April.',
-    image: 'http://localhost:8000/optimized/rothaus_republik2.jpg',
+    image: 'http://localhost:8000/optimized/rothaus_republik.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 

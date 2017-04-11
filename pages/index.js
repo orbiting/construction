@@ -12,7 +12,7 @@ const newsletters = [
     title: 'So heisst das Magazin von Project R',
     date: '12. April 2017',
     image: {
-      src: 'http://localhost:8000/optimized/rothaus_republik2.jpg',
+      src: 'http://localhost:8000/optimized/rothaus_republik.jpg',
       alt: 'Das Hotel Rothaus mit dem Banner der Republik'
     }
   },
