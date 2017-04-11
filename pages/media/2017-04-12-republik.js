@@ -32,8 +32,10 @@ export default ({url}) => {
       <p>
         Finden Sie mehr unter: <Link href='/'><a>project-r.construction</a></Link><br />
         Link zum aktuellen Newsletter: <Link href='/newsletter/2017-04-12-republik'><a>Das Magazin von Project R</a></Link><br />
-        Das Manifest im Wortlaut: <Link href='https://republik.ch/manifest'><a>republik.ch/manifest</a></Link>
+        Das Manifest im Wortlaut: <a href='https://republik.ch/manifest'>republik.ch/manifest</a>
       </p>
+
+      <p><a href='https://assets.project-r.construction/media/170412.zip'>Medienbilder (ab 14 Uhr) und Logo herunterladen</a></p>
 
       <h3>Vorgesehener Zeitrahmen</h3>
 
@@ -51,7 +53,6 @@ export default ({url}) => {
         Susanne Sugimoto: +41 78 897 70 28,<br />
         <a href='mailto:susanne.sugimoto@project-r.construction'>susanne.sugimoto@project-r.construction</a>
       </p>
-      <p>Pressebilder herunterladen (ab 14 Uhr)</p>
     </Layout>
   )
 }
