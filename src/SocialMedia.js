@@ -1,6 +1,7 @@
 import React from 'react'
 import FacebookIcon from './icons/facebook'
 import TwitterIcon from './icons/twitter'
+import GitHubIcon from './icons/github'
 
 const SocialMedia = () => (
   <p>
@@ -10,6 +11,10 @@ const SocialMedia = () => (
     {' '}
     <a href='https://twitter.com/_Project_R'>
       <TwitterIcon />
+    </a>
+    {' '}
+    <a href='https://github.com/orbiting'>
+      <GitHubIcon />
     </a>
   </p>
 )

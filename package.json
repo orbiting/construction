@@ -13,9 +13,8 @@
     "dotenv": "^4.0.0",
     "express": "^4.14.0",
     "glamor": "^2.20.22",
-    "mongoose": "^4.7.6",
-    "next": "^2.0.0-beta.37",
-    "nodemailer": "^2.7.0",
+    "isomorphic-unfetch": "^1.0.0",
+    "next": "^2.1.1",
     "querystring": "^0.2.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
