@@ -11,7 +11,7 @@ const media = [
     title: 'Das Magazin von Project R heisst «Republik»',
     date: 'Bern, 12. April 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/rothaus_republik.jpg',
+      src: 'https://assets.project-r.construction/images/logo_republik.jpg',
       alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
     }
   },
