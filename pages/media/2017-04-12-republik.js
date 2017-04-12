@@ -35,7 +35,7 @@ export default ({url}) => {
         Das Manifest im Wortlaut: <a href='https://republik.ch/manifest'>republik.ch/manifest</a>
       </p>
 
-      <p><a href='https://assets.project-r.construction/media/170412.zip'>Medienbilder (ab 14 Uhr) und Logo herunterladen</a></p>
+      <p><a href='https://assets.project-r.construction/media/170412.zip'>Medienbilder und Logo herunterladen</a></p>
 
       <h3>Vorgesehener Zeitrahmen</h3>
 
