@@ -27,7 +27,7 @@ export default ({url}) => {
 
       <h3>«Republik»-Crowdfunding startet am 26. April</h3>
 
-      <p>Die bereits zugesagten Investoren- und Spendengelder von 3,5 Millionen Franken sind an den Erfolg des Crowdfundings gekoppelt. Die «Republik» braucht 3000 Unterstützerinnen und Unterstützer, die zusammen mindestens CHF 750 000.- aufbringen. Das Crowdfunding startet am 26. April 2017.</p>
+      <p>Die bereits zugesagten Investoren- und Spendengelder von 3,5 Millionen Franken sind an den Erfolg des Crowdfundings gekoppelt. Die «Republik» braucht 3000 Unterstützerinnen und Unterstützer, die zusammen mindestens CHF 750'000.- aufbringen. Das Crowdfunding startet am 26. April 2017.</p>
 
       <p>
         Finden Sie mehr unter: <Link href='/'><a>project-r.construction</a></Link><br />

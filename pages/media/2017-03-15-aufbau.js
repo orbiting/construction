@@ -25,7 +25,7 @@ export default ({url}) => {
 
       <h3>Mit dem Crowdfunding den Markt testen</h3>
 
-      <p>Der Businessplan von Project R sieht ein digitales Magazin vor, das gross genug ist, in der öffentlichen Debatte Wirkung zu erzielen und schlank genug, um agil wachsen zu können. Mit dem Crowdfunding testet Project R, ob genügend Leserinnen und Leser bereit sind, für ein digitales Magazin zu bezahlen; ein Markttest in der Realität. Die bereits zugesagten Investorengelder von 3,5 Millionen Franken werden an den Erfolg des Crowdfundings gekoppelt. Das Project R-Team will 3000 Leserinnen und Leser von ihrem Konzept überzeugen und CHF 750 000.- sammeln. Das heisst: Zu jedem ins Crowdfunding eingezahlten Franken kommen CHF 4.66. Bleibt das Crowdfunding erfolglos, wird im Juni ordentlich liquidiert. Das Crowdfunding startet <strong>Ende April 2017</strong> und dauert bis Ende Mai.</p>
+      <p>Der Businessplan von Project R sieht ein digitales Magazin vor, das gross genug ist, in der öffentlichen Debatte Wirkung zu erzielen und schlank genug, um agil wachsen zu können. Mit dem Crowdfunding testet Project R, ob genügend Leserinnen und Leser bereit sind, für ein digitales Magazin zu bezahlen; ein Markttest in der Realität. Die bereits zugesagten Investorengelder von 3,5 Millionen Franken werden an den Erfolg des Crowdfundings gekoppelt. Das Project R-Team will 3000 Leserinnen und Leser von ihrem Konzept überzeugen und CHF 750'000.- sammeln. Das heisst: Zu jedem ins Crowdfunding eingezahlten Franken kommen CHF 4.66. Bleibt das Crowdfunding erfolglos, wird im Juni ordentlich liquidiert. Das Crowdfunding startet <strong>Ende April 2017</strong> und dauert bis Ende Mai.</p>
 
       <h3>Geschäftsmodell mit zwei Gesellschaftsformen</h3>
 
