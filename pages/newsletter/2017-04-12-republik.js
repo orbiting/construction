@@ -91,7 +91,7 @@ export default ({url}) => {
         </figcaption>
       </figure>
 
-      <p>Der wichtigste Mann bei der Gründung der Republik war der der liberale Basler Schriftsteller, Jurist und Napoleon-Anhänger Peter Ochs. Nach dem Scheitern der Revolution änderten seine Söhne ihren Namen – aus Scham. Und trotzdem hinterliess ihr Vater ein bleibendes Erbe: Es schrieb die erste moderne Verfassung der Schweiz. Mit Gewaltentrennung, Wahlen, Bürgerrecht, Freiheit von Religion und der Presse, Aufhebung der Untertanengebiete und Adelstitel.</p>
+      <p>Der wichtigste Mann bei der Gründung der Republik war der liberale Basler Schriftsteller, Jurist und Napoleon-Anhänger Peter Ochs. Nach dem Scheitern der Revolution änderten seine Söhne ihren Namen – aus Scham. Und trotzdem hinterliess ihr Vater ein bleibendes Erbe: Es schrieb die erste moderne Verfassung der Schweiz. Mit Gewaltentrennung, Wahlen, Bürgerrecht, Freiheit von Religion und der Presse, Aufhebung der Untertanengebiete und Adelstitel.</p>
 
       <p>Die Pressefreiheit garantierte die Verfassung der Helvetischen Republik im schlichten, aber umfassenden Grundsatz sieben: «Die Pressefreyheit ist eine natürliche Folge des Rechtes, das jeder hat, sich unterrichten zu lassen» – also zu wissen, was vor sich geht:</p>
 
