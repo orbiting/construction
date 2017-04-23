@@ -40,6 +40,7 @@ images:
 	convert -resize 1000x -quality 90 assets/images/raw/susanne_sugimoto.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/susanne_sugimoto.jpg
 	convert -resize 1000x -quality 90 assets/images/raw/thomas_preusse.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/thomas_preusse.jpg
 	convert -resize 1000x -quality 90 assets/images/raw/richard_hoechner.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/richard_hoechner.jpg
+	convert -resize 1000x -quality 90 assets/images/raw/andrea_arezina.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/andrea_arezina.jpg
 
 	jpegtran -copy none -progressive assets/images/raw/project_r_crew.jpg > assets/images/optimized/project_r_crew.jpg
 	jpegtran -copy none -progressive assets/images/raw/project_r_crew2.jpg > assets/images/optimized/project_r_crew2.jpg

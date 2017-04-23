@@ -81,6 +81,15 @@ export const richard = {
   email: 'richard.hoechner@project-r.construction'
 }
 
+export const andrea = {
+  image: 'https://assets.project-r.construction/images/andrea_arezina.jpg',
+  name: 'Andrea Arezina',
+  age: 32,
+  title: 'Kampagne',
+  description: 'Ein Crowdfunding, das über Tod und Leben dieses Unternehmens entscheidet, braucht einen erfahrenen Kopf. Deshalb haben wir den erfahrensten eingestellt. Er gehört Andrea Arezina. Sie arbeitet im April und Mai für die Republik. Arezina verbrachte ihre ersten Lebensjahre auf einem Bauernhof im ehemaligen Jugoslawien – und arbeitet heute als Spezialistin für politische Kampagnen. Und ist zweifellos eine Frau, die einen Unterschied macht. Sie war die führende Strategin hinter den zwei härtesten Abstimmungskampagnen der letzten Jahre. Und gewann beide: Die Unternehmenssteuerreform III scheiterte hoch. So wie davor die SVP-Durchsetzungsinitiative. Zu dieser organisierte Arezina das erfolgreichste Crowdfunding der Schweiz. Ihr Komitee erwartete 125\'000 Franken gegen die SVP-Initiative. Es kamen 1,1 Millionen. Arezina behauptet, gern exzessiv zu leben und exzessiv zu arbeiten. Bis Ende Mai tut sie Letzteres.',
+  email: 'andrea.arezina@project-r.construction'
+}
+
 const team = [
   susanne,
   laurent,
@@ -90,7 +99,8 @@ const team = [
   patrick,
   thomas,
   constantin,
-  christof
+  christof,
+  andrea
 ]
 
 const parseDob = timeParse('%d.%m.%Y')
@@ -106,7 +116,7 @@ const age = (dob) => {
 }
 
 team.forEach(person => {
-  person.age = age(person.dob)
+  person.age = person.dob ? age(person.dob) : person.age
 })
 
 export default team
