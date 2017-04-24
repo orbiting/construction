@@ -29,6 +29,7 @@ images:
 	convert -resize 1200x -quality 80 assets/images/raw/vorstand_genossenschaft.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/vorstand_genossenschaft.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/pressefreiheit.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/pressefreiheit.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/foto_manifest.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/foto_manifest.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/taufe_bern.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/taufe_bern.jpg
 	convert -resize 600x -quality 80 assets/images/raw/rothaus_thumb.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_thumb.jpg
 
 	convert -resize 1000x -quality 90 assets/images/raw/christof_moser.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/christof_moser.jpg
