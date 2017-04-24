@@ -30,8 +30,7 @@ export default ({url}) => {
 
       <p>
         <strong>Start Crowdfunding: </strong>26. April 2017<br />
-        <strong>Ende Crowdfunding: </strong>31. Mai 2017<br />
-        <strong>Alle Infromationen zum Crowdfunding: </strong>ab Sommer 2017
+        <strong>Ende Crowdfunding: </strong>31. Mai 2017
       </p>
 
       <p>
