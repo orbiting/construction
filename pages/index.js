@@ -8,6 +8,15 @@ import Grid, {GridItem} from '../src/Grid'
 
 const newsletters = [
   {
+    href: '/newsletter/2017-04-26-start-crowdfunding',
+    title: 'Startschuss Crowdfunding für «Republik»',
+    date: '26. April 2017',
+    image: {
+      src: 'https://assets.project-r.construction/images/rothaus_republik.jpg',
+      alt: 'iPhone Bildschirm mit Website Crowdfunding für Republik'
+    }
+  },
+  {
     href: '/newsletter/2017-04-12-republik',
     title: 'So heisst das Magazin von Project R',
     date: '12. April 2017',
