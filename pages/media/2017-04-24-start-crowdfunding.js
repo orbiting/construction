@@ -5,7 +5,7 @@ import Layout from '../../src/Layout'
 export default ({url}) => {
   const meta = {
     title: 'Ein bisschen Mitbesitzerin von «Republik» werden',
-    description: 'Punkt 07.00 Uhr, am 26. April 2017 startet unter republik.ch das Crowdfunding für das digitale Magazin «Republik»; online und im Hotel Rothaus vor Ort. Bis Ende Mai will die Project-R-Crew 3000 zukünftige Leserinnen und Leser finden, die insgesamt mindestens 750 000 Franken investieren.',
+    description: 'Punkt 07.00 Uhr, am 26. April 2017 startet unter republik.ch das Crowdfunding für das digitale Magazin «Republik»; online und im Hotel Rothaus vor Ort. Bis Ende Mai will die Project-R-Crew 3000 zukünftige Leserinnen und Leser finden, die insgesamt mindestens 750\'000 Franken investieren.',
     image: 'https://assets.project-r.construction/images/taufe_bern.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
@@ -18,9 +18,9 @@ export default ({url}) => {
 
       <h2>Ein bisschen Mitbesitzerin von «Republik» werden</h2>
 
-      <p><strong>Punkt 07.00 Uhr, am 26. April 2017 startet unter <a href="https://www.republik.ch">republik.ch</a> das Crowdfunding für das digitale Magazin «Republik»; online und im Hotel Rothaus vor Ort. Bis Ende Mai will die Project-R-Crew 3000 zukünftige Leserinnen und Leser finden, die insgesamt mindestens 750 000 Franken investieren.</strong></p>
+      <p><strong>Punkt 07.00 Uhr, am 26. April 2017 startet unter <a href='https://www.republik.ch'>republik.ch</a> das Crowdfunding für das digitale Magazin «Republik»; online und im Hotel Rothaus vor Ort. Bis Ende Mai will die Project-R-Crew 3000 zukünftige Leserinnen und Leser finden, die insgesamt mindestens 750'000 Franken investieren.</strong></p>
 
-      <p>Der Startschuss für das Crowdfunding wird bunt. Er ist Punkt 07.00 Uhr im Hotel Rothaus. Die ersten Abonnemente und Mitgliedschaften können <strong>ab 07.00 Uhr</strong> im Hotel Rothaus gelöst werden, an der Zürcher Langstrasse, direkt vor Ort bei der Project-R-Crew. Es gibt Kaffee, Gipfeli und Musik. Das Crowdfunding ist unter <a href="https://www.republik.ch">republik.ch</a> zu finden und startet gleichzeitig online um <strong>07.00 Uhr</strong>. Bis Ende Mai will die Project-R-Crew 3000 zukünftige Leserinnen und Leser finden, die zusammen 750 000 Franken investieren. Das Crowdfunding ist zugleich Markttest. Die Crew wird das digitale Massenmedium nur verwirklichen, wenn es eine Nachfrage für ein solches gibt. Wird das Ziel erreicht, fliessen zusätzlich die bereits zugesagten Mittel von Investorinnen und Spendern in der Höhe von 3,5 Millionen Franken.</p>
+      <p>Der Startschuss für das Crowdfunding wird bunt. Er ist Punkt 07.00 Uhr im Hotel Rothaus. Die ersten Abonnemente und Mitgliedschaften können <strong>ab 07.00 Uhr</strong> im Hotel Rothaus gelöst werden, an der Zürcher Langstrasse, direkt vor Ort bei der Project-R-Crew. Es gibt Kaffee, Gipfeli und Musik. Das Crowdfunding ist unter <a href='https://www.republik.ch'>republik.ch</a> zu finden und startet gleichzeitig online um <strong>07.00 Uhr</strong>. Bis Ende Mai will die Project-R-Crew 3000 zukünftige Leserinnen und Leser finden, die zusammen 750'000 Franken investieren. Das Crowdfunding ist zugleich Markttest. Die Crew wird das digitale Massenmedium nur verwirklichen, wenn es eine Nachfrage für ein solches gibt. Wird das Ziel erreicht, fliessen zusätzlich die bereits zugesagten Mittel von Investorinnen und Spendern in der Höhe von 3,5 Millionen Franken.</p>
 
       <h3>Für einen Kaffee pro Woche in einem Restaurant</h3>
 
