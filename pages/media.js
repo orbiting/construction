@@ -7,6 +7,15 @@ import Grid, {GridItem} from '../src/Grid'
 
 const media = [
   {
+    href: '/media/2017-04-24-start-crowdfunding',
+    title: 'Ein bisschen Mitbesitzerin von «Republik» werden',
+    date: 'Zürich, 24. April 2017',
+    image: {
+      src: 'https://assets.project-r.construction/images/taufe_bern.jpg',
+      alt: 'Taufe des Namen und Logo in Bern'
+    }
+  },
+  {
     href: '/media/2017-04-12-republik',
     title: 'Das Magazin von Project R heisst «Republik»',
     date: 'Bern, 12. April 2017',
