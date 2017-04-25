@@ -75,7 +75,7 @@ export default ({url}) => {
 
       <p>Im Fall eines Scheiterns des Crowdfundings beträgt Ihr Risiko übrigens null. Scheitern wir, wird Ihnen das Geld zurückbezahlt.</p>
 
-      <h3>Für den Preis eines Kaffees pro Woche</h3>
+      <h3>Einen Unterschied machen</h3>
 
       <p>Dafür machen Sie als Neuverlegerin im Falle eines erfolgreichen Crowdfundings kein schlechtes Geschäft: Für jedes Abonnement riskieren die Investoren 1118.40 Franken dazu.</p>
 
