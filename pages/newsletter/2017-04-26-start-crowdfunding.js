@@ -22,7 +22,7 @@ const topPromoStyle = css({
 export default ({url}) => {
   const meta = {
     title: 'Startschuss Crowdfunding für «Republik»',
-    description: 'TODO',
+    description: 'Das digitale Magazin von Project R – jetzt unterstützen: www.republik.ch',
     image: 'https://assets.project-r.construction/images/screen_crowdfunding.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
