@@ -34,7 +34,7 @@ export default ({url}) => {
         alt: 'iPhone Bildschirm mit Website Crowdfunding für Republik'
       }}>
         <h1>Startschuss Crowdfunding für&nbsp;«Republik»</h1>
-        <p>«Während Sie ein vernünftiges Leben führen — mit Familie, Job, Hobby —, arbeiten wir uns durch den Staub der Welt. Und liefern Ihnen das Wesentliche. Mit Ihrem Abonnement finanzieren Sie sich quasi ein privates Expeditionsteam in die Wirklichkeit.»</p>
+        <p>«Während Sie ein vernünftiges Leben führen – mit Familie, Job, Hobby –, arbeiten wir uns durch den Staub der Welt. Und liefern Ihnen das Wesentliche. Mit Ihrem Abonnement finanzieren Sie sich quasi ein privates Expeditionsteam in die Wirklichkeit.»</p>
       </Cover>
     )}>
 
@@ -55,6 +55,8 @@ export default ({url}) => {
 
       <p>Die Bedingungen sind hart, aber vernünftig. Denn es macht keinen Sinn, ein Massenmedium zu gründen, wenn die Leute es nicht wollen. Ausserdem schien uns ein Test per Crowdfunding das richtige Modell zu sein: Denn wir wollen einen Journalismus, der der Öffentlichkeit verpflichtet ist. Und von niemandem abhängig ist – ausser von seinen Leserinnen und Lesern.</p>
 
+      <h3>Mal Konzentrat, mal Panorama</h3>
+
       <p>Das gilt für den Start. Aber auch für die Jahre danach. «Republik» wird sich ohne Werbung finanzieren. Und damit ohne Ablenkung von den eigentlichen Kundinnen und Kunden: Ihnen. Das Magazin wird für Sie brauchbare Ware produzieren müssen, sonst überlebt es nicht. Seine Aufgabe wird sein, Ihnen Klarheit, Haltung, Ideen und gelegentlich Ärger zu liefern. Und darüber hinaus Ihre Zeit nicht zu verschwenden. Also Journalismus ohne Bullshit.</p>
 
       <p>Im Kern sehen wir uns als Dienstleistung für kluge Menschen in einer komplexen Welt. Sie leben ein vernünftiges Leben: mit Job, Familie, Hobby. Sie haben nicht die Zeit, sich 24 Stunden am Tag um allen Lärm der Welt zu kümmern. Wir haben sie. Unser Job als «Republik»-Redaktion werden die grossen Themen, Debatten, Fragen sein – kurz: alles, was lärmig, verwickelt oder unklar ist. Mit einem Abonnement der «Republik» mieten Sie sich quasi ein Expeditionsteam in die Wirklichkeit. Wir rennen, recherchieren und fragen für Sie. Und liefern Ihnen dann – mal als Konzentrat, mal als Panorama – die Fakten und Zusammenhänge. Als Grundlagen für Ihre eigenen Überlegungen und Entscheidungen.</p>
@@ -71,7 +73,9 @@ export default ({url}) => {
 
       <p>Ihr Risiko dabei ist begrenzt. Es beträgt exakt 240 Franken pro Jahr. Wir haben es wie folgt berechnet: Es ist der Preis, den man zahlt, wenn man ein Jahr lang jede Woche einmal im Restaurant einen Kaffee trinkt.</p>
 
-      <p>Im Fall eines Scheiterns des Crowdfundings beträgt Ihr Risiko übrigens null. Alle Zahlungen gehen bis zum Erreichen des Ziels auf ein Sperrkonto. Scheitern wir, wird Ihnen das Geld zurückbezahlt.</p>
+      <p>Im Fall eines Scheiterns des Crowdfundings beträgt Ihr Risiko übrigens null. Scheitern wir, wird Ihnen das Geld zurückbezahlt.</p>
+
+      <h3>Für den Preis eines Kaffees pro Woche</h3>
 
       <p>Dafür machen Sie als Neuverlegerin im Falle eines erfolgreichen Crowdfundings kein schlechtes Geschäft: Für jedes Abonnement riskieren die Investoren 1118.40 Franken dazu.</p>
 
