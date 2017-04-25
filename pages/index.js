@@ -12,7 +12,7 @@ const newsletters = [
     title: 'Startschuss Crowdfunding für «Republik»',
     date: '26. April 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/rothaus_republik.jpg',
+      src: 'https://assets.project-r.construction/images/screen_crowdfunding_thumb.jpg',
       alt: 'iPhone Bildschirm mit Website Crowdfunding für Republik'
     }
   },
