@@ -71,6 +71,9 @@ export default ({url}) => {
       <blockquote>«Ich bin sicher, eine kleine Rebellion hie und da ist eine gute Sache; sie ist in der Politik so notwendig, um die Dinge zu klären, wie ein Sturm für das Wetter.»</blockquote>
 
       <p>Wir glauben, dass auch im Journalismus die Zeit für eine kleine Rebellion gekommen ist. Und arbeiten daran, sie zu machen.</p>
+
+      <p>Vom 26. April bis am 31. Mai läuft das Crowdfunding für das digitale Magazin «Republik» von Project R. Auf <a href="https://www.republik.ch"> www.republik.ch</a> finden Sie alle Informationen zum Mitmachen.</p>
+
       <p>Wenn Sie informiert bleiben wollen, bitte hier für den Newsletter eintragen:</p>
       <Newsletter />
 
