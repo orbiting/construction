@@ -28,7 +28,7 @@ export default ({url}) => {
 
       <p>Sie haben Hunger bewiesen. Und Verr&uuml;cktheit. Und haben einen Unterschied gemacht. Sie haben in einer Branche, die vor allem schlechte Nachrichten kennt, ein Unternehmen gegr&uuml;ndet. Und damit ein neues Modell f&uuml;r den Journalismus erm&ouml;glicht: die Republik.</p>
 
-      <p>Kurz, Sie haben etwas getan. Am Ende waren es XXXXXXXXXXXXXXXXXX Menschen wie Sie. Aber jeder und jede von Ihnen hat einzeln eine Entscheidung getroffen.</p>
+      <p>Kurz, Sie haben etwas getan. Am Ende waren es 13'845 Menschen wie Sie. Aber jeder und jede von Ihnen hat einzeln eine Entscheidung getroffen.</p>
 
       <p>Wir haben im letzten Monat mit vielen von Ihnen gesprochen. Und wissen, dass Sie aus vielen verschiedenen Gr&uuml;nden bei uns an Bord sind: aus Verantwortung f&uuml;r das Gemeinwesen. Aus Interesse an der Welt. Aus Sorge um das Mediensystem. Aus Neugier.</p>
 
