@@ -8,6 +8,15 @@ import Grid, {GridItem} from '../src/Grid'
 
 const newsletters = [
   {
+    href: '/newsletter/2017-05-31-signal-journalismus',
+    title: 'Ein starkes Signal für den Journalismus',
+    date: '31. Mai 2017',
+    image: {
+      src: 'https://assets.project-r.construction/images/testimonials_collage.jpg',
+      alt: 'Eine Collage der Verlegerinnen'
+    }
+  },
+  {
     href: '/newsletter/2017-04-26-start-crowdfunding',
     title: 'Startschuss Crowdfunding für «Republik»',
     date: '26. April 2017',
@@ -72,7 +81,9 @@ export default ({url}) => {
 
       <p>Wir glauben, dass auch im Journalismus die Zeit für eine kleine Rebellion gekommen ist. Und arbeiten daran, sie zu machen.</p>
 
-      <p>Vom 26. April bis am 31. Mai läuft das Crowdfunding für das digitale Magazin «Republik» von Project R. Auf <a href="https://www.republik.ch"> www.republik.ch</a> finden Sie alle Informationen zum Mitmachen.</p>
+      <p>Vom 26. April bis 31. Mai lief die Crowdfunding-Kampagne für das digitale Magazin «Republik» von Project R. Ein überwältigender Erfolg: Über 13’000 Unterstützerinnen und Unterstützer wollen gemeinsam mit der Aufbau-Crew von Project R im Mediensystem einen entscheidenden Unterschied schaffen. Die «Republik» geht 2018 an den Start – kompromisslos in der Qualität, leserfinanziert, ohne Werbung und ohne Bullshit.</p>
+
+      <p>Hier finden Sie die «Republik» <a href="https://www.republik.ch">www.republik.ch</a>. Die Webseite des erfolgreichen Crowdfundings finden Sie <a href="https://www.republik.ch/crowdfunding">hier</a>.</p>
 
       <p>Wenn Sie informiert bleiben wollen, bitte hier für den Newsletter eintragen:</p>
       <Newsletter />
