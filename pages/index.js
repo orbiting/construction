@@ -8,6 +8,15 @@ import Grid, {GridItem} from '../src/Grid'
 
 const newsletters = [
   {
+    href: '/newsletter/2017-05-31-dankeschoen',
+    title: 'Dankeschön',
+    date: '31. Mai 2017',
+    image: {
+      src: 'https://assets.project-r.construction/images/XXXXXXXXXXXXXXXX.jpg',
+      alt: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+    }
+  },
+  {
     href: '/newsletter/2017-04-26-start-crowdfunding',
     title: 'Startschuss Crowdfunding für «Republik»',
     date: '26. April 2017',
