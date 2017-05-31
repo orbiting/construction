@@ -8,7 +8,7 @@ import Grid, {GridItem} from '../src/Grid'
 
 const newsletters = [
   {
-    href: '/newsletter/2017-05-31-dankeschoen',
+    href: '/newsletter/2017-05-31-signal-journalismus',
     title: 'Ein starkes Signal für den Journalismus',
     date: '31. Mai 2017',
     image: {

@@ -33,8 +33,8 @@ export default ({url}) => {
         src: meta.image,
         alt: 'Eine Collage der Verlegerinnen'
       }}>
-        <h1>Dankeschön</h1>
-        <p>Stay hungry. Stay foolish.</p>
+        <h1>Ein starkes Signal für den&nbsp;Journalismus</h1>
+        <p>Eine Republik wird nie von wenigen Leuten gegründet, sondern immer nur von vielen. Und das haben Sie in den letzten fünf Wochen tatsächlich gemeinsam mit uns getan: eine Republik gegründet. Willkommen an Bord!</p>
       </Cover>
     )}>
 
@@ -52,13 +52,13 @@ export default ({url}) => {
 
       <p>Bei der Republik werden Sie folglich (zu einem kleinen Teil) Verlegerin oder Verleger. Als solche oder solcher werden wir Sie regelm&auml;ssig informieren: &uuml;ber alle Zahlen, Fehler, Erfolge und die wichtigen Entscheidungen in der Redaktion. Und werden Sie gelegentlich um eine Entscheidung bitten &ndash; aber nur, wenn wir die Antwort wirklich h&ouml;ren wollen. Und wir werden Ihre Kritik und Ihre Vorschl&auml;ge f&uuml;r Themen entgegennehmen. Auch wenn wir nicht alle umsetzen. (Letzteres ist das Schicksal aller Verleger dieses Planeten. Es gibt keinen Grund, dass es Ihnen besser gehen sollte.)</p>
 
-      <p>Unter diesem <a href="https://www.republik.ch/updates/portraets" target="_blank">Link</a> finden Sie stellvertretend drei Vertretungen der Verlagsetage: die j&uuml;ngste, den &auml;ltesten und den, der am weitesten entfernt wohnt.</p>
+      <p>Unter <a href='https://www.republik.ch/updates/portraets' target='_blank'>diesem Link</a> finden Sie stellvertretend drei Vertretungen der Verlagsetage: die j&uuml;ngste, den &auml;ltesten und den, der am weitesten entfernt wohnt.</p>
 
       <p>
-        <a href="https://www.republik.ch/updates/portraets">
-        <img
-          src='https://assets.project-r.construction/images/testimonials_collage.jpg'
-          alt='Eine Collage der Verlegerinnen' />
+        <a href='https://www.republik.ch/updates/portraets'>
+          <img
+            src='https://assets.project-r.construction/images/publishers_narrow.jpg'
+            alt='Robert Berke, Mavie, Pierre Rom' />
         </a>
       </p>
 
@@ -71,18 +71,16 @@ export default ({url}) => {
       <p>Heute bleibt uns nur, Ihnen ein letztes Mal zu danken. Ohne Sie w&auml;re dieses Unternehmen nicht m&ouml;glich. Eine Republik wird nie von wenigen Leuten gegr&uuml;ndet, sondern immer nur von vielen. Und Sie haben das in den letzten f&uuml;nf Wochen tats&auml;chlich gemeinsam mit uns getan: eine Republik gegr&uuml;ndet.</p>
 
       <p>
-        <a href="https://www.republik.ch/?play=1">
-        <img
-          src='https://assets.project-r.construction/images/XXXXXXXXX.jpg'
-          alt='Video: Danke!' />
+        <a href='https://www.republik.ch/?play=1'>
+          <img src='https://assets.project-r.construction/images/merci_teaser.png' alt='Video: Danke!' />
         </a>
       </p>
 
       <p>Wir freuen uns auf ein gemeinsames 2018.</p>
 
-      <p><em>Ihr Team der Republik und von Project R</em></p>
+      <p>Ihr Team der Republik und von Project R</p>
 
-      <p><em>Clara Vuillemin, Laurent Burst, Nadja Schnetzler, Richard H&ouml;chner, Susanne Sugimoto, Patrick Recher, Thomas Preusse, Andrea Arezina, Christof Moser, Constantin Seibt</em></p>
+      <p>Clara Vuillemin, Laurent Burst, Nadja Schnetzler, Richard H&ouml;chner, Susanne Sugimoto, Patrick Recher, Thomas Preusse, Andrea Arezina, Christof Moser, Constantin Seibt</p>
 
     </Layout>
   )
