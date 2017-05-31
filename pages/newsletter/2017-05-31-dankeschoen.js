@@ -21,9 +21,9 @@ const topPromoStyle = css({
 
 export default ({url}) => {
   const meta = {
-    title: 'Dankeschön',
-    description: 'XXXXXXXXXXXXXX',
-    image: 'https://assets.project-r.construction/images/XXXXXXXXXXXXXXX.jpg',
+    title: 'Ein starkes Signal für den Journalismus',
+    description: 'Eine Republik wird nie von wenigen Leuten gegründet, sondern immer nur von vielen. Und das haben Sie in den letzten fünf Wochen tatsächlich gemeinsam mit uns getan: eine Republik gegründet.',
+    image: 'https://assets.project-r.construction/images/testimonials_collage.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -31,7 +31,7 @@ export default ({url}) => {
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
         src: meta.image,
-        alt: 'XXXXXXXXXXXXXXXXXXXXX'
+        alt: 'Eine Collage Verlegerinnen, welche ihr Bild hochgeladen haben'
       }}>
         <h1>Dankeschön</h1>
         <p>Stay hungry. Stay foolish.</p>
