@@ -66,6 +66,11 @@ export default ({url}) => {
 
       <p>Clara Vuillemin, Laurent Burst, Nadja Schnetzler, Richard H&ouml;chner, Susanne Sugimoto, Patrick Recher, Thomas Preusse, Andrea Arezina, Christof Moser, Constantin Seibt</p>
 
+      <p>PS: Die 14'000 Mitglieder für die Stelle eines Datenjournalisten oder einer Datenjournalistin haben wir nicht erreicht. Aber nur knapp verfehlt. Sobald wir ausgeschlafen haben, werden wir uns zusammensetzen und sehen, was zu tun ist.</p>
+
+      <p>PPS: Erwarten (und befürchten) Sie keine derartige Kadenz von Newslettern mehr. Wir werden Sie ab jetzt nur noch sehr sporadisch belästigen: Nur, wenn wir Grösseres fertig haben.</p>
+
+
     </Layout>
   )
 }
