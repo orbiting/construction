@@ -9,11 +9,11 @@ import Grid, {GridItem} from '../src/Grid'
 const newsletters = [
   {
     href: '/newsletter/2017-05-31-dankeschoen',
-    title: 'Dankeschön',
+    title: 'Ein starkes Signal für den Journalismus',
     date: '31. Mai 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/XXXXXXXXXXXXXXXX.jpg',
-      alt: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+      src: 'https://assets.project-r.construction/images/testimonials_collage.jpg',
+      alt: 'Eine Collage der Verlegerinnen'
     }
   },
   {

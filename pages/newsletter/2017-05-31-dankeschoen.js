@@ -31,7 +31,7 @@ export default ({url}) => {
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
         src: meta.image,
-        alt: 'Eine Collage Verlegerinnen, welche ihr Bild hochgeladen haben'
+        alt: 'Eine Collage der Verlegerinnen'
       }}>
         <h1>Dankeschön</h1>
         <p>Stay hungry. Stay foolish.</p>
