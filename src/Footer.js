@@ -11,10 +11,6 @@ const links = [
   {
     path: '/media',
     title: 'Medieninformationen'
-  },
-  {
-    path: '/jobs',
-    title: 'Jobs'
   }
 ]
 

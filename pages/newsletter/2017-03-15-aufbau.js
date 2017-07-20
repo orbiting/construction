@@ -285,12 +285,7 @@ export default ({url}) => {
       </p>
 
       <p>
-        PPPS: Wir suchen ab Sommer 2017 zwei weitere clevere Programmierer (oder noch besser: Programmiererinnen!).{' '}
-        <Link href='/jobs'>
-          <a>
-            Zum&nbsp;Job-Beschrieb
-          </a>
-        </Link>
+        PPPS: Wir suchen ab Sommer 2017 zwei weitere clevere Programmierer (oder noch besser: Programmiererinnen!).
       </p>
       <hr style={{margin: '40px 0'}} />
 
