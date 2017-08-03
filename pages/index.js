@@ -13,7 +13,7 @@ const newsletters = [
     date: '4. August 2017',
     image: {
       src: 'https://assets.project-r.construction/images/teamwork2.jpg',
-      alt: 'Auf dem Bild sieht man TK'
+      alt: 'Das Team der Republik bei einem Workshop'
     }
   },
   {
