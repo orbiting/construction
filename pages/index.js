@@ -8,6 +8,15 @@ import Grid, {GridItem} from '../src/Grid'
 
 const newsletters = [
   {
+    href: '/newsletter/2017-08-04-ausbau',
+    title: 'Die Start-Aufstellung der «Republik»-Redaktion steht',
+    date: '4. August 2017',
+    image: {
+      src: 'https://assets.project-r.construction/images/teamwork2.jpg',
+      alt: 'Das Team der Republik bei einem Workshop'
+    }
+  },
+  {
     href: '/newsletter/2017-05-31-signal-journalismus',
     title: 'Ein starkes Signal für den Journalismus',
     date: '31. Mai 2017',
