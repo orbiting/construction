@@ -75,9 +75,9 @@ const team = [
 
 export default ({url}) => {
   const meta = {
-    title: 'TK',
-    description: 'TK',
-    image: 'https://assets.project-r.construction/images/teamwork2.jpg',
+    title: 'Dürfen wir vorstellen? Die Neulinge an Bord der Republik',
+    description: 'Journalistinnen, Journalisten und Programmierer: Das ist die Start-Aufstellung der Redaktion',
+    image: 'https://assets.project-r.construction/images/teamwork1.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -88,8 +88,8 @@ export default ({url}) => {
         alt: 'Auf dem Bild sieht man TK'
       }}
       >
-        <h1>{meta.title}</h1>
-        <p>{meta.description}</p>
+        <h1>Die Start-Aufstellung der «Republik»-Redaktion steht</h1>
+        <p>«Wir arbeiten in den nächsten Monaten daran, etwas Brauchbares, Nützliches, Schönes auf die Beine zu stellen. Natürlich werden wir nicht von Anfang an perfekt sein. Und auch später nie. Aber es ist unsere Aufgabe, Ihrem Vertrauen gerecht zu werden.»</p>
       </Cover>
     )}>
 
