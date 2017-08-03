@@ -19,7 +19,9 @@ images:
 	convert -resize 2000x -quality 80 assets/images/raw/rothaus_republik.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_republik.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/logo_republik.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/logo_republik.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/screen_crowdfunding.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/screen_crowdfunding.jpg
-	
+	convert -resize 2000x -quality 80 assets/images/raw/teamwork1.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/teamwork1.jpg
+	convert -resize 2000x -quality 80 assets/images/raw/teamwork2.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/teamwork2.jpg
+
 	convert -resize 1200x -quality 80 assets/images/raw/it-0.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/it-0.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/it-1.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/it-1.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/it-2.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/it-2.jpg
@@ -49,6 +51,16 @@ images:
 	convert -resize 1000x -quality 90 assets/images/raw/thomas_preusse.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/thomas_preusse.jpg
 	convert -resize 1000x -quality 90 assets/images/raw/richard_hoechner.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/richard_hoechner.jpg
 	convert -resize 1000x -quality 90 assets/images/raw/andrea_arezina.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/andrea_arezina.jpg
+
+	convert -resize 1000x -quality 90 assets/images/raw/adrienne_fiechter.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/adrienne_fiechter.jpg
+	convert -resize 1000x -quality 90 assets/images/raw/anja_conzett.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/anja_conzett.jpg
+	convert -resize 1000x -quality 90 assets/images/raw/ariel_hauptmeier.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/ariel_hauptmeier.jpg
+	convert -resize 1000x -quality 90 assets/images/raw/brigitte_meyer.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/brigitte_meyer.jpg
+	convert -resize 1000x -quality 90 assets/images/raw/carlos_hanimann.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/carlos_hanimann.jpg
+	convert -resize 1000x -quality 90 assets/images/raw/daniel_pfaender.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/daniel_pfaender.jpg
+	convert -resize 1000x -quality 90 assets/images/raw/lukas_buenger.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/lukas_buenger.jpg
+	convert -resize 1000x -quality 90 assets/images/raw/sylke_gruhnwald.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/sylke_gruhnwald.jpg
+
 
 	jpegtran -copy none -progressive assets/images/raw/project_r_crew.jpg > assets/images/optimized/project_r_crew.jpg
 	jpegtran -copy none -progressive assets/images/raw/project_r_crew2.jpg > assets/images/optimized/project_r_crew2.jpg
