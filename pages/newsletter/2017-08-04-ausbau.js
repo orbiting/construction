@@ -33,7 +33,7 @@ const team = [
   },
     {
     image: 'https://assets.project-r.construction/images/lukas_buenger.jpg',
-    name: 'Lukas Buenger',
+    name: 'Lukas Bünger',
     age: 34,
     title: 'Software-Entwickler',
     description: `Das Buch, das Lukas Bünger noch unbedingt lesen will, ist die Abrechnung mit Oberembrach: Dort lebte er als Sohn der Pfarrerin zwischen  den Söhnen von Bauern und Piloten. Und er wünscht sich als Autor die Auferstehung von Robert Musil. Musil ist kein Zufall - beinahe hätte Bünger sein Leben als Germanist verbracht –, aber er floh schnell, als er merkte, dass man in fünf Jahren Studium dort «bestenfalls ein brutaler Fachidiot» werden konnte. Er erholte seinen Kopf ein Jahr lang an der ETH mit Mathematik - und begann mit dem Job, den er sich selber beigebracht hatte: Programmierer. Nach verschiedenen Agenturen heuerte er beim Start-up Watson an: als Entwickler bei dessen Front-End. Ein gutes Interface, so Bünger, «braucht eine heikle Balance: Es macht die Sache einfach. Aber es verkauft die Leute nicht für blöd. Denn das sind sie nicht.» Obwohl Bünger «Journalisten mit Abstand für die narzisstischste Berufsgruppe» hält, gibt er der «Republik» eine Chance. Das, weil ihn reizt, etwas von null auf zu entwickeln. «Die Schweiz hat High-Level-Robotik. Und hervorragende Ingenieure. Aber die Professionalisierung der Web-Entwicklung fängt erst an.»`,
@@ -60,13 +60,13 @@ const team = [
     name: 'Sylke Gruhnwald',
     age: 36,
     title: 'Rechercheurin',
-    description: `Eigentlich hätte Sylke Gruhnwald lukrativere Möglichkeiten als Journalismus: Sie kennt genug Leute. Sie weiss, wie man es anstellen müsste, Schwarzgeld über diverse Stationen zu verschieben, Schläger in Aserbaidschan anzuheuern, im Nahen Osten zu verschwinden. Mit ihrem Netz aus Informanten von Russland bis ins südliche Afrika und ihrer Kenntnis von Gesetzeslücken könnte sie auch erfolgreich ein Verbrechersyndikat aufbauen. Schon deshalb, weil sie extrem gerne organisiert. Doch die Welt im Schatten macht ihr nur Freude beim Betrachten. Darin zu leben wäre keine Option: «Selbst die, die Geld angehäuft haben, sind unzufrieden. Ich habe keinen Plan B.» Sie wuchs in München auf, studierte in Wien Betriebswirtschaft und chinesische Hochsprache und blieb im Studentenjob beim «Economist» hängen. 2012 kam sie zur NZZ - und baute dort als Chefin von Journalistinnen, Programmierern, Designerinnen das Datenteam auf. Und dazu ein Netzwerk von internationalen Rechercheuren: Sie wurde Mitglied in diversen Recherchierclubs. Und lernte die Journalismusstile (und -gesetze) im Ausland kennen: Am rauesten sind und leben die Kollegen im Osten. ( «Wir in der Schweiz sind dagegen wirklich nur First-World-Journalisten.») 2014 wechselte sie als Teamleiterin des Datenteams zum Schweizer Fernsehen, 2016 als Reporterin zum «Beobachter». Von ihren zahlreichen, fast immer vielköpfigen Recherchen wurden «The Migrants’ Files» am häufigsten ausgezeichnet: eine Übersicht über alle, die auf der Flucht nach Europa starben.`,
+    description: `Eigentlich hätte Sylke Gruhnwald lukrativere Möglichkeiten als Journalismus: Sie kennt genug Leute. Sie weiss, wie man es anstellen müsste, Schwarzgeld über diverse Stationen zu verschieben, Schläger in Aserbaidschan anzuheuern, im Nahen Osten zu verschwinden. Mit ihrem Netz aus Informanten von Russland bis ins südliche Afrika und ihrer Kenntnis von Gesetzeslücken könnte sie auch erfolgreich ein Verbrechersyndikat aufbauen. Schon deshalb, weil sie extrem gerne organisiert. Doch die Welt im Schatten macht ihr nur Freude beim Betrachten. Darin zu leben wäre keine Option: «Selbst die, die Geld angehäuft haben, sind unzufrieden. Ich habe keinen Plan B.» Sie wuchs in München auf, studierte in Wien Betriebswirtschaft und chinesische Hochsprache und blieb im Studentenjob beim «Economist» hängen. 2012 kam sie zur NZZ - und baute dort als Chefin von Journalistinnen, Programmierern, Designerinnen das Datenteam auf. Und dazu ein Netzwerk von internationalen Rechercheuren: Sie wurde Mitglied in diversen Recherchierclubs. Und lernte die Journalismusstile (und -gesetze) im Ausland kennen: Am rauesten sind und leben die Kollegen im Osten. («Wir in der Schweiz sind dagegen wirklich nur First-World-Journalisten.») 2014 wechselte sie als Teamleiterin des Datenteams zum Schweizer Fernsehen, 2016 als Reporterin zum «Beobachter». Von ihren zahlreichen, fast immer vielköpfigen Recherchen wurden «The Migrants’ Files» am häufigsten ausgezeichnet: eine Übersicht über alle, die auf der Flucht nach Europa starben.`,
     email: ''
   },
   {
     image: 'https://assets.project-r.construction/images/daniel_pfaender.jpg',
-    name: 'Daniel Pfaender',
-    age: 43,
+    name: 'Daniel Pfänder',
+    age: 42,
     title: 'Software-Entwickler',
     description: `Daniel Pfänder wuchs im Taubertal auf. Dieses liegt in Bayern. Noch heute spricht er den sanften Dialekt seiner Herkunft. Und ihn umgibt ein Hauch von Ruhe und Provinz. Dem es nichts anhaben konnte, dass er zehn Jahre im internationalsten und elitärsten Konzern des Planeten arbeitete: Google. So ruhig Pfänder wirkt, sein Leben bestand aus drei energischen Fluchten. Als Sohn des Dorfschullehrers ging Pfänder aufs Gymnasium. Aber mit 15 hatte er die Schnauze voll «von dem Schweinesystem: den sadistischen Lehrern». Er beschloss, als Einsiedler zu leben. Doch seine Eltern holten ihn mit einem Kompromiss «zurück in die Zivilisation»: statt auszusteigen, Rudolf-Steiner-Schule. Nach dem Abitur war er erst ratlos, weil ihn zu viele Dinge interessierten. Dann studierte er Biologie. Doch eines Tages, im Labor, als er Bakterien mit radioaktivem Mittel markierte, fragte er sich, ob er das ein Leben lang tun wollte: an einer Fussnote der Forschung mitarbeiten. Das war 1995, die Zeit der ersten Webbrowser. Pfänder verliess das Labor und stieg ins Netz um: Es schien ihm das Tor zur Welt. Er bastelte Websites, begann eine Lehre als Mediengestalter bei einer Druckerei, studierte Multimedia und jede Nacht die Jobseite von Google. Eines Nachts erschien das Inserat: Webmaster gesucht. Pfänder schrieb und bestieg vor der ersten Bewerbungsrunde in Zürich das erste Flugzeug seines Lebens. Er hatte Flugangst, kein Wunder, wirkte er nach der Landung souverän: das Schlimmste lag hinter ihm. Nach fünf Monaten Testreihen (einer davon war das Warten) bekam er den Job. Damals arbeiteten bei Google Zürich noch 150 Leute, zehn Jahre später waren es 3000. Und Pfänder fragte sich, ob er nicht schon wieder eine Fussnote war: obwohl er vielleicht die meistgesehenen Fussnoten des Planeten programmiert hatte – die auf den Videos von Youtube. Er fragte sich, ob er nicht - zusammen mit hochintelligenten Technikern - in einer Blase lebte. Er kündigte. Mit der Begründung, dass er «seine Wäsche wieder selbst waschen» wolle. Und heuerte bei der «Republik» an, wo er das muss.`,
     email: ''
@@ -103,7 +103,7 @@ export default ({url}) => {
 
     <p>Wir haben Ihnen als Verlegerin, als Verleger beim Crowdfunding versprochen, dass die Redaktion möglichst gemischt sein soll: nach Erfahrungen, Alter, Fähigkeiten – und etwa 50:50 in Sachen Geschlecht. Denn zusammen mit zu viel ähnlichen Leuten hat man keine Chance, den eigenen blinden Flecken zu entkommen. Egal, wie man sich dreht: Je schärfer man hinsieht, desto unsichtbarer wird, was man nicht sieht.</p>
 
-    <p>Unser Plan ist, die eigene Blindheit durch einen möglichst geschickten Mix zu bekämpfen. In der Hoffnung, dass aus vielen Einäugigen ein scharfsichtiges Ganzes entsteht. Kurz: das klassische Konzept jeder «Republik».</p>
+    <p>Unser Plan ist, die eigene Blindheit durch einen möglichst geschickten Mix zu bekämpfen. In der Hoffnung, dass aus vielen Einäugigen ein scharfsichtiges Ganzes entsteht. Kurz: das klassische Konzept jeder Republik.</p>
 
     <p>Die Einäugigen, die wir in den letzten Wochen an Bord geholt haben, kommen aus den verschiedensten Winkeln. Sie wuchsen in den Bergen, der Stadt oder im Internet auf, arbeiteten in so verschiedenen Unternehmen wie der WOZ, der NZZ oder Google; sie sind teils Rechercheurinnen, teils Stilisten, teils beides, teils Programmierer. (Wir sind ein IT-Unternehmen.)</p>
 
@@ -119,13 +119,13 @@ export default ({url}) => {
 
     <p>Und erholen Sie sich gut!</p>
 
-    <p>Mit besten Grüssen an Ihre Strände, Berge und Balkone -</p>
+    <p>Mit besten Grüssen an Ihre Strände, Berge und Balkone –</p>
 
     <p>die Crew von Project R und der «Republik»</p>
 
-    <p>PS: In den nächsten zwei Wochen werden wir Sie noch einmal stören müssen. Es geht um die Veröffentlichung des Codes der Crowdfunding-Website. Damit diese auch von Unternehmen gebraucht werden kann, die Ähnliches vorhaben. (Wir versprachen Ende April, das wir das tun würden. Und müssen nun Hannah Arendt folgen, die einmal schrieb: «Es gibt nur eine einzige brauchbare Methode, die Zukunft vorherzusagen: Gib ein Versprechen und halte es.»)</p>
+    <p>PS: Falls Sie noch nicht als Verleger, als Verlegerin der «Republik» an Bord sind – unsere Büros sind nach einer kurzen Pause wieder geöffnet. Und wir heissen Sie hier willkommen:<a href="https://www.republik.ch"> www.republik.ch</a></p>
 
-    <p>PPS: Falls Sie noch nicht als Verleger, als Verlegerin der «Republik» an Bord sind – unsere Büros sind nach einer kurzen Pause wieder geöffnet. Und wir heissen Sie hier willkommen:<a href="https://www.republik.ch"> www.republik.ch</a></p>
+    <p>PPS: In den nächsten zwei Wochen werden wir Sie noch einmal stören müssen. Es geht um die Veröffentlichung des Codes der Crowdfunding-Website. Damit diese auch von Unternehmen gebraucht werden kann, die Ähnliches vorhaben. (Wir versprachen Ende April, das wir das tun würden. Und müssen nun Hannah Arendt folgen, die einmal schrieb: «Es gibt nur eine einzige brauchbare Methode, die Zukunft vorherzusagen: Gib ein Versprechen und halte es.»)</p>
 
   </Layout>
   )
