@@ -7,7 +7,7 @@ import Portrait from '../../src/Portrait'
 
 // the newsletter content should never change
 const team = [
- {
+  {
     image: 'https://assets.project-r.construction/images/brigitte_meyer.jpg',
     name: 'Brigitte Meyer',
     age: 47,
@@ -15,7 +15,7 @@ const team = [
     description: `Die zukünftige Bildchefin der «Republik» tat, was kein Mensch vor ihr tat: Sie renovierte 2009 die NZZ. Die letzte nennenswerte Veränderung der «Neuen Zürcher Zeitung» lag damals über 60 Jahre zurück: 1946 hatte man die Frakturschrift abgeschafft. Was viele schon damals nach nur 166 Jahren als überhastet empfanden. Meyer verbrachte ihre Kindheit in Schaffhausen: Dort war nur der Rhein gross. Und alles andere niedlich. Sie verliess die Stadt Richtung Zürich mit einer «Aversion gegen alles Pittoreske». Eigentlich war ihr Plan, an der Uni zu studieren, um Journalistin zu werden. Doch dann bestand sie die Prüfung zur Kunstgewerbeschule. Und landete dann doch im Journalismus, nur anders: als Layouterin beim Magazin «Facts». Danach stieg sie schnell auf, weil sie «kein Problem hatte, Verantwortung zu übernehmen». Das erste Magazin, dass sie komplett neu gestaltete, war das Frauenmagazin «Meyer’s». Als dieses drei Jahre später in Konkurs ging, pendelte sie als Art-Direktorin von 2002 bis 2006 zwischen «Weltwoche» und «Magazin» hin und her. (Sie war dort, wo Roger Köppel nicht war.) Ihre Philosophie bei Bild wie Layout war: Kein Chichi, kein Bullshit, keine Schnörkel. Und vor allem: keine durchgezogene Bildsprache. Sondern das präzise Bild von Fall zu Fall, je nach Text. Und das nicht als Illustration, sondern als Statement. Im Zweifel hält sich Meyer an die Klassik – oder die Idee, die die Klassik in die Luft sprengt: «Ich mag Grenzen und das Ausbrechen aus Grenzen.» Beim Relaunch der NZZ reduzierte sie mit einer Hamburger Agentur das Layout auf das Skelett, entfernte alle Schlacken und baute es wieder auf: ohne Schnörkel, ohne Überflüssiges, nur mit einem winzigen Hauch Exzentrischem. Sie blieb als Bildchefin bis 2017. Bei der NZZ hatte Meyer ein Team von 15 Leuten und 237 Jahre Tradition im Rücken. Bei der «Republik» startet sie nun mit leichtem Gepäck: mit 0 Leuten und 0 Jahren Tradition.`,
     email: ''
   },
-    {
+  {
     image: 'https://assets.project-r.construction/images/carlos_hanimann.jpg',
     name: 'Carlos Hanimann',
     age: 35,
@@ -31,7 +31,7 @@ const team = [
     description: `Adrienne Fichter kennt Start-ups aus Erfahrung: 2009 war sie bei der Gründung von Politnetz an Bord – und ging drei Jahre durch die faszinierende Hölle von Schlaflosigkeit, Pizzaschachteln und Testen von Ideen. Politnetz.ch war der erste Versuch in der Schweiz, eine digitale Plattform für die demokratische Debatte zu bauen. Und kein schlechter Ort für Fichter, denn ihre Themen waren exakt diese: Politik und Netz. Fichter ist studierte Politologin und Social-Media-Expertin. Von 2014 bis 2017 leitete sie die Social-Media-Abteilung der NZZ: verantwortlich für Konzepte, Debatten, Trolls und Essays zum Thema. Diesen Januar kündigte sie, um als Autorin und Herausgeberin an einem Buch zu arbeiten: «Smartphone-Demokratie» zur Politik im 21. Jahrhundert: zu Fake-News, Bots, Filterblasen, Empörungswellen und den neuesten Strategien der Spin-Doktoren. Es erscheint Mitte September im Verlag NZZ Libro – und diesen Herbst wird Fichter zwecks Vorstellung kreuz und quer durchs Land reisen. Eine Debatte mit ihr lohnt sich. Nicht nur wegen ihrer Kompetenz. Sondern auch, weil Fichters Mutter aus Russland einwanderte. Und ihre Tochter trotz einer Kindheit in Luzern zwei Schweizer Nationaltugenden nie begriffen hat: den Geiz. Und die Zurückhaltung bei der Äusserung der eigenen Ideen.`,
     email: ''
   },
-    {
+  {
     image: 'https://assets.project-r.construction/images/lukas_buenger.jpg',
     name: 'Lukas Bünger',
     age: 34,
@@ -89,44 +89,44 @@ export default ({url}) => {
         alt: 'Das Team der Republik bei einem Workshop'
       }}
     >
-      <h1>Die Start-Aufstellung der «Republik»-Redaktion steht</h1>
-      <p>«Wir arbeiten in den nächsten Monaten daran, etwas Brauchbares, Nützliches, Schönes auf die Beine zu stellen. Natürlich werden wir nicht von Anfang an perfekt sein. Und auch später nie. Aber es ist unsere Aufgabe, Ihrem Vertrauen gerecht zu werden.»</p>
-    </Cover>
+        <h1>Die Start-Aufstellung der «Republik»-Redaktion steht</h1>
+        <p>«Wir arbeiten in den nächsten Monaten daran, etwas Brauchbares, Nützliches, Schönes auf die Beine zu stellen. Natürlich werden wir nicht von Anfang an perfekt sein. Und auch später nie. Aber es ist unsere Aufgabe, Ihrem Vertrauen gerecht zu werden.»</p>
+      </Cover>
     )}>
 
-    <Head>
-      <title>Die Start-Aufstellung der «Republik»-Redaktion steht</title>
-    </Head>
-    <p>Ladies and Gentlemen,</p>
+      <Head>
+        <title>Die Start-Aufstellung der «Republik»-Redaktion steht</title>
+      </Head>
+      <p>Ladies and Gentlemen,</p>
 
-    <p>entschuldigen Sie, dass wir Sie mitten in den Sommerferien stören. Aber wir haben ein paar Neuigkeiten, die nicht warten können. Oder genauer gesagt: ein paar Neulinge.</p>
+      <p>entschuldigen Sie, dass wir Sie mitten in den Sommerferien stören. Aber wir haben ein paar Neuigkeiten, die nicht warten können. Oder genauer gesagt: ein paar Neulinge.</p>
 
-    <p>Wir haben Ihnen als Verlegerin, als Verleger beim Crowdfunding versprochen, dass die Redaktion möglichst gemischt sein soll: nach Erfahrungen, Alter, Fähigkeiten – und etwa 50:50 in Sachen Geschlecht. Denn zusammen mit zu viel ähnlichen Leuten hat man keine Chance, den eigenen blinden Flecken zu entkommen. Egal, wie man sich dreht: Je schärfer man hinsieht, desto unsichtbarer wird, was man nicht sieht.</p>
+      <p>Wir haben Ihnen als Verlegerin, als Verleger beim Crowdfunding versprochen, dass die Redaktion möglichst gemischt sein soll: nach Erfahrungen, Alter, Fähigkeiten – und etwa 50:50 in Sachen Geschlecht. Denn zusammen mit zu viel ähnlichen Leuten hat man keine Chance, den eigenen blinden Flecken zu entkommen. Egal, wie man sich dreht: Je schärfer man hinsieht, desto unsichtbarer wird, was man nicht sieht.</p>
 
-    <p>Unser Plan ist, die eigene Blindheit durch einen möglichst geschickten Mix zu bekämpfen. In der Hoffnung, dass aus vielen Einäugigen ein scharfsichtiges Ganzes entsteht. Kurz: das klassische Konzept jeder Republik.</p>
+      <p>Unser Plan ist, die eigene Blindheit durch einen möglichst geschickten Mix zu bekämpfen. In der Hoffnung, dass aus vielen Einäugigen ein scharfsichtiges Ganzes entsteht. Kurz: das klassische Konzept jeder Republik.</p>
 
-    <p>Die Einäugigen, die wir in den letzten Wochen an Bord geholt haben, kommen aus den verschiedensten Winkeln. Sie wuchsen in den Bergen, der Stadt oder im Internet auf, arbeiteten in so verschiedenen Unternehmen wie der WOZ, der NZZ oder Google; sie sind teils Rechercheurinnen, teils Stilisten, teils beides, teils Programmierer. (Wir sind ein IT-Unternehmen.)</p>
+      <p>Die Einäugigen, die wir in den letzten Wochen an Bord geholt haben, kommen aus den verschiedensten Winkeln. Sie wuchsen in den Bergen, der Stadt oder im Internet auf, arbeiteten in so verschiedenen Unternehmen wie der WOZ, der NZZ oder Google; sie sind teils Rechercheurinnen, teils Stilisten, teils beides, teils Programmierer. (Wir sind ein IT-Unternehmen.)</p>
 
-    <p>Falls Sie noch Qualitäten vermissen: Das ist nur die erste Welle der Einstellungen. Nicht zuletzt ist der Job der Neulinge, bis Ende Herbst die gesamte Redaktion aufzubauen. Weitere Einäugige werden also folgen.</p>
+      <p>Falls Sie noch Qualitäten vermissen: Das ist nur die erste Welle der Einstellungen. Nicht zuletzt ist der Job der Neulinge, bis Ende Herbst die gesamte Redaktion aufzubauen. Weitere Einäugige werden also folgen.</p>
 
-    <p>An Bord sind, in zufälliger Reihenfolge:</p>
+      <p>An Bord sind, in zufälliger Reihenfolge:</p>
 
-    {team.map((person, i) => <Portrait key={i} {...person} odd={!(i % 2)} />)}
+      {team.map((person, i) => <Portrait key={i} {...person} odd={!(i % 2)} />)}
 
-    <p>So weit die ersten Zuzüge der Redaktion. Wahrscheinlich werden sie genau das tun, was jede Redaktion für ihre Verlegerin, ihren Verleger tut: Sie erstaunen. Mal, weil sie verblüffend Interessantes produzieren. Mal, weil man sich so furchtbar über die Bande ärgert.</p>
+      <p>So weit die ersten Zuzüge der Redaktion. Wahrscheinlich werden sie genau das tun, was jede Redaktion für ihre Verlegerin, ihren Verleger tut: Sie erstaunen. Mal, weil sie verblüffend Interessantes produzieren. Mal, weil man sich so furchtbar über die Bande ärgert.</p>
 
-    <p>Aber bis dahin ist noch ein wenig Zeit. Es sind ja nun noch fünf Monate bis zum Start der «Republik». Entschuldigen Sie die Störung Ihrer Sommerferien.</p>
+      <p>Aber bis dahin ist noch ein wenig Zeit. Es sind ja nun noch fünf Monate bis zum Start der «Republik». Entschuldigen Sie die Störung Ihrer Sommerferien.</p>
 
-    <p>Und erholen Sie sich gut!</p>
+      <p>Und erholen Sie sich gut!</p>
 
-    <p>Mit besten Grüssen an Ihre Strände, Berge und Balkone –</p>
+      <p>Mit besten Grüssen an Ihre Strände, Berge und Balkone –</p>
 
-    <p>die Crew von Project R und der «Republik»</p>
+      <p>die Crew von Project R und der «Republik»</p>
 
-    <p>PS: Falls Sie noch nicht als Verleger, als Verlegerin der «Republik» an Bord sind – unsere Büros sind nach einer kurzen Pause wieder geöffnet. Und wir heissen Sie hier willkommen:<a href="https://www.republik.ch"> www.republik.ch</a></p>
+      <p>PS: Falls Sie noch nicht als Verleger, als Verlegerin der «Republik» an Bord sind – unsere Büros sind nach einer kurzen Pause wieder geöffnet. Und wir heissen Sie hier willkommen:<a href='https://www.republik.ch'> www.republik.ch</a></p>
 
-    <p>PPS: In den nächsten zwei Wochen werden wir Sie noch einmal stören müssen. Es geht um die Veröffentlichung des Codes der Crowdfunding-Website. Damit diese auch von Unternehmen gebraucht werden kann, die Ähnliches vorhaben. (Wir versprachen Ende April, das wir das tun würden. Und müssen nun Hannah Arendt folgen, die einmal schrieb: «Es gibt nur eine einzige brauchbare Methode, die Zukunft vorherzusagen: Gib ein Versprechen und halte es.»)</p>
+      <p>PPS: In den nächsten zwei Wochen werden wir Sie noch einmal stören müssen. Es geht um die Veröffentlichung des Codes der Crowdfunding-Website. Damit diese auch von Unternehmen gebraucht werden kann, die Ähnliches vorhaben. (Wir versprachen Ende April, das wir das tun würden. Und müssen nun Hannah Arendt folgen, die einmal schrieb: «Es gibt nur eine einzige brauchbare Methode, die Zukunft vorherzusagen: Gib ein Versprechen und halte es.»)</p>
 
-  </Layout>
+    </Layout>
   )
 }

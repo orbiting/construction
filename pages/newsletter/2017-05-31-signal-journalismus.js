@@ -70,7 +70,6 @@ export default ({url}) => {
 
       <p>PPS: Erwarten (und befürchten) Sie keine derartige Kadenz von Newslettern mehr. Wir werden Sie ab jetzt nur noch sehr sporadisch belästigen: Nur, wenn wir Grösseres fertig haben.</p>
 
-
     </Layout>
   )
 }
