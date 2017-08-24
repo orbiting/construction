@@ -114,11 +114,13 @@ export default ({url}) => {
 
       <p>Das Crowdfunding der Republik begann am 26. April 2017, um 7 Uhr morgens. Die Lobby im Rothaus war prallvoll gepackt mit verregneten Verlegern, dem Geruch nach Aufregung und nassem Hund. Eine Etage weiter oben sass das IT-Team im Maschinenraum, einem winzigen Hotelzimmer. An dessen Tür waren massive Drohungen befestigt, nicht zu stören.</p>
 
-      <p>
+      <figure style={{margin: '0 0 10px'}}>
         <img
           src='https://assets.project-r.construction/images/nl7-warroom.jpg'
           alt='Das IT-Team im kleinen Maschinenraum' />
-      </p>
+        <br />
+        <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>Foto: Jan Bolomey für Project R</figcaption>
+      </figure>
 
       <p>Sie hatten die Nacht durchprogrammiert, ein paar Hundert letzte Änderungen, tranken mechanisch Kaffee und begannen sich zu entspannen. Dann, um 7.32 Uhr, stürzte das System ab. Panik herrschte. Das System wurde ab- und eingeschaltet – und lief nach zwanzig endlosen Sekunden erneut. Dann stürzte es zwei weitere Male ab: um 9.00 Uhr und 9:58 Uhr.</p>
 

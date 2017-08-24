@@ -38,7 +38,6 @@ images:
 
 	convert -resize 1200x -quality 80 assets/images/raw/nl7-error.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-error.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/nl7-kosmos.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-kosmos.jpg
-	convert -resize 1200x -quality 80 assets/images/raw/nl7-throughput.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-throughput.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/nl7-tpr.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-tpr.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/nl7-warroom.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-warroom.jpg
 
