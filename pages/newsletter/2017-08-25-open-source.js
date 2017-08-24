@@ -6,8 +6,8 @@ import Cover from '../../src/Cover'
 
 export default ({url}) => {
   const meta = {
-    title: 'todo',
-    description: 'todo',
+    title: 'Blick zurück nach vorn: Project R legt los',
+    description: '«Die Frankenstein-Monster-Strategie der Tamedia, die Zeitungskäufe von Christoph Blocher, die Selbstideologisierung der NZZ: Ehrlich gesagt wäre es uns lieber gewesen, wenn wir uns geirrt hätten.»',
     image: 'https://assets.project-r.construction/images/nl7-dani.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
@@ -16,17 +16,13 @@ export default ({url}) => {
     <Layout url={url} meta={meta} cover={(
       <Cover image={{
         src: meta.image,
-        alt: 'todo'
+        alt: 'Programmier hinter Laptop mit Republik-Aufkleber'
       }}
     >
-        <h1>todo</h1>
-        <p>«todo»</p>
+        <h1>Blick zurück nach&nbsp;vorn</h1>
+        <p>«Die Frankenstein-Monster-Strategie der Tamedia, die Zeitungskäufe von Christoph Blocher, die Selbstideologisierung der NZZ: Ehrlich gesagt wäre es uns lieber gewesen, wenn wir uns geirrt hätten.»</p>
       </Cover>
     )}>
-
-      <Head>
-        <title>todo</title>
-      </Head>
       <p>Ladies and Gentlemen,</p>
 
       <p>der Journalismus in der Schweiz ist in einem neuen Zeitalter angelangt. Tamedia legt die Zeitungen in der Welsch- und der Deutschschweiz zu je einer riesigen Redaktion zusammen. Der Charakter der einzelnen Zeitungen besteht nur noch aus dem, was sie aus dem Pool herausfischen. Intern schwärmte der Tamedia-Verleger Pietro Supino von den Chancen des «industriellen Journalismus».</p>
@@ -41,7 +37,7 @@ export default ({url}) => {
 
     <p>Falls Sie jetzt trotzdem weiterlesen, werden Sie einiges über unsere Bemühungen erfahren, nicht nur brauchbaren Journalismus zu machen, sondern auch brauchbare Software. Und Sie erfahren alles zur Programmierung der Crowdfunding-Seite der Republik. Und über die schockierenden Minuten, in denen beinahe unser ganzes Unternehmen abgestürzt wäre.</p>
 
-    <p>Am wertvollsten ist dieser Newsletter für Sie, wenn Sie selbst ein grösseres Crowdfunding planen: Dann kann seine Lektüre für Sie 100ʼ000 Franken wert sein.</p>
+    <p>Am wertvollsten ist dieser Newsletter für Sie, wenn Sie selbst ein grösseres Crowdfunding planen: Dann kann seine Lektüre für Sie 100'000 Franken wert sein.</p>
 
     <p>Der Grund ist, dass Project R bei der Gründung der Republik ein Versprechen abgab: Gemeinnützigkeit. Unser Unternehmen ist ja in zwei Teile aufgespalten. Die Republik AG konzentriert sich auf die Praxis des Journalismus: Ihr Job ist, das Magazin zu machen. Die Project R Genossenschaft dagegen hat die Aufgabe, sich um mehr als nur das eigene Geschäft zu kümmern: um die Institution des Journalismus.</p>
 
@@ -73,7 +69,7 @@ export default ({url}) => {
         alt='Entspannter Programmierer hinter seinen Laptop' />
     </p>
 
-    <p>Was bei IT-Fehlern passieren kann, zeigte der Fall von NZZ.at, der österreichischen Tochter der NZZ. Sie war schon in der Minute der Geburt zum Tod verurteilt. Sie startete mit grossem Wirbel am 21. Januar 2015 – und dann fielen beim Start die Zahlungssysteme aus. Für eine ganze Woche. Keiner der Neugierigen konnte abonnieren. Später schätzte man, dass der Ausfall die NZZ.at rund 2000 Abonnenten kostete. (Sie brauchte 10ʼ000.) Von diesem Schlag erholte sich der Start-up nie mehr.</p>
+    <p>Was bei IT-Fehlern passieren kann, zeigte der Fall von NZZ.at, der österreichischen Tochter der NZZ. Sie war schon in der Minute der Geburt zum Tod verurteilt. Sie startete mit grossem Wirbel am 21. Januar 2015 – und dann fielen beim Start die Zahlungssysteme aus. Für eine ganze Woche. Keiner der Neugierigen konnte abonnieren. Später schätzte man, dass der Ausfall die NZZ.at rund 2000 Abonnenten kostete. (Sie brauchte 10'000.) Von diesem Schlag erholte sich der Start-up nie mehr.</p>
 
     <p>Den Todesstoss erhielt die Firma dann ebenfalls durch die Informatik: Als man später das Redaktionssystem auf das der NZZ umstellte, erwies es sich als unmöglich, die Kundendatenbank zu übertragen: Die NZZ.at musste allen Abonnenten kündigen – mit der Bitte, sich neu einzutragen. Nur die Hälfte tat das. Damit war das Schicksal besiegelt: Im April 2017 wurde sie eingestellt.</p>
 
@@ -89,7 +85,7 @@ export default ({url}) => {
 
     <p><strong>Infrastruktur.</strong> Eine Profi-Crowdfunding-Seite zu benutzen, erspart einem viel: etwa den ganzen Ärger mit den Zahlungsanbindungen. Nur uns hätte das nichts erspart: Wir mussten sie sowieso programmieren. Also taten wir es sofort.</p>
 
-    <p><strong>Geld.</strong> Die Crowdfunding-Firmen nehmen für ihre Dienste 8 bis 12 Prozent der Einnahmen. Programmiert man selbst, gibt man an die Zahlungsanbieter 2 bis 4 Prozent ab. Doch das Geldargument war das kleinste bei unserer Entscheidung. (Zwar lohnte es sich im Nachhinein. Der Unterschied betrug etwa 230ʼ000 Franken. Aber das war unvorhersehbar: Niemand von uns rechnete damit, dass das Crowdfunding derart atemberaubend laufen würde.) </p>
+    <p><strong>Geld.</strong> Die Crowdfunding-Firmen nehmen für ihre Dienste 8 bis 12 Prozent der Einnahmen. Programmiert man selbst, gibt man an die Zahlungsanbieter 2 bis 4 Prozent ab. Doch das Geldargument war das kleinste bei unserer Entscheidung. (Zwar lohnte es sich im Nachhinein. Der Unterschied betrug etwa 230'000 Franken. Aber das war unvorhersehbar: Niemand von uns rechnete damit, dass das Crowdfunding derart atemberaubend laufen würde.) </p>
 
       <p>Vor allem die Punkte 1 bis 5 führten zu dem Unternehmensentscheid, den unser Programmierer Patrick Recher wie folgt beschrieb: «Fuck, dann müssen wir das Teil halt selber bauen.»</p>
 
@@ -108,7 +104,7 @@ export default ({url}) => {
       <li>Zur Einfachheit gehört auch das Konzept, dass die Seite sofort nach der Zahlung ohne Eingabe eines Passworts betretbar ist. (Was komplex zu programmieren war, aber dann erstaunlich klaglos funktionierte.)</li>
       <li>Vorhanden, wenn auch ein wenig unauffällig, war unter dem «Mitmach»-Button auch der Vermerk: «Ich kann mir diesen Betrag nicht leisten.» Darauf folgte ein Link, bei dem man den Betrag für die Mitgliedschaft selbst eintragen konnte: von 1 Franken an. Zu unserer Verblüffung wurde diese Möglichkeit alles andere als missbraucht: Im Schnitt zahlten weniger vermögende Verleger 170 Franken – mit zuweilen einer Lebensgeschichte als Begründung, warum sie nicht 240 zahlten. Vertrauen lohnt sich.</li>
       <li>Spät, auf das Lobbying unseres Community-Managers Richard Höchner hin, wurde die Community-Seite programmiert, auf welche die neuen Verlegerinnen und Verleger ein Foto und einen Slogan hochladen konnten. Wir rechneten mit 100, 200 Leuten – es kamen genau 4000. Ihre Fotos sehen nun von Flachbildschirmen mal mild, mal streng auf unsere Sitzungen hinunter, zwecks Erinnerung, für wen wir arbeiten. Das klappt – es wirkt so einschüchternd wie eine Verleger-Ahnengalerie in Öl. </li>
-      <li>Eine weitere Überraschung war die Mitgliedsnummer. Sie wurde erst in der Nacht vor dem Crowdfunding fertig programmiert – und wurde verblüffend populär: Nicht selten stellen sich uns Verleger mit ihrer Mitgliedsnummer vor – und besondere Zahlen (wie 12ʼ345) waren erstaunlich begehrt.</li>
+      <li>Eine weitere Überraschung war die Mitgliedsnummer. Sie wurde erst in der Nacht vor dem Crowdfunding fertig programmiert – und wurde verblüffend populär: Nicht selten stellen sich uns Verleger mit ihrer Mitgliedsnummer vor – und besondere Zahlen (wie 12'345) waren erstaunlich begehrt.</li>
       <li>Dafür gingen die ziemlich aufwendig organisierten Prominentenvideos in der Flut unbeachtet unter. Offensichtlich verscheucht vom republikanischen Geist.</li>
       <li>Das Härteste zum Programmieren waren die Zahlungsanbindungen. Wir wählten den Weg, mit allen Anbietern direkt zu verhandeln. Dazu später mehr. </li>
     </ul>
@@ -157,9 +153,9 @@ export default ({url}) => {
 
     <p>Denn um sie für Ihre Pläne zu nutzen, brauchen Sie eine Agentur oder besser zwei versierte Programmierer, für mindestens zwei Wochen. Deren Job besteht im Wesentlichen aus drei Dingen: 1. das Design auswechseln. 2. den eigenen Provider, die eigene Datenbank, das eigene Mailprogramm anbinden (ein ziemliches Paket). 3. die Zahlungsanbindungen herstellen: Das kostet Wochen an Verhandlungen und Zeit. Die Kreditkartenverbindung war die einfachste Sache, der Einzahlungsschein selbst programmierbar, also problemlos, PayPal benahm sich schon einiges komplizierter, die Verhandlungen mit der Postfinance glichen einer diplomatischen Mission.</p>
 
-    <p>Die Kosten? Etwa 10ʼ000 Franken, falls Sie selbst programmieren lassen, etwa 20ʼ000 bis 30ʼ000 Franken, wenn Sie eine Agentur anstellen. (Letzteres ist weniger empfehlenswert, nicht wegen des höheren Preises, sondern weil Sie dann ausgeliefert sind. Die NZZ.at scheiterte auch deshalb, weil sie zum Bau ihrer Website eine Agentur angeheuert hatte, die wiederum eine Agentur für die Zahlungsanbindungen anheuerte – das Resultat: eine Reihe fallender Dominosteine.)</p>
+    <p>Die Kosten? Etwa 10'000 Franken, falls Sie selbst programmieren lassen, etwa 20'000 bis 30'000 Franken, wenn Sie eine Agentur anstellen. (Letzteres ist weniger empfehlenswert, nicht wegen des höheren Preises, sondern weil Sie dann ausgeliefert sind. Die NZZ.at scheiterte auch deshalb, weil sie zum Bau ihrer Website eine Agentur angeheuert hatte, die wiederum eine Agentur für die Zahlungsanbindungen anheuerte – das Resultat: eine Reihe fallender Dominosteine.)</p>
 
-    <p>Was Sie als Basis von uns kostenlos erhalten, ist eine Plattform, in die von unserem Programmierteam (Thomas Preusse am Frontend, Patrick Recher am Backend und Clara Vuillemin als Head of Product) drei Monate konzentrierte Arbeit gesteckt wurde – würden Sie so etwas selbst entwickeln lassen, es kostete Sie zwischen 100ʼ000 und 200ʼ000 Franken.</p>
+    <p>Was Sie als Basis von uns kostenlos erhalten, ist eine Plattform, in die von unserem Programmierteam (Thomas Preusse am Frontend, Patrick Recher am Backend und Clara Vuillemin als Head of Product) drei Monate konzentrierte Arbeit gesteckt wurde – würden Sie so etwas selbst entwickeln lassen, es kostete Sie zwischen 100'000 und 200'000 Franken.</p>
 
     <h3>Tipps</h3>
 
@@ -167,7 +163,7 @@ export default ({url}) => {
 
     <p>Die ersten Vorbereitungen zum Crowdfunding der Republik begannen (obwohl wir das damals nicht wussten) schon fast zwei Jahre davor: Wir redeten mit rund vier Dutzend Journalistinnen, Verlagsprofis, Werbern, Anwälten über das noch geheime Project R. (Ein kleines Wunder, dass alle dichthielten.) Das half doppelt: Erstens durch kompetentes Feedback. Zweitens erobert das Herz von Leuten wenig mehr, als wenn man sie fragt. Wir hatten dadurch einen harten Kern von freundlichen Unterstützerinnen und Unterstützern.</p>
 
-    <p>Zweitens hatten wir vor dem Crowdfunding die E-Mails von 8000 Leuten, die sich für das Projekt interessierten. Und – nach einem Telefon- und Diplomatiemarathon – wir waren beim Start auf den Newslettern anderer Organisationen mit insgesamt 200ʼ000 Adressaten. Last, not least luden die zehn Mitglieder unseres Teams in der Nacht vor dem Crowdfunding sämtliche Adressen von Bekannten in eine Mailkanone.</p>
+    <p>Zweitens hatten wir vor dem Crowdfunding die E-Mails von 8000 Leuten, die sich für das Projekt interessierten. Und – nach einem Telefon- und Diplomatiemarathon – wir waren beim Start auf den Newslettern anderer Organisationen mit insgesamt 200'000 Adressaten. Last, not least luden die zehn Mitglieder unseres Teams in der Nacht vor dem Crowdfunding sämtliche Adressen von Bekannten in eine Mailkanone.</p>
 
     <p>Drittens müssen Video, Text, Newsletter und Botschaft passen. Das heisst vor allem: Nicht allen passen. Das deshalb, weil aus allgemeiner Zustimmung niemand handelt. Das Pathos der Republik-Gründung hatte entscheidende Gegner. Aber noch entscheidender: auch das Gegenteil.</p>
 
@@ -177,7 +173,7 @@ export default ({url}) => {
 
     <p>Kurz: Sie haben unseren Respekt, wenn Sie ein grösseres Crowdfunding wagen. Es ist kein ganz freundliches Abenteuer. Und es wäre eine Ehre, wenn Sie dabei unsere Seite brauchen könnten.</p>
 
-    <p>Hier noch einmal der Link zum Code: github.com/orbiting</p>
+    <p>Hier noch einmal der Link zum Code: <a href="https://github.com/orbiting">github.com/orbiting</a></p>
 
     <p>Und Ihnen, allen Verlegerinnen und Verlegern, die bis hierhin durchgehalten haben, ohne persönlich ein Crowdfunding zu planen, verleihen wir den Tapferkeitsorden. Für Ihre Neugier.</p>
 
@@ -197,7 +193,7 @@ export default ({url}) => {
 
     <p>PPPS: Und falls Sie die nun aller Geheimnisse beraubte Crowdfunding-Seite besichtigen wollen, können Sie das hier tun: <a href="https://www.republik.ch/crowdfunding">www.republik.ch/crowdfunding</a></p>
 
-    <p>PPPPS: Dort finden Sie übrigens unsere Prognosen aus dem Frühling: Zur Frankenstein-Monster-Strategie von Tamedia, zu den Kaufabsichten von Christoph Blocher, zur Selbstideologisierung der NZZ. In der Zwischenzeit sind das Nachrichten von gestern: Tamedia gründete den Pool, die BaZ-Holding kaufte Gratiszeitungen mit einer Gesamtauflage von 700ʼ000 Stück, die NZZ schasste im Feuilleton ihre Kulturkorrespondenten und ersetzte sie durch politische, die Blick-Gruppe spart fünf Prozent ihres Budgets ein. Ehrlich gesagt: Es wäre uns lieber gewesen, wenn wir uns geirrt hätten.</p>
+    <p>PPPPS: Dort finden Sie übrigens unsere Prognosen aus dem Frühling: Zur Frankenstein-Monster-Strategie von Tamedia, zu den Kaufabsichten von Christoph Blocher, zur Selbstideologisierung der NZZ. In der Zwischenzeit sind das Nachrichten von gestern: Tamedia gründete den Pool, die BaZ-Holding kaufte Gratiszeitungen mit einer Gesamtauflage von 700'000 Stück, die NZZ schasste im Feuilleton ihre Kulturkorrespondenten und ersetzte sie durch politische, die Blick-Gruppe spart fünf Prozent ihres Budgets ein. Ehrlich gesagt: Es wäre uns lieber gewesen, wenn wir uns geirrt hätten.</p>
 
     </Layout>
   )
