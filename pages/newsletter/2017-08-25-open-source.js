@@ -86,7 +86,7 @@ export default ({url}) => {
 
       <p><strong>Geld.</strong> Die Crowdfunding-Firmen nehmen für ihre Dienste 8 bis 12 Prozent der Einnahmen. Programmiert man selbst, gibt man an die Zahlungsanbieter 2 bis 4 Prozent ab. Doch das Geldargument war das kleinste bei unserer Entscheidung. (Zwar lohnte es sich im Nachhinein. Der Unterschied betrug etwa 230'000 Franken. Aber das war unvorhersehbar: Niemand von uns rechnete damit, dass das Crowdfunding derart atemberaubend laufen würde.) </p>
 
-      <p>Vor allem die Punkte 1 bis 5 führten zu dem Unternehmensentscheid, den unser Programmierer Patrick Recher wie folgt beschrieb: «Fuck, dann müssen wir das Teil halt selber bauen.»</p>
+      <p>Diese Überlegungen führten zu dem Unternehmensentscheid, den unser Programmierer Patrick Recher wie folgt beschrieb: «Fuck, dann müssen wir das Teil halt selber bauen.»</p>
 
       <h3>2. Welche Entscheidungen treffen Sie, wenn Sie unsere Seite übernehmen?</h3>
 
