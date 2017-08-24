@@ -5,8 +5,8 @@ import Cover from '../../src/Cover'
 
 export default ({url}) => {
   const meta = {
-    title: 'Blick zurück nach vorn: Project R legt los',
-    description: '«Die Frankenstein-Monster-Strategie der Tamedia, die Zeitungskäufe von Christoph Blocher, die Selbstideologisierung der NZZ: Ehrlich gesagt wäre es uns lieber gewesen, wenn wir uns geirrt hätten.»',
+    title: 'Blick zurück nach vorn',
+    description: 'Nachwuchsförderung, Debattenkultur, Open-Source-Software – die Project R Genossenschaft legt los. (Und dieser Newsletter kann für Sie mindestens 100\'000 Franken wert sein.)',
     image: 'https://assets.project-r.construction/images/nl7-dani.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
@@ -19,7 +19,7 @@ export default ({url}) => {
       }}
     >
         <h1>Blick zurück nach&nbsp;vorn</h1>
-        <p>«Die Frankenstein-Monster-Strategie der Tamedia, die Zeitungskäufe von Christoph Blocher, die Selbstideologisierung der NZZ: Ehrlich gesagt wäre es uns lieber gewesen, wenn wir uns geirrt hätten.»</p>
+        <p>«Die Zeitungskäufe von Christoph Blocher, die Selbstideologisierung der NZZ, die Frankenstein-Monster-Strategie der Tamedia: Ehrlich gesagt wäre es uns lieber gewesen, wir hätten uns geirrt.»</p>
       </Cover>
     )}>
       <p>Ladies and Gentlemen,</p>
