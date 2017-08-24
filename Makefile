@@ -21,6 +21,7 @@ images:
 	convert -resize 2000x -quality 80 assets/images/raw/screen_crowdfunding.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/screen_crowdfunding.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/teamwork1.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/teamwork1.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/teamwork2.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/teamwork2.jpg
+	convert -resize 2000x -quality 80 assets/images/raw/nl7-dani.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-dani.jpg
 
 	convert -resize 1200x -quality 80 assets/images/raw/it-0.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/it-0.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/it-1.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/it-1.jpg
@@ -34,6 +35,12 @@ images:
 	convert -resize 1200x -quality 80 assets/images/raw/foto_manifest.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/foto_manifest.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/taufe_bern.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/taufe_bern.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/manifest_rothaus.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/manifest_rothaus.jpg
+
+	convert -resize 1200x -quality 80 assets/images/raw/nl7-error.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-error.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/nl7-kosmos.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-kosmos.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/nl7-throughput.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-throughput.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/nl7-tpr.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-tpr.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/nl7-warroom.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-warroom.jpg
 
 
 	convert -resize 600x -quality 80 assets/images/raw/rothaus_thumb.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_thumb.jpg

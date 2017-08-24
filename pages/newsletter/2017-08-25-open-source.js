@@ -3,13 +3,12 @@ import Head from 'next/head'
 
 import Layout from '../../src/Layout'
 import Cover from '../../src/Cover'
-import Portrait from '../../src/Portrait'
 
 export default ({url}) => {
   const meta = {
     title: 'todo',
     description: 'todo',
-    image: 'todo',
+    image: 'https://assets.project-r.construction/images/nl7-dani.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -68,6 +67,12 @@ export default ({url}) => {
 
     <p>Planen Sie ein Crowdfunding, stehen Sie vor einer harten Entscheidung: Gehen Sie zu einer der Profi-Plattformen oder programmieren Sie selbst? Wir taten es selbst – und es war keine Entscheidung, die wir mit Begeisterung getroffen haben. Um ehrlich zu sein: Wir versuchten, es zu vermeiden. Denn das hiess: volles Risiko.</p>
 
+    <p>
+      <img
+        src='https://assets.project-r.construction/images/nl7-tpr.jpg'
+        alt='Thomas ist der Beste!' />
+    </p>
+
     <p>Was bei IT-Fehlern passieren kann, zeigte der Fall von NZZ.at, der österreichischen Tochter der NZZ. Sie war schon in der Minute der Geburt zum Tod verurteilt. Sie startete mit grossem Wirbel am 21. Januar 2015 – und dann fielen beim Start die Zahlungssysteme aus. Für eine ganze Woche. Keiner der Neugierigen konnte abonnieren. Später schätzte man, dass der Ausfall die NZZ.at rund 2000 Abonnenten kostete. (Sie brauchte 10ʼ000.) Von diesem Schlag erholte sich der Start-up nie mehr.</p>
 
     <p>Den Todesstoss erhielt die Firma dann ebenfalls durch die Informatik: Als man später das Redaktionssystem auf das der NZZ umstellte, erwies es sich als unmöglich, die Kundendatenbank zu übertragen: Die NZZ.at musste allen Abonnenten kündigen – mit der Bitte, sich neu einzutragen. Nur die Hälfte tat das. Damit war das Schicksal besiegelt: Im April 2017 wurde sie eingestellt.</p>
@@ -113,11 +118,23 @@ export default ({url}) => {
 
     <p>Das Crowdfunding der Republik begann am 26. April 2017, um 7 Uhr morgens. Die Lobby im Rothaus war prallvoll gepackt mit verregneten Verlegern, dem Geruch nach Aufregung und nassem Hund. Einen Stock weiter oben sass das IT-Team im Maschinenraum, einem winzigen Hotelzimmer. An dessen Tür waren massive Drohungen befestigt, nicht zu stören.</p>
 
+    <p>
+      <img
+        src='https://assets.project-r.construction/images/nl7-warroom.jpg'
+        alt='Thomas ist der Beste!' />
+    </p>
+
     <p>Sie hatten die Nacht durchprogrammiert, ein paar Hundert letzte Änderungen, tranken mechanisch Kaffee und begannen sich zu entspannen. Dann, um 7.32 Uhr, stürzte das System ab. Panik herrschte. Das System wurde ab- und eingeschaltet – und lief nach zwanzig endlosen Sekunden erneut. Dann stürzte es drei weitere Male ab: um 7.45 Uhr, 8 Uhr, 8.10 Uhr.</p>
 
     <p>Draussen, im Netz, fand ein wilder Ansturm statt: von Verlegerinnen und Leuten, die alle paar Minuten die Republik-Seite neu aufschalteten, um die Zahl im Zähler zu beobachten, die in schnellem Rhythmus stieg.</p>
 
     <p>Drinnen, im Maschinenraum, sah das Team fassungslos auf den Kontrollmonitor, der sich in rasendem Tempo mit Fehlermeldungen füllte. Diese scrollten rot gefärbt den Bildschirm hoch, erst einzelne, dann zu Hunderten, in einem Tempo, dass niemand sie mehr lesen konnte – ein Strom aus maschinellem Blut. Der Programmierer Patrick Recher war überzeugt, das Internet noch sie so brutal erlebt zu haben.</p>
+
+    <p>
+      <img
+        src='https://assets.project-r.construction/images/nl7-error.jpg'
+        alt='Error, Error, Error!' />
+    </p>
 
     <p>Das Team versuchte das System zu entlasten, indem es alles Überflüssige abschaltete: etwa die Community-Seite und das sekündliche Update des Zählers. Es half nicht viel.</p>
 
@@ -168,6 +185,12 @@ export default ({url}) => {
     <p>Ihre Crew von Project R und der Republik</p>
 
     <p>PS: Im Herbst plant Project R eine kleine Debattenreihe im neu eröffneten Europaallee-Koloss Kosmos. Die erste Veranstaltung, am 18. September, trägt den Titel «Gesünder durch Informationsdiät!». In den Monaten darauf sprechen wir über Erwachsenwerden (Taten statt Jammern), die Grenze zwischen Aktivismus und Journalismus und im Dezember zum Stand des Irrtums in der Republik. Den Link dazu finden Sie auf der Veranstaltungsseite des Kosmos: xxxxxxxxxxxxxxx</p>
+
+    <p>
+      <img
+        src='https://assets.project-r.construction/images/nl7-kosmos.jpg'
+        alt='Traffic pushing up' />
+    </p>
 
     <p>PPS: Falls Sie etwas für die Vielfalt im Mediensystem tun wollen und noch nicht bei uns Verlegerin oder Verleger sind, können Sie das in Minutenschnelle ändern. Und zwar hier: <a href="https://www.republik.ch">www.republik.ch</a></p>
 

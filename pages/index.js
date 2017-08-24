@@ -12,7 +12,7 @@ const newsletters = [
     title: 'todo',
     date: '25. August 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/teamwork2.jpg',
+      src: 'https://assets.project-r.construction/images/nl7-dani.jpg',
       alt: 'todo'
     }
   },
