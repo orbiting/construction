@@ -163,11 +163,13 @@ export default ({url}) => {
 
       <p>Nun, die Republik-Seite eignet sich nicht für kleine Crowdfundings. Dafür sind die Profi-Plattformen besser aufgestellt. Sie ist eine Plattform für grosse, kühne Projekte.</p>
 
-      <p>Denn um sie für Ihre Pläne zu nutzen, brauchen Sie eine Agentur oder besser zwei versierte Programmierer, für mindestens zwei Wochen. Deren Job besteht im Wesentlichen aus drei Dingen: 1. das Design auswechseln. 2. den eigenen Provider, die eigene Datenbank, das eigene Mailprogramm anbinden (ein ziemliches Paket). 3. die Zahlungsanbindungen herstellen: Das kostet Wochen an Verhandlungen und Zeit. Die Kreditkartenverbindung war die einfachste Sache, der Einzahlungsschein selbst programmierbar, also problemlos, PayPal benahm sich schon einiges komplizierter, die Verhandlungen mit der Postfinance glichen einer diplomatischen Mission.</p>
+      <p>Denn um sie für Ihre Pläne zu nutzen, brauchen Sie eine Agentur oder besser zwei erfahrene Programmierer (mit Kenntnissen von Javascript, GraphQL und PostgreSQL), für mindestens zwei Wochen. Deren Job besteht im Wesentlichen aus drei Dingen: 1. das Design auswechseln. 2. den eigenen Provider, die eigene Datenbank, das eigene Mailprogramm anbinden (plus die eigene Buchhaltung – ein ziemliches Paket). 3. die Zahlungsanbindungen herstellen: Das kostet Wochen an Verhandlungen und Zeit. Die Kreditkartenverbindung war die einfachste Sache, der Einzahlungsschein selbst programmierbar, also problemlos, PayPal benahm sich schon einiges komplizierter, die Verhandlungen mit der Postfinance glichen einer diplomatischen Mission.</p>
 
       <p>Die Kosten? Etwa 10'000 Franken, falls Sie selbst programmieren lassen, etwa 20'000 bis 30'000 Franken, wenn Sie eine Agentur anstellen. (Letzteres ist weniger empfehlenswert, nicht wegen des höheren Preises, sondern weil Sie dann ausgeliefert sind. Die NZZ.at scheiterte auch deshalb, weil sie zum Bau ihrer Website eine Agentur angeheuert hatte, die wiederum eine Agentur für die Zahlungsanbindungen anheuerte – das Resultat: eine Reihe fallender Dominosteine.)</p>
 
       <p>Was Sie als Basis von uns kostenlos erhalten, ist eine Plattform, in die von unserem Programmierteam (Thomas Preusse am Frontend, Patrick Recher am Backend und Clara Vuillemin als Head of Product) drei Monate konzentrierte Arbeit gesteckt wurde – würden Sie so etwas selbst entwickeln lassen, es kostete Sie zwischen 100'000 und 200'000 Franken.</p>
+
+      <p>Zum Schluss eine Warnung: Obiges gilt nur, falls Sie sich eng an die Dramaturgie der «Republik»-Seite halten wollen. Brauchen Sie einen Massanzug, programmieren Sie vorzugsweise selber. (Statt am Ende ca. 70 Prozent anzupassen.) Was sich in jedem Fall vernünftig herauslösen lässt, ist der Code mit den Zahlungsanbindungen.</p>
 
       <h3>Tipps</h3>
 
