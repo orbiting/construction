@@ -13,7 +13,7 @@ const newsletters = [
     date: '13. September 2017',
     image: {
       src: 'https://assets.project-r.construction/images/nl7-code.jpg',
-      alt: 'Backend-Code Screenshot'
+      alt: 'Backend-Code-Screenshot'
     }
   },
   {

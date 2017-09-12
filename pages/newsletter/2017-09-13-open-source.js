@@ -15,7 +15,7 @@ export default ({url}) => {
     <Layout url={url} meta={meta} cover={(
       <Cover image={{
         src: meta.image,
-        alt: 'Backend-Code Screenshot'
+        alt: 'Backend-Code-Screenshot'
       }}
     >
         <h1>Der Crowdfunding-Code gegen die Frankenstein-Monster-Strategie</h1>
