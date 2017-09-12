@@ -5,7 +5,7 @@ import Cover from '../../src/Cover'
 
 export default ({url}) => {
   const meta = {
-    title: 'Blick zurück nach vorn',
+    title: 'Der Crowdfunding-Code gegen die Frankenstein-Monster-Strategie',
     description: 'Nachwuchsförderung, Debattenkultur, Open-Source-Software – die Project R Genossenschaft legt los. (Und dieser Newsletter kann für Sie mindestens 100\'000 Franken wert sein.)',
     image: 'https://assets.project-r.construction/images/nl7-code.jpg',
     url: `https://project-r.construction${url.pathname}`
@@ -15,10 +15,10 @@ export default ({url}) => {
     <Layout url={url} meta={meta} cover={(
       <Cover image={{
         src: meta.image,
-        alt: 'Programmier hinter Laptop mit Republik-Aufkleber'
+        alt: 'Backend-Code Screenshot'
       }}
     >
-        <h1>Blick zurück nach&nbsp;vorn</h1>
+        <h1>Der Crowdfunding-Code gegen die Frankenstein-Monster-Strategie</h1>
         <p>«Die Zeitungskäufe von Christoph Blocher, die Selbstideologisierung der NZZ, die Frankenstein-Monster-Strategie der Tamedia: Ehrlich gesagt wäre es uns lieber gewesen, wir hätten uns geirrt.»</p>
       </Cover>
     )}>
@@ -31,7 +31,7 @@ export default ({url}) => {
       <figure style={{margin: '0 0 10px'}}>
         <img
           src='https://assets.project-r.construction/images/nl7-frankenstein.jpg'
-          alt='' />
+          alt='Frankenstein in Bride of Frankenstein (1935)' />
         <br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
             Foto: Everett Collection/Keystone

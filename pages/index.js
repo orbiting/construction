@@ -9,11 +9,11 @@ import Grid, {GridItem} from '../src/Grid'
 const newsletters = [
   {
     href: '/newsletter/2017-09-13-open-source',
-    title: 'Blick zurück nach vorn: Project R legt los',
+    title: 'Der Crowdfunding-Code gegen die Frankenstein-Monster-Strategie',
     date: '13. September 2017',
     image: {
       src: 'https://assets.project-r.construction/images/nl7-code.jpg',
-      alt: 'Programmier hinter Laptop mit Republik-Aufkleber'
+      alt: 'Backend-Code Screenshot'
     }
   },
   {
