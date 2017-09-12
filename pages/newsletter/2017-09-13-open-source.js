@@ -48,16 +48,16 @@ export default ({url}) => {
 
       <p>Vielleicht scrollen Sie einfach auch schnell bis zum PS durch. Dann, wenn Sie nur daran interessiert sind, eine unserer Veranstaltungen im neu eröffneten Kosmos in Zürich zu besuchen. </p>
 
-      <p>Falls Sie jetzt trotzdem weiterlesen, werden Sie einiges über unsere Bemühungen erfahren, nicht nur brauchbaren Journalismus zu machen, sondern auch brauchbare Software. Und Sie erfahren alles zur Programmierung der Crowdfunding-Seite der Republik. Und über die schockierenden Minuten, in denen beinahe unser ganzes Unternehmen abgestürzt wäre.</p>
+      <p>Falls Sie jetzt trotzdem weiterlesen, werden Sie einiges über unsere Bemühungen erfahren, nicht nur brauchbaren Journalismus zu machen, sondern auch brauchbare Software. Und Sie erfahren alles zur Programmierung der Crowdfunding-Seite der «Republik». Und über die schockierenden Minuten, in denen beinahe unser ganzes Unternehmen abgestürzt wäre.</p>
 
-      <p>Am wertvollsten ist dieser Newsletter für Sie, wenn Sie selbst ein grösseres Crowdfunding planen: Dann kann seine Lektüre für Sie 100'000 Franken wert sein. Der Grund ist, dass Project R bei der Gründung der Republik ein Versprechen abgab: Gemeinnützigkeit. Unser Unternehmen ist ja in zwei Teile aufgespalten. Die Republik AG konzentriert sich auf die Praxis des Journalismus: Ihr Job ist, das Magazin zu machen. Die Project R Genossenschaft dagegen hat die Aufgabe, sich um mehr als nur das eigene Geschäft zu kümmern: um die Institution des Journalismus.</p>
+      <p>Am wertvollsten ist dieser Newsletter für Sie, wenn Sie selbst ein grösseres Crowdfunding planen: Dann kann seine Lektüre für Sie 100'000 Franken wert sein. Der Grund ist, dass Project R bei der Gründung der «Republik» ein Versprechen abgab: Gemeinnützigkeit. Unser Unternehmen ist ja in zwei Teile aufgespalten. Die Republik AG konzentriert sich auf die Praxis des Journalismus: Ihr Job ist, das Magazin zu machen. Die Project R Genossenschaft dagegen hat die Aufgabe, sich um mehr als nur das eigene Geschäft zu kümmern: um die Institution des Journalismus.</p>
 
       <p>Unter anderem tut sie dies mit folgenden Mitteln:</p>
 
       <ul>
         <li>Mit der Veranstaltung von Debatten. (Die Premiere dazu finden Sie im PS.)</li>
-        <li>Mit Ausbildung. (Soeben wurde das Ausbildungskonzept verabschiedet – ab Mitte 2018 werden die ersten vier Auszubildenden bei der Republik anfangen.)</li>
-        <li>Mit juristischem Know-how – nicht zuletzt als Schutzschild für die Republik.</li>
+        <li>Mit Ausbildung. (Soeben wurde das Ausbildungskonzept verabschiedet – ab Mitte 2018 werden die ersten vier Auszubildenden bei der «Republik» anfangen.)</li>
+        <li>Mit juristischem Know-how – nicht zuletzt als Schutzschild für die «Republik».</li>
         <li>Mit Open-Source-Software. Was immer wir an Programmen entwickeln, wir veröffentlichen den gesamten Code. Kostenlos. Für alle, die ihn brauchen können.</li>
         <li>Mit der periodischen Veröffentlichung von Vorgängen, die in anderen Firmen als Geschäftsgeheimnis gelten: Dazu gehören alle Fehler, alle Tricks, alle Strategien, geglückte wie gescheiterte. (Wir fangen in diesem Newsletter gleich an.)</li>
       </ul>
@@ -94,7 +94,7 @@ export default ({url}) => {
 
       <p>Vor allem die Punkte 1 bis 4 führten zu dem Unternehmensentscheid, den unser Programmierer Patrick Recher wie folgt beschrieb: «Fuck, dann müssen wir das Teil halt selber bauen.»</p>
 
-      <h3>2. Welche Entscheidungen treffen Sie, wenn Sie unsere Seite übernehmen?</h3>
+      <h3>Welche Entscheidungen treffen Sie, wenn Sie unsere Seite übernehmen?</h3>
 
       <p>Schreiben ist schon schlimm genug: Man muss dauernd Entscheidungen treffen: dieses Wort oder jenes oder keines. Jeder Text ist ein Massaker an seinen Varianten.</p>
 
@@ -118,7 +118,7 @@ export default ({url}) => {
 
       <p>Das Tückische beim Crowdfunding ist, dass der Ansturm entweder am Anfang kommt oder nie. Erreicht das Projekt in den ersten Tagen nicht mindestens einen Drittel des Ziels, ist es so gut wie gestorben. Nur ist das auch die Zeit, in der Ihr System am anfälligsten ist. Irgendeine Kinderkrankheit wird es haben, garantiert.</p>
 
-      <p>Das Crowdfunding der Republik begann am 26. April 2017, um 7 Uhr morgens. Die Lobby im Rothaus war prallvoll gepackt mit verregneten Verlegern, dem Geruch nach Aufregung und nassem Hund. Eine Etage weiter oben sass das IT-Team im Maschinenraum, einem winzigen Hotelzimmer. An dessen Tür waren massive Drohungen befestigt, nicht zu stören.</p>
+      <p>Das Crowdfunding der «Republik» begann am 26. April 2017, um 7 Uhr morgens. Die Lobby im Rothaus war prallvoll gepackt mit verregneten Verlegern, dem Geruch nach Aufregung und nassem Hund. Eine Etage weiter oben sass das IT-Team im Maschinenraum, einem winzigen Hotelzimmer. An dessen Tür waren massive Drohungen befestigt, nicht zu stören.</p>
 
       <figure style={{margin: '0 0 10px'}}>
         <img
@@ -128,14 +128,14 @@ export default ({url}) => {
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'left'}}>
           Als die «Republik» kurz auf der Kippe stand: Momente des Schreckens am 26. April im IT-Team.
           <span style={{float: 'right', marginLeft: 5}}>
-            Foto: Jan Bolomey für Project R
+            Credit: Foto: Jan Bolomey für Project R
           </span>
         </figcaption>
       </figure>
 
       <p>Sie hatten die Nacht durchprogrammiert, ein paar Hundert letzte Änderungen, tranken mechanisch Kaffee und begannen sich zu entspannen. Dann, um 7.32 Uhr, stürzte das System ab. Panik herrschte. Das System wurde ab- und eingeschaltet – und lief nach zwanzig endlosen Sekunden erneut. Dann stürzte es zwei weitere Male ab: um 9.00 Uhr und 9:58 Uhr.</p>
 
-      <p>Draussen, im Netz, fand ein wilder Ansturm statt: von Verlegerinnen und Leuten, die alle paar Minuten die Republik-Seite neu aufriefen, um die Zahl im Zähler zu beobachten, die in schnellem Rhythmus stieg.</p>
+      <p>Draussen, im Netz, fand ein wilder Ansturm statt: von Verlegerinnen und Leuten, die alle paar Minuten die «Republik»-Seite neu aufriefen, um die Zahl im Zähler zu beobachten, die in schnellem Rhythmus stieg.</p>
 
       <p>Drinnen, im Maschinenraum, sah das Team fassungslos auf den Kontrollmonitor, der sich in rasendem Tempo mit Fehlermeldungen füllte. Diese scrollten rot gefärbt den Bildschirm hoch, erst einzelne, dann zu Hunderten, in einem Tempo, dass niemand sie mehr lesen konnte – ein Strom aus maschinellem Blut. Der Programmierer Patrick Recher war überzeugt, das Internet noch nie so brutal erlebt zu haben.</p>
 
@@ -151,7 +151,7 @@ export default ({url}) => {
 
       <p>Nun stand das Team vor einem Dilemma: Das gesamte System funktionierte zwar noch passabel, man musste es jedoch immer wieder neu starten. Und der Ansturm von Neuverlegerinnen und Neuverlegern war jenseits aller Erwartung. (Bis Mitternacht waren es 5651 Verleger und über eine Million Franken.) Und der Fehler lag im Herzen des Systems. Die Frage war, ob man ihn korrigieren sollte – mit dem Risiko, dass man bei der Korrektur einen Fehler macht und das System abstürzen würde.</p>
 
-      <p>Um 10.42 Uhr riskierte das Team den Neustart mit der korrigierten Version. Sie lief. Und zwar für die restlichen 34 Tage problemlos. Bis auf einen mysteriösen, nie geklärten Crash, Sekunden nachdem das Fernsehen in der «Tagesschau» die Nachricht vom erfolgreichen Crowdfunding der Republik gebracht hatte.</p>
+      <p>Um 10.42 Uhr riskierte das Team den Neustart mit der korrigierten Version. Sie lief. Und zwar für die restlichen 34 Tage problemlos. Bis auf einen mysteriösen, nie geklärten Crash, Sekunden nachdem das Fernsehen in der «Tagesschau» die Nachricht vom erfolgreichen Crowdfunding der «Republik» gebracht hatte.</p>
 
       <p>Um 10 Uhr abends befahl die IT-Chefin Clara Vuillemin, dass der Frontend-Programmierer Thomas Preusse nach Hause müsse – und zwar in Begleitung. Preusse hatte 48 Stunden durchgearbeitet und keinen Tropfen Adrenalin mehr im Blut. Man warf ihn auf sein Bett wie einen bärtigen Sack, wo er innert Sekunden ins Koma fiel. Um 3 Uhr sass er im Bett, hellwach. Ihm war eine weitere mögliche Fehlerquelle eingefallen: die zu kleine Datenbank. Preusse ging ins Netz, kaufte eine riesige Datenbank für 1200 Franken im Monat, kopierte die Daten, schloss das Teil an und sank um 5 Uhr morgens in den zweiten Teil der Bewusstlosigkeit.</p>
 
@@ -161,7 +161,7 @@ export default ({url}) => {
 
       <h3>Was es kostet, was es bringt</h3>
 
-      <p>Nun, die Republik-Seite eignet sich nicht für kleine Crowdfundings. Dafür sind die Profi-Plattformen besser aufgestellt. Sie ist eine Plattform für grosse, kühne Projekte.</p>
+      <p>Nun, die «Republik»-Seite eignet sich nicht für kleine Crowdfundings. Dafür sind die Profi-Plattformen besser aufgestellt. Sie ist eine Plattform für grosse, kühne Projekte.</p>
 
       <p>Denn um sie für Ihre Pläne zu nutzen, brauchen Sie eine Agentur oder besser zwei erfahrene Programmierer (mit Kenntnissen von Javascript, GraphQL und PostgreSQL), für mindestens zwei Wochen. Deren Job besteht im Wesentlichen aus drei Dingen: 1. das Design auswechseln. 2. den eigenen Provider, die eigene Datenbank, das eigene Mailprogramm anbinden (plus die eigene Buchhaltung – ein ziemliches Paket). 3. die Zahlungsanbindungen herstellen: Das kostet Wochen an Verhandlungen und Zeit. Die Kreditkartenverbindung war die einfachste Sache, der Einzahlungsschein selbst programmierbar, also problemlos, PayPal benahm sich schon einiges komplizierter, die Verhandlungen mit der Postfinance glichen einer diplomatischen Mission.</p>
 
@@ -175,15 +175,15 @@ export default ({url}) => {
 
       <p>Ein Crowdfunding lebt nicht von der Website allein. Von aussen sieht die Sache zwar entspannt aus. Man schaltet eine Seite auf. Wartet. Und dann kommt Geld. (Oder nicht.) Doch von Nahem verflüchtigt sich aller Buddhismus. Ein grösseres Crowdfunding braucht Monate Arbeit. Mit der Logistik dahinter könnte man auch ein kleines Land erobern, etwa San Marino.</p>
 
-      <p>Die ersten Vorbereitungen zum Crowdfunding der Republik begannen (obwohl wir das damals nicht wussten) schon fast zwei Jahre davor: Wir redeten mit rund vier Dutzend Journalistinnen, Verlagsprofis, Werbern, Anwälten über das noch geheime Project R. (Ein kleines Wunder, dass alle dichthielten.) Das half doppelt: Erstens durch kompetentes Feedback. Zweitens erobert das Herz von Leuten wenig mehr, als wenn man sie fragt. Wir hatten dadurch einen harten Kern von freundlichen Unterstützerinnen und Unterstützern.</p>
+      <p>Die ersten Vorbereitungen zum Crowdfunding der «Republik» begannen (obwohl wir das damals nicht wussten) schon fast zwei Jahre davor: Wir redeten mit rund vier Dutzend Journalistinnen, Verlagsprofis, Werbern, Anwälten über das noch geheime Project R. (Ein kleines Wunder, dass alle dichthielten.) Das half doppelt: Erstens durch kompetentes Feedback. Zweitens erobert das Herz von Leuten wenig mehr, als wenn man sie fragt. Wir hatten dadurch einen harten Kern von freundlichen Unterstützerinnen und Unterstützern.</p>
 
       <p>Zweitens hatten wir vor dem Crowdfunding die E-Mails von 8000 Leuten, die sich für das Projekt interessierten. Und – nach einem Telefon- und Diplomatiemarathon – wir waren beim Start auf den Newslettern anderer Organisationen mit insgesamt 200'000 Adressaten. Last, not least luden die zehn Mitglieder unseres Teams in der Nacht vor dem Crowdfunding sämtliche Adressen von Bekannten in eine Mailkanone.</p>
 
-      <p>Drittens müssen Video, Text, Newsletter und Botschaft passen. Das heisst vor allem: Nicht allen passen. Das deshalb, weil aus allgemeiner Zustimmung niemand handelt. Das Pathos der Republik-Gründung hatte entscheidende Gegner. Aber noch entscheidender: auch das Gegenteil.</p>
+      <p>Drittens müssen Video, Text, Newsletter und Botschaft passen. Das heisst vor allem: Nicht allen passen. Das deshalb, weil aus allgemeiner Zustimmung niemand handelt. Das Pathos der «Republik»-Gründung hatte entscheidende Gegner. Aber noch entscheidender: auch das Gegenteil.</p>
 
       <p>Viertens muss man sich wappnen: Das Team eines grösseren Crowdfundings wird im entscheidenden Monat durch die Hölle gehen. Bei Erfolg wie bei Misserfolg. Bei Misserfolg kämpft es ums Überleben, bei Erfolg überschwemmen Hunderte von Mails, Telefonaten, Supportanfragen die Organisation. Nach einer Woche Erfolg sah unsere Crew aus, als hätte sie sieben Nächte unter einer Brücke geschlafen.</p>
 
-      <p>Fünftens: das Timing. Das ist ein Gramm Instinkt – und ein Kilo Glück. Das Crowdfunding der Republik fand zu einer Zeit statt, in der Donald Trump gerade in den USA das Amt als Präsident übernommen hatte, die Briten sich zum Austritt aus der EU entschlossen hatten und in Frankreich in den Umfragen vor der Wahl lange der Front National führte. Plötzlich waren Selbstverständlichkeiten nicht mehr selbstverständlich: Dinge wie der Rechtsstaat, die Gewaltenteilung, die Demokratie und die Freiheit der Presse. Nicht, dass wir uns freuten, dass das so war: Eine Zeit lang fragten wir uns, ob es nicht übertrieben sei, dass die Welt ein Replay der 30er-Jahre androhte – nur dazu, dass wir ein Onlinemagazin zum Fliegen bringen konnten.</p>
+      <p>Fünftens: das Timing. Das ist ein Gramm Instinkt – und ein Kilo Glück. Das Crowdfunding der «Republik» fand zu einer Zeit statt, in der Donald Trump gerade in den USA das Amt als Präsident übernommen hatte, die Briten sich zum Austritt aus der EU entschlossen hatten und in Frankreich in den Umfragen vor der Wahl lange der Front National führte. Plötzlich waren Selbstverständlichkeiten nicht mehr selbstverständlich: Dinge wie der Rechtsstaat, die Gewaltenteilung, die Demokratie und die Freiheit der Presse. Nicht, dass wir uns freuten, dass das so war: Eine Zeit lang fragten wir uns, ob es nicht übertrieben sei, dass die Welt ein Replay der 30er-Jahre androhte – nur dazu, dass wir ein Onlinemagazin zum Fliegen bringen konnten.</p>
 
       <p>Kurz: Sie haben unseren Respekt, wenn Sie ein grösseres Crowdfunding wagen. Es ist kein ganz freundliches Abenteuer. Und es wäre eine Ehre, wenn Sie dabei unsere Seite brauchen könnten.</p>
 
@@ -193,9 +193,9 @@ export default ({url}) => {
 
       <p>Mit herzlichen Grüssen</p>
 
-      <p>Ihre Crew von Project R und der Republik</p>
+      <p>Ihre Crew von Project R und der «Republik»</p>
 
-      <p>PS: Diesen Herbst führt Project R eine kleine Debattenreihe im neu eröffneten Europaallee-Koloss Kosmos in Zürich durch. Die erste Veranstaltung, am Montag 18. September, trägt den Titel «Gesünder durch Informationsdiät!». In den Monaten darauf sprechen wir über das Erwachsenwerden (Taten statt Jammern), die Grenze zwischen Aktivismus und Journalismus und im Dezember zum Stand des Irrtums in der «Republik». Den Link dazu finden Sie auf der Veranstaltungsseite des Kosmos: <a href='https://kosmos.ch/programm/veranstaltungen/kosmopolitics-gesuender-durch-informationsdiaet-/100525#details'>kosmos.ch</a></p>
+      <p>PS: Diesen Herbst führt Project R eine kleine Debattenreihe im neu eröffneten Europaallee-Koloss Kosmos in Zürich durch. Die erste Veranstaltung, am Montag 18. September, trägt den Titel «Gesünder durch Informationsdiät!». In den Monaten darauf sprechen wir über das Erwachsenwerden (Taten statt Jammern), die Grenze zwischen Aktivismus und Journalismus und im Dezember zum Stand des Irrtums in der «Republik». Weitere Informationen dazu finden Sie auf der Veranstaltungsseite des Kosmos: <a href='https://kosmos.ch/programm/veranstaltungen/kosmopolitics-gesuender-durch-informationsdiaet-/100525#details'>kosmos.ch</a></p>
 
       <p>
         <img
