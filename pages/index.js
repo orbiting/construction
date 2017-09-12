@@ -8,11 +8,11 @@ import Grid, {GridItem} from '../src/Grid'
 
 const newsletters = [
   {
-    href: '/newsletter/2017-08-25-open-source',
+    href: '/newsletter/2017-09-13-open-source',
     title: 'Blick zurück nach vorn: Project R legt los',
-    date: '25. August 2017',
+    date: '13. September 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/nl7-dani.jpg',
+      src: 'https://assets.project-r.construction/images/nl7-code.jpg',
       alt: 'Programmier hinter Laptop mit Republik-Aufkleber'
     }
   },
