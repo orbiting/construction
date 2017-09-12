@@ -38,7 +38,7 @@ export default ({url}) => {
         </figcaption>
       </figure>
 
-      <p>Damit bewahrheitet sich eine weitere Prognose, die wir diesen Frühling in der Crowdfunding-Kampagne für die «Republik» gemacht hatten. Die Zeitungskäufe von Christoph Blocher, die Selbstideologisierung der NZZ, die Frankenstein-Monster-Strategie der Tamedia – inzwischen sind das Nachrichten von gestern. Tamedia gründet seine Monsterredaktionen, die BaZ-Holding kauft Gratiszeitungen mit einer Gesamtauflage von 700ʼ000 Stück, die NZZ schasst ihre Kulturkorrespondenten im Feuilleton. Ehrlich gesagt: Es wäre uns lieber gewesen, wir hätten uns geirrt.</p>
+      <p>Damit bewahrheitet sich eine weitere Prognose, die wir diesen Frühling in der Crowdfunding-Kampagne für die «Republik» gemacht hatten. Die Zeitungskäufe von Christoph Blocher, die Selbstideologisierung der NZZ, die Frankenstein-Monster-Strategie der Tamedia – inzwischen sind das Nachrichten von gestern. Tamedia gründet seine Monsterredaktionen, die BaZ-Holding kauft Gratiszeitungen mit einer Gesamtauflage von 700'000 Stück, die NZZ schasst ihre Kulturkorrespondenten im Feuilleton. Ehrlich gesagt: Es wäre uns lieber gewesen, wir hätten uns geirrt.</p>
 
       <h3>Dieser Newsletter ist lang – dafür aber mindestens 100'000 Franken&nbsp;wert</h3>
 
