@@ -1,6 +1,9 @@
 {
   "name": "construction",
   "version": "0.2.0",
+  "engines": {
+    "node": "8.4.0"
+  },
   "private": true,
   "devDependencies": {
     "nodemon": "^1.11.0",
