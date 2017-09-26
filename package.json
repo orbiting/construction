@@ -23,8 +23,7 @@
     "react": "^15.6.2",
     "react-apollo": "^1.4.15",
     "react-dom": "^15.6.2",
-    "redux": "^3.7.2",
-    "subscriptions-transport-ws": "^0.8.3"
+    "redux": "^3.7.2"
   },
   "scripts": {
     "start": "NODE_ENV=production node server.js",
