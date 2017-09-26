@@ -3,21 +3,21 @@
   "version": "0.2.0",
   "private": true,
   "devDependencies": {
-    "nodemon": "^1.11.0",
+    "nodemon": "^1.12.1",
     "standard": "^8.6.0"
   },
   "dependencies": {
-    "body-parser": "^1.15.2",
+    "body-parser": "^1.18.2",
     "d3-time": "^1.0.5",
     "d3-time-format": "^2.0.4",
     "dotenv": "^4.0.0",
-    "express": "^4.14.0",
-    "glamor": "^2.20.22",
+    "express": "^4.15.5",
+    "glamor": "^2.20.40",
     "isomorphic-unfetch": "^1.0.0",
-    "next": "^2.4.3",
+    "next": "^3.2.2",
     "querystring": "^0.2.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2"
   },
   "scripts": {
     "start": "NODE_ENV=production node server.js",
