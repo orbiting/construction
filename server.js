@@ -26,6 +26,9 @@ app.prepare().then(() => {
   server.get('/welcome_aboard.html', (req, res) => {
     res.redirect(301, '/newsletter/welcome')
   })
+  server.get('/newsletter/:slug', (req, res) => {
+    return app.render(req, res, '/newsletter', req.params)
+  })
   server.get('*', (req, res) => {
     return handle(req, res)
   })

@@ -15,6 +15,7 @@ const getDocuments = gql`
     documents {
       content
       meta {
+        slug
         title
         description
         image
@@ -22,72 +23,6 @@ const getDocuments = gql`
     }
   }
 `
-
-const staticNewsletters = [
-  {
-    href: '/newsletter/2017-09-13-open-source',
-    title: 'Der Crowdfunding-Code gegen die Frankenstein-Monster-Strategie',
-    date: '13. September 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/nl7-code.jpg',
-      alt: 'Backend-Code-Screenshot'
-    }
-  },
-  {
-    href: '/newsletter/2017-08-04-ausbau',
-    title: 'Die Start-Aufstellung der «Republik»-Redaktion steht',
-    date: '4. August 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/teamwork2.jpg',
-      alt: 'Das Team der Republik bei einem Workshop'
-    }
-  },
-  {
-    href: '/newsletter/2017-05-31-signal-journalismus',
-    title: 'Ein starkes Signal für den Journalismus',
-    date: '31. Mai 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/testimonials_collage.jpg',
-      alt: 'Eine Collage der Verlegerinnen'
-    }
-  },
-  {
-    href: '/newsletter/2017-04-26-start-crowdfunding',
-    title: 'Startschuss Crowdfunding für «Republik»',
-    date: '26. April 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/screen_crowdfunding_thumb.jpg',
-      alt: 'iPhone Bildschirm mit Website Crowdfunding für Republik'
-    }
-  },
-  {
-    href: '/newsletter/2017-04-12-republik',
-    title: 'So heisst das Magazin von Project R',
-    date: '12. April 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/rothaus_republik.jpg',
-      alt: 'Das Hotel Rothaus mit dem Banner der Republik'
-    }
-  },
-  {
-    href: '/newsletter/2017-03-15-aufbau',
-    title: 'Der Bauplan von Project R',
-    date: '15. März 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
-      alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
-    }
-  },
-  {
-    href: '/newsletter/2017-01-10-hotel-rothaus',
-    title: 'Project R geht an den Start',
-    date: '10. Januar 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
-      alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'
-    }
-  }
-]
 
 class Index extends Component {
   render () {
@@ -100,22 +35,9 @@ class Index extends Component {
       url: `https://project-r.construction${url.pathname}`
     }
 
-    let newsletters = [...staticNewsletters]
-
-    // TODO: Copy over and use Loader here.
-    if (!loading && !error) {
-      documents.forEach(document => {
-        newsletters.unshift({
-          href: '/',  // TODO: Get via API.
-          title: document.meta.title,
-          date: '31. Dezember 2017',  // TODO: Get via API.
-          image: {
-            src: document.meta.image,
-            alt: ''  // TODO: Get via API.
-          }
-        })
-      })
-    }
+    let newsletters = loading
+      ? []
+      : documents
 
     return (
       <Layout meta={meta} url={url} cover={(
@@ -147,10 +69,11 @@ class Index extends Component {
 
         <h3>Aktuelles von Project R</h3>
 
+        {!!error && <span>{error.toString()}</span>}
         <Grid>
           {newsletters.map((newsletter, i) => (
             <GridItem key={i}>
-              <Card {...newsletter} />
+              <Card {...newsletter.meta} />
             </GridItem>
           ))}
         </Grid>

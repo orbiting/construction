@@ -21,14 +21,14 @@ const textStyle = css({
   }
 })
 
-const Card = ({href, title, date, image}) => (
+const Card = ({slug, title, date, image}) => (
   <div {...containerStyle}>
-    <Link href={href}>
+    <Link href={{pathname: '/newsletter', query: {slug}}} as={`/newsletter/${slug}`}>
       <a {...imageStyle}>
-        <img {...image} />
+        <img src={image} />
       </a>
     </Link>
-    <Link href={href}>
+    <Link href={{pathname: '/newsletter', query: {slug}}} as={`/newsletter/${slug}`}>
       <a {...textStyle}>
         <h3>{title}</h3>
         <p>{date}</p>

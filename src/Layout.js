@@ -59,7 +59,7 @@ const containerStyle = css({
   }
 })
 
-const Layout = ({children, meta, cover, url}) => (
+const Layout = ({children, meta, cover, url, raw}) => (
   <div className='base'>
     <Head>
       <meta name='viewport' content='width=device-width, initial-scale=1' />
@@ -82,9 +82,10 @@ const Layout = ({children, meta, cover, url}) => (
     </Head>}
 
     {cover}
+    {!!raw && children}
 
     <div {...containerStyle}>
-      {children}
+      {!raw && children}
 
       <Footer url={url} />
     </div>
