@@ -4,7 +4,7 @@ const newsletter = require('./server/newsletter')
 require('dotenv').config()
 
 const DEV = process.env.NODE_ENV !== 'production'
-const PORT = 4000
+const PORT = process.env.PORT || 4000
 
 const app = next({dir: '.', dev: DEV})
 const handle = app.getRequestHandler()
