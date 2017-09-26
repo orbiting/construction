@@ -25,6 +25,7 @@
   "scripts": {
     "start": "NODE_ENV=production node server.js",
     "build": "next build",
+    "heroku-postbuild": "npm run build",
     "dev": "node server.js",
     "standardize": "standard --fix 'src/**/*.js' 'pages/**/*.js'"
   }
