@@ -10,7 +10,7 @@ import Layout from '../../src/Layout'
 
 const getDocument = gql`
   query getDocument($slug: String!) {
-    document(slug: $slug) {
+    newsletter: document(slug: $slug) {
       content
       meta {
         slug
@@ -24,7 +24,7 @@ const getDocument = gql`
 
 class Index extends Component {
   render () {
-    const { data: {loading, error, document}, url } = this.props
+    const { data: {loading, error, newsletter}, url } = this.props
 
     const meta = {
       title: 'Project R geht an den Start',
@@ -40,13 +40,12 @@ class Index extends Component {
       return <div>{error.toString()}</div>
     }
 
-    if (!document) {
+    if (!newsletter) {
       return <div>404</div>
     }
-
     return (
       <Layout raw meta={meta} url={url}>
-        {renderMdast(document.content, newsletterSchema)}
+        {renderMdast(newsletter.content, newsletterSchema)}
       </Layout>
     )
   }
