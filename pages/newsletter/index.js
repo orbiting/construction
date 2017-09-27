@@ -8,9 +8,9 @@ import newsletterSchema from '../../src/Templates/Newsletter'
 
 import Layout from '../../src/Layout'
 
-const getDocuments = gql`
-  query getDocuments {
-    documents {
+const getDocument = gql`
+  query getDocument($slug: String!) {
+    document(slug: $slug) {
       content
       meta {
         slug
@@ -24,7 +24,7 @@ const getDocuments = gql`
 
 class Index extends Component {
   render () {
-    const { data: {loading, error, documents}, url } = this.props
+    const { data: {loading, error, document}, url } = this.props
 
     const meta = {
       title: 'Project R geht an den Start',
@@ -39,16 +39,14 @@ class Index extends Component {
     if (error) {
       return <div>{error.toString()}</div>
     }
-    const newsletterDoc = documents
-      .find(doc => doc.meta.slug === url.query.slug)
 
-    if (!newsletterDoc) {
+    if (!document) {
       return <div>404</div>
     }
 
     return (
       <Layout raw meta={meta} url={url}>
-        {renderMdast(newsletterDoc.content, newsletterSchema)}
+        {renderMdast(document.content, newsletterSchema)}
       </Layout>
     )
   }
@@ -56,5 +54,11 @@ class Index extends Component {
 
 export default compose(
   withData,
-  graphql(getDocuments)
+  graphql(getDocument, {
+    options: props => ({
+      variables: {
+        slug: props.url.query.slug
+      }
+    })
+  })
 )(Index)
