@@ -2,6 +2,7 @@ import React, {PropTypes} from 'react'
 import Head from 'next/head'
 import {css} from 'glamor'
 import Footer from './Footer'
+import { META_ROBOTS } from '../lib/settings'
 
 import 'glamor/reset'
 
@@ -69,6 +70,7 @@ const Layout = ({children, meta, cover, url, raw}) => (
 
     {!!meta && <Head>
       <title>{meta.title}</title>
+      {!!META_ROBOTS && <meta name='robots' content={META_ROBOTS} />}
       <meta name='description' content={meta.description} />
       <meta property='og:type' content='website' />
       <meta property='og:url' content={meta.url} />
@@ -79,9 +81,9 @@ const Layout = ({children, meta, cover, url, raw}) => (
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:site' content='@_Project_R' />
       <meta name='twitter:creator' content='@_Project_R' />
-      <meta name="twitter:title" content={meta.twitterTitle || meta.title} />
-      <meta name="twitter:description" content={meta.twitterDescription || meta.description} />
-      <meta name="twitter:image:src" content={meta.twitterImage || meta.image} />
+      <meta name='twitter:title' content={meta.twitterTitle || meta.title} />
+      <meta name='twitter:description' content={meta.twitterDescription || meta.description} />
+      <meta name='twitter:image:src' content={meta.twitterImage || meta.image} />
     </Head>}
 
     {cover}
