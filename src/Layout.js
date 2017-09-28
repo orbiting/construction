@@ -79,12 +79,9 @@ const Layout = ({children, meta, cover, url, raw}) => (
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:site' content='@_Project_R' />
       <meta name='twitter:creator' content='@_Project_R' />
-      {meta.twitterTitle &&
-        <meta name="twitter:title" content={meta.twitterTitle} />}
-      {meta.twitterDescription &&
-      <meta name="twitter:description" content={meta.twitterDescription} />}
-      {meta.twitterImage &&
-        <meta name="twitter:image:src" content={meta.twitterImage} />}
+      <meta name="twitter:title" content={meta.twitterTitle || meta.title} />
+      <meta name="twitter:description" content={meta.twitterDescription || meta.description} />
+      <meta name="twitter:image:src" content={meta.twitterImage || meta.image} />
     </Head>}
 
     {cover}
