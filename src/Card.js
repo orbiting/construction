@@ -26,7 +26,7 @@ const textStyle = css({
 const parsePublishDate = timeParse('%d.%m.%Y %H:%M')
 const formatPublishDate = timeFormat('%d. %b %Y')
 
-const Card = ({slug, title, date, image}) => (
+const Card = ({slug, title, publishDate, image}) => (
   <div {...containerStyle}>
     <Link href={{pathname: '/newsletter', query: {slug}}} as={`/newsletter/${slug}`}>
       <a {...imageStyle}>
@@ -36,7 +36,7 @@ const Card = ({slug, title, date, image}) => (
     <Link href={{pathname: '/newsletter', query: {slug}}} as={`/newsletter/${slug}`}>
       <a {...textStyle}>
         <h3>{title}</h3>
-        {!!date && <p>{formatPublishDate(parsePublishDate(date))}</p>}
+        {!!publishDate && parsePublishDate(publishDate) && <p>{formatPublishDate(parsePublishDate(publishDate))}</p>}
       </a>
     </Link>
   </div>
