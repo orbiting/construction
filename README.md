@@ -8,6 +8,7 @@ MAIL_URL=smtp://postmaster@project-r.construction:POSTMASTER_PW@smtp.mailgun.org
 MAILGUN_API_KEY=YOUR_KEY
 MAILGUN_LIST=construction_test@project-r.construction
 MONGO_URL=mongodb://localhost/construction
+PUBLIC_BASE_URL=http://localhost:4000
 ```
 
 Install dependencies

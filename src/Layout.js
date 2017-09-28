@@ -72,13 +72,19 @@ const Layout = ({children, meta, cover, url, raw}) => (
       <meta name='description' content={meta.description} />
       <meta property='og:type' content='website' />
       <meta property='og:url' content={meta.url} />
-      <meta property='og:title' content={meta.title} />
-      <meta property='og:description' content={meta.description} />
-      <meta property='og:image' content={meta.image} />
+      <meta property='og:title' content={meta.facebookTitle || meta.title} />
+      <meta property='og:description' content={meta.facebookDescription || meta.description} />
+      <meta property='og:image' content={meta.facebookImage || meta.image} />
       <meta property='fb:app_id' content='1774637906137716' />
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:site' content='@_Project_R' />
       <meta name='twitter:creator' content='@_Project_R' />
+      {meta.twitterTitle &&
+        <meta name="twitter:title" content={meta.twitterTitle} />}
+      {meta.twitterDescription &&
+      <meta name="twitter:description" content={meta.twitterDescription} />}
+      {meta.twitterImage &&
+        <meta name="twitter:image:src" content={meta.twitterImage} />}
     </Head>}
 
     {cover}

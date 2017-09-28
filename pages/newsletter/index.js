@@ -5,6 +5,7 @@ import { compose } from 'redux'
 import withData from '../../lib/apollo/withData'
 import { renderMdast } from '../../src/Templates'
 import newsletterSchema from '../../src/Templates/Newsletter'
+import { PUBLIC_BASE_URL } from '../../lib/settings'
 
 import Layout from '../../src/Layout'
 
@@ -17,6 +18,12 @@ const getDocument = gql`
         title
         description
         image
+        facebookDescription
+        facebookImage
+        facebookTitle
+        twitterDescription
+        twitterImage
+        twitterTitle
       }
     }
   }
@@ -26,22 +33,18 @@ class Index extends Component {
   render () {
     const { data: {loading, error, newsletter}, url } = this.props
 
-    const meta = {
-      title: 'Project R geht an den Start',
-      description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam – oder gar nicht.»',
-      image: 'https://assets.project-r.construction/images/balkon.jpg',
-      url: `https://project-r.construction${url.pathname}`
-    }
-
     if (loading) {
       return null
     }
     if (error) {
       return <div>{error.toString()}</div>
     }
-
     if (!newsletter) {
       return <div>404</div>
+    }
+    const meta = {
+      ...newsletter.meta,
+      url: `${PUBLIC_BASE_URL}${url.pathname}/${url.query.slug}`
     }
     return (
       <Layout raw meta={meta} url={url}>
