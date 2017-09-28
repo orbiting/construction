@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import {css} from 'glamor'
+import {timeParse} from 'd3-time-format'
+import {timeFormat} from '../lib/format'
 
 const containerStyle = css({
   height: '100%',
@@ -21,6 +23,9 @@ const textStyle = css({
   }
 })
 
+const parsePublishDate = timeParse('%d.%m.%Y %H:%M')
+const formatPublishDate = timeFormat('%d. %b %Y')
+
 const Card = ({slug, title, date, image}) => (
   <div {...containerStyle}>
     <Link href={{pathname: '/newsletter', query: {slug}}} as={`/newsletter/${slug}`}>
@@ -31,7 +36,7 @@ const Card = ({slug, title, date, image}) => (
     <Link href={{pathname: '/newsletter', query: {slug}}} as={`/newsletter/${slug}`}>
       <a {...textStyle}>
         <h3>{title}</h3>
-        <p>{date}</p>
+        {!!date && <p>{formatPublishDate(parsePublishDate(date))}</p>}
       </a>
     </Link>
   </div>

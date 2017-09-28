@@ -19,6 +19,7 @@ const getDocuments = gql`
         title
         description
         image
+        publishDate
       }
     }
   }
