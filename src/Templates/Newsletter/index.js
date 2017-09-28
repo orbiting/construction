@@ -95,6 +95,7 @@ const schema = {
         {
           matchMdast: matchZone('FIGURE'),
           component: Figure,
+          getData: node => node.data,
           rules: [
             {
               matchMdast: matchImageParagraph,
