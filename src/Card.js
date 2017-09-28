@@ -24,7 +24,7 @@ const textStyle = css({
 })
 
 const parsePublishDate = timeParse('%d.%m.%Y %H:%M')
-const formatPublishDate = timeFormat('%d. %b %Y')
+const formatPublishDate = timeFormat('%d. %B %Y')
 
 const Card = ({slug, title, publishDate, image}) => (
   <div {...containerStyle}>
