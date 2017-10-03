@@ -1,31 +1,29 @@
 import Container from './Container'
 import Cover, {Title, Lead} from './Cover'
-import Paragraph, {Strong, Em, Link} from './Paragraph'
+import Paragraph, {Strong, Em, Link, Br} from './Paragraph'
 import Center from './Center'
 import { H2, H3 } from './Headlines'
 import Figure, { Image, Caption } from './Figure'
 import Blockquote from './Blockquote'
 import List, { ListItem } from './List'
 
-const matchType = type => node => node.type === type
-const matchHeading = depth => node => (
-  node.type === 'heading' && node.depth === depth
-)
-const matchZone = identifier => node => (
-  node.type === 'zone' && node.identifier === identifier
-)
-const matchParagraph = matchType('paragraph')
-const matchImage = matchType('image')
-const matchImageParagraph = node => (
-  matchParagraph(node) &&
-  node.children.length === 1 &&
-  matchImage(node.children[0])
-)
+import {
+  matchType,
+  matchZone,
+  matchHeading,
+  matchParagraph,
+  matchImageParagraph
+} from '../utils'
 
 const paragraph = {
-  matchMdast: matchType('paragraph'),
+  matchMdast: matchParagraph,
   component: Paragraph,
   rules: [
+    {
+      matchMdast: matchType('break'),
+      component: Br,
+      isVoid: true
+    },
     {
       matchMdast: matchType('strong'),
       component: Strong
@@ -64,7 +62,8 @@ const schema = {
       rules: [
         {
           matchMdast: matchImageParagraph,
-          component: () => null
+          component: () => null,
+          isVoid: true
         },
         {
           matchMdast: matchHeading(1),
@@ -95,7 +94,6 @@ const schema = {
         {
           matchMdast: matchZone('FIGURE'),
           component: Figure,
-          getData: node => node.data,
           rules: [
             {
               matchMdast: matchImageParagraph,
@@ -103,10 +101,11 @@ const schema = {
               getData: node => ({
                 src: node.children[0].url,
                 alt: node.children[0].alt
-              })
+              }),
+              isVoid: true
             },
             {
-              matchMdast: matchType('paragraph'),
+              matchMdast: matchParagraph,
               component: Caption,
               getData: (node, parent) => (parent && parent.data) || {},
               rules: paragraph.rules
