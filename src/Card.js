@@ -4,6 +4,8 @@ import {css} from 'glamor'
 import {timeParse} from 'd3-time-format'
 import {timeFormat} from '../lib/format'
 
+import {imageResizeUrl} from './Templates/utils'
+
 const containerStyle = css({
   height: '100%',
   backgroundColor: '#f2f2f2'
@@ -30,7 +32,7 @@ const Card = ({slug, title, publishDate, image}) => (
   <div {...containerStyle}>
     <Link href={{pathname: '/newsletter', query: {slug}}} as={`/newsletter/${slug}`}>
       <a {...imageStyle}>
-        <img src={image} />
+        <img src={imageResizeUrl(image, '580x326')} />
       </a>
     </Link>
     <Link href={{pathname: '/newsletter', query: {slug}}} as={`/newsletter/${slug}`}>
