@@ -48,7 +48,7 @@ export default ({url}) => {
         <li>Mithilfe beim Aufbau des Genossenschaftsrats und der demokratischen Organe der Project R Genossenschaft</li>
         <li>Planung, Vorbereitung und Durchführung von Veranstaltungen aller Art</li>
         <li>Rekrutierung und Briefing von spannenden Personen für Podien, Referate, Kurse, Workshops, etc.</li>
-        <li>  Bewerben von Veranstaltungen, z.B. auf Social Media oder über Newsletter</li>
+        <li>Bewerben von Veranstaltungen, z.B. auf Social Media oder über Newsletter</li>
         <li>Verfassen von Texten und Inhalten mit Community-Fokus für Social Media und eigene Kanäle, insbesondere Newsletter</li>
         <li>Datenbankpflege</li>
       </ul>
