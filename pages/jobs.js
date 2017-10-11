@@ -57,7 +57,7 @@ export default ({url}) => {
 
       <h2>Ausbildungsplätze bei der «Republik»</h2>
 
-      <p>Schon hat es sich herumgesprochen. Dass wir im März 2018 vier Trainees für unternehmerischen Journalismus einstellen. Junge Kolleginnen und Kollegen, die zweierlei mitbringen: schreiberischen Ehrgeiz und unternehmerisches Feuer. Die schon viel können und noch viel mehr vorhaben. Denen wir beibringen, wie man brillante Texte schreibt und ein Medienunternehmen exzellent managt. Und auch wir möchten lernen, mit euch gemeinsam: Wie gestaltet man so eine Ausbildung? Begründet eine «Academy for Entrepreneurial Journalism». Denn dort wollen wir hin.</p>
+      <p>Schon hat es sich herumgesprochen. Dass wir 2018 vier Trainees für unternehmerischen Journalismus einstellen. Junge Kolleginnen und Kollegen, die zweierlei mitbringen: schreiberischen Ehrgeiz und unternehmerisches Feuer. Die schon viel können und noch viel mehr vorhaben. Denen wir beibringen, wie man brillante Texte schreibt und ein Medienunternehmen exzellent managt. Und auch wir möchten lernen, mit euch gemeinsam: Wie gestaltet man so eine Ausbildung? Begründet eine «Academy for Entrepreneurial Journalism». Denn dort wollen wir hin.</p>
 
       <p>Schon gehen hier im Hotel Rothaus die ersten Bewerbungen ein. Über die wir uns sehr freuen. Aber haltet lieber noch einige Tage lang still. Bis zum 1. November 2017. Dann veröffentlichen wir an dieser Stelle das detaillierte Ausbildungskonzept. Erklären euch, wie ihr euch bewerben könnt.</p>
 
