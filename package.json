@@ -30,6 +30,7 @@
     "build": "next build",
     "heroku-postbuild": "npm run build",
     "dev": "nodemon --watch server --watch app --watch lib/routes.js server.js",
-    "standardize": "standard --fix 'src/**/*.js' 'pages/**/*.js'"
+    "standardize": "standard --fix 'src/**/*.js' 'pages/**/*.js'",
+    "import:templates": "cp -r ../publikator-frontend/components/Templates src/ && rm -r src/Templates/NewsletterEmail && rm src/Templates/email.js && rm src/Templates/newsletter.*"
   }
 }
