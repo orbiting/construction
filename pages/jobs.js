@@ -53,7 +53,7 @@ export default ({url}) => {
         <li>Datenbankpflege</li>
       </ul>
 
-      <p>Bitte schicke deine Bewerbungsunterlagen inklusive Motivationsschreiben - möglichst kurz - bis zum 18. Oktober 2017 an <a href='mailto:communityrelations@project-r.construction'>communityrelations@project-r.construction</a></p>
+      <p>Bitte schicke deine Bewerbungsunterlagen inklusive Motivationsschreiben - möglichst kurz - bis zum 21. Oktober 2017 an <a href='mailto:communityrelations@project-r.construction'>communityrelations@project-r.construction</a></p>
 
       <h2>Ausbildungsplätze bei der «Republik»</h2>
 
