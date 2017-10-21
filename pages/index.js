@@ -1,76 +1,8 @@
 import React from 'react'
-
 import Layout from '../src/Layout'
 import Newsletter from '../src/Newsletter'
 import Cover from '../src/Cover'
 import Card from '../src/Card'
-import Grid, {GridItem} from '../src/Grid'
-
-const newsletters = [
-  {
-    href: '/newsletter/2017-09-13-open-source',
-    title: 'Der Crowdfunding-Code gegen die Frankenstein-Monster-Strategie',
-    date: '13. September 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/nl7-code.jpg',
-      alt: 'Backend-Code-Screenshot'
-    }
-  },
-  {
-    href: '/newsletter/2017-08-04-ausbau',
-    title: 'Die Start-Aufstellung der «Republik»-Redaktion steht',
-    date: '4. August 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/teamwork2.jpg',
-      alt: 'Das Team der Republik bei einem Workshop'
-    }
-  },
-  {
-    href: '/newsletter/2017-05-31-signal-journalismus',
-    title: 'Ein starkes Signal für den Journalismus',
-    date: '31. Mai 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/testimonials_collage.jpg',
-      alt: 'Eine Collage der Verlegerinnen'
-    }
-  },
-  {
-    href: '/newsletter/2017-04-26-start-crowdfunding',
-    title: 'Startschuss Crowdfunding für «Republik»',
-    date: '26. April 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/screen_crowdfunding_thumb.jpg',
-      alt: 'iPhone Bildschirm mit Website Crowdfunding für Republik'
-    }
-  },
-  {
-    href: '/newsletter/2017-04-12-republik',
-    title: 'So heisst das Magazin von Project R',
-    date: '12. April 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/rothaus_republik.jpg',
-      alt: 'Das Hotel Rothaus mit dem Banner der Republik'
-    }
-  },
-  {
-    href: '/newsletter/2017-03-15-aufbau',
-    title: 'Der Bauplan von Project R',
-    date: '15. März 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
-      alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
-    }
-  },
-  {
-    href: '/newsletter/2017-01-10-hotel-rothaus',
-    title: 'Project R geht an den Start',
-    date: '10. Januar 2017',
-    image: {
-      src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
-      alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'
-    }
-  }
-]
 
 export default ({url}) => {
   const meta = {
@@ -91,32 +23,26 @@ export default ({url}) => {
       </Cover>
     )}>
 
-      <p>Ladies and Gentlemen,</p>
+    <p>Project R ist die gemeinnützige Genossenschaft hinter der «Republik». Project R fördert die Demokratie, indem sie den Journalismus als vierte Gewalt stärkt.</p>
 
-      <p>Thomas Jefferson, der Autor der amerikanischen Unabhängigkeits­erklärung, schrieb einmal:</p>
+    <p>Die Genossenschaft setzt sich ein für die Weiterentwicklung des Journalismus und die Vermittlung relevanter Informationen, die Bürgerinnen und Bürgern eine kritische Wissens- und Meinungsbildung ermöglichen.</p>
 
-      <blockquote>«Ich bin sicher, eine kleine Rebellion hie und da ist eine gute Sache; sie ist in der Politik so notwendig, um die Dinge zu klären, wie ein Sturm für das Wetter.»</blockquote>
+    <p>Dem Gemeinwohl verpflichtet, fördert Project R den konstruktiven gesellschaftlichen Diskurs und diskriminierungsfreie, vielfältige Debatten über die Fragen unserer Zeit.</p>
 
-      <p>Wir glauben, dass auch im Journalismus die Zeit für eine kleine Rebellion gekommen ist. Und arbeiten daran, sie zu machen.</p>
+    <p>Laden Sie <a href="https://assets.republik.ch/cf_gui/static/statuten_project_r_genossenschaft_unterschrieben.pdf" download>hier</a> die Statuten der Project R Genossenschaft herunter.</p>
 
-      <p>Vom 26. April bis 31. Mai lief die Crowdfunding-Kampagne für das digitale Magazin «Republik» von Project R. Ein überwältigender Erfolg: Über 13'000 Unterstützerinnen und Unterstützer wollen gemeinsam mit der Aufbau-Crew von Project R im Mediensystem einen entscheidenden Unterschied schaffen. Die «Republik» geht 2018 an den Start – kompromisslos in der Qualität, leserfinanziert, ohne Werbung und ohne Bullshit.</p>
+    <p>Und hier können Sie Mitglied werden: <a href="https://www.republik.ch/pledge">www.republik.ch</a>.</p>
 
-      <p>Hier finden Sie die «Republik» <a href='https://www.republik.ch'>www.republik.ch</a>. Die Webseite des erfolgreichen Crowdfundings finden Sie <a href='https://www.republik.ch/crowdfunding'>hier</a>.</p>
+    <p>Wenn Sie informiert bleiben wollen, bitte hier für den Newsletter eintragen:</p>
+    <Newsletter />
+    <p>Danke!</p>
 
-      <p>Wenn Sie informiert bleiben wollen, bitte hier für den Newsletter eintragen:</p>
-      <Newsletter />
+    <h3>Die «Republik»: Das erste Projekt von Project R</h3>
 
-      <p>Danke!</p>
+    <p>Vom 26. April bis zum 31. Mai lief die Crowdfunding-Kampagne für das digitale Magazin «Republik». Sie traf einen Nerv: Fast 14’000 begeisterte Unterstützerinnen und Unterstützer der ersten Stunde wollen mit uns gemeinsam einen Unterschied machen und das Mediensystem verändern. Die «Republik» geht im Januar 2018 an den Start – kompromisslos in der Qualität, leserfinanziert, ohne Werbung und ohne Bullshit.</p>
 
-      <h3>Aktuelles von Project R</h3>
+    <p>Hier finden Sie die «Republik»: <a href='https://www.republik.ch'>www.republik.ch</a>. Die Webseite des erfolgreichen Crowdfundings finden Sie <a href='https://www.republik.ch/crowdfunding'>hier</a>.</p>
 
-      <Grid>
-        {newsletters.map((newsletter, i) => (
-          <GridItem key={i}>
-            <Card {...newsletter} />
-          </GridItem>
-        ))}
-      </Grid>
-    </Layout>
+  </Layout>
   )
 }

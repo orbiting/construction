@@ -5,16 +5,32 @@ import {intersperse} from './utils/helpers'
 
 const links = [
   {
+    path: '/news',
+    title: 'Aktuelles'
+  },
+  {
+    path: '/republik',
+    title: 'Republik'
+  },
+  {
     path: '/crew',
     title: 'Crew'
   },
   {
-    path: '/media',
-    title: 'Medieninformationen'
-  },
-  {
     path: '/jobs',
     title: 'Jobs'
+  },
+  {
+    path: '/manifest',
+    title: 'Manifest'
+  },
+  {
+    path: '/english',
+    title: 'English'
+  },
+  {
+    path: '/media',
+    title: 'Medieninformationen'
   }
 ]
 
