@@ -9,8 +9,8 @@ import team from '../src/data/team'
 export default ({url}) => {
   const meta = {
     title: 'Project-R-Crew',
-    description: 'Die Project-R-Crew arbeitet derzeit – gemeinsam mit zahlreichen Komplizinnen im Hintergrund – an der Entwicklung des digitalen Magazins «Republik».',
-    image: 'https://assets.project-r.construction/images/project_r_crew2.jpg',
+    description: 'Project R wurde von einer engagierten Community und zahlreichen Helferinnen ins Leben gerufen. Inzwischen hat die Genossenschaft mehr als 14’000 Mitglieder.',
+    image: 'https://assets.project-r.construction/images/header_crew.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -24,8 +24,7 @@ export default ({url}) => {
         <p>{meta.description}</p>
       </Cover>
     )}>
-
-      <p>Zur Aufbau-Crew gehören:</p>
+      <p>Die Project R Genossenschaft arbeitet derzeit primär an der Entwicklung des digitalen Magazins «Republik». Dabei ergänzen sich die beiden Unternehmen perfekt: Bei der gemeinnützigen Project R Genossenschaft ist primär das Institutionelle angesiedelt, in der Republik AG das Publizistische. Das Team der «Republik» finden Sie hier. Und das ist die Crew, die bei Project R den Rahmen für von Bürgerinnen und Bürgern finanzierten Journalismus schafft:</p>
 
       {team.map((person, i) => <Portrait key={i} {...person} odd={!(i % 2)} />)}
     </Layout>

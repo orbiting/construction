@@ -5,7 +5,7 @@ export const clara = {
   image: 'https://assets.project-r.construction/images/clara_vuillemin.jpg',
   name: 'Clara Vuillemin',
   dob: '24.01.1992',
-  title: 'Head of IT',
+  title: 'Vorstandsmitglied',
   description: `Clara Vuillemin studierte Maschinenbau und Elektrotechnik in Lausanne und Moskau. Daneben arbeitete sie in zahlreichen Jobs: auf dem Bauernhof, bei NGOs in New York, Perm (im Ural) und Kasachstan, war Reporterin bei der «Moskauer Deutschen Zeitung», App-Programmiererin in Winterthur, IT-Verantwortliche im Rotpunktverlag Zürich, Politikerin bei den Jungen Grünen, und gab – ihr bisheriger Lieblingsjob – in Lausanne Physik für Ingenieursstudenten: Mechanik, Elektrotechnik, Quantentheorie. Sie spricht schnell, denkt noch schneller. Einer ihrer Lieblingssätze ist: «Let’s get this shit done!» Wenn Vuillemin etwas nicht versteht, hat nicht sie ein Problem, sondern der, der Unverständliches gesagt hat. Ihr Job bei Project R ist der Aufbau einer IT-Architektur: Open Source, brauchbar auch für andere Medien und Entwickler, anpassbar an Entwicklung und Ideen der Redaktion: «Ich will, dass es schön ist. Ich will, dass es schnell ist. Ich will, dass es sicher ist.»`,
   email: 'clara.vuillemin@project-r.construction'
 }
@@ -14,7 +14,7 @@ export const susanne = {
   image: 'https://assets.project-r.construction/images/susanne_sugimoto.jpg',
   name: 'Susanne Sugimoto',
   dob: '15.10.1963',
-  title: 'Geschäftsführung',
+  title: 'Geschäftsführung und Vorstandsmitglied',
   description: `Susanne Sugimoto kennt KMUs, Politik, Gewerkschaften und Grosskonzerne von innen. Sie machte eine Lehre als Drogistin (nur einen Steinwurf vom Rothaus entfernt). Danach holte sie die Matura nach und machte ein Studium der Geographie und Wirtschaftsinformatik. (Das erste Kind kam am letzten Tag des ersten Semesters, das zweite am ersten Tag des letzten.) Kurz darauf sass sie im Zürcher Gemeinderat und wurde Zentralsekretärin beim Schweizerischen Kaufmännischen Verband, wo sie unter anderem nach dem Grounding der Swissair das Bodenpersonal vertrat. Dann wechselte sie aus Neugier auf die Seite, mit der sie zuvor zehn Jahre über Löhne verhandelt hatte: zu den Konzernen. Sie wurde Leiterin der Medienstelle bei Coop. Und fünf Jahre später Leiterin des Kommunikationsteams für Zentraleuropa beim Zementmulti Holcim. Heute führt sie eine selbstständige Beraterfirma. Als Geschäftsführerin bei Project R ist ihr Job der Überblick über Budget, Personal, Tagesgeschäft. Kurz: Die Aufgabe der meisten Teammitglieder von Project R ist der Aufbau von Komplexität. Ihre die Reduktion von Komplexität.`,
   email: 'susanne.sugimoto@project-r.construction'
 }
@@ -23,7 +23,7 @@ export const laurent = {
   image: 'https://assets.project-r.construction/images/laurent_burst.jpg',
   name: 'Laurent Burst',
   dob: '28.03.1979',
-  title: 'Strategie',
+  title: 'Vorstandsmitglied',
   description: `Laurent Burst begann seine Geschäftstätigkeit mit 13 bei seinem Eintritt ins Gymnasium, mit Produktion, Druck und Inserateakquise bei einer Schülerzeitung, programmierte mit 14 in den Ferien professionelle Datenbanken, besass mit 15 das erste Natel der Schule, arbeitete mit 16 als Reporter für die «Zuger Presse», war mit 17 Kommunikationschef der Firma Brainstore, mit 21 Verwaltungsrat, mit 23 übernahm er die Geschäftsleitung. Mit 28 wechselte er – nach 10 Jahren Managementmenterfahrung – zur Verpackungsfirma Stewo, erst als Produktemanager, dann als Mitglied der Geschäftsleitung (das jüngste aller Zeiten, das erste mit Teilzeitpensum), bekam mit 30 zu Weihnachten das Buch «Annie Leibowitz at Work» geschenkt, verbrachte eine schlaflose Nacht, kündigte in der Silvesternacht und begann mit dem Beruf seines Vaters: Fotograf. Er fotografierte für Publikationen wie GQ oder das «Wall Street Journal», reiste im Jahr drei Mal um den Erdball, vermisste das Teamwork – und baut seit 2014 ein Startup auf: «Herr Rizzi», eine Importfirma für exotische Getränke aus der ganzen Welt. Bei Project R ist er für die Konstruktion von Businessplan und Rechtsform zuständig – und für die höflichste Art, die härtesten Fragen zu stellen. (Fragen sind die Spezialität von Burst, dessen Chef einst bei einem Mittagessen eine Ladung Zahnstocher in sein Hemd steckte, und verkündete: Bei jeder Frage von Burst werde er einen Zahnstocher herausnehmen, und nach dem letzten Zahnstocher sei für den Rest des Tages Ruhe.) Bei Project R haben wir leider keine Zahnstocher: Burst hat vor, das Projekt im Verwaltungsrat derart hart mit Fragen zu löchern, dass es auch noch in 20 Jahren ausbaufähig bleibt.`,
   email: 'laurent.burst@project-r.construction'
 }
@@ -32,8 +32,8 @@ export const nadja = {
   image: 'https://assets.project-r.construction/images/nadja_schnetzler.jpg',
   name: 'Nadja Schnetzler',
   dob: '24.04.1972',
-  title: 'Prozesse und Zusammenarbeit',
-  description: `Nadja Schnetzler begann bei einer Schülerzeitung, aus der noch vor der Matura ein Business wurde: die Vermittlung von Inseraten für Schülerzeitungen. Später, in der Ringier-Journalistenschule, machte sie Praktika bei so unterschiedlichen Medien wie «Bild» und «taz». Doch entscheidender war ein Tag im Frühling 1997: Als Schnetzler mit ihrem späteren Mann entschied, während der Herbstferien in einem Ladenlokal in Biel ein neuartiges Geschäft aufzumachen: einen Ideenhandel namens Brainstore. Die ersten Produkte waren noch unschlagbar günstig – für 9 Franken 90 erhielten Passanten gleich drei Ideen. (Eine typische Frage war etwa, wie man den pensionierten Ehemann dazu bringt, wieder ausser Haus zu gehen.) Zur Verblüffung aller entwickelte sich daraus eine international tätige Firma: Auf dem Höhepunkt beschäftige Brainstore 80 Mitarbeiter und 3000 Freelancer – und entwickelte Ideen für Unternehmen, NGOs, Privatleute und Regierungen auf sämtlichen Kontinenten, mit Ausnahme der Antarktis. (Mehr zu Theorie und Praxis der industriellen Ideenproduktion finden Sie in Schnetzlers Buch «Die Ideenmaschine».) 2012 machte sich Nadja Schnetzler als Kollaborations-Coach mit «Word and Deed» selbstständig. Bei Project R ist ihr Mandat die Entwicklung und Zusammenarbeit: Wie macht man etwas besser? Wie einfacher? Und wie kann man etwas neu denken?`,
+  title: 'Präsidentin und Vorstandsmitglied, Leitung Lab und Deb',
+  description: `Nadja Schnetzler begann bei einer Schülerzeitung, aus der noch vor der Matura ein Business wurde: die Vermittlung von Inseraten für Schülerzeitungen. Später, in der Ringier-Journalistenschule, machte sie Praktika bei so unterschiedlichen Medien wie «Bild» und «taz». Doch entscheidender war ein Tag im Frühling 1997: Als Schnetzler mit ihrem späteren Mann entschied, während der Herbstferien in einem Ladenlokal in Biel ein neuartiges Geschäft aufzumachen: einen Ideenhandel namens Brainstore. Die ersten Produkte waren noch unschlagbar günstig – für 9 Franken 90 erhielten Passanten gleich drei Ideen. (Eine typische Frage war etwa, wie man den pensionierten Ehemann dazu bringt, wieder ausser Haus zu gehen.) Zur Verblüffung aller entwickelte sich daraus eine international tätige Firma: Auf dem Höhepunkt beschäftige Brainstore 80 Mitarbeiter und 3000 Freelancer – und entwickelte Ideen für Unternehmen, NGOs, Privatleute und Regierungen auf sämtlichen Kontinenten, mit Ausnahme der Antarktis. (Mehr zu Theorie und Praxis der industriellen Ideenproduktion finden Sie in Schnetzlers Buch «Die Ideenmaschine».) 2012 machte sich Nadja Schnetzler als Kollaborations-Coach mit «Word and Deed» selbstständig. Sie kümmert sich auf einer planerischen Ebene um die langfristige Weiterentwicklung von Project R und führt für die Genossenschaft und ihre Projekte das Innovations-Labor, das Experimente durchführt sowie mit Einbezug von unterschiedlichsten Personen und Blickwinkeln Prototypen und Konzepte austüftelt.`,
   email: 'nadja.schnetzler@project-r.construction'
 }
 
@@ -76,21 +76,37 @@ export const richard = {
   image: 'https://assets.project-r.construction/images/richard_hoechner.jpg',
   name: 'Richard Höchner',
   dob: '13.05.1987',
-  title: 'Netzwerk-Organisation',
-  description: 'Das Interessante am Journalismus ist, dass man mit jedem einen Grund zum Reden hat: von der Bundesrätin bis zum Bauarbeiter. Und das Interessante an einer Redaktion ist, dass die verschiedensten Leute vorbeikommen. Leute mit Ideen, mit Interessen, mit Fragen, mit Informationen – kurz: Verrückte aller Art. Richard Höchner ist unser Mann, der diese Vielfalt zusammenbringen wird. Seine Eltern lernten sich in einem kaputten Zug in Italien kennen. Das Resultat dieser Zugpanne, Richard Höchner, wuchs danach in zwei Familien auf: Die schweizerische war ruhig und seriös, die italienische laut, politisch und so herzlich wie chaotisch. Höchner besuchte die Schule in Rheineck SG: einer kleinen Grenzstadt, die nicht nur aussah, als käme sie aus dem Mittelalter. Sondern sich auch so anfühlte. Er floh: erst nach Neuseeland zu einem Auslandjahr, dann – noch im Gymnasium – als Trendscout zur Bieler Firma Brainstore. Höchner machte schnell Karriere: zum Organisator von 3000 freien Mitarbeiterinnen und Mitarbeitern rund um den Planeten. 2010 wechselte er zu «Warm Decent Human Beings» (WDHB) – einer Firma, die Informationsreisen für andere Firmen organisiert: Höchner führte Ingenieure, Financiers und Manager in Dinge wie digitales Business, Detailhandel oder Marketing ein – an Orten wie Doha, Bangalore oder Bogotá. Sieben Jahre flog er pro Jahr dreimal um den Planeten. (Und veranstaltete als Hobby in Zürich Partys.) Als Resultat, sagt er, haben unter seinen Freunden kaum zwei Leute denselben Pass. Bei Project R wird Höchner zum ersten Mal sesshaft. Er ist zuständig für das, was er schon immer tat: das Zusammenbringen von Leuten und Ideen. Also für die Vernetzung von Experten und Lesern aller Art. Und sonstigen Verrückten.',
+  title: 'Mitglied der Geschäftsleitung und Leitung Community Development',
+  description: `Das Interessante am Journalismus ist, dass man mit jedem einen Grund zum Reden hat: von der Bundesrätin bis zum Bauarbeiter. Und das Interessante an einer Redaktion ist, dass die verschiedensten Leute vorbeikommen. Leute mit Ideen, mit Interessen, mit Fragen, mit Informationen – kurz: Verrückte aller Art. Richard Höchner ist unser Mann, der diese Vielfalt zusammenbringen wird. Seine Eltern lernten sich in einem kaputten Zug in Italien kennen. Das Resultat dieser Zugpanne, Richard Höchner, wuchs danach in zwei Familien auf: Die schweizerische war ruhig und seriös, die italienische laut, politisch und so herzlich wie chaotisch. Höchner besuchte die Schule in Rheineck SG: einer kleinen Grenzstadt, die nicht nur aussah, als käme sie aus dem Mittelalter. Sondern sich auch so anfühlte. Er floh: erst nach Neuseeland zu einem Auslandjahr, dann – noch im Gymnasium – als Trendscout zur Bieler Firma Brainstore. Höchner machte schnell Karriere: zum Organisator von 3000 freien Mitarbeiterinnen und Mitarbeitern rund um den Planeten. 2010 wechselte er zu «Warm Decent Human Beings» (WDHB) – einer Firma, die Informationsreisen für andere Firmen organisiert: Höchner führte Ingenieure, Financiers und Manager in Dinge wie digitales Business, Detailhandel oder Marketing ein – an Orten wie Doha, Bangalore oder Bogotá. Sieben Jahre flog er pro Jahr dreimal um den Planeten. (Und veranstaltete als Hobby in Zürich Partys.) Als Resultat, sagt er, haben unter seinen Freunden kaum zwei Leute denselben Pass. Bei Project R wird Höchner zum ersten Mal sesshaft. Er ist zuständig für das, was er schon immer tat: das Zusammenbringen von Leuten und Ideen. Also für die Vernetzung von Experten und Lesern aller Art. Und sonstigen Verrückten.`,
   email: 'richard.hoechner@project-r.construction'
+}
+
+export const philipp = {
+  image: 'https://assets.project-r.construction/images/philipp_vonessen.jpg',
+  name: 'Philipp von Essen',
+  dob: '07.05.1982',
+  title: 'Geschäftsstelle',
+  description: 'Portrait folgt.',
+  email: 'philipp.vonessen@project-r.construction'
+}
+
+export const francois = {
+  image: 'https://assets.project-r.construction/images/francois_zosso.jpg',
+  name: 'François Zosso',
+  dob: '05.07.1962',
+  title: 'Finanzen',
+  description: 'Portrait folgt.',
+  email: 'francois.zosso@project-r.construction'
 }
 
 const team = [
   susanne,
-  laurent,
   nadja,
   richard,
   clara,
-  patrick,
-  thomas,
-  constantin,
-  christof
+  laurent,
+  philipp,
+  francois
 ]
 
 const parseDob = timeParse('%d.%m.%Y')

@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Layout from '../src/Layout'
-import Newsletter from '../src/Newsletter'
 import Cover from '../src/Cover'
 import Card from '../src/Card'
 import Grid, {GridItem} from '../src/Grid'
@@ -74,18 +73,22 @@ const newsletters = [
 
 export default ({url}) => {
   const meta = {
-    title: 'Project R geht an den Start',
-    description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam – oder gar nicht.»',
-    image: 'https://assets.project-r.construction/images/balkon.jpg',
+    title: 'Aktuelles von Project R',
+    description: '«Stand der Arbeit, Stand des Irrtums beim Aufbau von Project R und der ‹Republik›.»',
+    image: 'https://assets.project-r.construction/images/header_aktuelles.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
   return (
-    <Layout meta={meta} url={url}>
-
-      <h2>Aktuelles von Project R</h2>
-
-      <p>Stand der Arbeit, Stand des Irrtums beim Aufbau von Project R und der «Republik».</p>
+    <Layout meta={meta} url={url} cover={(
+      <Cover image={{
+        src: 'https://assets.project-r.construction/images/header_aktuelles.jpg',
+        alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'}}
+        >
+        <h1>{meta.title}</h1>
+        <p>{meta.description}</p>
+      </Cover>
+    )}>
 
       <h2>Newsletter-Archiv</h2>
 
@@ -105,15 +108,6 @@ export default ({url}) => {
         Kosmos, Lagerstrasse 102, 8004 Zürich</p>
 
       <p>Wenn die Grenzen zwischen Aktivismus und Journalismus fallen: Welche neuen Formen von Berichterstattung entstehen, welche sind Erfolg versprechend? Wir geben Einblick in erfolgreiche Modelle und diskutieren Erfahrungen, Probleme, Chancen und die Zukunft von aktivistischem Journalismus.</p>
-
-      <p>Gäste:</p>
-      <ul>
-        <li>Oliver Classen, Public Eye</li>
-        <li>Crispin Dowler, Unearthed/Greenpeace, London</li>
-        <li>Sylke Gruhnwald, «Republik»</li>
-        <li>Ariel Hauptmeier, «Republik»</li>
-        <li>Anja Conzett, «Republik»</li>
-      </ul>
 
       <p>Moderation: Hannes Britschgi, Publizist Ringier</p>
 
@@ -156,7 +150,6 @@ export default ({url}) => {
       </ul>
 
       <p>Moderation: Olivia Kühni, stv. Chefredaktorin «Schweizer Monat»</p>
-       
 
     </Layout>
   )

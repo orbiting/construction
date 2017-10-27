@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import Head from 'next/head'
 import {css} from 'glamor'
 import Footer from './Footer'
@@ -42,6 +43,7 @@ css.global('a, a:visited', {
 css.global('a:hover', {
   color: '#444'
 })
+
 css.global('.base ul', {
   listStyleType: 'disc',
   margin: '0 0 1em',
