@@ -7,7 +7,8 @@
   "private": true,
   "devDependencies": {
     "nodemon": "^1.12.1",
-    "standard": "^10.0.3"
+    "standard": "^10.0.3",
+    "static-server": "^2.0.6"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -29,6 +30,7 @@
     "build": "next build",
     "heroku-postbuild": "npm run build",
     "dev": "node server.js",
+    "assets": "static-server assets --port 8000",
     "standardize": "standard --fix 'src/**/*.js' 'pages/**/*.js'"
   }
 }
