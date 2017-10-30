@@ -3,6 +3,9 @@ const next = require('next')
 const newsletter = require('./server/newsletter')
 require('dotenv').config()
 
+const fs = require('fs')
+const path = require('path')
+
 const DEV = process.env.NODE_ENV !== 'production'
 const PORT = process.env.PORT || 4000
 
@@ -26,9 +29,14 @@ app.prepare().then(() => {
   server.get('/welcome_aboard.html', (req, res) => {
     res.redirect(301, '/newsletter/welcome')
   })
-  server.get('/newsletter/welcome', (req, res) => {
-    return app.render(req, res, '/newsletter/welcome', req.query)
-  })
+  fs.readdirSync(path.join(__dirname, 'pages/newsletter'))
+    .map(file => path.basename(file, '.js'))
+    .filter(basename => basename[0] !== '.' && basename !== 'index')
+    .forEach(staticSlug => {
+      server.get(`/newsletter/${staticSlug}`, (req, res) => {
+        return app.render(req, res, `/newsletter/${staticSlug}`, req.query)
+      })
+    })
   server.get('/newsletter/:slug', (req, res) => {
     return app.render(req, res, '/newsletter', req.params)
   })
