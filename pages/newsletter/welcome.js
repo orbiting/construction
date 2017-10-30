@@ -1,12 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
-import {css} from 'glamor'
 
 import Layout from '../../src/Layout'
-
-const welcomeStyle = css({
-  textAlign: 'center'
-})
 
 export default ({url}) => {
   return (
@@ -14,7 +9,7 @@ export default ({url}) => {
       <Head>
         <title>Project R Newsletter</title>
       </Head>
-      <h2 {...welcomeStyle}>
+      <h2>
         {url.query.message
           ? url.query.message
           : 'Welcome aboard!'}
