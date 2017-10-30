@@ -11,7 +11,7 @@ const media = [
     title: 'Ein bisschen Mitbesitzerin von «Republik» werden',
     date: 'Zürich, 24. April 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/taufe_bern.jpg',
+      src: 'http://localhost:8000/images/optimized/taufe_bern.jpg',
       alt: 'Taufe des Namen und Logo in Bern'
     }
   },
@@ -20,7 +20,7 @@ const media = [
     title: 'Das Magazin von Project R heisst «Republik»',
     date: 'Bern, 12. April 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/logo_republik.jpg',
+      src: 'http://localhost:8000/images/optimized/logo_republik.jpg',
       alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
     }
   },
@@ -29,7 +29,7 @@ const media = [
     title: 'Der Bauplan von Project R steht',
     date: 'Zürich, 15. März 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
+      src: 'http://localhost:8000/images/optimized/enterprise_with_hand.jpg',
       alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
     }
   },
@@ -38,7 +38,7 @@ const media = [
     title: 'Project R stellt Aufbau-Crew vor und zieht ins Hotel Rothaus',
     date: 'Zürich, 10. Januar 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/rothaus_thumb.jpg',
+      src: 'http://localhost:8000/images/optimized/rothaus_thumb.jpg',
       alt: 'Das Hotel Rothaus von aussen'
     }
   }

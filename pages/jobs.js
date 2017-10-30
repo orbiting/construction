@@ -7,7 +7,7 @@ export default ({url}) => {
   const meta = {
     title: 'Jobs',
     description: 'Löse mit einem motivierten, multidisziplinären und unorthodoxen Team die interessantesten Probleme der Branche!',
-    image: 'https://assets.project-r.construction/images/header_jobs.jpg',
+    image: 'http://localhost:8000/images/optimized/header_jobs.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 

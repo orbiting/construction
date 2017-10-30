@@ -13,7 +13,7 @@ const links = [
     title: 'Projekte'
   },
   {
-    path: 'https://www.republik.ch/manifest',
+    path: '/manifest',
     title: 'Manifest'
   },
   {

@@ -11,7 +11,7 @@ const newsletters = [
     title: 'Der Crowdfunding-Code gegen die Frankenstein-Monster-Strategie',
     date: '13. September 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/nl7-code.jpg',
+      src: 'http://localhost:8000/images/optimized/nl7-code.jpg',
       alt: 'Backend-Code-Screenshot'
     }
   },
@@ -20,7 +20,7 @@ const newsletters = [
     title: 'Die Start-Aufstellung der «Republik»-Redaktion steht',
     date: '4. August 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/teamwork2.jpg',
+      src: 'http://localhost:8000/images/optimized/teamwork2.jpg',
       alt: 'Das Team der Republik bei einem Workshop'
     }
   },
@@ -29,7 +29,7 @@ const newsletters = [
     title: 'Ein starkes Signal für den Journalismus',
     date: '31. Mai 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/testimonials_collage.jpg',
+      src: 'http://localhost:8000/images/optimized/testimonials_collage.jpg',
       alt: 'Eine Collage der Verlegerinnen'
     }
   },
@@ -38,7 +38,7 @@ const newsletters = [
     title: 'Startschuss Crowdfunding für «Republik»',
     date: '26. April 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/screen_crowdfunding_thumb.jpg',
+      src: 'http://localhost:8000/images/optimized/screen_crowdfunding_thumb.jpg',
       alt: 'iPhone Bildschirm mit Website Crowdfunding für Republik'
     }
   },
@@ -47,7 +47,7 @@ const newsletters = [
     title: 'So heisst das Magazin von Project R',
     date: '12. April 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/rothaus_republik.jpg',
+      src: 'http://localhost:8000/images/optimized/rothaus_republik.jpg',
       alt: 'Das Hotel Rothaus mit dem Banner der Republik'
     }
   },
@@ -56,7 +56,7 @@ const newsletters = [
     title: 'Der Bauplan von Project R',
     date: '15. März 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
+      src: 'http://localhost:8000/images/optimized/enterprise_with_hand.jpg',
       alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
     }
   },
@@ -65,7 +65,7 @@ const newsletters = [
     title: 'Project R geht an den Start',
     date: '10. Januar 2017',
     image: {
-      src: 'https://assets.project-r.construction/images/project_r_crew.jpg',
+      src: 'http://localhost:8000/images/optimized/project_r_crew.jpg',
       alt: 'Das Project R Team in der Lobby des Hotel Rothaus am 5. Januar 2017'
     }
   }
@@ -75,14 +75,14 @@ export default ({url}) => {
   const meta = {
     title: 'Aktuelles von Project R',
     description: '«Stand der Arbeit, Stand des Irrtums beim Aufbau von Project R und der ‹Republik›.»',
-    image: 'https://assets.project-r.construction/images/header_aktuelles.jpg',
+    image: 'http://localhost:8000/images/optimized/header_aktuelles.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
   return (
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/images/header_aktuelles.jpg',
+        src: 'http://localhost:8000/images/optimized/header_aktuelles.jpg',
         alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'}}
         >
         <h1>{meta.title}</h1>
@@ -122,7 +122,9 @@ export default ({url}) => {
       <h3>«Werd erwachsen: Jammer nicht. Tu was!»</h3>
       <p>Kosmopolitics, 9. Oktober 2017, 20.00 Uhr<br />
         Kosmos, Lagerstrasse 102, 8004 Zürich</p>
-
+      <p>
+        <img src='http://localhost:8000/images/optimized/Kosmopolitics-20171009_20-10_7739.jpg' />
+      </p>
       <p>Welchen Beitrag kann ich leisten, an die Gesellschaft, an die Institutionen, an die Demokratie? Menschen, die zum Schluss gekommen sind, dass nach der Systemkritik eine Zeit des Bauens folgt, erzählen ihre Geschichte und laden das Publikum ein, über ihren (zukünftigen) Beitrag an die Gesellschaft nachzudenken.</p>
       <p>Gäste:</p>
       <ul>
@@ -136,6 +138,9 @@ export default ({url}) => {
       <h3>«Gesünder durch Informationsdiät!»</h3>
       <p>Kosmopolitics, 18. September 2017, 20.00 Uhr<br />
         Kosmos, Lagerstrasse 102, 8004 Zürich</p>
+      <p>
+        <img src='http://localhost:8000/images/optimized/20170918_20-36_1694_full.jpg' />
+      </p>
 
       <p>Welche Nachrichten wünsche ich mir: täglich, jährlich, einmal im Leben? In diesem interaktiven Workshop mit vorangehendem Gespräch beleuchten wir die Frage, was an Information unverzichtbar ist – und was ungeniessbar.</p>
 

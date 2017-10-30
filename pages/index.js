@@ -7,14 +7,14 @@ export default ({url}) => {
   const meta = {
     title: 'Project R',
     description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen. Damit der Journalismus unabhängig von den Grossverlagen existieren kann. Ein Modell dafür schafft man nur gemeinsam – oder gar nicht.»',
-    image: 'https://assets.project-r.construction/images/header_front.jpg',
+    image: 'http://localhost:8000/images/optimized/header_front.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
   return (
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/images/rothaus_r.jpg',
+        src: 'http://localhost:8000/images/optimized/rothaus_r.jpg',
         alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'}}
       >
         <h1>Project R</h1>

@@ -6,7 +6,7 @@ export default ({url}) => {
   const meta = {
     title: 'Ein bisschen Mitbesitzerin von «Republik» werden',
     description: 'Punkt 07.00 Uhr, am 26. April 2017 startet unter republik.ch das Crowdfunding für das digitale Magazin «Republik»; online und im Hotel Rothaus vor Ort. Bis Ende Mai will die Project-R-Crew 3000 zukünftige Leserinnen und Leser finden, die insgesamt mindestens 750\'000 Franken investieren.',
-    image: 'https://assets.project-r.construction/images/taufe_bern.jpg',
+    image: 'http://localhost:8000/images/optimized/taufe_bern.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 

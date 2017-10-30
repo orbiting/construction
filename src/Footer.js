@@ -42,6 +42,9 @@ const Footer = ({url}) => (
       Raiffeisenbank Winterthur<br />
       IBAN: CH04 8148 5000 0083 4669 1
     </p>
+    <p>
+      <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NZEW4QTG7GWUJ'>Mit PayPal spenden</a>
+    </p>
   </div>
 )
 

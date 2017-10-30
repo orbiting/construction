@@ -2,7 +2,7 @@ import {timeParse} from 'd3-time-format'
 import {timeYear} from 'd3-time'
 
 export const clara = {
-  image: 'https://assets.project-r.construction/images/clara_vuillemin.jpg',
+  image: 'http://localhost:8000/images/optimized/clara_vuillemin.jpg',
   name: 'Clara Vuillemin',
   dob: '24.01.1992',
   title: 'Vorstandsmitglied',
@@ -11,7 +11,7 @@ export const clara = {
 }
 
 export const susanne = {
-  image: 'https://assets.project-r.construction/images/susanne_sugimoto.jpg',
+  image: 'http://localhost:8000/images/optimized/susanne_sugimoto.jpg',
   name: 'Susanne Sugimoto',
   dob: '15.10.1963',
   title: 'Geschäftsführung und Vorstandsmitglied',
@@ -20,7 +20,7 @@ export const susanne = {
 }
 
 export const laurent = {
-  image: 'https://assets.project-r.construction/images/laurent_burst.jpg',
+  image: 'http://localhost:8000/images/optimized/laurent_burst.jpg',
   name: 'Laurent Burst',
   dob: '28.03.1979',
   title: 'Vorstandsmitglied',
@@ -29,7 +29,7 @@ export const laurent = {
 }
 
 export const nadja = {
-  image: 'https://assets.project-r.construction/images/nadja_schnetzler.jpg',
+  image: 'http://localhost:8000/images/optimized/nadja_schnetzler.jpg',
   name: 'Nadja Schnetzler',
   dob: '24.04.1972',
   title: 'Präsidentin und Vorstandsmitglied, Leitung Lab und Deb',
@@ -38,7 +38,7 @@ export const nadja = {
 }
 
 export const patrick = {
-  image: 'https://assets.project-r.construction/images/patrick_recher.jpg',
+  image: 'http://localhost:8000/images/optimized/patrick_recher.jpg',
   name: 'Patrick Recher',
   dob: '18.08.1988',
   title: 'Software-Entwicklung',
@@ -47,7 +47,7 @@ export const patrick = {
 }
 
 export const thomas = {
-  image: 'https://assets.project-r.construction/images/thomas_preusse.jpg',
+  image: 'http://localhost:8000/images/optimized/thomas_preusse.jpg',
   name: 'Thomas Preusse',
   dob: '13.03.1991',
   title: 'Software-Entwicklung',
@@ -55,7 +55,7 @@ export const thomas = {
   email: 'thomas.preusse@project-r.construction'
 }
 export const constantin = {
-  image: 'https://assets.project-r.construction/images/constantin_seibt.jpg',
+  image: 'http://localhost:8000/images/optimized/constantin_seibt.jpg',
   name: 'Constantin Seibt',
   dob: '20.02.1966',
   title: 'Konzeption und Redaktion',
@@ -64,7 +64,7 @@ export const constantin = {
 }
 
 export const christof = {
-  image: 'https://assets.project-r.construction/images/christof_moser.jpg',
+  image: 'http://localhost:8000/images/optimized/christof_moser.jpg',
   name: 'Christof Moser',
   dob: '03.04.1979',
   title: 'Konzeption und Redaktion',
@@ -73,7 +73,7 @@ export const christof = {
 }
 
 export const richard = {
-  image: 'https://assets.project-r.construction/images/richard_hoechner.jpg',
+  image: 'http://localhost:8000/images/optimized/richard_hoechner.jpg',
   name: 'Richard Höchner',
   dob: '13.05.1987',
   title: 'Mitglied der Geschäftsleitung und Leitung Community Development',
@@ -82,7 +82,7 @@ export const richard = {
 }
 
 export const philipp = {
-  image: 'https://assets.project-r.construction/images/philipp_vonessen.jpg',
+  image: 'http://localhost:8000/images/optimized/philipp_vonessen.jpg',
   name: 'Philipp von Essen',
   dob: '07.05.1982',
   title: 'Geschäftsstelle',
@@ -91,7 +91,7 @@ export const philipp = {
 }
 
 export const francois = {
-  image: 'https://assets.project-r.construction/images/francois_zosso.jpg',
+  image: 'http://localhost:8000/images/optimized/francois_zosso.jpg',
   name: 'François Zosso',
   dob: '05.07.1962',
   title: 'Finanzen',

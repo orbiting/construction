@@ -7,14 +7,14 @@ export default ({url}) => {
   const meta = {
     title: 'Das erste Projekt: Die «Republik»',
     description: '«Ohne Journalismus keine Demokratie. Und ohne Demokratie keine Freiheit.»',
-    image: 'https://assets.project-r.construction/images/balkon.jpg',
+    image: 'http://localhost:8000/images/optimized/balkon.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
   return (
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/images/header_projekte.jpg',
+        src: 'http://localhost:8000/images/optimized/header_projekte.jpg',
         alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'}}
       >
         <h1>Das erste Projekt: Die «Republik»</h1>
@@ -40,24 +40,19 @@ export default ({url}) => {
       <h3>Ausblick</h3>
 
       <p>Zurzeit fliesst all unsere Energie in die «Republik». Wir haben die Maschine auf die Startbahn geschoben, nun muss sie abheben. Doch auch für die Zeit danach haben wir viel vor. Unter anderem wollen wir jetzt und in Zukunft 
-        <ul>
-          <li>dafür sorgen, dass der mit jährlich 240’000 Franken dotierte Fonds für grosse Recherchen, grosse Geschichten und grosse Ideen bestmöglich eingesetzt wird – sodass mit dem Geld wegweisende Storys finanziert werden. Solche, die für die Bürgerinnen und Bürger relevant sind. Die Debatten auslösen. </li>
-
-          <li>Menschen zusammenbringen und vernetzen, die wie wir dafür brennen, dass sich der Journalismus weiterentwickelt. Damit Bürgerinnen und Bürger all die Informationen erhalten, die sie brauchen, um gute Entscheidungen zu treffen. </li>
-
-          <li>die Softwareentwicklung für die «Republik» finanzieren und den Code als Open Source allen zur Verfügung stellen, die damit arbeiten wollen.</li>
-
-          <li>uns für Medienvielfalt, unabhängigen Journalismus und eine konstruktive Medienpolitik einsetzen. 
-neue journalistische Erzählformen entwickeln. </li>
-          <li>den Diskurs über all das fördern, was Medienunternehmen in Zukunft brauchen: Werkzeuge, Plattformen, Geld, Schutz, Wissen, Communitys und noch vieles mehr.</li>
-
-          <li>dazu beitragen, dass Kinder und Jugendliche in der Schule oder nach der Schule lernen, wie Medien funktionieren. Wir wollen ihnen zeigen, wie man kritisch liest, wie man sich einmischt und warum das wichtig ist.</li> 
-          <li>Journalistinnen und Journalisten ausbilden – und eine Akademie für unternehmerischen Journalismus begründen. 
-anderen helfen, eigene journalistische Projekte anzuschieben, indem wir sie mit Coaching, Rechtsberatung, Arbeitsplätzen und Kontakten unterstützen.</li>
-          <li>neue, unabhängige Medien, die den Leser und die Leserin in den Mittelpunkt stellen, fördern und unterstützen. 
-dazu beitragen, dass in der Schweiz konstruktive Debatten zu den wichtigen Themen geführt werden. Wir wollen erforschen, unter welchen Voraussetzungen diese Debatten für alle Beteiligten wertvoll sind.</li>
-        </ul>
       </p>
+      <ul>
+        <li>dafür sorgen, dass der mit jährlich 240’000 Franken dotierte Fonds für grosse Recherchen, grosse Geschichten und grosse Ideen bestmöglich eingesetzt wird – sodass mit dem Geld wegweisende Storys finanziert werden. Solche, die für die Bürgerinnen und Bürger relevant sind. Die Debatten auslösen. </li>
+        <li>Menschen zusammenbringen und vernetzen, die wie wir dafür brennen, dass sich der Journalismus weiterentwickelt. Damit Bürgerinnen und Bürger all die Informationen erhalten, die sie brauchen, um gute Entscheidungen zu treffen. </li>
+        <li>die Softwareentwicklung für die «Republik» finanzieren und den Code als Open Source allen zur Verfügung stellen, die damit arbeiten wollen.</li>
+        <li>uns für Medienvielfalt, unabhängigen Journalismus und eine konstruktive Medienpolitik einsetzen. 
+neue journalistische Erzählformen entwickeln. </li>
+        <li>den Diskurs über all das fördern, was Medienunternehmen in Zukunft brauchen: Werkzeuge, Plattformen, Geld, Schutz, Wissen, Communitys und noch vieles mehr.</li>
+        <li>dazu beitragen, dass Kinder und Jugendliche in der Schule oder nach der Schule lernen, wie Medien funktionieren. Wir wollen ihnen zeigen, wie man kritisch liest, wie man sich einmischt und warum das wichtig ist.</li><li>Journalistinnen und Journalisten ausbilden – und eine Akademie für unternehmerischen Journalismus begründen. </li>
+        <li>anderen helfen, eigene journalistische Projekte anzuschieben, indem wir sie mit Coaching, Rechtsberatung, Arbeitsplätzen und Kontakten unterstützen.</li>
+        <li>neue, unabhängige Medien, die den Leser und die Leserin in den Mittelpunkt stellen, fördern und unterstützen. </li>
+        <li>dazu beitragen, dass in der Schweiz konstruktive Debatten zu den wichtigen Themen geführt werden. Wir wollen erforschen, unter welchen Voraussetzungen diese Debatten für alle Beteiligten wertvoll sind.</li>
+      </ul>
 
       <p>Sobald sich etwas tut bei Project R, werden wir Sie informieren. Tragen Sie sich hier für unseren Newsletter ein und folgen Sie uns auf <a href='https://www.facebook.com/ProjectRGenossenschaft/'>Facebook</a> oder <a href='https://twitter.com/_Project_R'>Twitter</a>. Dann sind Sie immer auf dem neuesten Stand.</p>
       <Newsletter />
