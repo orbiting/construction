@@ -9,7 +9,7 @@ import TwitterIcon from '../src/icons/twitter'
 export default ({url}) => {
   const meta = {
     title: 'Manifest',
-    description: 'Lat. manifestus = sichtbar gemacht, handgreiflich gemacht»',
+    description: '«Lat. manifestus = sichtbar gemacht, handgreiflich gemacht»',
     image: 'http://localhost:8000/images/optimized/header_manifest.jpg',
     url: `https://project-r.construction${url.pathname}`
   }

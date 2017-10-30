@@ -29,8 +29,7 @@ export default ({url}) => {
       <p>Dem Gemeinwohl verpflichtet, fördert Project R den konstruktiven gesellschaftlichen Diskurs und diskriminierungsfreie, vielfältige Debatten über die Fragen unserer Zeit.</p>
 
       <p>
-        Lesen Sie <a href='https://assets.republik.ch/cf_gui/static/statuten_project_r_genossenschaft_unterschrieben.pdf' download>hier</a> die Statuten der Project R Genossenschaft. <br />
-        <a href='https://www.republik.ch/pledge'>Mitglied werden</a> <br />.
+        Lesen Sie <a href='https://assets.republik.ch/cf_gui/static/statuten_project_r_genossenschaft_unterschrieben.pdf' download>hier</a> die Statuten der Project R Genossenschaft. Und werden Sie <a href='https://www.republik.ch/pledge'>hier</a> Mitglied. <br />
       </p>
 
       <p>Wenn Sie informiert bleiben wollen, bitte hier für den Newsletter eintragen:</p>
