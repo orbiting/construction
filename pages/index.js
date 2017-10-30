@@ -9,11 +9,11 @@ import Newsletter from '../src/Newsletter'
 import Cover from '../src/Cover'
 import Card from '../src/Card'
 import Grid, {GridItem} from '../src/Grid'
+import staticNewsletters from '../src/data/newsletters'
 
 const getDocuments = gql`
   query getDocuments {
     documents {
-      content
       meta {
         slug
         title
@@ -38,7 +38,7 @@ class Index extends Component {
 
     let newsletters = loading
       ? []
-      : documents
+      : documents.concat(staticNewsletters)
 
     return (
       <Layout meta={meta} url={url} cover={(

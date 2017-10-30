@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import {css} from 'glamor'
-import {timeParse} from 'd3-time-format'
 import {timeFormat} from '../lib/format'
 
 import {imageResizeUrl} from './Templates/utils'
@@ -25,23 +24,35 @@ const textStyle = css({
   }
 })
 
-const parsePublishDate = timeParse('%d.%m.%Y %H:%M')
+const parseDate = string => {
+  const date = new Date(string)
+  return isNaN(date) ? undefined : date
+}
 const formatPublishDate = timeFormat('%d. %B %Y')
 
-const Card = ({slug, title, publishDate, image}) => (
-  <div {...containerStyle}>
-    <Link href={{pathname: '/newsletter', query: {slug}}} as={`/newsletter/${slug}`}>
-      <a {...imageStyle}>
-        <img src={imageResizeUrl(image, '580x326')} />
-      </a>
-    </Link>
-    <Link href={{pathname: '/newsletter', query: {slug}}} as={`/newsletter/${slug}`}>
-      <a {...textStyle}>
-        <h3>{title}</h3>
-        {!!publishDate && parsePublishDate(publishDate) && <p>{formatPublishDate(parsePublishDate(publishDate))}</p>}
-      </a>
-    </Link>
-  </div>
+const CardLink = ({slug, href, children}) => (
+  <Link href={href || {pathname: '/newsletter', query: {slug}}} as={href || `/newsletter/${slug}`} passHref>
+    {children}
+  </Link>
 )
+
+const Card = ({slug, href, title, publishDate, image, imageAlt}) => {
+  let parsedDate = parseDate(publishDate)
+  return (
+    <div {...containerStyle}>
+      <CardLink href={href} slug={slug}>
+        <a {...imageStyle}>
+          <img src={imageResizeUrl(image, '580x326')} alt={imageAlt} />
+        </a>
+      </CardLink>
+      <CardLink href={href} slug={slug}>
+        <a {...textStyle}>
+          <h3>{title}</h3>
+          {!!parsedDate && <p>{formatPublishDate(parsedDate)}</p>}
+        </a>
+      </CardLink>
+    </div>
+  )
+}
 
 export default Card
