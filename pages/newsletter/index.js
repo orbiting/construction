@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Head from 'next/head'
 
 import { gql, graphql } from 'react-apollo'
 import { compose } from 'redux'
@@ -46,8 +47,12 @@ class Index extends Component {
     }
     if (!newsletter) {
       return (
-        <Layout url={url} meta={{title: '404'}}>
+        <Layout url={url}>
+          <Head>
+            <title>404</title>
+          </Head>
           <h1>404</h1>
+          <p>Seite nicht gefunden.</p>
         </Layout>
       )
     }
@@ -70,6 +75,15 @@ export default compose(
       variables: {
         slug: props.url.query.slug
       }
-    })
+    }),
+    props: ({data, ownProps: {serverContext}}) => {
+      if (serverContext && !data.error && !data.loading && !data.newsletter) {
+        serverContext.res.statusCode = 404
+      }
+
+      return {
+        data
+      }
+    }
   })
 )(Index)
