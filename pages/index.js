@@ -36,7 +36,7 @@ class Index extends Component {
       url: `https://project-r.construction${url.pathname}`
     }
 
-    let newsletters = loading
+    let newsletters = loading || !documents
       ? []
       : documents.concat(staticNewsletters)
 
@@ -44,8 +44,8 @@ class Index extends Component {
       <Layout meta={meta} url={url} cover={(
         <Cover image={{
           src: 'https://assets.project-r.construction/images/rothaus_r.jpg',
-          alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'}}
-        >
+          alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'
+        }}>
           <h1>Project R</h1>
           <p>{meta.description}</p>
         </Cover>
@@ -70,7 +70,8 @@ class Index extends Component {
 
         <h3>Aktuelles von Project R</h3>
 
-        {!!error && <span>{error.toString()}</span>}
+        {!!loading && <p>Lädt…</p>}
+        {!!error && <p>Nicht verfügbar, bitte versuchen Sie es später nochmals.</p>}
         <Grid>
           {newsletters.map((newsletter, i) => (
             <GridItem key={i}>

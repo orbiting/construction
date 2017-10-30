@@ -34,13 +34,22 @@ class Index extends Component {
     const { data: {loading, error, newsletter}, url } = this.props
 
     if (loading) {
-      return null
+      return <Layout url={url}><p>Lädt…</p></Layout>
     }
     if (error) {
-      return <div>{error.toString()}</div>
+      return (
+        <Layout url={url}>
+          <h1>Nicht verfügbar</h1>
+          <p>Bitte versuchen Sie es später nochmals.</p>
+        </Layout>
+      )
     }
     if (!newsletter) {
-      return <div>404</div>
+      return (
+        <Layout url={url} meta={{title: '404'}}>
+          <h1>404</h1>
+        </Layout>
+      )
     }
     const meta = {
       ...newsletter.meta,
