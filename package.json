@@ -6,27 +6,31 @@
   },
   "private": true,
   "devDependencies": {
-    "nodemon": "^1.11.0",
+    "nodemon": "^1.12.1",
     "standard": "^8.6.0"
   },
   "dependencies": {
-    "body-parser": "^1.15.2",
+    "body-parser": "^1.18.2",
     "d3-time": "^1.0.5",
     "d3-time-format": "^2.0.4",
     "dotenv": "^4.0.0",
-    "express": "^4.14.0",
-    "glamor": "^2.20.22",
-    "isomorphic-unfetch": "^1.0.0",
-    "next": "^2.4.3",
+    "express": "^4.15.5",
+    "glamor": "^2.20.40",
+    "isomorphic-unfetch": "^2.0.0",
+    "next": "^3.2.2",
+    "next-routes": "^1.0.40",
     "querystring": "^0.2.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react": "^15.6.2",
+    "react-apollo": "^1.4.15",
+    "react-dom": "^15.6.2",
+    "redux": "^3.7.2"
   },
   "scripts": {
     "start": "NODE_ENV=production node server.js",
     "build": "next build",
     "heroku-postbuild": "npm run build",
-    "dev": "node server.js",
-    "standardize": "standard --fix 'src/**/*.js' 'pages/**/*.js'"
+    "dev": "nodemon --watch server --watch lib/routes.js server.js",
+    "standardize": "standard --fix 'src/**/*.js' 'pages/**/*.js'",
+    "import:templates": "cp -r ../publikator-frontend/components/Templates src/ && rm -r src/Templates/NewsletterEmail && rm src/Templates/email.js && rm src/Templates/newsletter.*"
   }
 }

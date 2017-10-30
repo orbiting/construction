@@ -7,16 +7,17 @@ const SUBJECT = 'Bitte Anmeldung Project R-Newsletter bestätigen'
 const FROM_EMAIL = 'jefferson@project-r.construction'
 const FROM_NAME = 'Jefferson - Project R'
 
-const subscribeText = (email, token) => `Ma'am, Sir,
+const subscribeText = (email, token) => `Guten Tag
 
-herzlichen Dank für Ihr Interesse an Project R.
+Herzlichen Dank für Ihr Interesse an der Project R Genossenschaft und Republik.
 
-Wir arbeiten derzeit an dem Aufbau der Crowdfunding-Plattform, an der IT-Entwicklung und am Redaktionskonzept.
-Sobald wir Neuigkeiten haben, werden wir uns wieder melden!
-
-Dafür müssen Sie nur noch auf folgenden Link klicken:
+Bestätigen Sie Ihre Newsletter-Anmeldung mit Klicken auf den folgenden Link:
 
 ${process.env.PUBLIC_BASE_URL}/newsletter/subscribe?email=${encodeURIComponent(email)}&token=${encodeURIComponent(token)}
+
+Derzeit arbeiten wir hart am Aufbau des digitalen Magazins Republik. Auch die Project R Genossenschaft ist nicht untätig und veranstaltet bereits Debatten. Sobald wir wieder Neuigkeiten haben, werden wir uns melden!
+
+Sie wollen Mitglied der Project R Genossenschaft und Verleger*in der Republik werden? Dann klicken Sie hier: www.republik.ch
 
 Ihre R-Crew`
 
@@ -61,7 +62,10 @@ const subscribeEmail = (email) => {
     },
     body: JSON.stringify({
       email_address: email,
-      status: 'subscribed'
+      status: 'subscribed',
+      interests: process.env.MAILCHIMP_INTEREST_ID && {
+        [process.env.MAILCHIMP_INTEREST_ID]: true
+      }
     })
   })
     .then(response => response.json())
