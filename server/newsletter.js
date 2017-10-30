@@ -63,8 +63,8 @@ const subscribeEmail = (email) => {
     body: JSON.stringify({
       email_address: email,
       status: 'subscribed',
-      interests: {
-        'c9cb2eaed4': true // Project R NL
+      interests: process.env.MAILCHIMP_INTEREST_ID && {
+        [process.env.MAILCHIMP_INTEREST_ID]: true
       }
     })
   })

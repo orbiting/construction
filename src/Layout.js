@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react'
 import Head from 'next/head'
 import {css} from 'glamor'
 import Footer from './Footer'
-import { META_ROBOTS } from '../lib/settings'
+import { META_ROBOTS } from '../lib/publicEnv'
 
 import 'glamor/reset'
 

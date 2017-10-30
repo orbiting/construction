@@ -6,7 +6,7 @@ import { compose } from 'redux'
 import withData from '../../lib/apollo/withData'
 import { renderMdast } from '../../src/Templates'
 import newsletterSchema from '../../src/Templates/Newsletter'
-import { PUBLIC_BASE_URL } from '../../lib/settings'
+import { PUBLIC_BASE_URL } from '../../lib/publicEnv'
 
 import Layout from '../../src/Layout'
 
