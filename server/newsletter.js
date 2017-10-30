@@ -54,8 +54,14 @@ const sendEmail = (email, text) => {
 }
 
 const subscribeEmail = (email) => {
-  return fetch(`https://us14.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}/members`, {
-    method: 'POST',
+  const hash = crypto
+    .createHash('md5')
+    .update(email)
+    .digest('hex')
+    .toLowerCase()
+
+  return fetch(`https://us14.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}/members/${hash}`, {
+    method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
       'Authorization': 'Basic ' + (new Buffer('anystring:' + process.env.MAILCHIMP_API_KEY).toString('base64'))
