@@ -73,7 +73,7 @@ export default compose(
   graphql(getDocument, {
     options: props => ({
       variables: {
-        slug: props.url.query.slug
+        slug: props.url.query.slug || ''
       }
     }),
     props: ({data, ownProps: {serverContext}}) => {
