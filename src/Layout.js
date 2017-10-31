@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import Head from 'next/head'
 import {css} from 'glamor'
 import Footer from './Footer'
