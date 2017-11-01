@@ -1,8 +1,8 @@
 {
   "name": "construction",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "engines": {
-    "node": "8.4.0"
+    "node": "8.9.0"
   },
   "private": true,
   "devDependencies": {
@@ -10,20 +10,25 @@
     "standard": "^8.6.0"
   },
   "dependencies": {
+    "apollo-cache-inmemory": "^1.0.0",
+    "apollo-client": "^2.0.1",
+    "apollo-link-http": "^1.0.0",
     "body-parser": "^1.18.2",
     "d3-time": "^1.0.5",
     "d3-time-format": "^2.0.4",
     "dotenv": "^4.0.0",
     "express": "^4.15.5",
     "glamor": "^2.20.40",
+    "graphql": "^0.11.7",
+    "graphql-tag": "^2.5.0",
     "isomorphic-unfetch": "^2.0.0",
-    "next": "^3.2.2",
+    "next": "^4.1.4",
     "next-routes": "^1.0.40",
     "prop-types": "^15.6.0",
     "querystring": "^0.2.0",
-    "react": "^15.6.2",
-    "react-apollo": "^1.4.15",
-    "react-dom": "^15.6.2",
+    "react": "^16.0.0",
+    "react-apollo": "^2.0.0",
+    "react-dom": "^16.0.0",
     "redux": "^3.7.2"
   },
   "scripts": {
