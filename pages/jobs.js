@@ -57,7 +57,7 @@ export default ({url}) => {
 
     <p>Wir melden uns Anfang Dezember bei dir. Hoffentlich mit einer Einladung zum Auswahltag. Er ist am Samstag, 16. Dezember 2017, von 8 bis 20 Uhr in Zürich.</p>
 
-    <p>Hast du Fragen? Dann schreib an ariel.hauptmeier@republik.ch</p>
+    <p>Hast du Fragen? Dann schreib an ausbildung@republik.ch</p>
 
     <p>Viel Glück!</p>
 
