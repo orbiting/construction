@@ -1,8 +1,8 @@
 {
   "name": "construction",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "engines": {
-    "node": "8.4.0"
+    "node": "8.9.0"
   },
   "private": true,
   "devDependencies": {
