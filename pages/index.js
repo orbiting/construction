@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import { gql, graphql } from 'react-apollo'
+import { graphql } from 'react-apollo'
+import gql from 'graphql-tag'
 import { compose } from 'redux'
 import withData from '../lib/apollo/withData'
 
