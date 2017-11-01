@@ -24,7 +24,7 @@ export default ({url}) => {
 
     <p><strong>Wir bieten:</strong> vier Ausbildungsplätze für unternehmerischen Journalismus.</p>
 
-    <p><strong>Wir suchen:</strong> Leute, die anders sind. Die viel können und noch viel mehr vorhaben. Die laut sind und nicht einverstanden sind, die analytisch denken können und ihre Meinung eloquent artikulieren. Wir wollen eine diverse Republik. Mit verschiedenen Herkünften und Erfahrungswelten, mit eigenwilligen Ausdrucksformen, mit Stimmen, die sich unterscheiden. Wir suchen ehrgeizige Schreiber, die unternehmerisch denken. Wir suchen angehende Unternehmerinnen, die für guten Journalismus brennen. </p>
+    <p><strong>Wir suchen:</strong> Leute, die anders sind. Die viel können und noch viel mehr vorhaben. Die laut sind und nicht einverstanden sind, die analytisch denken können und ihre Meinung eloquent artikulieren. Wir wollen eine diverse «Republik». Mit verschiedenen Herkünften und Erfahrungswelten, mit eigenwilligen Ausdrucksformen, mit Stimmen, die sich unterscheiden. Wir suchen ehrgeizige Schreiber, die unternehmerisch denken. Wir suchen angehende Unternehmerinnen, die für guten Journalismus brennen. </p>
 
     <p>Sichere Medienjobs werden bald so selten sein wie optimistische Verlagsmanager. Das ist die schlechte Nachricht. Die gute: Die Investitionen dafür, ein Medienunternehmen zu gründen, sind heute so gering wie niemals zuvor, seit Reinhard Lutz 1571 seine «Warhafftige Zeitung von den Gottlosen Hexen» herausgab, eines der ersten Presseorgane der Neuzeit. Alles, was du heute brauchst, sind eine bestechende Idee, ehrgeizige Mitstreiter, Know-how und ein mutiges Herz. Und los. Es wird Zeit, dass wir unsere eigenen Medien gründen. Die Zeiten für Verlegerinnen und Verleger könnten nicht besser sein.</p>
 
@@ -34,7 +34,7 @@ export default ({url}) => {
 
     <p>Auch die journalistische Seite deiner Ausbildung ist massgeschneidert. Bist du eine Wühlmaus? Eine Schönschreiberin? Ein Nachrichtenhund? Bist du Reporter, Essayistin, Datenjunkie, Multimedia-Maniac? Wir wollen alles dafür tun, dir den letzten Schliff im journalistischen Handwerk zu geben. Nur eines können wir dir nicht beibringen: deinen eigenen originellen Blick auf die Welt. Den musst du mitbringen.</p>
 
-    <p>Wir sind ein Start-up. Wir haben viel zu tun. Wir erwarten von dir, dass du selbstständig bist und dich autonom organisieren kannst. Dass wir auf dich zählen können, wenn die Hütte brennt. Dass du, nach Bedarf, die einzelnen Abteilungen unterstützt. Etwa, wenn es darum geht, im Project R Lab Workshops, Prototypen und Konzepte zu entwickeln, für die Republik oder andere Medien.</p>
+    <p>Wir sind ein Start-up. Wir haben viel zu tun. Wir erwarten von dir, dass du selbstständig bist und dich autonom organisieren kannst. Dass wir auf dich zählen können, wenn die Hütte brennt. Dass du, nach Bedarf, die einzelnen Abteilungen unterstützt. Etwa, wenn es darum geht, im Project R Lab Workshops, Prototypen und Konzepte zu entwickeln, für die «Republik» oder andere Medien.</p>
 
     <p>Betreut wirst du von Nadja Schnetzler (Project R) und Ariel Hauptmeier (Redaktion). Sie begleiten dich durch dein Ausbildungsjahr. Zusätzlich zu deinem Gehalt erhältst du ein Fortbildungsbudget zur freien Verfügung. Du kannst es etwa einsetzen für externe Workshops und Hospitanzen. Wir ermutigen dich, einen Monat lang fremde Luft zu schnuppern – sei es bei einem Praktikum beim «New Yorker», bei einem Reportageseminar an der FNPI in Cartagena oder …</p>
 
