@@ -35,7 +35,7 @@ images:
 	convert -resize 1200x -quality 80 assets/images/raw/foto_manifest.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/foto_manifest.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/taufe_bern.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/taufe_bern.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/manifest_rothaus.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/manifest_rothaus.jpg
-	convert -resize 1200x -quality 80 assets/images/raw/ausbildung.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/ausbildung.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/ausbildung.png jpg:- | jpegtran -copy none -progressive > assets/images/optimized/ausbildung.jpg
 
 	convert -resize 1200x -quality 80 assets/images/raw/nl7-error.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-error.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/nl7-kosmos.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-kosmos.jpg
