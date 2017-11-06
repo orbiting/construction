@@ -33,6 +33,16 @@ npm run dev
 ```
 Access the website under: http://localhost:4000
 
+#### Basic Auth
+
+Provide the following .env variables to enable HTTP basic auth:
+
+```
+BASIC_AUTH_USER=
+BASIC_AUTH_PASS=
+BASIC_AUTH_REALM=
+```
+
 ## Assets
 
 Assets are hosted exoscale.ch s3.
