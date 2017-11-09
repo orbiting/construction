@@ -34,7 +34,7 @@ class Index extends Component {
     const meta = {
       title: 'Project R geht an den Start',
       description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam – oder gar nicht.»',
-      image: 'https://assets.project-r.construction/images//balkon.jpg',
+      image: 'https://assets.project-r.construction/images/balkon.jpg',
       url: `https://project-r.construction${url.pathname}`
     }
 
@@ -45,7 +45,7 @@ class Index extends Component {
     return (
       <Layout meta={meta} url={url} cover={(
         <Cover image={{
-          src: 'https://assets.project-r.construction/images//rothaus_r.jpg',
+          src: 'https://assets.project-r.construction/images/rothaus_r.jpg',
           alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'
         }}>
           <h1>Project R</h1>
