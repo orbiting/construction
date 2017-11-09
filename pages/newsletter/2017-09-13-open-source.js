@@ -6,7 +6,7 @@ import Cover from '../../src/Cover'
 export default ({url}) => {
   const meta = {
     title: 'Der Crowdfunding-Code gegen die Frankenstein-Monster-Strategie',
-    description: 'Nachwuchsförderung, Debattenkultur, Open-Source-Software – die Project R Genossenschaft legt los. (Und dieser Newsletter kann für Sie mindestens 100'000 Franken wert sein.)',
+    description: 'Nachwuchsförderung, Debattenkultur, Open-Source-Software – die Project R Genossenschaft legt los. (Und dieser Newsletter kann für Sie mindestens 100\'000 Franken wert sein.)',
     image: 'https://assets.project-r.construction/imagesnl7-code.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
