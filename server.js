@@ -1,7 +1,11 @@
 const express = require('express')
+const basicAuth = require('express-basic-auth')
 const next = require('next')
 const newsletter = require('./server/newsletter')
 require('dotenv').config()
+
+const fs = require('fs')
+const path = require('path')
 
 const DEV = process.env.NODE_ENV !== 'production'
 const PORT = process.env.PORT || 4000
@@ -11,6 +15,24 @@ const handle = app.getRequestHandler()
 
 app.prepare().then(() => {
   const server = express()
+
+  if (!DEV) {
+    server.enable('trust proxy')
+    server.use((req, res, next) => {
+      if (`${req.protocol}://${req.get('Host')}` !== process.env.PUBLIC_BASE_URL) {
+        return res.redirect(process.env.PUBLIC_BASE_URL + req.url)
+      }
+      return next()
+    })
+  }
+
+  if (process.env.BASIC_AUTH_PASS) {
+    server.use(basicAuth({
+      users: { [process.env.BASIC_AUTH_USER]: process.env.BASIC_AUTH_PASS },
+      challenge: true,
+      realm: process.env.BASIC_AUTH_REALM
+    }))
+  }
 
   server.use(newsletter)
 
@@ -25,6 +47,17 @@ app.prepare().then(() => {
   })
   server.get('/welcome_aboard.html', (req, res) => {
     res.redirect(301, '/newsletter/welcome')
+  })
+  fs.readdirSync(path.join(__dirname, 'pages/newsletter'))
+    .map(file => path.basename(file, '.js'))
+    .filter(basename => basename[0] !== '.' && basename !== 'index')
+    .forEach(staticSlug => {
+      server.get(`/newsletter/${staticSlug}`, (req, res) => {
+        return app.render(req, res, `/newsletter/${staticSlug}`, req.query)
+      })
+    })
+  server.get('/newsletter/:slug', (req, res) => {
+    return app.render(req, res, '/newsletter', req.params)
   })
   server.get('*', (req, res) => {
     return handle(req, res)

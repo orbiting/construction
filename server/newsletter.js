@@ -54,8 +54,14 @@ const sendEmail = (email, text) => {
 }
 
 const subscribeEmail = (email) => {
-  return fetch(`https://us14.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}/members`, {
-    method: 'POST',
+  const hash = crypto
+    .createHash('md5')
+    .update(email)
+    .digest('hex')
+    .toLowerCase()
+
+  return fetch(`https://us14.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}/members/${hash}`, {
+    method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
       'Authorization': 'Basic ' + (new Buffer('anystring:' + process.env.MAILCHIMP_API_KEY).toString('base64'))
@@ -63,8 +69,13 @@ const subscribeEmail = (email) => {
     body: JSON.stringify({
       email_address: email,
       status: 'subscribed',
+<<<<<<< HEAD
       interests: {
         'c9cb2eaed4': true // Project R NL
+=======
+      interests: process.env.MAILCHIMP_INTEREST_ID && {
+        [process.env.MAILCHIMP_INTEREST_ID]: true
+>>>>>>> master
       }
     })
   })

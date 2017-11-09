@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Head from 'next/head'
 import {css} from 'glamor'
 import Footer from './Footer'
+import { META_ROBOTS } from '../lib/publicEnv'
 
 import 'glamor/reset'
 
@@ -61,7 +62,7 @@ const containerStyle = css({
   }
 })
 
-const Layout = ({children, meta, cover, url}) => (
+const Layout = ({children, meta, cover, url, raw}) => (
   <div className='base'>
     <Head>
       <meta name='viewport' content='width=device-width, initial-scale=1' />
@@ -71,22 +72,27 @@ const Layout = ({children, meta, cover, url}) => (
 
     {!!meta && <Head>
       <title>{meta.title}</title>
+      {!!META_ROBOTS && <meta name='robots' content={META_ROBOTS} />}
       <meta name='description' content={meta.description} />
       <meta property='og:type' content='website' />
       <meta property='og:url' content={meta.url} />
-      <meta property='og:title' content={meta.title} />
-      <meta property='og:description' content={meta.description} />
-      <meta property='og:image' content={meta.image} />
+      <meta property='og:title' content={meta.facebookTitle || meta.title} />
+      <meta property='og:description' content={meta.facebookDescription || meta.description} />
+      <meta property='og:image' content={meta.facebookImage || meta.image} />
       <meta property='fb:app_id' content='1774637906137716' />
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:site' content='@_Project_R' />
       <meta name='twitter:creator' content='@_Project_R' />
+      <meta name='twitter:title' content={meta.twitterTitle || meta.title} />
+      <meta name='twitter:description' content={meta.twitterDescription || meta.description} />
+      <meta name='twitter:image:src' content={meta.twitterImage || meta.image} />
     </Head>}
 
     {cover}
+    {!!raw && children}
 
     <div {...containerStyle}>
-      {children}
+      {!raw && children}
 
       <Footer url={url} />
     </div>

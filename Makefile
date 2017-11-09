@@ -14,7 +14,7 @@ images:
 	convert -resize 2000x -quality 80 assets/images/raw/balkon.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/balkon.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/rothaus.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/rothaus_r.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_r.jpg
-	convert -resize 2000x -quality 80 assets/images/raw/wewantyou.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/wewantyou.jpg
+	convert -resize 2000x -quality 80 assets/images/raw/header_jobs.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/header_jobs.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/enterprise_with_hand.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/enterprise_with_hand.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/rothaus_republik.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/rothaus_republik.jpg
 	convert -resize 2000x -quality 80 assets/images/raw/logo_republik.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/logo_republik.jpg
@@ -35,6 +35,7 @@ images:
 	convert -resize 1200x -quality 80 assets/images/raw/foto_manifest.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/foto_manifest.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/taufe_bern.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/taufe_bern.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/manifest_rothaus.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/manifest_rothaus.jpg
+	convert -resize 1200x -quality 80 assets/images/raw/ausbildung.png jpg:- | jpegtran -copy none -progressive > assets/images/optimized/ausbildung.jpg
 
 	convert -resize 1200x -quality 80 assets/images/raw/nl7-error.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-error.jpg
 	convert -resize 1200x -quality 80 assets/images/raw/nl7-kosmos.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/nl7-kosmos.jpg

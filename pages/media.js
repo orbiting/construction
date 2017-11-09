@@ -10,37 +10,57 @@ const media = [
     href: '/media/2017-04-24-start-crowdfunding',
     title: 'Ein bisschen Mitbesitzerin von «Republik» werden',
     date: 'Zürich, 24. April 2017',
+<<<<<<< HEAD
     image: {
       src: 'http://localhost:8000/images/optimized/taufe_bern.jpg',
       alt: 'Taufe des Namen und Logo in Bern'
     }
+=======
+    image: 'https://assets.project-r.construction/images/taufe_bern.jpg',
+    imageAlt: 'Taufe des Namen und Logo in Bern'
+>>>>>>> master
   },
   {
     href: '/media/2017-04-12-republik',
     title: 'Das Magazin von Project R heisst «Republik»',
     date: 'Bern, 12. April 2017',
+<<<<<<< HEAD
     image: {
       src: 'http://localhost:8000/images/optimized/logo_republik.jpg',
       alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
     }
+=======
+    image: 'https://assets.project-r.construction/images/logo_republik.jpg',
+    imageAlt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
+>>>>>>> master
   },
   {
     href: '/media/2017-03-15-aufbau',
     title: 'Der Bauplan von Project R steht',
     date: 'Zürich, 15. März 2017',
+<<<<<<< HEAD
     image: {
       src: 'http://localhost:8000/images/optimized/enterprise_with_hand.jpg',
       alt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
     }
+=======
+    image: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
+    imageAlt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
+>>>>>>> master
   },
   {
     href: '/media/2017-01-10-hotel-rothaus',
     title: 'Project R stellt Aufbau-Crew vor und zieht ins Hotel Rothaus',
     date: 'Zürich, 10. Januar 2017',
+<<<<<<< HEAD
     image: {
       src: 'http://localhost:8000/images/optimized/rothaus_thumb.jpg',
       alt: 'Das Hotel Rothaus von aussen'
     }
+=======
+    image: 'https://assets.project-r.construction/images/rothaus_thumb.jpg',
+    imageAlt: 'Das Hotel Rothaus von aussen'
+>>>>>>> master
   }
 ]
 
@@ -53,9 +73,9 @@ export default ({url}) => {
       <h1>Medien&shy;informationen</h1>
 
       <Grid>
-        {media.map((newsletter, i) => (
+        {media.map((info, i) => (
           <GridItem key={i}>
-            <Card {...newsletter} />
+            <Card {...info} />
           </GridItem>
         ))}
       </Grid>
