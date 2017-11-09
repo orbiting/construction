@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
 
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
@@ -80,6 +81,11 @@ class Index extends Component {
             </GridItem>
           ))}
         </Grid>
+        <Link href='/news'>
+          <a>
+            Zum Newsletter-Archiv
+          </a>
+        </Link>
       </Layout>
     )
   }

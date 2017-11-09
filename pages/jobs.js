@@ -5,15 +5,9 @@ import Cover from '../src/Cover'
 
 export default ({url}) => {
   const meta = {
-<<<<<<< HEAD
-    title: 'Jobs',
-    description: 'Löse mit einem motivierten, multidisziplinären und unorthodoxen Team die interessantesten Probleme der Branche!',
-    image: 'http://localhost:8000/images/optimized/header_jobs.jpg',
-=======
     title: 'Ausbildung «Unternehmerischer Journalismus»',
     description: 'Ab Mai bietet Project R vier Ausbildungsplätze. Die Bewerbungsfrist läuft bis Ende November.',
     image: 'https://assets.project-r.construction/images/header_jobs.jpg',
->>>>>>> master
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -23,15 +17,6 @@ export default ({url}) => {
         src: meta.image,
         alt: 'Fünf Mitarbeiter der «Republik» im Büro'}}
       >
-<<<<<<< HEAD
-        <h1>{meta.title}</h1>
-        <p>{meta.description}</p>
-      </Cover>
-    )}>
-
-      <h2>Ausbildungsplätze bei der «Republik»</h2>
-      <p>Schon hat es sich herumgesprochen. Dass wir 2018 vier Trainees für unternehmerischen Journalismus einstellen. Junge Kolleginnen und Kollegen, die zweierlei mitbringen: schreiberischen Ehrgeiz und unternehmerisches Feuer. Die schon viel können und noch viel mehr vorhaben. Denen wir beibringen, wie man brillante Texte schreibt und ein Medienunternehmen exzellent managt. Und auch wir möchten lernen, mit euch gemeinsam: Wie gestaltet man so eine Ausbildung? Begründet eine «Academy for Entrepreneurial Journalism». Denn dort wollen wir hin.</p>
-=======
         <h1>Wir bilden aus!</h1>
         <p>Löse mit einem motivierten, multidisziplinären und unorthodoxen Team die interessantesten Probleme der Branche!</p>
       </Cover>
@@ -75,16 +60,11 @@ export default ({url}) => {
       </ul>
 
       <p>Wir melden uns Anfang Dezember bei dir. Hoffentlich mit einer Einladung zum Auswahltag. Er ist am Samstag, 16. Dezember 2017, von 8 bis 20 Uhr in Zürich.</p>
->>>>>>> master
 
       <p>Hast du Fragen? Dann schreib an <a href='mailto:ausbildung@republik.ch'>ausbildung@republik.ch</a></p>
 
-<<<<<<< HEAD
-      <p>Wir freuen uns auf deine Bewerbung!</p>
-=======
       <p>Viel Glück!</p>
 
->>>>>>> master
     </Layout>
   )
 }

@@ -6,8 +6,6 @@ import Volume from './icons/Volume'
 import Subtitles from './icons/Subtitles'
 import {InlineSpinner} from './Spinner'
 
-
-
 const PROGRESS_HEIGHT = 4
 
 const styles = {

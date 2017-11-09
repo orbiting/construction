@@ -6,7 +6,7 @@ import Cover from '../../src/Cover'
 export default ({url}) => {
   const meta = {
     title: 'Der Crowdfunding-Code gegen die Frankenstein-Monster-Strategie',
-    description: 'Nachwuchsförderung, Debattenkultur, Open-Source-Software – die Project R Genossenschaft legt los. (Und dieser Newsletter kann für Sie mindestens 100\'000 Franken wert sein.)',
+    description: 'Nachwuchsförderung, Debattenkultur, Open-Source-Software – die Project R Genossenschaft legt los. (Und dieser Newsletter kann für Sie mindestens 100'000 Franken wert sein.)',
     image: 'http://localhost:8000/images/optimized/nl7-code.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
@@ -103,7 +103,7 @@ export default ({url}) => {
       <p>Ihre Entscheidung, ob Sie unsere Seite für Ihr Crowdfunding übernehmen wollen oder nicht, hängt davon ab, ob Sie ähnliche Entscheidungen treffen wollen, wie wir sie trafen. Die wichtigsten sind:</p>
 
       <ul>
-        <li>Der Weg zur Zahlung wurde (wie gesagt) so schnell wie möglich gestaltet: Die Seite fragt erst nach der Kreditkarte, erst später nach der Bestätigung der E-Mail und nach der Adresse. (Quasi die sanfte Variante des inoffiziellen Mottos der Schweizer Tourismusbranche: «Send your money, but don\'t come.»)</li>
+        <li>Der Weg zur Zahlung wurde (wie gesagt) so schnell wie möglich gestaltet: Die Seite fragt erst nach der Kreditkarte, erst später nach der Bestätigung der E-Mail und nach der Adresse. (Quasi die sanfte Variante des inoffiziellen Mottos der Schweizer Tourismusbranche: «Send your money, but don't come.»)</li>
         <li>Wir haben versucht, den ganzen Vorgang so einfach wie möglich zu gestalten. Die Seite wurde mit den Grossvätern und Grossmüttern unserer Teammitglieder getestet – fast alle kamen durch.</li>
         <li>Alle Antwortmails und Fehlermeldungen sind individualisierter – damit man einer persönlichen Kommunikation so nahe wie möglich kommt.</li>
         <li>Zur Einfachheit gehört auch das Konzept, dass die Seite sofort nach der Zahlung ohne Eingabe eines Passworts betretbar ist. (Was komplex zu programmieren war, aber dann erstaunlich klaglos funktionierte.)</li>

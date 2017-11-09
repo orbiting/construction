@@ -25,7 +25,7 @@ export default ({url}) => {
 
       <p>Eine funktionierende Demokratie braucht funktionierende Medien. Und dafür braucht es nicht nur Journalistinnen und Journalisten, sondern auch Sie. Als Leserinnen und Leser. Als Bürgerinnen und Bürger. Als Menschen, die bereit sind, etwas Geld in unabhängigen Journalismus zu investieren.</p>
 
-      <p>Im Mai 2017 kamen über ein Crowdfunding fast 14\'000 Menschen zusammen, die den Start der «Republik» möglich gemacht haben.</p>
+      <p>Im Mai 2017 kamen über ein Crowdfunding fast 14'000 Menschen zusammen, die den Start der «Republik» möglich gemacht haben.</p>
 
       <p>Die «Republik» wird ein digitales Magazin für die öffentliche Debatte – für Politik, Wirtschaft, Gesellschaft. Die «Republik» ist werbefrei und unabhängig. Wir sehen uns als Service. Während Sie ein vernünftiges Leben führen – mit Familie, Job, Hobby –, arbeiten wir uns durch den Staub der Welt. Und liefern Ihnen das Wesentliche. Mit Ihrem Abonnement finanzieren Sie sich quasi ein privates Expeditionsteam in die Wirklichkeit.</p>
 
@@ -42,7 +42,7 @@ export default ({url}) => {
       <p>Zurzeit fliesst all unsere Energie in die «Republik». Wir haben die Maschine auf die Startbahn geschoben, nun muss sie abheben. Doch auch für die Zeit danach haben wir viel vor. Unter anderem wollen wir jetzt und in Zukunft 
       </p>
       <ul>
-        <li>dafür sorgen, dass der mit jährlich 240\'000 Franken dotierte Fonds für grosse Recherchen, grosse Geschichten und grosse Ideen bestmöglich eingesetzt wird – sodass mit dem Geld wegweisende Storys finanziert werden. Solche, die für die Bürgerinnen und Bürger relevant sind. Die Debatten auslösen. </li>
+        <li>dafür sorgen, dass der mit jährlich 240'000 Franken dotierte Fonds für grosse Recherchen, grosse Geschichten und grosse Ideen bestmöglich eingesetzt wird – sodass mit dem Geld wegweisende Storys finanziert werden. Solche, die für die Bürgerinnen und Bürger relevant sind. Die Debatten auslösen. </li>
         <li>Menschen zusammenbringen und vernetzen, die wie wir dafür brennen, dass sich der Journalismus weiterentwickelt. Damit Bürgerinnen und Bürger all die Informationen erhalten, die sie brauchen, um gute Entscheidungen zu treffen. </li>
         <li>die Softwareentwicklung für die «Republik» finanzieren und den Code als Open Source allen zur Verfügung stellen, die damit arbeiten wollen.</li>
         <li>uns für Medienvielfalt, unabhängigen Journalismus und eine konstruktive Medienpolitik einsetzen. 
