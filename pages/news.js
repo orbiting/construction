@@ -1,11 +1,31 @@
 import React from 'react'
 
+import { graphql } from 'react-apollo'
+import gql from 'graphql-tag'
+import { compose } from 'redux'
+import withData from '../lib/apollo/withData'
+
 import Layout from '../src/Layout'
 import Cover from '../src/Cover'
 import Card from '../src/Card'
 import Grid, {GridItem} from '../src/Grid'
+import staticNewsletters from '../src/data/newsletters'
 
-const newsletters = [
+const getDocuments = gql`
+  query getDocuments {
+    documents {
+      meta {
+        slug
+        title
+        description
+        image
+        publishDate
+      }
+    }
+  }
+`
+
+const _ = [
   {
     href: '/newsletter/2017-09-13-open-source',
     title: 'Der Crowdfunding-Code gegen die Frankenstein-Monster-Strategie',
@@ -71,7 +91,13 @@ const newsletters = [
   }
 ]
 
-export default ({url}) => {
+const News = (props) => {
+  const { data: {loading, error, documents}, url } = props
+
+  let newsletters = loading || !documents
+    ? []
+    : documents.concat(staticNewsletters)
+
   const meta = {
     title: 'Aktuelles von Project R',
     description: '«Stand der Arbeit, Stand des Irrtums beim Aufbau von Project R und der ‹Republik›.»',
@@ -92,12 +118,15 @@ export default ({url}) => {
 
       <h2>Newsletter-Archiv</h2>
 
+      {!!loading && <p>Lädt…</p>}
+      {!!error && <p>Nicht verfügbar, bitte versuchen Sie es später nochmals.</p>}
       <Grid>
         {newsletters.map((newsletter, i) => (
-          <GridItem key={i}>
-            <Card {...newsletter} />
-          </GridItem>
-        ))}
+            <GridItem key={i}>
+              <Card {...newsletter.meta} />
+            </GridItem>
+          )
+        )}
       </Grid>
 
       <h2>Veranstaltungen</h2>
@@ -159,3 +188,8 @@ export default ({url}) => {
     </Layout>
   )
 }
+
+export default compose(
+  withData,
+  graphql(getDocuments)
+)(News)
