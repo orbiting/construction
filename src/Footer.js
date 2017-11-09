@@ -18,13 +18,10 @@ const Footer = ({url}) => (
 
     <p>
       <strong>Kontakt</strong><br />
-      Project R<br />
-      c/o Hotel Rothaus<br />
+      Project R Genossenschaft<br />
       Sihlhallenstrasse 1<br />
       8004 Zürich<br />
-      Schweiz<br />
       <a href='mailto:kontakt@project-r.construction'>kontakt@project-r.construction</a><br />
-      <Link href='/media'><a>Medieninformationen</a></Link>
     </p>
 
     <p>
@@ -41,9 +38,6 @@ const Footer = ({url}) => (
       8004 Zürich<br />
       Raiffeisenbank Winterthur<br />
       IBAN: CH04 8148 5000 0083 4669 1
-    </p>
-    <p>
-      <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NZEW4QTG7GWUJ'>Mit PayPal spenden</a>
     </p>
   </div>
 )

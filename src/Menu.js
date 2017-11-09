@@ -25,6 +25,10 @@ const links = [
     title: 'Jobs'
   },
   {
+    path: '/media',
+    title: 'Medieninformationen'
+  },
+  {
     path: '/en',
     title: 'English'
   }
