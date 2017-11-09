@@ -5,6 +5,14 @@ import Cover from '../src/Cover'
 
 import FacebookIcon from '../src/icons/facebook'
 import TwitterIcon from '../src/icons/twitter'
+import VideoPlayer from '../src/VideoPlayer'
+
+const teamVideo = {
+  hls: 'https://player.vimeo.com/external/213078685.m3u8?s=09907679a29279449533845fa451ef9a3754da02',
+  mp4: 'https://player.vimeo.com/external/213078685.hd.mp4?s=150318d6e82f1f342442340bade748be38280e61&profile_id=175',
+  subtitles: '/static/subtitles/team.vtt',
+  poster: `/static/video/team.jpg`
+}
 
 export default ({url}) => {
   const meta = {
@@ -24,8 +32,9 @@ export default ({url}) => {
         <p>{meta.description}</p>
       </Cover>
     )}>
+      <VideoPlayer subtitles src={teamVideo} />
 
-      <p>Unser Manifest bringt auf den Punkt, wofür wir stehen. Es entstand im Winter 2016/2017 im Gründerteam von Project R und der «Republik». Am 12. April 2017 haben wir es in Bern präsentiert. Es hängt heute aussen am Hotel Rothaus, dem Sitz von Project R und der «Republik» an der Langstrasse in Zürich.</p>
+      <p><br />Unser Manifest bringt auf den Punkt, wofür wir stehen. Es entstand im Winter 2016/2017 im Gründerteam von Project R und der «Republik». Am 12. April 2017 haben wir es in Bern präsentiert. Es hängt heute aussen am Hotel Rothaus, dem Sitz von Project R und der «Republik» an der Langstrasse in Zürich.</p>
 
       <p>
         <a href='https://assets.republik.ch/cf_gui/static/manifest.pdf' target='_blank'>Manifest als PDF herunterladen</a>

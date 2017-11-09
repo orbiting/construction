@@ -1,6 +1,14 @@
 import React from 'react'
 import Layout from '../src/Layout'
 import Cover from '../src/Cover'
+import VideoPlayer from '../src/VideoPlayer'
+
+const enVideo = {
+  hls: 'https://player.vimeo.com/external/215798102.m3u8?s=b3730f7f6332985771865f3b85c13aeae93223b1',
+  mp4: 'https://player.vimeo.com/external/215798102.hd.mp4?s=bdc8421b7d1c2a04fcf9521655332e54c7c4c039&profile_id=175',
+  subtitles: '/static/subtitles/main_en.vtt',
+  poster: `/static/video/main.jpg`
+}
 
 export default ({url}) => {
   const meta = {
@@ -22,7 +30,9 @@ export default ({url}) => {
     )}>
       <p>We are reclaiming journalism as a profession and are creating a new business model that places our readers at the center. Our digital magazine «Republik» (in German) will launch in January 2018. «Republik» is reader-owned, independent and ad-free.</p>
 
-      <p>Project R is an open-source cooperative, and we share our knowledge, software and business insights with other projects who also want to foster democracy and free speech around the world.</p>
+      <VideoPlayer subtitles src={enVideo} />
+
+      <p><br />Project R is an open-source cooperative, and we share our knowledge, software and business insights with other projects who also want to foster democracy and free speech around the world.</p>
 
       <p>This May, we collected about € 3.1m in a crowdfunding campaign in which we sold nearly 14\'000 memberships. We will start publishing in 2018 and are currently scaling up our team and building our editorial office.</p>
 
