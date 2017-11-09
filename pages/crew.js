@@ -9,7 +9,7 @@ import team from '../src/data/team'
 export default ({url}) => {
   const meta = {
     title: 'Project-R-Crew',
-    description: 'Project R wurde von einer engagierten Community und zahlreichen Helferinnen ins Leben gerufen. Inzwischen hat die Genossenschaft mehr als 14’000 Mitglieder.',
+    description: 'Project R wurde von einer engagierten Community und zahlreichen Helferinnen ins Leben gerufen. Inzwischen hat die Genossenschaft mehr als 14\'000 Mitglieder.',
     image: 'http://localhost:8000/images/optimized/header_crew.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
