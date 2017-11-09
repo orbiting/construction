@@ -18,7 +18,7 @@ export default ({url}) => {
         {url.query.message
           ? url.query.message
           : 'Welcome aboard!'}
-     </h2>
+      </h2>
     </Layout>
   )
 }
