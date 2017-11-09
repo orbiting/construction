@@ -14,7 +14,11 @@ export default ({url}) => {
       <Head>
         <title>Project R Newsletter</title>
       </Head>
-      <h2 {...welcomeStyle}>Welcome aboard!</h2>
+      <h2>
+        {url.query.message
+          ? url.query.message
+          : 'Welcome aboard!'}
+     </h2>
     </Layout>
   )
 }
