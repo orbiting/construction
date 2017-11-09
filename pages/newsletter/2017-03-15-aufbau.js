@@ -231,7 +231,7 @@ export default ({url}) => {
 
       <h3>Wie man Journalisten vor Mut schützt</h3>
 
-      <p>Das aktuellste Beispiel: Der Verlag Ringier Axel Springer Schweiz hat Ende Januar nach über 35 Jahren das angesehenste Magazin der Westschweiz geschlossen: «L'Hebdo».</p>
+      <p>Das aktuellste Beispiel: Der Verlag Ringier Axel Springer Schweiz hat Ende Januar nach über 35 Jahren das angesehenste Magazin der Westschweiz geschlossen: «L’Hebdo».</p>
 
       <p>Zwar hatte der Verlag der Redaktion noch die Chance gegeben, ein neues Konzept für die digitale Zukunft zu entwickeln. Die Redaktion arbeitete im Sommer und Herbst wie wild durch, dann präsentierte sie das Resultat dem Verlag. Der nannte das Konzept «ausgezeichnet» – und schloss das Magazin nur Wochen später. Und als die Redaktion, überzeugt von ihrem Konzept, ein Management-Buy-out vorschlug, verweigerte sich der Verlag. Mit der Begründung, die Redaktion «vor dem eigenen Mut zu schützen».</p>
 
