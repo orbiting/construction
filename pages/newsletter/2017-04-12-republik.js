@@ -24,7 +24,7 @@ export default ({url}) => {
   const meta = {
     title: 'So heisst das Magazin von Project R',
     description: 'Am heutigen 12. April, dem Jahrestag der Ausrufung der Helvetischen Republik, enthüllt das Medienprojekt in Bern den Namen des geplanten digitalen Magazins. Das Crowdfunding startet am 26. April.',
-    image: 'https://assets.project-r.construction/imagesrothaus_republik.jpg',
+    image: 'https://assets.project-r.construction/images/rothaus_republik.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -61,7 +61,7 @@ export default ({url}) => {
 
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/imagesfoto_manifest.jpg'
+          src='https://assets.project-r.construction/images/foto_manifest.jpg'
           alt='Fotos des Manifest der Republik' /><br />
         <figcaption style={{fontSize: 12, fontFamily: 'sans-serif', margin: 0, textAlign: 'left'}} />
       </figure>
@@ -84,7 +84,7 @@ export default ({url}) => {
 
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/imagesfreiheitsbaum.jpg'
+          src='https://assets.project-r.construction/images/freiheitsbaum.jpg'
           alt='Münsterplatz Basel, 22. Januar 1798, Pflanzung des Freiheitsbaumes' /><br />
         <figcaption style={{fontSize: 12, fontFamily: 'sans-serif', margin: 0, textAlign: 'left'}}>
           Nach dem Umsturz der alten Ordnung wird 1798 auf dem Basler Münsterplatz ein Freiheitsbaum aufgerichtet. (Credits: Historisches Museum Basel, Reprografie: P. Portner)
@@ -97,7 +97,7 @@ export default ({url}) => {
 
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/imagespressefreiheit.jpg'
+          src='https://assets.project-r.construction/images/pressefreiheit.jpg'
           alt='Auszug aus der Verfassung der helvetischen Republik zur Pressefreiheit' /><br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}} />
       </figure>
@@ -112,7 +112,7 @@ export default ({url}) => {
 
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/imageslogo_republik.jpg'
+          src='https://assets.project-r.construction/images/logo_republik.jpg'
           alt='Logo Republik' /><br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}} />
       </figure>
@@ -145,7 +145,7 @@ export default ({url}) => {
 
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/imagesochs_waser.jpg'
+          src='https://assets.project-r.construction/images/ochs_waser.jpg'
           alt='' /><br />
         <figcaption style={{fontSize: 12, fontFamily: 'sans-serif', margin: 0, textAlign: 'left'}}>
           Peter Ochs rief am 12. April 1798 in Aarau die Helvetische Republik aus, für Johann Heinrich Waser kam die erste moderne Verfassung der Schweiz zu spät: Er wurde 1780 wegen «Pressevergehen» hingerichtet.

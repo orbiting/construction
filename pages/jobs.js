@@ -7,7 +7,7 @@ export default ({url}) => {
   const meta = {
     title: 'Ausbildung «Unternehmerischer Journalismus»',
     description: 'Ab Mai bietet Project R vier Ausbildungsplätze. Die Bewerbungsfrist läuft bis Ende November.',
-    image: 'https://assets.project-r.construction/images/header_jobs.jpg',
+    image: 'https://assets.project-r.construction/images//header_jobs.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -45,7 +45,7 @@ export default ({url}) => {
       <p>Und zugleich entwickelt ihr im letzten Monat die Ausbildung weiter und arbeitet eure Nachfolger ein.</p>
 
       <img
-        src='https://assets.project-r.construction/images/ausbildung.jpg'
+        src='https://assets.project-r.construction/images//ausbildung.jpg'
         alt='Schema der Ausbildungsmodule im Ausbildungsjahr «Unternehmerischer Journalismus» bei der «Republik»' /><br />
 
       <p><strong>So bewirbst du dich:</strong> Bitte schick deine Bewerbung bis zum 30. November 2017, 18 Uhr an <a href='mailto:ausbildung@republik.ch'>ausbildung@republik.ch</a></p>

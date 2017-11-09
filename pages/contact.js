@@ -11,14 +11,14 @@ export default ({url}) => {
   const meta = {
     title: 'Newsletter von Project R',
     description: 'Jetzt E-Mail-Adresse eintragen und auf dem Laufenden bleiben',
-    image: 'https://assets.project-r.construction/imagesrothaus.jpg',
+    image: 'https://assets.project-r.construction/images/rothaus.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
   return (
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/imagesrothaus.jpg',
+        src: 'https://assets.project-r.construction/images/rothaus.jpg',
         alt: 'Das Hotel Rothaus an der Langstrasse mit einem Project R Logo auf dem Balkon'}}
       >
         <h1>Newsletter und Kontakt</h1>

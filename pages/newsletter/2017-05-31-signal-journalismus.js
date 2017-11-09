@@ -7,7 +7,7 @@ export default ({url}) => {
   const meta = {
     title: 'Ein starkes Signal für den Journalismus',
     description: 'Eine Republik wird nie von wenigen Leuten gegründet, sondern immer nur von vielen. Und das haben Sie in den letzten fünf Wochen tatsächlich gemeinsam mit uns getan: eine Republik gegründet.',
-    image: 'https://assets.project-r.construction/imagestestimonials_collage.jpg',
+    image: 'https://assets.project-r.construction/images/testimonials_collage.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -41,7 +41,7 @@ export default ({url}) => {
       <p>
         <a href='https://www.republik.ch/updates/portraets'>
           <img
-            src='https://assets.project-r.construction/imagespublishers_narrow.jpg'
+            src='https://assets.project-r.construction/images/publishers_narrow.jpg'
             alt='Robert Berke, Mavie, Pierre Rom' />
         </a>
       </p>
@@ -56,7 +56,7 @@ export default ({url}) => {
 
       <p>
         <a href='https://www.republik.ch/?play=1'>
-          <img src='https://assets.project-r.construction/imagesmerci_teaser.png' alt='Video: Danke!' />
+          <img src='https://assets.project-r.construction/images/merci_teaser.png' alt='Video: Danke!' />
         </a>
       </p>
 

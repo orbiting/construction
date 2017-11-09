@@ -7,7 +7,7 @@ export default ({url}) => {
   const meta = {
     title: 'Der Crowdfunding-Code gegen die Frankenstein-Monster-Strategie',
     description: 'Nachwuchsförderung, Debattenkultur, Open-Source-Software – die Project R Genossenschaft legt los. (Und dieser Newsletter kann für Sie mindestens 100\'000 Franken wert sein.)',
-    image: 'https://assets.project-r.construction/imagesnl7-code.jpg',
+    image: 'https://assets.project-r.construction/images/nl7-code.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -30,7 +30,7 @@ export default ({url}) => {
 
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/imagesnl7-frankenstein.jpg'
+          src='https://assets.project-r.construction/images/nl7-frankenstein.jpg'
           alt='Frankenstein in Bride of Frankenstein (1935)' />
         <br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
@@ -122,7 +122,7 @@ export default ({url}) => {
 
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/imagesnl7-warroom.jpg'
+          src='https://assets.project-r.construction/images/nl7-warroom.jpg'
           alt='Das IT-Team im kleinen Maschinenraum' />
         <br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'left'}}>
@@ -141,7 +141,7 @@ export default ({url}) => {
 
       <p>
         <img
-          src='https://assets.project-r.construction/imagesnl7-error.jpg'
+          src='https://assets.project-r.construction/images/nl7-error.jpg'
           alt='Bildschirm mit Fehlermeldungen' />
       </p>
 
@@ -199,7 +199,7 @@ export default ({url}) => {
 
       <p>
         <img
-          src='https://assets.project-r.construction/imagesnl7-kosmos.jpg'
+          src='https://assets.project-r.construction/images/nl7-kosmos.jpg'
           alt='Smart-Phone-Screen mit Event-Ankündigung für Project R Anlass im Kosmos' />
       </p>
 

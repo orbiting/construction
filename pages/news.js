@@ -35,14 +35,14 @@ const News = (props) => {
   const meta = {
     title: 'Aktuelles von Project R',
     description: '«Stand der Arbeit, Stand des Irrtums beim Aufbau von Project R und der ‹Republik›.»',
-    image: 'https://assets.project-r.construction/imagesheader_aktuelles.jpg',
+    image: 'https://assets.project-r.construction/images/header_aktuelles.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
   return (
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/imagesheader_aktuelles.jpg',
+        src: 'https://assets.project-r.construction/images/header_aktuelles.jpg',
         alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'}}
         >
         <h1>{meta.title}</h1>
@@ -86,7 +86,7 @@ const News = (props) => {
       <p>Kosmopolitics, 9. Oktober 2017, 20.00 Uhr<br />
         Kosmos, Lagerstrasse 102, 8004 Zürich</p>
       <p>
-        <img src='https://assets.project-r.construction/imagesKosmopolitics-20171009_20-10_7739.jpg' />
+        <img src='https://assets.project-r.construction/images/Kosmopolitics-20171009_20-10_7739.jpg' />
       </p>
       <p>Welchen Beitrag kann ich leisten, an die Gesellschaft, an die Institutionen, an die Demokratie? Menschen, die zum Schluss gekommen sind, dass nach der Systemkritik eine Zeit des Bauens folgt, erzählen ihre Geschichte und laden das Publikum ein, über ihren (zukünftigen) Beitrag an die Gesellschaft nachzudenken.</p>
       <p>Gäste:</p>
@@ -102,7 +102,7 @@ const News = (props) => {
       <p>Kosmopolitics, 18. September 2017, 20.00 Uhr<br />
         Kosmos, Lagerstrasse 102, 8004 Zürich</p>
       <p>
-        <img src='https://assets.project-r.construction/images20170918_20-36_1694_full.jpg' />
+        <img src='https://assets.project-r.construction/images/20170918_20-36_1694_full.jpg' />
       </p>
 
       <p>Welche Nachrichten wünsche ich mir: täglich, jährlich, einmal im Leben? In diesem interaktiven Workshop mit vorangehendem Gespräch beleuchten wir die Frage, was an Information unverzichtbar ist – und was ungeniessbar.</p>

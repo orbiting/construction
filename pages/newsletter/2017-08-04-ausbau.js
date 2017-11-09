@@ -8,7 +8,7 @@ import Portrait from '../../src/Portrait'
 // the newsletter content should never change
 const team = [
   {
-    image: 'https://assets.project-r.construction/imagesbrigitte_meyer.jpg',
+    image: 'https://assets.project-r.construction/images/brigitte_meyer.jpg',
     name: 'Brigitte Meyer',
     age: 47,
     title: 'Bildchefin',
@@ -16,7 +16,7 @@ const team = [
     email: ''
   },
   {
-    image: 'https://assets.project-r.construction/imagescarlos_hanimann.jpg',
+    image: 'https://assets.project-r.construction/images/carlos_hanimann.jpg',
     name: 'Carlos Hanimann',
     age: 35,
     title: 'Reporter',
@@ -24,7 +24,7 @@ const team = [
     email: ''
   },
   {
-    image: 'https://assets.project-r.construction/imagesadrienne_fiechter.jpg',
+    image: 'https://assets.project-r.construction/images/adrienne_fiechter.jpg',
     name: 'Adrienne Fichter',
     age: 33,
     title: 'Redaktorin',
@@ -32,7 +32,7 @@ const team = [
     email: ''
   },
   {
-    image: 'https://assets.project-r.construction/imageslukas_buenger.jpg',
+    image: 'https://assets.project-r.construction/images/lukas_buenger.jpg',
     name: 'Lukas Bünger',
     age: 34,
     title: 'Software-Entwickler',
@@ -40,7 +40,7 @@ const team = [
     email: ''
   },
   {
-    image: 'https://assets.project-r.construction/imagesanja_conzett.jpg',
+    image: 'https://assets.project-r.construction/images/anja_conzett.jpg',
     name: 'Anja Conzett',
     age: 29,
     title: 'Reporterin',
@@ -48,7 +48,7 @@ const team = [
     email: ''
   },
   {
-    image: 'https://assets.project-r.construction/imagesariel_hauptmeier.jpg',
+    image: 'https://assets.project-r.construction/images/ariel_hauptmeier.jpg',
     name: 'Ariel Hauptmeier',
     age: 47,
     title: 'Textchef',
@@ -56,7 +56,7 @@ const team = [
     email: ''
   },
   {
-    image: 'https://assets.project-r.construction/imagessylke_gruhnwald.jpg',
+    image: 'https://assets.project-r.construction/images/sylke_gruhnwald.jpg',
     name: 'Sylke Gruhnwald',
     age: 36,
     title: 'Rechercheurin',
@@ -64,7 +64,7 @@ const team = [
     email: ''
   },
   {
-    image: 'https://assets.project-r.construction/imagesdaniel_pfaender.jpg',
+    image: 'https://assets.project-r.construction/images/daniel_pfaender.jpg',
     name: 'Daniel Pfänder',
     age: 42,
     title: 'Software-Entwickler',
@@ -78,7 +78,7 @@ export default ({url}) => {
   const meta = {
     title: 'Dürfen wir vorstellen? Die Neulinge an Bord der «Republik»',
     description: 'Journalistinnen, Journalisten und Programmierer: Das ist die Start-Aufstellung der Redaktion',
-    image: 'https://assets.project-r.construction/imagesteamwork2.jpg',
+    image: 'https://assets.project-r.construction/images/teamwork2.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 

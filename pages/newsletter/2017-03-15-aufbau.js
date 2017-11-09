@@ -46,7 +46,7 @@ export default ({url}) => {
   const meta = {
     title: 'Der Bauplan von Project R',
     description: 'Das Medienprojekt stellt den Bauplan für das Geschäftsmodell vor. Und wird bald den Markt testen: mit einem Crowdfunding.',
-    image: 'https://assets.project-r.construction/imagesenterprise_with_hand.jpg',
+    image: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -84,7 +84,7 @@ export default ({url}) => {
 
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='https://assets.project-r.construction/imageshammett_mccarthy.jpg'
+          src='https://assets.project-r.construction/images/hammett_mccarthy.jpg'
           alt='Senator Joseph McCarthy nimmt den Schwur von Autor Dashiell Hammett im «Permanent Investigating Committee» des Senats ab' /><br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}}>
           Photo by Hank Walker/The LIFE Picture Collection/Getty Images
@@ -132,13 +132,13 @@ export default ({url}) => {
               <td>
                 <img
                   style={{height: 40, marginBottom: 10}}
-                  src='https://assets.project-r.construction/imagesproject_r_logo.svg' /><br />
+                  src='https://assets.project-r.construction/images/project_r_logo.svg' /><br />
                 Genossenschaft
               </td>
               <td>
                 <img
                   style={{height: 40, marginLeft: -10, marginBottom: 10}}
-                  src='https://assets.project-r.construction/imagesmagazine_logo.png' /><br />
+                  src='https://assets.project-r.construction/images/magazine_logo.png' /><br />
                 Aktiengesellschaft
               </td>
             </tr>
@@ -205,7 +205,7 @@ export default ({url}) => {
 
       <p>
         <img
-          src='https://assets.project-r.construction/imagesvorstand_genossenschaft.jpg'
+          src='https://assets.project-r.construction/images/vorstand_genossenschaft.jpg'
           alt='Nadja Schnetzler, Clara Vuillemin, Laurent Burst und Susanne Sugimoto schauen fröhlich in die Kamera' />
       </p>
 

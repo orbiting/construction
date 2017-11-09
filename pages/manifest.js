@@ -18,14 +18,14 @@ export default ({url}) => {
   const meta = {
     title: 'Manifest',
     description: '«Lat. manifestus = sichtbar gemacht, handgreiflich gemacht»',
-    image: 'https://assets.project-r.construction/imagesheader_manifest.jpg',
+    image: 'https://assets.project-r.construction/images/header_manifest.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
   return (
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/imagesheader_aktuelles.jpg',
+        src: 'https://assets.project-r.construction/images/header_aktuelles.jpg',
         alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'}}
         >
         <h1>{meta.title}</h1>

@@ -8,7 +8,7 @@ import Portrait from '../../src/Portrait'
 // we could import from src, but the newsletter content should never change
 const team = [
   {
-    image: 'https://assets.project-r.construction/imagessusanne_sugimoto.jpg',
+    image: 'https://assets.project-r.construction/images/susanne_sugimoto.jpg',
     name: 'Susanne Sugimoto',
     age: 53,
     title: 'Geschäftsführung',
@@ -16,7 +16,7 @@ const team = [
     email: 'susanne.sugimoto@project-r.construction'
   },
   {
-    image: 'https://assets.project-r.construction/imageslaurent_burst.jpg',
+    image: 'https://assets.project-r.construction/images/laurent_burst.jpg',
     name: 'Laurent Burst',
     age: 37,
     title: 'Strategie',
@@ -24,7 +24,7 @@ const team = [
     email: 'laurent.burst@project-r.construction'
   },
   {
-    image: 'https://assets.project-r.construction/imagesnadja_schnetzler.jpg',
+    image: 'https://assets.project-r.construction/images/nadja_schnetzler.jpg',
     name: 'Nadja Schnetzler',
     age: 44,
     title: 'Prozesse und Zusammenarbeit',
@@ -32,7 +32,7 @@ const team = [
     email: 'nadja.schnetzler@project-r.construction'
   },
   {
-    image: 'https://assets.project-r.construction/imagesclara_vuillemin.jpg',
+    image: 'https://assets.project-r.construction/images/clara_vuillemin.jpg',
     name: 'Clara Vuillemin',
     age: 24,
     title: 'Head of IT',
@@ -40,7 +40,7 @@ const team = [
     email: 'clara.vuillemin@project-r.construction'
   },
   {
-    image: 'https://assets.project-r.construction/imagespatrick_recher.jpg',
+    image: 'https://assets.project-r.construction/images/patrick_recher.jpg',
     name: 'Patrick Recher',
     age: 28,
     title: 'Software-Entwicklung',
@@ -48,7 +48,7 @@ const team = [
     email: 'patrick.recher@project-r.construction'
   },
   {
-    image: 'https://assets.project-r.construction/imagesthomas_preusse.jpg',
+    image: 'https://assets.project-r.construction/images/thomas_preusse.jpg',
     name: 'Thomas Preusse',
     age: 25,
     title: 'Software-Entwicklung',
@@ -56,7 +56,7 @@ const team = [
     email: 'thomas.preusse@project-r.construction'
   },
   {
-    image: 'https://assets.project-r.construction/imagesconstantin_seibt.jpg',
+    image: 'https://assets.project-r.construction/images/constantin_seibt.jpg',
     name: 'Constantin Seibt',
     age: 50,
     title: 'Konzeption und Redaktion',
@@ -64,7 +64,7 @@ const team = [
     email: 'constantin.seibt@project-r.construction'
   },
   {
-    image: 'https://assets.project-r.construction/imageschristof_moser.jpg',
+    image: 'https://assets.project-r.construction/images/christof_moser.jpg',
     name: 'Christof Moser',
     age: 37,
     title: 'Konzeption und Redaktion',
@@ -77,7 +77,7 @@ export default ({url}) => {
   const meta = {
     title: 'Project R geht an den Start',
     description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam, oder gar nicht.»',
-    image: 'https://assets.project-r.construction/imagesproject_r_crew.jpg',
+    image: 'https://assets.project-r.construction/images/project_r_crew.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -110,7 +110,7 @@ export default ({url}) => {
 
       <p>Und zwar - das ist unser zweiter Grund, Sie einzuladen - an unserem brandneuen Geschäftssitz.</p>
 
-      <img src='https://assets.project-r.construction/imagesrothaus.jpg' />
+      <img src='https://assets.project-r.construction/images/rothaus.jpg' />
 
       <p>Wir haben unsere Büros fürs erste im Hotel Rothaus eingerichtet, mitten im Zürcher Kreis 4 an der Langstrasse, genauer: an der Sihlhallenstrasse 1. Das Rothaus war viele Jahre das Winterquartier für die Artisten des Zirkus Knie, später ein Stundenhotel – keine schlechte Umgebung für publizistische Pläne.</p>
 

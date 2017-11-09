@@ -6,7 +6,7 @@ export default ({url}) => {
   const meta = {
     title: 'Project R stellt Aufbau-Crew vor und zieht ins Hotel Rothaus',
     description: 'Die Aufbau-Crew von Project R hat Anfang Januar ihr provisorisches Domizil im Zürcher Kreis 4 bezogen. Dort treibt das Team die Konzeption und Entwicklung des Medienprojekts voran.',
-    image: 'https://assets.project-r.construction/imagesrothaus.jpg',
+    image: 'https://assets.project-r.construction/images/rothaus.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
