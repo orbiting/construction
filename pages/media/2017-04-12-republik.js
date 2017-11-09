@@ -7,7 +7,7 @@ export default ({url}) => {
   const meta = {
     title: 'Das Magazin von Project R heisst «Republik»',
     description: 'Am heutigen 12. April, dem Jahrestag der Ausrufung der Helvetischen Republik, enthüllt das Medienprojekt in Bern den Namen des geplanten digitalen Magazins. Das Crowdfunding startet am 26. April.',
-    image: 'http://localhost:8000/images/optimized/logo_republik.jpg',
+    image: 'https://assets.project-r.construction/imageslogo_republik.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 

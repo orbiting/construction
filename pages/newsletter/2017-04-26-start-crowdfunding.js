@@ -23,7 +23,7 @@ export default ({url}) => {
   const meta = {
     title: 'Startschuss Crowdfunding für «Republik»',
     description: 'Das digitale Magazin von Project R – jetzt unterstützen: www.republik.ch',
-    image: 'http://localhost:8000/images/optimized/screen_crowdfunding.jpg',
+    image: 'https://assets.project-r.construction/imagesscreen_crowdfunding.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
@@ -63,7 +63,7 @@ export default ({url}) => {
 
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='http://localhost:8000/images/optimized/manifest_rothaus.jpg'
+          src='https://assets.project-r.construction/imagesmanifest_rothaus.jpg'
           alt='Das Manifest hängt am Balkon des Hotel Rothaus' />
         <br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}} />
@@ -87,7 +87,7 @@ export default ({url}) => {
 
       <figure style={{margin: '0 0 10px'}}>
         <img
-          src='http://localhost:8000/images/optimized/taufe_bern.jpg'
+          src='https://assets.project-r.construction/imagestaufe_bern.jpg'
           alt='Taufe des Namen und Logo in Bern' /><br />
         <figcaption style={{fontSize: 10, fontFamily: 'sans-serif', margin: 0, textAlign: 'right'}} />
       </figure>

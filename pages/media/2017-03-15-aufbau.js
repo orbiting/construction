@@ -7,7 +7,7 @@ export default ({url}) => {
   const meta = {
     title: 'Der Bauplan für das Geschäftsmodell von Project R steht',
     description: 'Das Medienprojekt wird mit zwei Gesellschaftsformen aufgebaut. Die Struktur räumt dem Publikum eine gewichtige Stimme ein.',
-    image: 'http://localhost:8000/images/optimized/enterprise_with_hand.jpg',
+    image: 'https://assets.project-r.construction/imagesenterprise_with_hand.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
