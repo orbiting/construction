@@ -14,7 +14,7 @@ const newsletters = [
       title: 'Die Start-Aufstellung der «Republik»-Redaktion steht',
       publishDate: '2017-08-04T05:00:00.000Z',
       image: 'https://assets.project-r.construction/images/teamwork2.jpg',
-      imageAlt: 'Das Team der Republik bei einem Workshop'
+      imageAlt: 'Das Team der «Republik» bei einem Workshop'
     }
   },
   {
@@ -32,7 +32,7 @@ const newsletters = [
       title: 'Startschuss Crowdfunding für «Republik»',
       publishDate: '2017-04-26T05:00:00.000Z',
       image: 'https://assets.project-r.construction/images/screen_crowdfunding_thumb.jpg',
-      imageAlt: 'iPhone Bildschirm mit Website Crowdfunding für Republik'
+      imageAlt: 'iPhone Bildschirm mit Website Crowdfunding für «Republik»'
     }
   },
   {
@@ -41,7 +41,7 @@ const newsletters = [
       title: 'So heisst das Magazin von Project R',
       publishDate: '2017-04-12T05:00:00.000Z',
       image: 'https://assets.project-r.construction/images/rothaus_republik.jpg',
-      imageAlt: 'Das Hotel Rothaus mit dem Banner der Republik'
+      imageAlt: 'Das Hotel Rothaus mit dem Banner der «Republik»'
     }
   },
   {

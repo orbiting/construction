@@ -21,7 +21,7 @@ const newsletters = [
     date: '4. August 2017',
     image: {
       src: 'http://localhost:8000/images/optimized/teamwork2.jpg',
-      alt: 'Das Team der Republik bei einem Workshop'
+      alt: 'Das Team der «Republik» bei einem Workshop'
     }
   },
   {
@@ -39,7 +39,7 @@ const newsletters = [
     date: '26. April 2017',
     image: {
       src: 'http://localhost:8000/images/optimized/screen_crowdfunding_thumb.jpg',
-      alt: 'iPhone Bildschirm mit Website Crowdfunding für Republik'
+      alt: 'iPhone Bildschirm mit Website Crowdfunding für «Republik»'
     }
   },
   {
@@ -48,7 +48,7 @@ const newsletters = [
     date: '12. April 2017',
     image: {
       src: 'http://localhost:8000/images/optimized/rothaus_republik.jpg',
-      alt: 'Das Hotel Rothaus mit dem Banner der Republik'
+      alt: 'Das Hotel Rothaus mit dem Banner der «Republik»'
     }
   },
   {
