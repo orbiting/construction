@@ -32,11 +32,13 @@ export default ({url}) => {
         <p>{meta.description}</p>
       </Cover>
     )}>
+
+      <p>Unser Manifest bringt auf den Punkt, wofür wir stehen. Es entstand im Winter 2016/2017 im Gründerteam von Project R und der «Republik». Am 12. April 2017 haben wir es in Bern präsentiert. Es hängt heute aussen am Hotel Rothaus, dem Sitz von Project R und der «Republik» an der Langstrasse in Zürich.</p>
+
       <VideoPlayer subtitles src={teamVideo} />
 
-      <p><br />Unser Manifest bringt auf den Punkt, wofür wir stehen. Es entstand im Winter 2016/2017 im Gründerteam von Project R und der «Republik». Am 12. April 2017 haben wir es in Bern präsentiert. Es hängt heute aussen am Hotel Rothaus, dem Sitz von Project R und der «Republik» an der Langstrasse in Zürich.</p>
-
       <p>
+        <br />
         <a href='https://assets.republik.ch/cf_gui/static/manifest.pdf' target='_blank'>Manifest als PDF herunterladen</a>
       </p>
       <p>

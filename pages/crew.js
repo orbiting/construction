@@ -24,7 +24,7 @@ export default ({url}) => {
         <p>{meta.description}</p>
       </Cover>
     )}>
-      <p>Die Project R Genossenschaft arbeitet derzeit primär an der Entwicklung des digitalen Magazins «Republik». Dabei ergänzen sich die beiden Unternehmen perfekt: Bei der gemeinnützigen Project R Genossenschaft ist primär das Institutionelle angesiedelt, in der Republik AG das Publizistische. Das Team der «Republik» finden Sie hier. Und das ist die Crew, die bei Project R den Rahmen für von Bürgerinnen und Bürgern finanzierten Journalismus schafft:</p>
+      <p>Die Project R Genossenschaft arbeitet derzeit primär an der Entwicklung des digitalen Magazins «Republik». Dabei ergänzen sich die beiden Unternehmen perfekt: Bei der gemeinnützigen Project R Genossenschaft ist primär das Institutionelle angesiedelt, in der Republik AG das Publizistische. Das Team der «Republik» finden Sie <a href='https://www.republik.ch/crew'>hier</a>. Und das ist die Crew, die bei Project R den Rahmen für von Bürgerinnen und Bürgern finanzierten Journalismus schafft:</p>
 
       {team.map((person, i) => <Portrait key={i} {...person} odd={!(i % 2)} />)}
     </Layout>

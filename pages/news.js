@@ -70,7 +70,16 @@ const News = (props) => {
       <p> Kosmopolitics, 13. November 2017, 20.00 Uhr<br />
         Kosmos, Lagerstrasse 102, 8004 Zürich</p>
 
-      <p>Wenn die Grenzen zwischen Aktivismus und Journalismus fallen: Welche neuen Formen von Berichterstattung entstehen, welche sind Erfolg versprechend? Wir geben Einblick in erfolgreiche Modelle und diskutieren Erfahrungen, Probleme, Chancen und die Zukunft von aktivistischem Journalismus.</p>
+      <p>Wenn die Grenzen zwischen Aktivismus und Journalismus fallen: Welche neuen Formen von Berichterstattung entstehen, und welche sind Erfolg versprechend? Wir geben Einblick in konzeptionelle Grenzgänge und diskutieren konkrete Erfahrungen, Probleme, Chancen und Zukunftsmodelle von aktivistischem Journalismus respektive journalistischem Aktivismus. Jeder Gast nimmt einen Case mit, der im Plenum besprochen wird. So nehmen wir Sie mit auf verschiedenste Schauplätze: Lohndumping, Luftverschmutzung, Frauenquote, Rohstoffhandel und Justizirrtum.</p>
+
+      <p>Gäste:</p>
+      <ul>
+        <li>Oliver Classen, Mediensprecher, Public Eye</li>
+        <li>Crispin Dowler, Reporter, Unearthed / Greenpeace (London/UK)</li>
+        <li>Sina Bühler, Stiftungsrätin Presserat & Geschäftsführerin investigativ.ch</li>
+        <li>Ariel Hauptmeier, Textchef, «Republik»</li>
+        <li>Anja Conzett, Reporterin, «Republik»</li>
+      </ul>
 
       <p>Moderation: Hannes Britschgi, Publizist Ringier</p>
 
