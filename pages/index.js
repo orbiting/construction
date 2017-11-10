@@ -58,7 +58,8 @@ class Index extends Component {
 
         <p>Dem Gemeinwohl verpflichtet, fördert Project R den konstruktiven gesellschaftlichen Diskurs und diskriminierungsfreie, vielfältige Debatten über die Fragen unserer Zeit.</p>
 
-        <p>Lesen Sie <a href='https://assets.project-r.construction/media/statuten_project_r_genossenschaft_unterschrieben.pdf'>hier</a> die Statuten der Project R Genossenschaft.</p>
+        <p>Lesen Sie <a href='https://assets.project-r.construction/media/statuten_project_r_genossenschaft_unterschrieben.pdf'>hier</a> die Statuten der Project R Genossenschaft.<br />
+        <a href='https://www.republik.ch/pledge'>Mitglied werden</a></p>
 
         <h3>Die «Republik»: Das erste Projekt von Project R</h3>
 
