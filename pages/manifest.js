@@ -15,7 +15,7 @@ const teamVideo = {
 export default ({url}) => {
   const meta = {
     title: 'Manifest',
-    description: '«Lat. manifestus = sichtbar gemacht, handgreiflich gemacht»',
+    description: 'Lat. manifestus = sichtbar gemacht, handgreiflich gemacht.',
     image: 'https://assets.project-r.construction/images/header_manifest.jpg',
     url: `https://project-r.construction${url.pathname}`
   }

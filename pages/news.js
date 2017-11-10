@@ -34,7 +34,7 @@ const News = (props) => {
 
   const meta = {
     title: 'Aktuelles von Project R',
-    description: '«Stand der Arbeit, Stand des Irrtums beim Aufbau von Project R und der ‹Republik›.»',
+    description: 'Stand der Arbeit, Stand des Irrtums beim Aufbau von Project R und der «Republik».',
     image: 'https://assets.project-r.construction/images/header_aktuelles.jpg',
     url: `https://project-r.construction${url.pathname}`
   }

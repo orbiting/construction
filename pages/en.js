@@ -13,7 +13,7 @@ const enVideo = {
 export default ({url}) => {
   const meta = {
     title: 'Project R',
-    description: '«Project R is a Switzerland-based cooperative fighting for independent journalism, freedom of expression, public debate and a functioning democracy.»',
+    description: 'Project R is a Switzerland-based cooperative fighting for independent journalism, freedom of expression, public debate and a functioning democracy.',
     image: 'https://assets.project-r.construction/images/header_front.jpg',
     url: `https://project-r.construction${url.pathname}`
   }

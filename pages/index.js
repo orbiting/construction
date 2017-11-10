@@ -64,7 +64,7 @@ class Index extends Component {
 
         <p>Vom 26. April bis 31. Mai lief die Crowdfunding-Kampagne für das digitale Magazin «Republik» von Project R. Ein überwältigender Erfolg: Über 13'000 Unterstützerinnen und Unterstützer wollen gemeinsam mit der Aufbau-Crew von Project R im Mediensystem einen entscheidenden Unterschied schaffen. Die «Republik» geht 2018 an den Start – kompromisslos in der Qualität, leserfinanziert, ohne Werbung und ohne Bullshit.</p>
 
-        <p>Hier finden Sie die «Republik» <a href='https://www.republik.ch'>www.republik.ch</a>. Die Webseite des erfolgreichen Crowdfundings finden Sie <a href='https://www.republik.ch/crowdfunding'>hier</a>.</p>
+        <p>Hier finden Sie die «Republik»: <a href='https://www.republik.ch'>www.republik.ch</a>. Die Webseite des erfolgreichen Crowdfundings finden Sie <a href='https://www.republik.ch/crowdfunding'>hier</a>.</p>
 
         <p>Wenn Sie informiert bleiben wollen, bitte hier für den Newsletter eintragen:</p>
         <Newsletter />
