@@ -3,8 +3,6 @@ import React from 'react'
 import Layout from '../src/Layout'
 import Cover from '../src/Cover'
 
-import FacebookIcon from '../src/icons/facebook'
-import TwitterIcon from '../src/icons/twitter'
 import VideoPlayer from '../src/VideoPlayer'
 
 const teamVideo = {
