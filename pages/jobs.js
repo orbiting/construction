@@ -46,7 +46,7 @@ export default ({url}) => {
 
       <img
         src='https://assets.project-r.construction/images/ausbildung.jpg'
-        alt='Schema der Ausbildungsmodule im Ausbildungsjahr "Unternehmerischer Journalismus" bei der Republik' /><br />
+        alt='Schema der Ausbildungsmodule im Ausbildungsjahr «Unternehmerischer Journalismus» bei der «Republik»' /><br />
 
       <p><strong>So bewirbst du dich:</strong> Bitte schick deine Bewerbung bis zum 30. November 2017, 18 Uhr an <a href='mailto:ausbildung@republik.ch'>ausbildung@republik.ch</a></p>
 

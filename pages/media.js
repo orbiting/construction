@@ -12,6 +12,7 @@ const media = [
     date: 'Zürich, 24. April 2017',
     image: 'https://assets.project-r.construction/images/taufe_bern.jpg',
     imageAlt: 'Taufe des Namen und Logo in Bern'
+
   },
   {
     href: '/media/2017-04-12-republik',
@@ -19,6 +20,7 @@ const media = [
     date: 'Bern, 12. April 2017',
     image: 'https://assets.project-r.construction/images/logo_republik.jpg',
     imageAlt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
+
   },
   {
     href: '/media/2017-03-15-aufbau',
@@ -26,6 +28,7 @@ const media = [
     date: 'Zürich, 15. März 2017',
     image: 'https://assets.project-r.construction/images/enterprise_with_hand.jpg',
     imageAlt: 'Konzernmodell: Genossenschaft (Project R) und Aktiengesellschaft (Name noch ein Geheimnis)'
+
   },
   {
     href: '/media/2017-01-10-hotel-rothaus',

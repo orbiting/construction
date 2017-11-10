@@ -2,22 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
 import SocialMedia from './SocialMedia'
-import {intersperse} from './utils/helpers'
-
-const links = [
-  {
-    path: '/crew',
-    title: 'Crew'
-  },
-  {
-    path: '/media',
-    title: 'Medieninformationen'
-  },
-  {
-    path: '/jobs',
-    title: 'Jobs'
-  }
-]
+import Menu from './Menu'
 
 const Footer = ({url}) => (
   <div>
@@ -27,37 +12,28 @@ const Footer = ({url}) => (
         src='https://assets.project-r.construction/images/project_r_logo.svg' />
     </a></Link>
 
-    <p>
-      {intersperse(
-        links.map(({path, title}, i) => {
-          if (path === url.pathname) {
-            return title
-          }
-          return (
-            <Link key={i} href={path}>
-              <a>
-                {title}
-              </a>
-            </Link>
-          )
-        }),
-        ' – '
-      )}
-    </p>
+    <Menu url={url} />
 
     <SocialMedia />
 
     <p>
-    Project R<br />
-    c/o Hotel Rothaus<br />
-    Sihlhallenstrasse 1<br />
-    8004 Zürich<br />
-    Schweiz
+      <strong>Kontakt</strong><br />
+      Project R Genossenschaft<br />
+      Sihlhallenstrasse 1<br />
+      8004 Zürich<br />
+      <a href='mailto:kontakt@project-r.construction'>kontakt@project-r.construction</a><br />
     </p>
 
     <p>
-      Spendenkonto:<br />
-      <strong>Project R Genossenschaft</strong><br />
+      <strong>Rechtliches</strong><br />
+      <a href='https://assets.project-r.construction/media/statuten_project_r_genossenschaft_unterschrieben.pdf'>
+        Statuten
+      </a>
+    </p>
+
+    <p>
+      <strong>Spendenkonto</strong><br />
+      Project R Genossenschaft<br />
       Sihlhallenstrasse 1<br />
       8004 Zürich<br />
       Raiffeisenbank Winterthur<br />
