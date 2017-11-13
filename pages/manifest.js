@@ -23,7 +23,7 @@ export default ({url}) => {
   return (
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/images/header_aktuelles.jpg',
+        src: meta.image,
         alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'}}
         >
         <h1>{meta.title}</h1>

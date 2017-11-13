@@ -77,12 +77,17 @@ class Index extends Component {
         {!!loading && <p>Lädt…</p>}
         {!!error && <p>Nicht verfügbar, bitte versuchen Sie es später nochmals.</p>}
         <Grid>
-          {newsletters.map((newsletter, i) => (
+          {newsletters.slice(0, 2).map((newsletter, i) => (
             <GridItem key={i}>
               <Card {...newsletter.meta} />
             </GridItem>
           ))}
         </Grid>
+        <Link href='/news'>
+          <a>
+            Zum Newsletter-Archiv
+          </a>
+        </Link>
       </Layout>
     )
   }
