@@ -7,17 +7,17 @@ export default ({url}) => {
   const meta = {
     title: 'Das erste Projekt: Die «Republik»',
     description: '«Ohne Journalismus keine Demokratie. Und ohne Demokratie keine Freiheit.»',
-    image: 'https://assets.project-r.construction/images/balkon.jpg',
+    image: 'https://assets.project-r.construction/images/header_projekte.jpg',
     url: `https://project-r.construction${url.pathname}`
   }
 
   return (
     <Layout meta={meta} url={url} cover={(
       <Cover image={{
-        src: 'https://assets.project-r.construction/images/header_projekte.jpg',
+        src: meta.image,
         alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'}}
       >
-        <h1>Das erste Projekt: Die «Republik»</h1>
+        <h1>{meta.title}</h1>
         <p>{meta.description}</p>
       </Cover>
     )}>

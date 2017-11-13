@@ -40,8 +40,15 @@ const media = [
 ]
 
 export default ({url}) => {
+  const meta = {
+    title: 'Medien­informationen',
+    description: '',
+    image: 'https://assets.project-r.construction/images/header_projekte.jpg',
+    url: `https://project-r.construction${url.pathname}`
+  }
+
   return (
-    <Layout url={url}>
+    <Layout meta={meta} url={url}>
       <Head>
         <title>Project R Medieninformationen</title>
       </Head>

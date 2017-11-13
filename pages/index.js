@@ -31,7 +31,7 @@ class Index extends Component {
     const { data: {loading, error, documents}, url } = this.props
 
     const meta = {
-      title: 'Project R geht an den Start',
+      title: 'Project R',
       description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam – oder gar nicht.»',
       image: 'https://assets.project-r.construction/images/balkon.jpg',
       url: `https://project-r.construction${url.pathname}`
@@ -47,7 +47,7 @@ class Index extends Component {
           src: 'https://assets.project-r.construction/images/rothaus_r.jpg',
           alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'
         }}>
-          <h1>Project R</h1>
+          <h1>{meta.title}</h1>
           <p>{meta.description}</p>
         </Cover>
       )}>
@@ -59,7 +59,7 @@ class Index extends Component {
         <p>Dem Gemeinwohl verpflichtet, fördert Project R den konstruktiven gesellschaftlichen Diskurs und diskriminierungsfreie, vielfältige Debatten über die Fragen unserer Zeit.</p>
 
         <p>Lesen Sie <a href='https://assets.project-r.construction/media/statuten_project_r_genossenschaft_unterschrieben.pdf'>hier</a> die Statuten der Project R Genossenschaft.<br />
-        <a href='https://www.republik.ch/pledge'>Mitglied werden</a></p>
+          <a href='https://www.republik.ch/pledge'>Mitglied werden</a></p>
 
         <h3>Die «Republik»: Das erste Projekt von Project R</h3>
 
