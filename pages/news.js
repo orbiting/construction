@@ -65,6 +65,14 @@ const News = (props) => {
 
       <h2>Veranstaltungen</h2>
 
+      <h3>«Republik: Stand der Arbeit, Stand des Irrtums»</h3>
+      <p>Kosmopolitics, 4. Dezember 2017, 20.00 Uhr <br />
+        Kosmos, Lagerstrasse 102, 8004 Zürich</p>
+
+      <p>Die Redaktion der «Republik» gibt Einblick in den Redaktionsaufbau, die aktuellen Themen und Pläne für den Start im Januar 2018. Und stellt sich den Fragen, Ideen und Warnungen des Publikums.</p>
+
+      <h2>Vergangene Veranstaltungen</h2>
+
       <h3>«Die Welt verändern – indem man sie beschreibt»</h3>
 
       <p> Kosmopolitics, 13. November 2017, 20.00 Uhr<br />
@@ -82,14 +90,6 @@ const News = (props) => {
       </ul>
 
       <p>Moderation: Hannes Britschgi, Publizist Ringier</p>
-
-      <h3>«Republik: Stand der Arbeit, Stand des Irrtums»</h3>
-      <p>Kosmopolitics, 4. Dezember 2017, 20.00 Uhr <br />
-        Kosmos, Lagerstrasse 102, 8004 Zürich</p>
-
-      <p>Die Redaktion der «Republik» gibt Einblick in den Redaktionsaufbau, die aktuellen Themen und Pläne für den Start im Januar 2018. Und stellt sich den Fragen, Ideen und Warnungen des Publikums.</p>
-
-      <h2>Vergangene Veranstaltungen</h2>
 
       <h3>«Werd erwachsen: Jammer nicht. Tu was!»</h3>
       <p>Kosmopolitics, 9. Oktober 2017, 20.00 Uhr<br />

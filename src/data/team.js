@@ -81,22 +81,31 @@ export const richard = {
   email: 'richard.hoechner@project-r.construction'
 }
 
-export const philipp = {
-  image: 'https://assets.project-r.construction/images/philipp_vonessen.jpg',
-  name: 'Philipp von Essen',
-  dob: '07.05.1982',
-  title: 'Geschäftsstelle',
-  description: 'Portrait folgt.',
-  email: 'philipp.vonessen@project-r.construction'
+const francois = {
+  image: `https://assets.project-r.construction/images/francois_zosso.jpg`,
+  name: 'François Zosso',
+  age: 55,
+  title: 'Finanzchef',
+  description: `Zosso sah, wie sein Vater um halb neun aus dem Haus ging und um halb sechs wieder da war. Und wusste, was er wollte: einen Job im Büro. Auf dem Weg dazu ging er fast ohne Zögern vor. Kaum hatte er das Wirtschaftsstudium begonnen, brach er ab und heuerte in einer Treuhandbude an. In den zwanzig Jahren danach erlebte er fast alles, was Firmen sein konnten: 1. Kontinuität: Zosso arbeitete als Controller bei Hilti, einem Bohrmaschinenunternehmen «mit Superführung». Der Ton war zwar rau, «weil der Handwerker, der flucht» – dafür war Hilti durch die Nähe zu den Bauarbeitern immer bestens über die eigenen Produkte informiert. 2. Abstieg. Der Schuhkonzern Bally, berühmt für seine solide Ware, versuchte fancy zu werden – «ein klassischer Strategiefehler: Du stösst von dir, was dich stark macht.» Bally schrumpfte in Zossos Zeit als Finanzchef von 150 auf 50 Filialen. 3. Gründung: Zosso baute den gesamten Finanzbereich für Mediamarkt auf, der in die Schweiz einmarschierte: «Es war extrem lehrreich, alles neu zu überlegen, jeden Ablauf, jedes Formular.» 4. Boom: Bei Alcatel sah Zosso, ebenfalls als Finanzchef, den Tech-Hype (der Chef wurde Manager des Jahres, alle kassierten übertriebene Löhne) und den Absturz (der Manager des Jahres wurde entlassen). 2002 verwirklichte Zosso den Plan, selbstständig zu werden. Den Löwenanteil verdient er mit der Beratung von Spitälern für Betriebssoftware, daneben hat er diverse Mandate. Seit 2016 ist Zosso Finanzchef für Project R und die Republik.`,
+  email: 'francois.zosso@republik.ch'
 }
 
-export const francois = {
-  image: 'https://assets.project-r.construction/images/francois_zosso.jpg',
-  name: 'François Zosso',
-  dob: '05.07.1962',
-  title: 'Finanzen',
-  description: 'Portrait folgt.',
-  email: 'francois.zosso@project-r.construction'
+const nadine = {
+  image: `https://assets.project-r.construction/images/nadine_ticozzelli.jpg`,
+  name: 'Nadine Ticozzelli',
+  age: 34,
+  title: 'Marketing und Kommunikation',
+  description: `Nadine Ticozzelli wuchs in Zürich-Seebach auf, zwischen Betonblöcken und Waldrand. Sie startete mit 15 ins Berufsleben: Sie machte eine Lehre bei Foto Bäumli. Dort lernte sie, was sie wollte: Fotografie – sie hat mittlerweile 67 Hochzeiten hinter sich. (Ihr Tipp: Man soll seine Hochzeit nicht übertrieben über Niveau planen, sonst wird alles steif.) Und sie entdeckte ein Talent: Verkauf. Nach der Lehre verkaufte sie fünf Jahre Profikameras. Danach arbeitete sie als Kommunikationsplanerin und Beraterin für eine Reihe von Agenturen, darunter Wirz und Hochspannung. Sie suchte einen Job der Sinn stiftet, wechselte zu World Vision und dann als Marketingverantwortliche in den Bio-Fachhandel zu Terra Verde. Dass sie die Sekundarschule mit 15 aus Langeweile verliess, rettete sie nicht vor dem Lernen: die Handelsschule, das Diplom für Kommunikationsplanung, aktuell steckt sie im Lernen auf die Matur. Zur Republik kam sie diesen Monat: Sie hat die Aufgabe, von den zehn Bällen des Unternehmens «etwa fünf» mit in der Luft zu halten.`,
+  email: 'nadine.ticozzelli@republik.ch'
+}
+
+const philipp = {
+  image: `https://assets.project-r.construction/images/philipp_vonessen.jpg`,
+  name: 'Philipp von Essen',
+  age: 35,
+  title: 'Geschäftsstelle',
+  description: `Von Essen lebte seine ersten sieben Jahre in Ostberlin. Dann reiste seine Mutter mit ihm aus, zwei Tage vor dem Fall der Mauer. In den ersten Wochen in Volketswil staunte von Essen über die vielen Farben und fragte sich, warum in der Schule gespielt wurde statt gelernt. Er brauchte zehn Jahre, um wirklich anzukommen. Nach der Matur zog er nach Zürich und sah sich bei Theater und Film um – dann studierte er Betriebswirtschaft. Gleichzeitig mit dem Abschluss wurde er Vater, arbeitete für die Stadt, erst im Stadthaus, dann im Zentrum Karl der Grosse. Danach ging er als Zimmermann ein Jahr auf die Baustelle. (Von Essen ist gut mit Holz, in seiner Jugend baute er ein kleines, aber zweistöckiges Holzhaus im Garten.) Nach einem Jahr als Assistenz des Rektorats bei der F+F-Schule wechselte er zur Republik, an der er das Tempo schätzt, «das Tempo des Irrtums, das Tempo der Korrektur des Irrtums». In dem Wirbel des Aufbaus ist von Essen der Mann für den Kundendienst, das Büromaterial, alles Konkrete. Andere machen Architektur und Pläne, er ist der Unternehmenszimmermann.`,
+  email: 'philipp.vonessen@republik.ch'
 }
 
 const team = [
@@ -106,7 +115,8 @@ const team = [
   clara,
   laurent,
   philipp,
-  francois
+  francois,
+  nadine
 ]
 
 const parseDob = timeParse('%d.%m.%Y')
