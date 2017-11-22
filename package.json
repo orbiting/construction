@@ -11,7 +11,7 @@
     "standard": "^8.6.0"
   },
   "dependencies": {
-    "@project-r/template-newsletter": "^1.4.0",
+    "@project-r/template-newsletter": "^1.4.1",
     "apollo-cache-inmemory": "^1.0.0",
     "apollo-client": "^2.0.1",
     "apollo-link-http": "^1.0.0",
