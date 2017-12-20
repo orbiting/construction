@@ -14,12 +14,14 @@ import staticNewsletters from '../src/data/newsletters'
 const getDocuments = gql`
   query getDocuments {
     documents {
-      meta {
-        slug
-        title
-        description
-        image
-        publishDate
+      nodes {
+        meta {
+          slug
+          title
+          description
+          image
+          publishDate
+        }
       }
     }
   }
@@ -30,7 +32,7 @@ const News = (props) => {
 
   let newsletters = loading || !documents
     ? []
-    : documents.concat(staticNewsletters)
+    : documents.nodes.concat(staticNewsletters)
 
   const meta = {
     title: 'Aktuelles von Project R',
