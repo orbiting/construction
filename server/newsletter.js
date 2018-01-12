@@ -60,6 +60,16 @@ const subscribeEmail = (email) => {
     .digest('hex')
     .toLowerCase()
 
+  const { MAILCHIMP_INTEREST_IDS = '' } = process.env
+  const interestIds = MAILCHIMP_INTEREST_IDS.split(',').filter(Boolean)
+  const interests = interestIds.reduce(
+    (index, id) => {
+      index[id] = true
+      return index
+    },
+    {}
+  )
+
   return fetch(`https://us14.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}/members/${hash}`, {
     method: 'PUT',
     headers: {
@@ -69,9 +79,7 @@ const subscribeEmail = (email) => {
     body: JSON.stringify({
       email_address: email,
       status: 'subscribed',
-      interests: process.env.MAILCHIMP_INTEREST_ID && {
-        [process.env.MAILCHIMP_INTEREST_ID]: true
-      }
+      interests: interests
     })
   })
     .then(response => response.json())
