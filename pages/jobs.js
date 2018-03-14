@@ -23,16 +23,16 @@ export default ({url}) => {
     )}>
 
     <h2>Projektleitung Dialog & Social (60%) </h2>
-    <p>Netzwerkredaktion & Community | ab April 2018 oder nach Absprache </p>
+    <p>Netzwerkredaktion & Community | ab April 2018 oder nach Absprache</p>
 
 
-    <p>Wir möchten unsere Verlegerinnen und Verleger begeistern. Stolz machen. Mit ihnen gemeinsam magische Momente kreieren. Wenn andere Medien ihren Erfolg anhand von Klickzahlen messen, messen wir ihn am Glanz in den Augen unserer Verlegerinnen. Wir wollen intensiv mit unserer Community debattieren, online wie offline. Wir wollen unsere Themen hineintragen in die Gesellschaft. Unser Publikum für Journalismus begeistern. Und die Zukunft des digitalen Journalismus entwickeln. Dafür brauchen wir deine Unterstützung. </p>
+    <p>Wir möchten unsere Verlegerinnen und Verleger begeistern. Stolz machen. Mit ihnen gemeinsam magische Momente kreieren. Wenn andere Medien ihren Erfolg anhand von Klickzahlen messen, messen wir ihn am Glanz in den Augen unserer Verlegerinnen. Wir wollen intensiv mit unserer Community debattieren, online wie offline. Wir wollen unsere Themen hineintragen in die Gesellschaft. Unser Publikum für Journalismus begeistern. Und die Zukunft des digitalen Journalismus entwickeln. Dafür brauchen wir deine Unterstützung.</p>
 
     <p>Wir suchen einen Social-Media-Profi, der/die publizistisch denkt, die Redaktion mit neuen Ideen inspiriert und Social Storytelling zu einer eigenen journalistischen Disziplin entwickeln will. Du fühlst dich auf Twitter, Facebook und anderen sozialen Medien zu Hause, hast Lust, die Republik im Social Web zu repräsentieren, und möchtest den Dialog mit Verlegerinnen und Verlegern pflegen? Dann freuen wir uns auf deine Bewerbung.</p>
 
     <p>Zu deinen Aufgaben gehören:</p>
     <ul>
-      <li>Planung und Umsetzung des Social-Media-Kalenders und von Redaktionsplänen </li>
+      <li>Planung und Umsetzung des Social-Media-Kalenders und von Redaktionsplänen</li>
       <li>Erstellen von Social-Media-Postings, in Zusammenarbeit mit Autorinnen und Produktion</li>
       <li>Monitoring der Social-Media-Resonanz der Republik-Geschichten</li>
       <li>Monitoring der Social-Media-Kanäle und der Republik-Debatten</li>
