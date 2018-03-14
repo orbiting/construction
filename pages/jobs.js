@@ -22,7 +22,7 @@ export default ({url}) => {
       </Cover>
     )}>
 
-    <h2>Projektleitung Dialog & Social (60%) </h2>
+    <h2>Projektleitung Dialog & Social (60%)</h2>
     <p>Netzwerkredaktion & Community | ab April 2018 oder nach Absprache</p>
 
 
