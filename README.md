@@ -45,17 +45,14 @@ BASIC_AUTH_REALM=
 
 ## Assets
 
-Assets are hosted exoscale.ch s3.
+Assets are hosted on s3.
 
-Create following `.s3cfg` file:
+You'll need an `~/.s3cfg` with your keys:
 ```
 [default]
-host_base = sos.exo.io
-host_bucket = %(bucket)s.sos.exo.io
 access_key = X
 secret_key = X
 use_https = True
-signature_v2 = True
 ```
 
 Run `make upload-assets` to upload them via [s3cmd](http://s3tools.org/s3cmd).
