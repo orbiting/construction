@@ -37,7 +37,7 @@ export default ({url}) => {
 
       <p>
         <br />
-        <a href='https://assets.republik.ch/cf_gui/static/manifest.pdf' target='_blank'>Manifest als PDF herunterladen</a>
+        <a href='https://assets.project-r.construction/media/manifest.pdf' target='_blank'>Manifest als PDF herunterladen</a>
       </p>
       <p>
         Wollen Sie uns unterstützen, indem Sie das Manifest öffentlich aufhängen? Das würde uns freuen! Holen Sie Ihr kostenloses DIN-A3-Poster-Manifest hier bei uns im Hotel Rothaus ab. Bitte kurz vorher Bescheid sagen: <a style={{whiteSpace: 'nowrap'}} href='mailto:kontakt@project-r.construction'>kontakt@project-r.construction</a></p>

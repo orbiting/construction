@@ -4,11 +4,11 @@ all:
 	npm run dev
 
 upload-assets:
-	s3cmd sync --verbose --acl-public -c ./.s3cfg assets/images/optimized/ s3://construction/images/
-	s3cmd sync --verbose --acl-public -c ./.s3cfg assets/contact/ s3://construction/contact/
-	s3cmd sync --verbose --acl-public -c ./.s3cfg \
+	s3cmd sync --acl-public assets/images/optimized/ s3://projectr-assets/images/
+	s3cmd sync --acl-public assets/contact/ s3://projectr-assets/contact/
+	s3cmd sync --acl-public \
 		--exclude "*" --include "*.zip" --include "*.pdf"\
-		assets/media/ s3://construction/media/
+		assets/media/ s3://projectr-assets/media/
 
 images:
 	convert -resize 2000x -quality 80 assets/images/raw/balkon.jpg jpg:- | jpegtran -copy none -progressive > assets/images/optimized/balkon.jpg

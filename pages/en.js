@@ -40,7 +40,7 @@ export default ({url}) => {
         <a href='https://www.cjr.org/innovations/news-startup-crowdfunding-switzerland.php'>Columbia Journalism Review: ‘Startup that promises ‘no-bullshit journalism’ nets serious cash’</a>.
       </p>
 
-      <p>Our manifesto sums up what we stand for. Download the manifesto <a href='https://assets.republik.ch/cf_gui/static/manifesto_en.pdf'>here</a>.</p>
+      <p>Our manifesto sums up what we stand for. Download the manifesto <a href='https://assets.project-r.construction/media/manifesto_en.pdf'>here</a>.</p>
 
       <p>
         <a href='https://www.republik.ch/en'>Here</a> you can donate and read more about «Republik».
