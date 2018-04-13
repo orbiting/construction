@@ -21,7 +21,7 @@ const Footer = ({url}) => (
       Project R Genossenschaft<br />
       Sihlhallenstrasse 1<br />
       8004 Zürich<br />
-      <a href='mailto:kontakt@project-r.construction'>kontakt@project-r.construction</a><br />
+      <a href='mailto:office@project-r.construction'>office@project-r.construction</a><br />
     </p>
 
     <p>
