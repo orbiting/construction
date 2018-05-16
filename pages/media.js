@@ -70,7 +70,7 @@ export default ({url}) => {
             Schweizer Journalisten rufen die "Republik" aus</a>
           — Der Standard, Januar 2018</li>
 
-        <li><a href= 'https://www.tagesanzeiger.ch/kultur/diverses/das-bietet-die-republik/story/25185549'> 
+        <li><a href='https://www.tagesanzeiger.ch/kultur/diverses/das-bietet-die-republik/story/25185549'> 
             Das bietet die «Republik»</a>
           — TagesAnzeiger, Januar 2018</li>
 
@@ -82,11 +82,11 @@ export default ({url}) => {
             Das Online-Magazin «Republik» legt los</a> 
           — NZZ, Januar 2018</li>
 
-        <li><a href= 'http://www.persoenlich.com/medien/die-expedition-in-die-realitat-beginnt'>
+        <li><a href='http://www.persoenlich.com/medien/die-expedition-in-die-realitat-beginnt'>
             Republik: Die Expedition in die Realität beginnt</a> 
           — Persoenlich.com, Januar 2018</li>
 
-        <li><a href = 'https://www.nau.ch/news/onlinemagazin-republik-geht-an-den-start-65285498'>
+        <li><a href='https://www.nau.ch/news/onlinemagazin-republik-geht-an-den-start-65285498'>
             «Das ist die Chance, den Journalismus von morgen zu erfinden»</a> 
           — Nau.ch, Januar 2018</li>
 
