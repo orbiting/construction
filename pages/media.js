@@ -65,6 +65,35 @@ export default ({url}) => {
       <h3>Medienartikel zu Project R</h3>
 
       <ul>
+
+        <li><a href='https://derstandard.at/2000072162892/Schweizer-Journalisten-rufen-am-Montag-Republik-aus'>
+            Schweizer Journalisten rufen die "Republik" aus</a>
+          — Der Standard, Januar 2018</li>
+
+        <li><a href='https://www.tagesanzeiger.ch/kultur/diverses/das-bietet-die-republik/story/25185549'> 
+            Das bietet die «Republik»</a>
+          — TagesAnzeiger, Januar 2018</li>
+
+        <li><a href='https://www.srf.ch/play/tv/tagesschau/video/republik-ist-online?id=acafd8ea-28eb-48e5-9efc-40402426ef8b&station=69e8ac16-4327-4af4-b873-fd5cd6e895a7'>
+            Republik ist online</a> 
+          — SRF Tagesschau, Januar 2018</li> 
+
+        <li><a href='https://www.nzz.ch/feuilleton/medien/das-online-magazin-republik-legt-los-ld.1347420'>
+            Das Online-Magazin «Republik» legt los</a> 
+          — NZZ, Januar 2018</li>
+
+        <li><a href='http://www.persoenlich.com/medien/die-expedition-in-die-realitat-beginnt'>
+            Republik: Die Expedition in die Realität beginnt</a> 
+          — Persoenlich.com, Januar 2018</li>
+
+        <li><a href='https://www.nau.ch/news/onlinemagazin-republik-geht-an-den-start-65285498'>
+            «Das ist die Chance, den Journalismus von morgen zu erfinden»</a> 
+          — Nau.ch, Januar 2018</li>
+
+        <li><a href='https://www.cjr.org/innovations/news-startup-crowdfunding-switzerland.php'>
+            Startup that promises ‘no-bullshit journalism’ nets serious cash</a> 
+          — Columbia Journalism Review, Mai 2017</li>
+
         <li><a href='https://www.nzz.ch/feuilleton/medien/in-medias-ras-ein-testfall-fuer-schweizer-journalisten-ld.151509'>Die Idee von Project R liegt in der Luft</a> — NZZ, März 2017</li>
         <li><a href='http://www.srf.ch/sendungen/medientalk/medientalk-wie-gruende-ich-ein-medien-startup'>«Mit Fake News, mit Trump, mit dem langsamen Sterben, dem Niedergang und dem Vor-sich-her-Faulen der grossen Verlage, ist eigentlich klar, dass man etwas tun muss»</a> — Radio SRF4, Januar 2017</li>
         <li><a href='http://www.kontextwochenzeitung.de/medien/304/r-wie-rebellion-4158.html'>R wie Rebellion</a>  —  Kontext, Januar 2017</li>
