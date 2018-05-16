@@ -34,7 +34,7 @@ export default ({url}) => {
 
       <p><br />Project R is an open-source cooperative, and we share our knowledge, software and business insights with other projects who also want to foster democracy and free speech around the world.</p>
 
-      <p>In May 2017, we collected about € 3.1m in a crowdfunding campaign in which we sold nearly 14'000 memberships. We started publishing in January 2018 and have now over 20'000 members that support our mission.</p>
+      <p>In May 2017, we collected about € 3.1m in a crowdfunding campaign in which we sold nearly 14'000 memberships. We started publishing in January 2018 and now have over 20'000 members that support our mission.</p>
 
       <p>Read more about our crowdfunding here: <br />
         <a href='https://www.cjr.org/innovations/news-startup-crowdfunding-switzerland.php'>Columbia Journalism Review: ‘Startup that promises ‘no-bullshit journalism’ nets serious cash’</a>.
