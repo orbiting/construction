@@ -3,23 +3,56 @@ const bodyParser = require('body-parser')
 const fetch = require('isomorphic-unfetch')
 const crypto = require('crypto')
 
+const base64u = require('../lib/base64u')
+
 const SUBJECT = 'Bitte Anmeldung Project R-Newsletter bestätigen'
 const FROM_EMAIL = 'jefferson@project-r.construction'
 const FROM_NAME = 'Jefferson - Project R'
 
-const subscribeText = (email, token) => `Guten Tag
+// see NewsletterName graphql enum in republik backend
+// - backends/servers/republik/graphql/schema-types.js
+NEWSLETTER_NAME = 'PROJECTR'
 
-Herzlichen Dank für Ihr Interesse an der Project R Genossenschaft und Republik.
+const {
+  NEWSLETTER_HMAC_KEY,
+  REPUBLIK_PUBLIC_BASE_URL,
+  MANDRILL_API_KEY
+} = process.env
 
-Bestätigen Sie Ihre Newsletter-Anmeldung mit Klicken auf den folgenden Link:
+const missingEnv = ['NEWSLETTER_HMAC_KEY', 'REPUBLIK_PUBLIC_BASE_URL', 'MANDRILL_API_KEY']
+  .filter(key => !process.env[key])
 
-${process.env.PUBLIC_BASE_URL}/newsletter/subscribe?email=${encodeURIComponent(email)}&token=${encodeURIComponent(token)}
+if (missingEnv.length) {
+  console.warn(`missing env ${missingEnv.join(', ')}\n - newsletter sign up will not work`)
+}
 
-Derzeit arbeiten wir hart am Aufbau des digitalen Magazins Republik. Auch die Project R Genossenschaft ist nicht untätig und veranstaltet bereits Debatten. Sobald wir wieder Neuigkeiten haben, werden wir uns melden!
+const authenticate = (email, name, subscribed) => {
+  if (!NEWSLETTER_HMAC_KEY) {
+    console.error('missing NEWSLETTER_HMAC_KEY')
+    throw new Error('Newsletter-Anmeldungs-Link-Generation ist fehlgeschlagen.')
+  }
+  return crypto
+    .createHmac('sha256', NEWSLETTER_HMAC_KEY)
+    .update(`${email}${name}${+subscribed}`)
+    .digest('hex')
+}
 
-Sie wollen Mitglied der Project R Genossenschaft und Verleger*in der Republik werden? Dann klicken Sie hier: www.republik.ch
+const subscribeText = (email) => {
+  const subscribed = '1'
+  return `Guten Tag
 
-Ihre R-Crew`
+Vielen Dank für Ihr Interesse an Project R und der Republik.
+
+Bestätigen Sie Ihre Newsletter-Anmeldung mit folgendem Link:
+
+${REPUBLIK_PUBLIC_BASE_URL}/mitteilung?type=newsletter-subscription&name=${NEWSLETTER_NAME}&subscribed=${subscribed}&email=${base64u.encode(email)}&mac=${authenticate(email, NEWSLETTER_NAME, subscribed)}
+
+Wir freuen uns, Sie in unregelmässigen Abständen über Entwicklungen bei Project R und der Republik zu informieren.
+
+Sie wollen Mitglied der Project R Genossenschaft und Verlegerin der Republik werden? https://www.republik.ch/angebote
+
+Ihre Crew von der Republik und von Project R`
+}
 
 const sendEmail = (email, text) => {
   return fetch(`https://mandrillapp.com/api/1.0/messages/send.json`, {
@@ -28,7 +61,7 @@ const sendEmail = (email, text) => {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      key: process.env.MANDRILL_API_KEY,
+      key: MANDRILL_API_KEY,
       message: {
         text,
         subject: SUBJECT,
@@ -53,79 +86,16 @@ const sendEmail = (email, text) => {
     })
 }
 
-const subscribeEmail = (email) => {
-  const hash = crypto
-    .createHash('md5')
-    .update(email)
-    .digest('hex')
-    .toLowerCase()
-
-  const { MAILCHIMP_INTEREST_IDS = '' } = process.env
-  const interestIds = MAILCHIMP_INTEREST_IDS.split(',').filter(Boolean)
-  const interests = interestIds.reduce(
-    (index, id) => {
-      index[id] = true
-      return index
-    },
-    {}
-  )
-
-  return fetch(`https://us14.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}/members/${hash}`, {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': 'Basic ' + (new Buffer('anystring:' + process.env.MAILCHIMP_API_KEY).toString('base64'))
-    },
-    body: JSON.stringify({
-      email_address: email,
-      status: 'subscribed',
-      interests: interests
-    })
-  })
-    .then(response => response.json())
-    .then(data => {
-      if (data.status >= 400) {
-        if (data.title === 'Member Exists') {
-          return {
-            message: 'Sie sind bereits eingetragen.'
-          }
-        }
-        return {
-          message: 'Anmeldung fehlgeschlagen.'
-        }
-      }
-      return {}
-    })
-}
-
 server.get('/newsletter/subscribe', bodyParser.json(), async (req, res) => {
-  const {email, token} = req.query
+  const {email} = req.query
   if (!email) {
     return res.status(422).json({
       message: 'E-Mail fehlt'
     })
   }
 
-  const sha = crypto
-    .createHash('sha256')
-    .update(email + process.env.SUBSCRIBE_SECRET)
-    .digest('hex')
-
-  if (!token) {
-    const response = await sendEmail(email, subscribeText(email, sha))
-    return res.json(response)
-  } else {
-    if (sha !== token) {
-      return res.redirect(
-        `/newsletter/welcome?message=${encodeURIComponent('Ungültige Anfrage.')}`
-      )
-    }
-    const response = await subscribeEmail(email)
-    return res.redirect([
-      '/newsletter/welcome',
-      response.message ? `?message=${encodeURIComponent(response.message)}` : ''
-    ].join(''))
-  }
+  const response = await sendEmail(email, subscribeText(email))
+  return res.json(response)
 })
 
 module.exports = server
