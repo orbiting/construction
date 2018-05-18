@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import {css} from 'glamor'
 import fetch from 'isomorphic-unfetch'
 
+import { REPUBLIK_PUBLIC_BASE_URL } from '../lib/publicEnv'
+
 const formStyle = css({
   display: 'flex',
   justifyContent: 'space-between',
@@ -39,6 +41,10 @@ const buttonStyle = css({
     background: '#444',
     color: 'white'
   }
+})
+const privacyStyle = css({
+  fontFamily: 'sans-serif',
+  fontSize: 14
 })
 
 class Newsletter extends Component {
@@ -94,6 +100,11 @@ class Newsletter extends Component {
             : <button type='submit' {...fieldStyle} {...buttonStyle}>Anmelden</button> }
         </p>
         {!!message && <p>{message}</p>}
+        <p {...privacyStyle}>
+          <a href={`${REPUBLIK_PUBLIC_BASE_URL}/datenschutz`} target='_blank'>
+            Datenschutz
+          </a>
+        </p>
       </form>
     )
   }
