@@ -1,8 +1,8 @@
 const express = require('express')
 const basicAuth = require('express-basic-auth')
 const next = require('next')
+require('dotenv').config() // run before nl
 const newsletter = require('./server/newsletter')
-require('dotenv').config()
 
 const fs = require('fs')
 const path = require('path')
