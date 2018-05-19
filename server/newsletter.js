@@ -45,7 +45,7 @@ Vielen Dank für Ihr Interesse an Project R und der Republik.
 
 Bestätigen Sie Ihre Newsletter-Anmeldung mit folgendem Link:
 
-${REPUBLIK_PUBLIC_BASE_URL}/mitteilung?type=newsletter-subscription&name=${NEWSLETTER_NAME}&subscribed=${subscribed}&email=${base64u.encode(email)}&mac=${authenticate(email, NEWSLETTER_NAME, subscribed)}
+${REPUBLIK_PUBLIC_BASE_URL}/mitteilung?type=newsletter-subscription&name=${NEWSLETTER_NAME}&subscribed=${subscribed}&email=${base64u.encode(email)}&mac=${authenticate(email, NEWSLETTER_NAME, subscribed)}&context=projectr
 
 Wir freuen uns, Sie in unregelmässigen Abständen über Entwicklungen bei Project R und der Republik zu informieren.
 
