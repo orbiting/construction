@@ -42,6 +42,7 @@
     "heroku-postbuild": "npm run build",
     "assets": "static-server assets --port 8000",
     "dev": "nodemon --watch server --watch lib/routes.js server.js",
-    "standardize": "standard --fix 'src/**/*.js' 'pages/**/*.js'"
+    "standardize": "standard --fix 'src/**/*.js' 'pages/**/*.js'",
+    "cloc": "find . -name '*.js' -not -path \"./node_modules*\" -not -path \"./.next*\" | xargs wc -l"
   }
 }
