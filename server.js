@@ -36,6 +36,9 @@ app.prepare().then(() => {
 
   server.use(newsletter)
 
+  server.get('/geschaeftsbericht', (req, res) => {
+    res.redirect(301, 'https://cdn.republik.space/s3/republik-assets/assets/geschaeftsbericht2018.pdf')
+  })
   server.get('/index.html', (req, res) => {
     res.redirect(301, '/')
   })
