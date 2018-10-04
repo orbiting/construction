@@ -36,6 +36,9 @@ app.prepare().then(() => {
 
   server.use(newsletter)
 
+  server.get('/geschaeftsbericht', (req, res) => {
+    res.redirect(301, 'https://cdn.republik.space/s3/republik-assets/assets/geschaeftsbericht2017_2018_fuer_gv_und_urabstimmung.pdf')
+  })
   server.get('/index.html', (req, res) => {
     res.redirect(301, '/')
   })
