@@ -17,10 +17,6 @@ const links = [
     title: 'Manifest'
   },
   {
-    path: '/crew',
-    title: 'Crew'
-  },
-  {
     path: '/jobs',
     title: 'Jobs'
   },

@@ -5,8 +5,6 @@ import Cover from '../src/Cover'
 import Link from 'next/link'
 import Newsletter from '../src/Newsletter'
 
-import {susanne, laurent} from '../src/data/team'
-
 export default ({url}) => {
   const meta = {
     title: 'Newsletter von Project R',
@@ -36,16 +34,6 @@ export default ({url}) => {
         <a href='mailto:office@project-r.construction'>office@project-r.construction</a><br />
       PGP-Key-ID: 6A1DB6B9<br />
         <a href='https://assets.project-r.construction/contact/0x6A1DB6B9_office.asc'>Key herunterladen</a>
-      </p>
-
-      <p><strong>Geschäftsführung</strong><br />
-      Susanne Sugimoto, +41 78 897 70 28<br />
-        <a href={`mailto:${susanne.email}`}>{susanne.email}</a>
-      </p>
-
-      <p><strong>Investor Relations</strong><br />
-      Laurent Burst<br />
-        <a href={`mailto:${laurent.email}`}>{laurent.email}</a>
       </p>
 
     </Layout>

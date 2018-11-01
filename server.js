@@ -42,6 +42,9 @@ app.prepare().then(() => {
   server.get('/index.html', (req, res) => {
     res.redirect(301, '/')
   })
+  server.get('/crew', (req, res) => {
+    res.redirect(302, '/')
+  })
   server.get('/media.html', (req, res) => {
     res.redirect(301, '/media/2017-01-10-hotel-rothaus')
   })
