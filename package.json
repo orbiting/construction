@@ -2,7 +2,7 @@
   "name": "construction",
   "version": "0.3.0",
   "engines": {
-    "node": "8.10.x"
+    "node": "12.2.x"
   },
   "private": true,
   "devDependencies": {
