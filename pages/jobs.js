@@ -22,7 +22,13 @@ export default ({url}) => {
       </Cover>
     )}>
 
-    <p>Derzeit keinen offenen Stellen</p>
+    <h3>Offene Stellen bei der Republik</h3>
+    <ul>
+      <li><a href='https://www.republik.ch/jobs#community'>Community Builder & Partnership Management</a></li>
+      <li><a href='https://www.republik.ch/jobs#it'>Designerin</a></li>
+      <li><a href='https://www.republik.ch/jobs#it'>React-Entwickler</a></li>
+      <li><a href='https://www.republik.ch/jobs#it'>Backend-Entwicklerin</a></li>
+    </ul>
   </Layout>
   )
 }
