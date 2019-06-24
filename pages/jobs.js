@@ -7,7 +7,7 @@ export default ({url}) => {
   const meta = {
     title: 'Offene Stelle: Projektleitung Dialog & Social',
     description: 'Löse mit einem motivierten, multidisziplinären Team die interessantesten Probleme der Branche.',
-    image: 'https://assets.project-r.construction/images/header_jobs.jpg',
+    image: 'https://cdn.republik.space/s3/republik-assets/assets/images/jobs.jpg?resize=2000x',
     url: `https://project-r.construction${url.pathname}`
   }
 
