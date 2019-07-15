@@ -24,7 +24,7 @@ export default ({url}) => {
 
     <h3>Offene Stellen bei der Republik</h3>
     <ul>
-      <li><a href='https://www.republik.ch/jobs#editorial'>Redaktor...</a></li>
+      <li><a href='https://www.republik.ch/jobs#editorial'>Redaktorin mit Fokus Inland und Politik</a></li>
       <li><a href='https://www.republik.ch/jobs#community'>Community Builder & Partnership Management</a></li>
       <li><a href='https://www.republik.ch/jobs#it'>Designerin</a></li>
       <li><a href='https://www.republik.ch/jobs#it'>React-Entwickler</a></li>
