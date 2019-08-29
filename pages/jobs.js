@@ -21,16 +21,8 @@ export default ({url}) => {
         <p>Löse mit einem motivierten, multidisziplinären Team die interessantesten Probleme der Branche.</p>
       </Cover>
     )}>
-
-    <h3>Offene Stellen bei der Republik</h3>
-    <ul>
-      <li><a href='https://www.republik.ch/jobs#editorial'>Redaktorin mit Fokus Inland und Politik</a></li>
-      <li><a href='https://www.republik.ch/jobs#community'>Community Builder & Partnership Management</a></li>
-      <li><a href='https://www.republik.ch/jobs#it'>Designerin</a></li>
-      <li><a href='https://www.republik.ch/jobs#it'>React-Entwickler</a></li>
-      <li><a href='https://www.republik.ch/jobs#it'>Backend-Entwicklerin</a></li>
-    </ul>
-  </Layout>
+      <p>Derzeit keinen offenen Stellen</p>
+    </Layout>
   )
 }
 
