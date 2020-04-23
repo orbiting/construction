@@ -6,7 +6,7 @@
   },
   "private": true,
   "devDependencies": {
-    "nodemon": "^1.19.1",
+    "nodemon": "^2.0.3",
     "standard": "^8.6.0",
     "static-server": "^2.0.6"
   },
@@ -27,7 +27,7 @@
     "graphql-tag": "^2.5.0",
     "isomorphic-unfetch": "^2.0.0",
     "mdast-react-render": "^1.0.0",
-    "next": "^8.1.0",
+    "next": "^9.3.5",
     "next-routes": "^1.4.2",
     "prop-types": "^15.7.2",
     "querystring": "^0.2.0",
