@@ -37,7 +37,7 @@ const Footer = ({url}) => (
       Sihlhallenstrasse 1<br />
       8004 Zürich<br />
       Raiffeisenbank Winterthur<br />
-      IBAN: CH04 8148 5000 0083 4669 1
+      IBAN: CH06 8080 8006 3318 5396 1
     </p>
   </div>
 )
