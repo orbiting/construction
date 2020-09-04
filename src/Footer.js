@@ -32,6 +32,15 @@ const Footer = ({url}) => (
     </p>
 
     <p>
+      <strong>Vorstand</strong><br />
+      <a href='https://www.republik.ch/~clara'>Clara Vuillemin</a>, <a href='https://www.republik.ch/~pschmid'>Peter Schmid</a> und <a href='https://www.republik.ch/~sreinhard'>Sylvie Reinhard</a>
+    </p>
+
+    <p>
+      <a href='https://www.republik.ch/format/genossenschaftsrat'><strong>Genossenschaftsrat</strong></a>
+    </p>
+
+    <p>
       <strong>Spendenkonto</strong><br />
       Project R Genossenschaft<br />
       Sihlhallenstrasse 1<br />
