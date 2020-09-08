@@ -33,7 +33,7 @@ const Footer = ({url}) => (
 
     <p>
       <strong>Vorstand</strong><br />
-      <a href='https://www.republik.ch/~clara'>Clara Vuillemin</a>, <a href='https://www.republik.ch/~pschmid'>Peter Schmid</a> und <a href='https://www.republik.ch/~sreinhard'>Sylvie Reinhard</a>
+      <a href='https://www.republik.ch/~clara'>Clara Vuillemin</a> (Präsidentin), <a href='https://www.republik.ch/~pschmid'>Peter Schmid</a> und <a href='https://www.republik.ch/~sreinhard'>Sylvie Reinhard</a>
     </p>
 
     <p>
