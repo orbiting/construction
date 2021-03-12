@@ -26,7 +26,7 @@ const Footer = ({url}) => (
 
     <p>
       <strong>Rechtliches</strong><br />
-      <a href='https://assets.project-r.construction/media/statuten_project_r_genossenschaft_unterschrieben.pdf'>
+      <a href='https://cdn.repub.ch/s3/republik-assets/assets/statuten-statuen/statuten_project_r_genossenschaft_20201122.pdf'>
         Statuten
       </a>
     </p>
