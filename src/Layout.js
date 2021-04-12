@@ -64,8 +64,8 @@ const containerStyle = css({
 })
 
 const Layout = ({children, meta, cover, url, raw}) => {
-  const facebookImage = meta.facebookImage || meta.image
-  const twitterImage = meta.twitterImage || meta.image
+  const facebookImage = meta && (meta.facebookImage || meta.image)
+  const twitterImage = meta && (meta.twitterImage || meta.image)
 
   return (
     <div className='base'>
