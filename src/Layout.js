@@ -90,7 +90,7 @@ const Layout = ({children, meta, cover, url, raw}) => {
         <meta name='twitter:creator' content='@_Project_R' />
         <meta name='twitter:title' content={meta.twitterTitle || meta.title} />
         <meta name='twitter:description' content={meta.twitterDescription || meta.description} />
-        {twitterImage && <meta name='twitter:image:src' content={imageResizeUrl(twitterImage, '3000x')} />}
+        {twitterImage && <meta name='twitter:image:src' content={imageResizeUrl(twitterImage, '1500x')} />}
       </Head>}
 
       {cover}
