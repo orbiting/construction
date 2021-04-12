@@ -4,6 +4,7 @@ import Head from 'next/head'
 import {css} from 'glamor'
 import Footer from './Footer'
 import { META_ROBOTS } from '../lib/publicEnv'
+import { imageResizeUrl } from 'mdast-react-render/lib/utils'
 
 import 'glamor/reset'
 
@@ -62,42 +63,47 @@ const containerStyle = css({
   }
 })
 
-const Layout = ({children, meta, cover, url, raw}) => (
-  <div className='base'>
-    <Head>
-      <meta name='viewport' content='width=device-width, initial-scale=1' />
-      <link rel='shortcut icon' href='https://assets.project-r.construction/images/favicon.ico' />
-      <meta name='author' content='Project R' />
-    </Head>
+const Layout = ({children, meta, cover, url, raw}) => {
+  const facebookImage = meta.facebookImage || meta.image
+  const twitterImage = meta.twitterImage || meta.image
 
-    {!!meta && <Head>
-      <title>{meta.title}</title>
-      {!!META_ROBOTS && <meta name='robots' content={META_ROBOTS} />}
-      <meta name='description' content={meta.description} />
-      <meta property='og:type' content='website' />
-      <meta property='og:url' content={meta.url} />
-      <meta property='og:title' content={meta.facebookTitle || meta.title} />
-      <meta property='og:description' content={meta.facebookDescription || meta.description} />
-      <meta property='og:image' content={meta.facebookImage || meta.image} />
-      <meta property='fb:app_id' content='1774637906137716' />
-      <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content='@_Project_R' />
-      <meta name='twitter:creator' content='@_Project_R' />
-      <meta name='twitter:title' content={meta.twitterTitle || meta.title} />
-      <meta name='twitter:description' content={meta.twitterDescription || meta.description} />
-      <meta name='twitter:image:src' content={meta.twitterImage || meta.image} />
-    </Head>}
+  return (
+    <div className='base'>
+      <Head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='shortcut icon' href='https://assets.project-r.construction/images/favicon.ico' />
+        <meta name='author' content='Project R' />
+      </Head>
 
-    {cover}
-    {!!raw && children}
+      {!!meta && <Head>
+        <title>{meta.title}</title>
+        {!!META_ROBOTS && <meta name='robots' content={META_ROBOTS} />}
+        <meta name='description' content={meta.description} />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content={meta.url} />
+        <meta property='og:title' content={meta.facebookTitle || meta.title} />
+        <meta property='og:description' content={meta.facebookDescription || meta.description} />
+        {facebookImage && <meta property='og:image' content={facebookImage} />}
+        <meta property='fb:app_id' content='1774637906137716' />
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:site' content='@_Project_R' />
+        <meta name='twitter:creator' content='@_Project_R' />
+        <meta name='twitter:title' content={meta.twitterTitle || meta.title} />
+        <meta name='twitter:description' content={meta.twitterDescription || meta.description} />
+        {twitterImage && <meta name='twitter:image:src' content={imageResizeUrl(twitterImage, '3000x')} />}
+      </Head>}
 
-    <div {...containerStyle}>
-      {!raw && children}
+      {cover}
+      {!!raw && children}
 
-      <Footer url={url} />
+      <div {...containerStyle}>
+        {!raw && children}
+
+        <Footer url={url} />
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 Layout.propTypes = {
   cover: PropTypes.node,
