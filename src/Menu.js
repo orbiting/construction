@@ -9,10 +9,6 @@ const links = [
     title: 'Aktuelles'
   },
   {
-    path: '/projects',
-    title: 'Projekte'
-  },
-  {
     path: '/manifest',
     title: 'Manifest'
   },
