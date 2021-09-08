@@ -54,6 +54,9 @@ app.prepare().then(() => {
   server.get('/welcome_aboard.html', (req, res) => {
     res.redirect(301, '/newsletter/welcome')
   })
+  server.get('/projects', (req, res) => {
+    res.redirect(301, '/')
+  })
   fs.readdirSync(path.join(__dirname, 'pages/newsletter'))
     .map(file => path.basename(file, '.js'))
     .filter(basename => basename[0] !== '.' && basename !== 'index')
