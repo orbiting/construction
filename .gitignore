@@ -17,4 +17,5 @@ build
 .swp
 .swo
 .swn
+.idea
 npm-debug.log
