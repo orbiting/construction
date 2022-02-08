@@ -5,6 +5,7 @@ import {css} from 'glamor'
 import Footer from './Footer'
 import { META_ROBOTS } from '../lib/publicEnv'
 import { imageResizeUrl } from 'mdast-react-render/lib/utils'
+import { Center } from '@project-r/styleguide'
 
 import 'glamor/reset'
 
@@ -53,15 +54,18 @@ css.global('.base ul', {
 })
 
 export const PADDING = 20
-const containerStyle = css({
-  margin: '0 auto',
-  padding: PADDING,
-  paddingTop: PADDING / 2,
-  maxWidth: 640,
-  '@media (min-width: 600px)': {
-    paddingTop: PADDING
-  }
-})
+
+export const Paragraph = ({ children, ...props }) => <p
+      {...props}
+    >
+      {children}
+  </p>
+
+export const ListItem = ({ children }) => <li>{children}</li>
+
+export const List = ({ children, data }) =>
+  data.ordered ? <ol start={data.start}>{children}</ol> : <ul>{children}</ul>
+
 
 const Layout = ({children, meta, cover, url, raw}) => {
   const facebookImage = meta && (meta.facebookImage || meta.image)
@@ -96,11 +100,11 @@ const Layout = ({children, meta, cover, url, raw}) => {
       {cover}
       {!!raw && children}
 
-      <div {...containerStyle}>
+      <Center>
         {!raw && children}
 
         <Footer url={url} />
-      </div>
+      </Center>
     </div>
   )
 }

@@ -65,7 +65,7 @@ app.prepare().then(() => {
         return app.render(req, res, `/newsletter/${staticSlug}`, req.query)
       })
     })
-  server.get('/newsletter/:slug', (req, res) => {
+  server.get('/newsletter/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})/:slug', (req, res) => {
     return app.render(req, res, '/newsletter', req.params)
   })
   server.get('*', (req, res) => {

@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 import Teaser from '@project-r/template-newsletter/lib/web/Teaser'
 
-const CardLink = ({slug, href, children}) => (
-  <Link href={href || {pathname: '/newsletter', query: {slug}}} as={href || `/newsletter/${slug}`} passHref>
+const CardLink = ({path, href, children}) => (
+  <Link href={href || `/newsletter${path}`} passHref>
     {children}
   </Link>
 )

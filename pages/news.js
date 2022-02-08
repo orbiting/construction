@@ -10,28 +10,47 @@ import Cover from '../src/Cover'
 import Card from '../src/Card'
 import Grid, {GridItem} from '../src/Grid'
 import staticNewsletters from '../src/data/newsletters'
+import { NEWSLETTER_ID } from '../lib/publicEnv'
+import { Loader } from '@project-r/styleguide'
 
-const getDocuments = gql`
-  query getDocuments {
-    documents {
-      meta {
-        slug
-        title
-        description
-        image
-        publishDate
+const getNewsletterTeasers = gql`query getNewsletterTeasers($first: Int) {
+    documents(format: "${NEWSLETTER_ID}", first: $first) {
+      nodes {
+        id
+        meta {
+          title
+          description
+          publishDate
+          path
+          image
+        }
       }
     }
   }
 `
 
-const News = (props) => {
-  const { data: {loading, error, documents}, url } = props
+export const NewsletterTeasers = compose(
+  withData,
+  graphql(getNewsletterTeasers)
+)(({ data: {loading, error, documents} }) => <Loader
+  loading={loading}
+  error={error}
+  render={() => {
+    const newsletters = documents.nodes
+    if (!newsletters.length) return null
+    return (
+      <Grid>
+        {newsletters.map((newsletter, i) => (
+          <GridItem key={i}>
+            <Card {...newsletter.meta} />
+          </GridItem>
+        ))}
+      </Grid>
+    )
+  }}
+/>)
 
-  let newsletters = loading || !documents
-    ? []
-    : documents.concat(staticNewsletters)
-
+const News = ({ url }) => {
   const meta = {
     title: 'Aktuelles von Project R',
     description: 'Stand der Arbeit, Stand des Irrtums beim Aufbau von Project R und der «Republik».',
@@ -51,22 +70,9 @@ const News = (props) => {
     )}>
 
       <h2>Newsletter-Archiv</h2>
-
-      {!!loading && <p>Lädt…</p>}
-      {!!error && <p>Nicht verfügbar, bitte versuchen Sie es später nochmals.</p>}
-      <Grid>
-        {newsletters.map((newsletter, i) => (
-          <GridItem key={i}>
-            <Card {...newsletter.meta} />
-          </GridItem>
-          )
-        )}
-      </Grid>
+      <NewsletterTeasers first={-1} />
     </Layout>
   )
 }
 
-export default compose(
-  withData,
-  graphql(getDocuments)
-)(News)
+export default News
