@@ -10,9 +10,10 @@ import { renderMdast } from 'mdast-react-render'
 import { NEWSLETTER_ID, PUBLIC_BASE_URL } from '../../lib/publicEnv'
 
 import Layout, { Paragraph, List, ListItem } from '../../src/Layout'
-import { createNewsletterWebSchema, Loader } from '@project-r/styleguide'
+import { createNewsletterWebSchema, Loader, Center } from '@project-r/styleguide'
 import Grid, { GridItem } from '../../src/Grid'
 import Card from '../../src/Card'
+import { splitByTitle } from '../../src/utils/helpers'
 
 const schema = createNewsletterWebSchema({ Paragraph, List, ListItem })
 
@@ -57,8 +58,22 @@ const Newsletter = ({ newsletter, url }) => {
     ...newsletter.meta,
     url: `${PUBLIC_BASE_URL}${url.asPath}`
   }
+  const splitContent = splitByTitle(newsletter.content)
   return <Layout raw meta={meta} url={url}>
-    {renderMdast(newsletter.content, schema)}
+    {splitContent.title && (
+      <>
+        {renderMdast(splitContent.title, schema)}
+        <Center>
+          <h1>
+            {meta.title}
+          </h1>
+          <p><b>
+            {meta.description}
+          </b></p>
+        </Center>
+      </>
+    )}
+    {renderMdast(splitContent.main, schema)}
   </Layout>
 }
 
