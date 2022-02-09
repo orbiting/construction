@@ -41,6 +41,11 @@ export const getDocument = gql`
         shareFontSize
         shareInverted
         shareTextPosition
+        format {
+          meta {
+           externalBaseUrl
+          }
+        }
       }
     }
   }
@@ -86,6 +91,22 @@ export default compose(
       variables: {
         path: url?.query ? `/${url.query.path}` : ''
       }
-    })
+    }),
+    props: ({data, ownProps: {serverContext}}) => {
+      if (serverContext && !data.error && !data.loading && !data.newsletter) {
+        serverContext.res.statusCode = 404
+      }
+      if (data?.newsletter && !(data.newsletter.meta.format?.meta.externalBaseUrl || '').startsWith(PUBLIC_BASE_URL)) {
+        return {
+          data: {
+            ...data,
+            newsletter: null
+          },
+        }
+      }
+      return {
+        data
+      }
+    }
   })
 )(Index)
