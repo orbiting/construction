@@ -45,7 +45,7 @@ export const getDocument = gql`
   }
 `
 
-const NotFound = () => <Layout url={url}>
+const NotFound = ({ url }) => <Layout url={url}>
   <Head>
     <title>404</title>
   </Head>
@@ -80,20 +80,17 @@ const Newsletter = ({ newsletter, url }) => {
 const Index = ({ data: {loading, error, newsletter}, url }) => <Loader
   loading={loading}
   error={error}
-  render={() => newsletter ? <Newsletter newsletter={newsletter} url={url} />  : <NotFound />
+  render={() => newsletter ? <Newsletter newsletter={newsletter} url={url} />  : <NotFound url={url} />
   }
 />
-
-const getPath = ({ year, month, day, slug }) => `/${year}/${month}/${day}/${slug}`
 
 export default compose(
   withData,
   graphql(getDocument, {
-    options: ({ url }) =>
-      ({
-        variables: {
-          path: url.query ? getPath(url.query) : ''
-        }
-      })
+    options: ({ url }) => ({
+      variables: {
+        path: url?.query ? `/${url.query.path}` : ''
+      }
+    })
   })
 )(Index)
