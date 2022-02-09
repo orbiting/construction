@@ -56,7 +56,7 @@ const NotFound = ({ url }) => <Layout url={url}>
 const Newsletter = ({ newsletter, url }) => {
   const meta = {
     ...newsletter.meta,
-    url: `${PUBLIC_BASE_URL}${url.asPath}`
+    url: `${PUBLIC_BASE_URL}${newsletter.meta.path}`
   }
   const splitContent = splitByTitle(newsletter.content)
   return <Layout raw meta={meta} url={url}>
