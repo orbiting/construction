@@ -14,6 +14,7 @@ import { createNewsletterWebSchema, Loader, Center } from '@project-r/styleguide
 import Grid, { GridItem } from '../../src/Grid'
 import Card from '../../src/Card'
 import { splitByTitle } from '../../src/utils/helpers'
+import StatusError from '../../src/StatusError'
 
 const schema = createNewsletterWebSchema({ Paragraph, List, ListItem })
 
@@ -45,14 +46,6 @@ export const getDocument = gql`
   }
 `
 
-const NotFound = ({ url }) => <Layout url={url}>
-  <Head>
-    <title>404</title>
-  </Head>
-  <h1>404</h1>
-  <p>Seite nicht gefunden.</p>
-</Layout>
-
 const Newsletter = ({ newsletter, url }) => {
   const meta = {
     ...newsletter.meta,
@@ -77,10 +70,12 @@ const Newsletter = ({ newsletter, url }) => {
   </Layout>
 }
 
-const Index = ({ data: {loading, error, newsletter}, url }) => <Loader
+const Index = ({ data: {loading, error, newsletter}, url, serverContext }) => <Loader
   loading={loading}
   error={error}
-  render={() => newsletter ? <Newsletter newsletter={newsletter} url={url} />  : <NotFound url={url} />
+  render={() => newsletter ?
+    <Newsletter newsletter={newsletter} url={url} /> :
+    <StatusError prefix='/newsletter' serverContext={serverContext} url={url} />
   }
 />
 
