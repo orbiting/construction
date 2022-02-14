@@ -10,11 +10,12 @@ import { renderMdast } from 'mdast-react-render'
 import { NEWSLETTER_ID, PUBLIC_BASE_URL } from '../../lib/publicEnv'
 
 import Layout, { Paragraph, List, ListItem } from '../../src/Layout'
-import { createNewsletterWebSchema, Loader, Center } from '@project-r/styleguide'
+import { createNewsletterWebSchema, Loader, Center, colors } from '@project-r/styleguide'
 import Grid, { GridItem } from '../../src/Grid'
 import Card from '../../src/Card'
 import { splitByTitle } from '../../src/utils/helpers'
 import StatusError from '../../src/StatusError'
+import { css } from 'glamor'
 
 const schema = createNewsletterWebSchema({ Paragraph, List, ListItem })
 
@@ -24,6 +25,7 @@ export const getDocument = gql`
       content
       meta {
         publishDate
+        prepublication
         slug
         path
         title
@@ -51,6 +53,17 @@ export const getDocument = gql`
   }
 `
 
+const styles = {
+  prepub: css({
+    position: 'absolute',
+    background: colors.social,
+    width: '100%',
+    padding: '2px 5px',
+    color: '#ffffff',
+    zIndex: 10
+  })
+}
+
 const Newsletter = ({ newsletter, url }) => {
   const meta = {
     ...newsletter.meta,
@@ -58,6 +71,7 @@ const Newsletter = ({ newsletter, url }) => {
   }
   const splitContent = splitByTitle(newsletter.content)
   return <Layout raw meta={meta} url={url}>
+    {meta.prepublication && <div {...styles.prepub}>Editoren-Vorschau</div>}
     {splitContent.title && (
       <>
         {renderMdast(splitContent.title, schema)}

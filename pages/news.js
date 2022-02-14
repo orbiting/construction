@@ -21,6 +21,7 @@ const getNewsletterTeasers = gql`query getNewsletterTeasers($first: Int) {
           title
           description
           publishDate
+          prepublication
           path
           image
         }
