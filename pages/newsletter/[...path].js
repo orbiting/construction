@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
@@ -87,14 +87,22 @@ const Newsletter = ({ newsletter }) => {
   </Layout>
 }
 
-const Index = ({ data: {loading, error, newsletter}, serverContext }) => <Loader
-  loading={loading}
-  error={error}
-  render={() => newsletter ?
-    <Newsletter newsletter={newsletter} /> :
-    <StatusError serverContext={serverContext} />
-  }
-/>
+const Index = ({ router, data: {loading, error, newsletter, refetch}, serverContext }) => {
+  const queryPath = router.query.path
+  useEffect(() => {
+    if (!loading && !newsletter && queryPath.includes('vorschau')) {
+      refetch()
+    }
+  }, [loading, newsletter, queryPath])
+  return <Loader
+    loading={loading}
+    error={error}
+    render={() => newsletter ?
+      <Newsletter newsletter={newsletter} /> :
+      <StatusError serverContext={serverContext} />
+    }
+  />
+}
 
 export default compose(
   withRouter,
