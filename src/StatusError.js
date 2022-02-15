@@ -7,6 +7,7 @@ import Layout from './Layout'
 import Head from 'next/head'
 import { withRouter } from 'next/router'
 import { cleanAsPath } from '../lib/url'
+import { PUBLIC_BASE_URL } from '../lib/publicEnv'
 
 const getRedirect = gql`
   query getRedirect($path: String!) {
@@ -37,7 +38,7 @@ export default compose(
   graphql(getRedirect, {
     options: ({ router }) => ({
       variables: {
-        path: cleanAsPath(router.asPath)
+        path: `${PUBLIC_BASE_URL}${cleanAsPath(router.asPath)}`
       }
     }),
     props: ({

@@ -5,15 +5,15 @@ import gql from 'graphql-tag'
 import { compose } from 'redux'
 
 import { renderMdast } from 'mdast-react-render'
-import { NEWSLETTER_ID, PUBLIC_BASE_URL } from '../lib/publicEnv'
+import { NEWSLETTER_ID, PUBLIC_BASE_URL } from '../../lib/publicEnv'
 
-import Layout, { Paragraph, List, ListItem } from '../src/Layout'
+import Layout, { Paragraph, List, ListItem } from '../../src/Layout'
 import { createNewsletterWebSchema, Loader, Center, colors } from '@project-r/styleguide'
-import { splitByTitle } from '../src/utils/helpers'
-import StatusError from '../src/StatusError'
+import { splitByTitle } from '../../src/utils/helpers'
+import StatusError from '../../src/StatusError'
 import { css } from 'glamor'
 import { withRouter } from 'next/router'
-import { cleanAsPath } from '../lib/url'
+import { cleanAsPath } from '../../lib/url'
 
 const schema = createNewsletterWebSchema({ Paragraph, List, ListItem })
 
@@ -101,7 +101,7 @@ export default compose(
   graphql(getDocument, {
     options: ({ router }) => ({
       variables: {
-        path: cleanAsPath(router.asPath)
+        path: `/${router.query.path.join('/')}`
       }
     }),
     props: ({data, ownProps: {serverContext}}) => {
