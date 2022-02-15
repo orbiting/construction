@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Link from 'next/link'
 
 import Layout from '../src/Layout'
@@ -6,17 +6,16 @@ import Newsletter from '../src/Newsletter'
 import Cover from '../src/Cover'
 import { NewsletterTeasers } from './news'
 
-const Index = ({ url}) => {
+const Index = () => {
   const meta = {
     title: 'Project R',
     description: '«Es ist Zeit, dass sich die Journalisten unabhängig machen und der Journalismus unabhängig von den Grossverlagen existieren kann. Und ein Modell dafür schafft man nur gemeinsam – oder gar nicht.»',
     image: 'https://assets.project-r.construction/images/balkon.jpg',
-    url: `https://project-r.construction${url.pathname}`
+    url: `https://project-r.construction/`
   }
 
-
     return (
-      <Layout meta={meta} url={url} cover={(
+      <Layout meta={meta} cover={(
         <Cover image={{
           src: 'https://assets.project-r.construction/images/rothaus_r.jpg',
           alt: 'Balkon vom Hotel Rothaus mit gehisstem Project R Logo'

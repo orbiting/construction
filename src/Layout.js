@@ -67,7 +67,7 @@ export const List = ({ children, data }) =>
   data.ordered ? <ol start={data.start}>{children}</ol> : <ul>{children}</ul>
 
 
-const Layout = ({children, meta, cover, url, raw}) => {
+const Layout = ({children, meta, cover, raw}) => {
   const facebookImage = meta && (meta.facebookImage || meta.image)
   const twitterImage = meta && (meta.twitterImage || meta.image)
 
@@ -103,7 +103,7 @@ const Layout = ({children, meta, cover, url, raw}) => {
       <Center>
         {!raw && children}
 
-        <Footer url={url} />
+        <Footer />
       </Center>
     </div>
   )
@@ -111,9 +111,6 @@ const Layout = ({children, meta, cover, url, raw}) => {
 
 Layout.propTypes = {
   cover: PropTypes.node,
-  url: PropTypes.shape({
-    pathname: PropTypes.string.isRequired
-  }).isRequired,
   meta: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,

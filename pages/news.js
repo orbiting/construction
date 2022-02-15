@@ -3,13 +3,11 @@ import React from 'react'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
 import { compose } from 'redux'
-import withData from '../lib/apollo/withData'
 
 import Layout from '../src/Layout'
 import Cover from '../src/Cover'
 import Card from '../src/Card'
 import Grid, {GridItem} from '../src/Grid'
-import staticNewsletters from '../src/data/newsletters'
 import { NEWSLETTER_ID } from '../lib/publicEnv'
 import { Loader } from '@project-r/styleguide'
 
@@ -31,7 +29,6 @@ const getNewsletterTeasers = gql`query getNewsletterTeasers($first: Int) {
 `
 
 export const NewsletterTeasers = compose(
-  withData,
   graphql(getNewsletterTeasers)
 )(({ data: {loading, error, documents} }) => <Loader
   loading={loading}

@@ -1,10 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Link from 'next/link'
 import SocialMedia from './SocialMedia'
 import Menu from './Menu'
 
-const Footer = ({url}) => (
+const Footer = () => (
   <div>
     <Link href='/'><a>
       <img
@@ -12,7 +11,7 @@ const Footer = ({url}) => (
         src='https://assets.project-r.construction/images/project_r_logo.svg' />
     </a></Link>
 
-    <Menu url={url} />
+    <Menu />
 
     <SocialMedia />
 
@@ -50,11 +49,5 @@ const Footer = ({url}) => (
     </p>
   </div>
 )
-
-Footer.propTypes = {
-  url: PropTypes.shape({
-    pathname: PropTypes.string.isRequired
-  }).isRequired
-}
 
 export default Footer

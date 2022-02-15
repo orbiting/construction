@@ -1,11 +1,12 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Loader } from '@project-r/styleguide'
 import { compose } from 'redux'
-import withData from '../lib/apollo/withData'
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import Layout from './Layout'
 import Head from 'next/head'
+import { withRouter } from 'next/router'
+import { cleanAsPath } from '../lib/url'
 
 const getRedirect = gql`
   query getRedirect($path: String!) {
@@ -16,11 +17,11 @@ const getRedirect = gql`
   }
 `
 
-const StatusError = ({ url, loading, prefix }) => (
+const StatusError = ({ loading }) => (
   <Loader
     loading={loading}
     render={() => (
-      <Layout url={url}>
+      <Layout>
         <Head>
           <title>404</title>
         </Head>
@@ -32,26 +33,23 @@ const StatusError = ({ url, loading, prefix }) => (
 )
 
 export default compose(
-  withData,
+  withRouter,
   graphql(getRedirect, {
-    options: ({ url }) => ({
+    options: ({ router }) => ({
       variables: {
-        path: url.query.path,
+        path: cleanAsPath(router.asPath)
       }
     }),
     props: ({
       data,
       ownProps: {
-        serverContext,
-        url,
-        prefix
+        serverContext
       },
     }) => {
       const redirection = !data.error && !data.loading && data.redirection
       if (redirection) {
         const { target, status } = redirection
-        const completeTarget = `${prefix}${target}`
-        serverContext.res.redirect(status || 302, completeTarget)
+        serverContext.res.redirect(status || 302, target)
         return { loading: true }
       } else if (serverContext) {
         serverContext.res.statusCode = 404

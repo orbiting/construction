@@ -1,21 +1,19 @@
-import React, { Component, useMemo } from 'react'
-import Head from 'next/head'
+import React from 'react'
 
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
 import { compose } from 'redux'
-import withData from '../../lib/apollo/withData'
 
 import { renderMdast } from 'mdast-react-render'
-import { NEWSLETTER_ID, PUBLIC_BASE_URL } from '../../lib/publicEnv'
+import { NEWSLETTER_ID, PUBLIC_BASE_URL } from '../lib/publicEnv'
 
-import Layout, { Paragraph, List, ListItem } from '../../src/Layout'
+import Layout, { Paragraph, List, ListItem } from '../src/Layout'
 import { createNewsletterWebSchema, Loader, Center, colors } from '@project-r/styleguide'
-import Grid, { GridItem } from '../../src/Grid'
-import Card from '../../src/Card'
-import { splitByTitle } from '../../src/utils/helpers'
-import StatusError from '../../src/StatusError'
+import { splitByTitle } from '../src/utils/helpers'
+import StatusError from '../src/StatusError'
 import { css } from 'glamor'
+import { withRouter } from 'next/router'
+import { cleanAsPath } from '../lib/url'
 
 const schema = createNewsletterWebSchema({ Paragraph, List, ListItem })
 
@@ -64,13 +62,13 @@ const styles = {
   })
 }
 
-const Newsletter = ({ newsletter, url }) => {
+const Newsletter = ({ newsletter }) => {
   const meta = {
     ...newsletter.meta,
     url: `${PUBLIC_BASE_URL}${newsletter.meta.path}`
   }
   const splitContent = splitByTitle(newsletter.content)
-  return <Layout raw meta={meta} url={url}>
+  return <Layout raw meta={meta}>
     {meta.prepublication && <div {...styles.prepub}>Editoren-Vorschau</div>}
     {splitContent.title && (
       <>
@@ -89,21 +87,21 @@ const Newsletter = ({ newsletter, url }) => {
   </Layout>
 }
 
-const Index = ({ data: {loading, error, newsletter}, url, serverContext }) => <Loader
+const Index = ({ data: {loading, error, newsletter}, serverContext }) => <Loader
   loading={loading}
   error={error}
   render={() => newsletter ?
-    <Newsletter newsletter={newsletter} url={url} /> :
-    <StatusError prefix='/newsletter' serverContext={serverContext} url={url} />
+    <Newsletter newsletter={newsletter} /> :
+    <StatusError serverContext={serverContext} />
   }
 />
 
 export default compose(
-  withData,
+  withRouter,
   graphql(getDocument, {
-    options: ({ url }) => ({
+    options: ({ router }) => ({
       variables: {
-        path: url?.query ? `/${url.query.path}` : ''
+        path: cleanAsPath(router.asPath)
       }
     }),
     props: ({data, ownProps: {serverContext}}) => {
