@@ -10,8 +10,8 @@ import { cleanAsPath } from '../lib/url'
 import { PUBLIC_BASE_URL } from '../lib/publicEnv'
 
 const getRedirect = gql`
-  query getRedirect($path: String!) {
-    redirection(path: $path) {
+  query getRedirect($path: String!, $externalBaseUrl: String!) {
+    redirection(path: $path, externalBaseUrl: $externalBaseUrl) {
       target
       status
     }
@@ -38,7 +38,8 @@ export default compose(
   graphql(getRedirect, {
     options: ({ router }) => ({
       variables: {
-        path: `${PUBLIC_BASE_URL}${cleanAsPath(router.asPath)}`
+        path: cleanAsPath(router.asPath).replace(/^\/newsletter/g, ''),
+        externalBaseUrl: `${PUBLIC_BASE_URL}/newsletter`
       }
     }),
     props: ({
@@ -50,7 +51,10 @@ export default compose(
       const redirection = !data.error && !data.loading && data.redirection
       if (redirection) {
         const { target, status } = redirection
-        serverContext.res.redirect(status || 302, target)
+        const path = target.startsWith('/') && `/newsletter${target}` || target
+        console.log({ target, status, path })
+
+        serverContext.res.redirect(status || 302, path)
         return { loading: true }
       } else if (serverContext) {
         serverContext.res.statusCode = 404
