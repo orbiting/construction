@@ -42,8 +42,7 @@ export default graphql(getRedirect, {
     const redirection = !data.error && !data.loading && data.redirection
     if (redirection) {
       const { target, status } = redirection
-      const prefix = externalBaseUrl.replace(PUBLIC_BASE_URL, '/')
-      serverContext.res.redirect(status || 302, `${prefix}${target}`)
+      serverContext.res.redirect(status || 302, `${externalBaseUrl}${target}`)
       return { loading: true }
     } else if (serverContext) {
       serverContext.res.statusCode = 404

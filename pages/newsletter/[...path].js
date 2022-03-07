@@ -122,10 +122,10 @@ const Page = withDocument(({ path, externalBaseUrl, data: {loading, error, newsl
   />
 })
 
-const Index = withRouter(({ router }) => {
+const Index = withRouter(({ router, serverContext }) => {
   const path = `/${router.query.path.join('/')}`
   const externalBaseUrl = `${PUBLIC_BASE_URL}/newsletter`
-  return <Page path={path} externalBaseUrl={externalBaseUrl} />
+  return <Page path={path} externalBaseUrl={externalBaseUrl} serverContext={serverContext} />
 })
 
 export default Index
