@@ -5,9 +5,6 @@ import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import Layout from './Layout'
 import Head from 'next/head'
-import { withRouter } from 'next/router'
-import { cleanAsPath } from '../lib/url'
-import { PUBLIC_BASE_URL } from '../lib/publicEnv'
 
 const getRedirect = gql`
   query getRedirect($path: String!, $externalBaseUrl: String!) {
@@ -33,33 +30,22 @@ const StatusError = ({ loading }) => (
   />
 )
 
-export default compose(
-  withRouter,
-  graphql(getRedirect, {
-    options: ({ router }) => ({
-      variables: {
-        path: cleanAsPath(router.asPath).replace(/^\/newsletter/g, ''),
-        externalBaseUrl: `${PUBLIC_BASE_URL}/newsletter`
-      }
-    }),
-    props: ({
-      data,
-      ownProps: {
-        serverContext
-      },
-    }) => {
-      const redirection = !data.error && !data.loading && data.redirection
-      if (redirection) {
-        const { target, status } = redirection
-        const path = target.startsWith('/') && `/newsletter${target}` || target
-        console.log({ target, status, path })
-
-        serverContext.res.redirect(status || 302, path)
-        return { loading: true }
-      } else if (serverContext) {
-        serverContext.res.statusCode = 404
-      }
-      return { loading: false }
+export default graphql(getRedirect, {
+  props: ({
+    data,
+    ownProps: {
+      serverContext,
+      externalBaseUrl
     },
-  }),
-)(StatusError)
+  }) => {
+    const redirection = !data.error && !data.loading && data.redirection
+    if (redirection) {
+      const { target, status } = redirection
+      serverContext.res.redirect(status || 302, `${externalBaseUrl}${target}`)
+      return { loading: true }
+    } else if (serverContext) {
+      serverContext.res.statusCode = 404
+    }
+    return { loading: false }
+  },
+})(StatusError)

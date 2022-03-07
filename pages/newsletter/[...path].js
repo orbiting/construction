@@ -15,6 +15,17 @@ import { css } from 'glamor'
 import { withRouter } from 'next/router'
 import { cleanAsPath } from '../../lib/url'
 
+const styles = {
+  prepub: css({
+    position: 'absolute',
+    background: colors.social,
+    width: '100%',
+    padding: '2px 5px',
+    color: '#ffffff',
+    zIndex: 10
+  })
+}
+
 const schema = createNewsletterWebSchema({ Paragraph, List, ListItem })
 
 export const getDocument = gql`
@@ -51,16 +62,24 @@ export const getDocument = gql`
   }
 `
 
-const styles = {
-  prepub: css({
-    position: 'absolute',
-    background: colors.social,
-    width: '100%',
-    padding: '2px 5px',
-    color: '#ffffff',
-    zIndex: 10
-  })
-}
+const withDocument = graphql(getDocument, {
+  props: ({data, ownProps: {serverContext}}) => {
+    if (serverContext && !data.error && !data.loading && !data.newsletter) {
+      serverContext.res.statusCode = 404
+    }
+    if (data?.newsletter && !(data.newsletter.meta.format?.meta.externalBaseUrl || '').startsWith(PUBLIC_BASE_URL)) {
+      return {
+        data: {
+          ...data,
+          newsletter: null
+        },
+      }
+    }
+    return {
+      data
+    }
+  }
+})
 
 const Newsletter = ({ newsletter }) => {
   const meta = {
@@ -87,46 +106,26 @@ const Newsletter = ({ newsletter }) => {
   </Layout>
 }
 
-const Index = ({ router, data: {loading, error, newsletter, refetch}, serverContext }) => {
-  const queryPath = router.query.path
+const Page = withDocument(({ path, externalBaseUrl, data: {loading, error, newsletter, refetch}, serverContext }) => {
   useEffect(() => {
-    if (!loading && !newsletter && queryPath.includes('vorschau')) {
+    if (!loading && !newsletter && path.includes('/vorschau/')) {
       refetch()
     }
-  }, [loading, newsletter, queryPath])
+  }, [loading, newsletter, path])
   return <Loader
     loading={loading}
     error={error}
     render={() => newsletter ?
       <Newsletter newsletter={newsletter} /> :
-      <StatusError serverContext={serverContext} />
+      <StatusError path={path} externalBaseUrl={externalBaseUrl} serverContext={serverContext} />
     }
   />
-}
+})
 
-export default compose(
-  withRouter,
-  graphql(getDocument, {
-    options: ({ router }) => ({
-      variables: {
-        path: `/${router.query.path.join('/')}`
-      }
-    }),
-    props: ({data, ownProps: {serverContext}}) => {
-      if (serverContext && !data.error && !data.loading && !data.newsletter) {
-        serverContext.res.statusCode = 404
-      }
-      if (data?.newsletter && !(data.newsletter.meta.format?.meta.externalBaseUrl || '').startsWith(PUBLIC_BASE_URL)) {
-        return {
-          data: {
-            ...data,
-            newsletter: null
-          },
-        }
-      }
-      return {
-        data
-      }
-    }
-  })
-)(Index)
+const Index = withRouter(({ router }) => {
+  const path = `/${router.query.path.join('/')}`
+  const externalBaseUrl = `${PUBLIC_BASE_URL}/newsletter`
+  return <Page path={path} externalBaseUrl={externalBaseUrl} />
+})
+
+export default Index
