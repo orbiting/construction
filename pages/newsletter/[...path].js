@@ -28,6 +28,14 @@ const styles = {
 
 const schema = createNewsletterWebSchema({ Paragraph, List, ListItem })
 
+const notificationInfo = gql`
+  fragment notificationInfo on Notification {
+    id
+    readAt
+    createdAt
+  }
+`
+
 export const getDocument = gql`
   query getDocument($path: String!) {
     newsletter: document(path: $path) {
@@ -58,8 +66,23 @@ export const getDocument = gql`
           }
         }
       }
+      unreadNotifications {
+        nodes {
+          ...notificationInfo
+        }
+      }
     }
   }
+  ${notificationInfo}
+`
+
+export const MARK_NOTIFICATION_AS_READ_MUTATION = gql`
+  mutation markNotificationAsRead($id: ID!) {
+    markNotificationAsRead(id: $id) {
+      ...notificationInfo
+    }
+  }
+  ${notificationInfo}
 `
 
 const withDocument = graphql(getDocument, {
@@ -80,6 +103,26 @@ const withDocument = graphql(getDocument, {
     }
   }
 })
+
+const alreadyMarkedAsReadIds = []
+export const withMarkAsReadMutation = graphql(
+  MARK_NOTIFICATION_AS_READ_MUTATION,
+  {
+    props: ({ mutate }) => ({
+      markAsReadMutation: (id) => {
+        if (alreadyMarkedAsReadIds.includes(id)) {
+          return Promise.resolve()
+        }
+        alreadyMarkedAsReadIds.push(id)
+        return mutate({
+          variables: {
+            id,
+          },
+        })
+      },
+    }),
+  },
+)
 
 const Newsletter = ({ newsletter }) => {
   const meta = {
@@ -106,12 +149,22 @@ const Newsletter = ({ newsletter }) => {
   </Layout>
 }
 
-const Page = withDocument(({ path, externalBaseUrl, data: {loading, error, newsletter, refetch}, serverContext }) => {
+const Page = compose(withDocument, withMarkAsReadMutation)(({ path, externalBaseUrl, serverContext, data: {loading, error, newsletter, refetch}, markAsReadMutation }) => {
   useEffect(() => {
     if (!loading && !newsletter && path.includes('/vorschau/')) {
       refetch()
     }
   }, [loading, newsletter, path])
+
+  useEffect(() => {
+    const unreadNotifications = newsletter?.unreadNotifications?.nodes?.filter(
+      (n) => !n.readAt,
+    )
+    if (unreadNotifications && unreadNotifications.length) {
+      unreadNotifications.forEach((n) => markAsReadMutation(n.id))
+    }
+  }, [newsletter])
+
   return <Loader
     loading={loading}
     error={error}
