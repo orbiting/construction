@@ -5,6 +5,7 @@ import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import Layout from './Layout'
 import Head from 'next/head'
+import { PUBLIC_BASE_URL } from '../lib/publicEnv'
 
 const getRedirect = gql`
   query getRedirect($path: String!, $externalBaseUrl: String!) {
@@ -41,7 +42,8 @@ export default graphql(getRedirect, {
     const redirection = !data.error && !data.loading && data.redirection
     if (redirection) {
       const { target, status } = redirection
-      serverContext.res.redirect(status || 302, `${externalBaseUrl}${target}`)
+      const prefix = externalBaseUrl.replace(PUBLIC_BASE_URL, '/')
+      serverContext.res.redirect(status || 302, `${prefix}${target}`)
       return { loading: true }
     } else if (serverContext) {
       serverContext.res.statusCode = 404
