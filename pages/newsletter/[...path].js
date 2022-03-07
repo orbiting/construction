@@ -104,6 +104,7 @@ const withDocument = graphql(getDocument, {
   }
 })
 
+// TODO: I am confused (mostly about mobile push notifications), talk to @tpreusse
 const alreadyMarkedAsReadIds = []
 export const withMarkAsReadMutation = graphql(
   MARK_NOTIFICATION_AS_READ_MUTATION,
