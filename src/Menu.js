@@ -1,7 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { intersperse } from './utils/helpers'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const links = [
   {
@@ -22,28 +22,25 @@ const links = [
   }
 ]
 
-const Menu = ({ url }) => <p>
-  {intersperse(
-    links.map(({path, title}, i) => {
-      if (path === url.pathname) {
-        return title
-      }
-      return (
-        <Link key={i} href={path}>
-          <a>
-            {title}
-          </a>
-        </Link>
-      )
-    }),
-    ' – '
-  )}
-</p>
-
-Menu.propTypes = {
-  url: PropTypes.shape({
-    pathname: PropTypes.string.isRequired
-  }).isRequired
+const Menu = () => {
+  const { pathname } = useRouter()
+  return (
+    <p>
+      {intersperse(
+        links.map(({ path, title }, i) => {
+          if (path === pathname) {
+            return title
+          }
+          return (
+            <Link key={i} href={path}>
+              <a>{title}</a>
+            </Link>
+          )
+        }),
+        ' – '
+      )}
+    </p>
+  )
 }
 
 export default Menu

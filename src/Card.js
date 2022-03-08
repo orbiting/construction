@@ -2,11 +2,26 @@ import React from 'react'
 import Link from 'next/link'
 
 import Teaser from '@project-r/template-newsletter/lib/web/Teaser'
+import { css } from 'glamor'
+import { colors } from '@project-r/styleguide'
 
-const CardLink = ({slug, href, children}) => (
-  <Link href={href || {pathname: '/newsletter', query: {slug}}} as={href || `/newsletter/${slug}`} passHref>
+const styles = {
+  prepub: css({
+    position: 'absolute',
+    background: colors.social,
+    width: '100%',
+    padding: '2px 5px',
+    color: '#ffffff'
+  })
+}
+
+const CardLink = ({path, href, children}) => (
+  <Link href={href || `/newsletter${path}`} passHref>
     {children}
   </Link>
 )
 
-export default props => <Teaser {...props} Link={CardLink} />
+export default ({ prepublication, ...props }) => (<div style={{ position: 'relative'}}>
+  {prepublication && <div {...styles.prepub}>Editoren-Vorschau</div>}
+  <Teaser {...props} Link={CardLink} />
+</div>)
