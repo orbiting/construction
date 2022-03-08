@@ -68,7 +68,7 @@ const News = ({ url }) => {
     )}>
 
       <h2>Newsletter-Archiv</h2>
-      <NewsletterTeasers first={-1} />
+      <NewsletterTeasers first={null} />
     </Layout>
   )
 }
