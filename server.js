@@ -2,6 +2,7 @@ const express = require('express')
 const basicAuth = require('express-basic-auth')
 const next = require('next')
 require('dotenv').config() // run before nl
+const assets = require('./server/assets')
 const newsletter = require('./server/newsletter')
 
 const fs = require('fs')
@@ -34,6 +35,7 @@ app.prepare().then(() => {
     }))
   }
 
+  server.use(assets)
   server.use(newsletter)
 
   server.get('/geschaeftsbericht', (req, res) => {
