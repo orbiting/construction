@@ -1,113 +1,180 @@
-import React, {Component} from 'react'
-import {css} from 'glamor'
-import fetch from 'isomorphic-unfetch'
+import { useState } from 'react'
+import { graphql } from 'react-apollo'
+import { compose } from 'redux'
+import gql from 'graphql-tag'
+import { css } from 'glamor'
 
-import { REPUBLIK_PUBLIC_BASE_URL } from '../lib/publicEnv'
+import isEmail from 'validator/lib/isEmail'
 
-const formStyle = css({
-  display: 'flex',
-  justifyContent: 'space-between',
-  maxWidth: 400,
-  width: '100%',
-  '& input[type=email], & input[type=text]': {
-    width: 'auto',
-    flexGrow: 2,
-    minWidth: 0
-  },
-  '& input[type=submit], & button': {
-    marginLeft: 8,
-    width: 'auto',
-    flexGrow: 1
-  }
-})
-const fieldStyle = css({
-  appearance: 'none',
-  borderRadius: 0,
-  verticalAlign: 'bottom',
-  color: '#444',
-  padding: '10px 20px 10px 20px',
-  border: 'solid #444 1px',
-  textDecoration: 'none',
-  backgroundColor: 'white',
-  fontSize: 14,
-  height: 37,
-  ':focus': {
-    outline: 'none'
-  }
-})
-const buttonStyle = css({
-  minWidth: 106,
-  ':hover': {
-    background: '#444',
-    color: 'white'
-  }
-})
-const privacyStyle = css({
-  fontFamily: 'sans-serif',
-  fontSize: 14
-})
+import {
+  Button,
+  Field,
+  InlineSpinner,
+  Interaction,
+  useColorContext,
+} from '@project-r/styleguide'
 
-class Newsletter extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      loading: false,
-      message: null
-    }
-    this.onSubmit = this.onSubmit.bind(this)
-  }
+const { P } = Interaction
 
-  onSubmit (event) {
-    event.preventDefault()
-    const email = this.refs.email.value
-
-    if (!email) {
-      this.setState({message: 'Bitte geben Sie eine E-Mail Adresse an.'})
-      return
-    }
-
-    this.setState({ loading: true })
-
-    fetch(`/newsletter/subscribe?email=${encodeURIComponent(email)}`, {credentials: 'same-origin'})
-      .then(response => response.json())
-      .then(data => {
-        this.setState({message: data.message, loading: false})
-        if (data.success) {
-          this.refs.email.value = ''
-        }
-      })
-      .catch(e => {
-        this.setState({
-          message: 'Unerwarteter Fehler, bitte versuchen Sie es später nochmals.',
-          loading: false
-        })
-      })
-  }
-
-  render () {
-    const { loading, message } = this.state
-
-    return (
-      <form onSubmit={this.onSubmit}>
-        <p {...formStyle}>
-          <input {...fieldStyle}
-            type='email'
-            name='email'
-            ref='email'
-            placeholder='E-Mail-Adresse' />
-          { loading
-            ? '...'
-            : <button type='submit' {...fieldStyle} {...buttonStyle}>Anmelden</button> }
-        </p>
-        {!!message && <p>{message}</p>}
-        <p {...privacyStyle}>
-          <a href={`${REPUBLIK_PUBLIC_BASE_URL}/datenschutz`} target='_blank'>
-            Datenschutz
-          </a>
-        </p>
-      </form>
-    )
-  }
+const styles = {
+  form: css({
+    display: 'flex',
+    justifyContent: 'space-between',
+    flexFlow: 'row wrap',
+  }),
+  input: css({
+    marginRight: 10,
+    marginBottom: 0,
+    width: '58%',
+    flexGrow: 1,
+  }),
+  button: css({
+    width: 160,
+    textAlign: 'center',
+    marginBottom: 15,
+  }),
+  hints: css({
+    marginTop: -5,
+    fontSize: 16,
+    lineHeight: '24px',
+  }),
 }
 
-export default Newsletter
+const checkEmail = ({ value, shouldValidate }) => ({
+  email: value,
+  error:
+    (value.trim().length <= 0 && 'E-Mail-Adresse fehlt') ||
+    (!isEmail(value) && 'E-Mail-Adresse ungültig'),
+  dirty: shouldValidate,
+})
+
+const errorToString = (error) => {
+  if (error.networkError) {
+    if (error.toString().match(/failed/i)) {
+      return <>
+        Die Verbindung zur Republik ist fehlgeschlagen.
+        Bitte prüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.
+      </>
+    }
+    return <>
+      Bei Ihrer Anfrage ist ein Fehler aufgetreten: «{error.toString()}».
+      Erste-Hilfe-Team: <a href="mailto:kontakt@republik.ch">kontakt@republik.ch</a>.
+    </>
+  }
+  return error.graphQLErrors && error.graphQLErrors.length
+    ? error.graphQLErrors.map((e) => e.message).join(', ')
+    : error.toString()
+}
+const ErrorMessage = ({ error, style, children }) => {
+  const [colorScheme] = useColorContext()
+  return (
+    <P style={{ margin: '20px 0', ...style }}>
+      <span {...colorScheme.set('color', 'error')}>
+        {error && errorToString(error)}
+        {children}
+      </span>
+    </P>
+  )
+}
+
+const EmailForm = (props) => {
+  const {
+    onChange,
+    onSubmit,
+    loading,
+    error,
+    dirty,
+    email,
+    serverError,
+  } = props
+
+  return (
+    <div>
+      <form onSubmit={onSubmit}>
+        <div {...styles.form}>
+          <div {...styles.input}>
+            <Field
+              name='email'
+              type='email'
+              label={'E-Mail-Adresse'}
+              error={dirty && error}
+              onChange={(_, value, shouldValidate) => {
+                onChange(
+                  checkEmail({
+                    value,
+                    shouldValidate,
+                  }),
+                )
+              }}
+              value={email}
+            />
+          </div>
+          <div {...styles.button}>
+            {loading ? (
+              <InlineSpinner />
+            ) : (
+              <Button block type='submit'>
+                Anmelden
+              </Button>
+            )}
+          </div>
+        </div>
+      </form>
+      {!!serverError && <ErrorMessage error={serverError} />}
+    </div>
+  )
+}
+
+const Newsletter = ({ requestSubscription }) => {
+  const [state, setState] = useState(() => checkEmail({ value: '' }))
+  const [serverState, setServerState] = useState({})
+  if (serverState.success) {
+    return <P>
+      Danke. Jetzt müssen Sie noch Ihre E-Mail-Adresse bestätigen.
+    </P>
+  }
+  return (
+    <EmailForm
+      {...state}
+      onChange={setState}
+      onSubmit={(e) => {
+        e.preventDefault()
+        if (state.error) {
+          setState({ ...state, dirty: true })
+          return
+        }
+
+        if (state.loading) {
+          return
+        }
+        setServerState({ loading: true })
+
+        requestSubscription({
+          variables: { email: state.email },
+        })
+          .then(() => {
+            setServerState({ loading: false, success: true })
+          })
+          .catch((error) => {
+            setServerState({ loading: false, error })
+          })
+      }}
+      loading={serverState.loading}
+      serverError={serverState.error}
+    />
+  )
+}
+
+const signUpMutation = gql`
+  mutation requestNewsletter($email: String!) {
+    requestNewsletterSubscription(email: $email, name: PROJECTR, context: "newsletter")
+  }
+`
+
+export default compose(
+  graphql(signUpMutation, {
+    props: ({ mutate }) => ({
+      requestSubscription: mutate,
+    }),
+  }),
+)(Newsletter)
