@@ -42,7 +42,7 @@ const Index = () => {
         <p>Hier finden Sie die «Republik»: <a href={`${REPUBLIK_PUBLIC_BASE_URL}`}>www.republik.ch</a>.</p>
 
         <p>Wenn Sie informiert bleiben wollen, bitte hier für den Newsletter eintragen:</p>
-        <Newsletter name='PROJECTR' />
+        <Newsletter />
         
         <p>
           <a href={`${REPUBLIK_PUBLIC_BASE_URL}/datenschutz`} target='_blank'>
