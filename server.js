@@ -3,7 +3,6 @@ const basicAuth = require('express-basic-auth')
 const next = require('next')
 require('dotenv').config() // run before nl
 const assets = require('./server/assets')
-const newsletter = require('./server/newsletter')
 
 const fs = require('fs')
 const dirPath = require('path')
@@ -36,7 +35,6 @@ app.prepare().then(() => {
   }
 
   server.use(assets)
-  server.use(newsletter)
 
   server.get('/geschaeftsbericht', (req, res) => {
     res.redirect(301, 'https://cdn.republik.space/s3/republik-assets/assets/geschaeftsbericht2017_2018_fuer_gv_und_urabstimmung.pdf')
