@@ -84,7 +84,7 @@ const withDocument = graphql(getDocument, {
 const Newsletter = ({ newsletter }) => {
   const meta = {
     ...newsletter.meta,
-    url: `${PUBLIC_BASE_URL}${newsletter.meta.path}`
+    url: `${PUBLIC_BASE_URL}/newsletter${newsletter.meta.path}`
   }
   const splitContent = splitByTitle(newsletter.content)
   return <Layout raw meta={meta}>
