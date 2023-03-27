@@ -32,7 +32,7 @@ const Footer = () => (
 
     <p>
       <strong>Vorstand</strong><br />
-      <a href='https://www.republik.ch/~sreinhard'>Sylvie&nbsp;Reinhard</a> (Präsidentin), <a href='https://www.republik.ch/~avw'>Alfonso&nbsp;von&nbsp;Wunschheim</a> und <a href='https://www.republik.ch/~row'>Roger&nbsp;de&nbsp;Weck</a>
+      <a href='https://www.republik.ch/~sreinhard'>Sylvie&nbsp;Reinhard</a> (Präsidentin) und <a href='https://www.republik.ch/~avw'>Alfonso&nbsp;von&nbsp;Wunschheim</a>
     </p>
 
     <p>
